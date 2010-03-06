@@ -662,10 +662,64 @@ sistemas de información válido para dar soporte a los procesos de la
 organización incluidos en el ámbito del Plan de Sistemas de Información. 
 
 \section{Diagnóstico de la situación actual}
+Analizados los diferentes procesos y los sistemas de información actuales que les dan cobertura, se concluye lo siguiente:
+
+\subsection{Contratación de personal}
+\begin{itemize}
+\item Espacio en la web de la UMA para la solicitud de empleo $\to$ Si.
+\item Herramienta para gestionar los procesos de selección de personal $\to$ No.
+\end{itemize}
+
+\subsection{Implamantación de los planes de estudios de cada carrera}
+\begin{itemize}
+\item Base de datos de los planes de estudio $\to$ Si, pero ésta quedará obsoleta cuando esté totalmente implantado el EEES, por lo que se necesitará una nueva para almacenar los datos de las nuevas titulaciones.
+\item Servicios web para la obtención y consulta de los planes de estudio $\to$ Si, aunque debe actualizarse.
+\item Herramientas de administración de todas las características de cada asignatura $\to$ No.
+\end{itemize}
+
+\subsection{Asignación del profesorado a las distintas asignaturas}
+\begin{itemize}
+\item Base de datos de profesores que imparten clase en la UMA $\to$ Si, pero se deben ampliar los contenidos existentes para dotarla de una mayor funcionalidad.
+\item Herramientas de búsqueda de profesorado, aplicando criterios de selección $\to$ Si, aunque debe mejorarse el motor de búsqueda actual.
+\item Herramientas de asignación de los distintos profesores a las asignaturas correspondientes $\to$ No.
+\end{itemize}
+
+\subsection{Establecimiento de los horarios lectivos de cada facultad}
+\begin{itemize}
+\item Base de datos de los planes de estudio $\to$ Si, pero ésta quedará obsoleta cuando esté totalmente implantado el EEES, por lo que se necesitará una nueva para almacenar los datos de las nuevas titulaciones.
+\item Herramientas de elaboración de horarios según las características de las asignaturas $\to$ No.
+\end{itemize}
+
+\subsection{Organización de aulas}
+\begin{itemize}
+\item Base de datos de las aulas disponibles de cada facultad $\to$ Si, pero se deben ampliar los contenidos existentes para dotarla de una mayor funcionalidad.
+\item Horario elaborado en el proceso anterior $\to$ Si.
+\item  Herramienta que realice automáticamente la asignación
+    aulas-asignaturas teniendo en cuenta localización, estado, capacidad,
+    recursos, etc $\to$ No.
+\end{itemize}
+
+\subsection{Fijación de fechas, horarios y localizaciones de evaluación de asignaturas}
+\begin{itemize}
+\item Base de datos de los planes de estudio $\to$ Si, pero ésta quedará obsoleta cuando esté totalmente implantado el EEES, por lo que se necesitará una nueva para almacenar los datos de las nuevas titulaciones. 
+\item Base de datos de las aulas disponibles $\to$ Si, pero se deben ampliar los contenidos existentes para dotarla de una mayor funcionalidad. 
+\item Calendario académico para conocer las fechas de los exámenes $\to$ Si.
+\item Herramienta que genere de forma automática la organización de los
+    exámenes, contando con la duración del examen, profesores implicados,
+    facultades donde se imparte la asignatura\... $\to$ No.
+\end{itemize}
 
 \section{Definición del modelo de sistemas de información}
-
-
+A continuación se detalla la funcionalidad principal de cada proceso:
+\begin{description}
+\item[Contratación de personal] A través de la página web se publicitarán las plazas demandadas para la realización del proyecto. Un sistema de selección automatizado nos ayudará a filtrar los candidatos más acordes con el puesto.
+\item[Implamantación de los planes de estudios de cada carrera] Se proporcionará un mecanismo que facilite la transición entre planes de estudio. Basándose en las bases de datos del plan antiguo y siguiendo con las directrices del plan de EEES, se crearán nuevas bases de datos que alberguen las características del nuevo plan.
+\item[Asignación del profesorado a las distintas asignaturas] Un nuevo motor de búsqueda de profesores permitirá una rápida visión de su situación. Además, se contará con la funcionalidad de la modificación de sus datos, como la asignatura o asignaturas que tiene asignadas.
+\item[Establecimiento de los horarios lectivos de cada facultad] Mediante un calendario y el plan actual, además de otros requisitos opcionales, se generarán unos horarios para cada facultad.
+\item[Organización de aulas] A través de los horarios generados automáticamente y teniendo en cuenta las posibilidades que ofrecen las instalaciones de cada facultad, se generará una relación de asignaciones entre aulas y asignaturas, dentro de los horarios.
+\item[Fijación de fechas, horarios y localizaciones de evaluación de asignaturas] A través del plan establecido, y utilizando las asignaciones de aulas y horarios generados por los procesos anteriormente descritos, se automatizará la asignación de exámenes dentro de los horarios y las aulas disponibles, siguiendo los periodos descritos en el plan.
+\end{description}
+ 
 \chapter{Definición de la arquitectura tecnológica}
 En esta actividad se propone una arquitectura tecnológica que de soporte al
 modelo de información y de sistemas de información incluyendo, si es

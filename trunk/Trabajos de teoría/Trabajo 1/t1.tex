@@ -79,7 +79,7 @@ investigador altamente preparado y un entorno cultural idóneo para hacer mas
 cómoda y fructífera su vida académica.
 
 Su oferta de titulaciones, tanto regladas como propias, es muy amplia; ya que 
-cuenta con los siguentes centro
+cuenta con los siguentes centros
 \begin{itemize}
   \item E.T.S. de Arquitectura
   \item E.T.S.I. de Telecomunicación
@@ -105,7 +105,9 @@ cuenta con los siguentes centro
   \item Existe un proyecto que se negocia con el ayuntamiento de Estepona para 
       crear centros en este municipio.
 \end{itemize}
-\ref{Mapa_Malaga}
+
+En la figura \ref{Mapa_Malaga} se puede ver la situación geográfica de los 
+mismos
 
 \imagen{PSIIntro_mapaUMA.png}{9}{Situación Geográfica de la UMA}{Mapa_Malaga}
 
@@ -179,12 +181,12 @@ Dña. Adelaida de la Calle, rectora de la universidad.
 \item[Responsable]
 Dña. María Valpuesta, vicerrectorado de Innovación y Desarrollo Tecnológico.
 \item[Coordinador]
-D. Luis Muñoz.
+D. Luis Muñoz Villarreal.
 \item[Grupo de trabajo]
-D. Sergio de la Rubia.
-D. Miguel Millán.
-Dña. Alicia Serrano.
-D. Juan Miguel Torres.
+D. Sergio de la Rubia García-Carpintero.
+D. Miguel Millán Sánchez-Grande.
+Dña. Alicia Serrano Sánchez.
+D. Juan Miguel Torres Triviño.
 \end{itemize}
 
 Dña. Adelaida de la Calle será la encargada de administrar el plan,
@@ -218,11 +220,13 @@ se desarrolla lo siguiente:
 Dentro de la organización se han identificado los siguientes procesos afectados 
 por el PSI:
 \begin{enumerate}
-  \item Recopilar información de los planes de estudios de cada carrera.
-  \item Buscar profesorado.
-  \item Organizar aulas.
-  \item Establecer horarios lectivos de cada facultad.
-  \item Fijar fechas, horarios y localización de evaluación de asignaturas.
+  \item Contratación de personal.
+  \item Implantación de los planes de estudios de cada carrera.
+  \item Asignación del profesorado a las distintas asignaturas.
+  \item Establececimiento de los horarios lectivos de cada facultad.
+  \item Organización de aulas.
+  \item Fijación de fechas, horarios y localizaciones de evaluación de
+    asignaturas. 
 \end{enumerate}
 
 \subsection{Catálogo de objetivos del PSI} \label{ss:2.1.2}
@@ -438,11 +442,124 @@ con el objetivo de incorporarlos al catálogo de requisitos del Plan de
 Sistemas de Información. 
 
 \section{Estudio de los procesos del PSI}
+En esta sección se muestran los procesos más significativos de la
+organización en el ámbito del Plan de Sistemas e Información.  
+\subsection{Contratación de personal}
+Indica el proceso de selección e incorporación de nuevos empleados para la
+realización de nuestro software.
+\subsection{Implantación de los planes de estudios de cada carrera}
+Proceso que se encarga de recoger la información de los planes de estudio de
+cada una de las carreras asociadas a la Universidad de Málaga. Para ello, se
+tienen los planes de estudio y junto con las directrices del Espacio Europeo
+de Educación Superior (EEES) se realizan los nuevos Planes de Estudio
+adaptados.
 
+\subsection{Asignación del profesorado a distintas asignaturas}
+Se trata de buscar profesores cualificados para impartir las distintas
+asignaturas que están contenidas en los planes de estudio. Para ello, se
+tiene una lista con las características de cada profesor. Tras la selección
+de estos profesores, se realiza la asignación a las distintas asignaturas de
+los planes de estudio.
+ 
+\subsection{Establecimiento de horarios lectivos de cada facultad}
+En este proceso tiene como entrada los planes de estudio de cada
+facultad. Tras una serie de reuniones con cada facultad y siguiente sus
+espectativas y directrices obtenemos el calendario final.
+
+\subsection{Organización de aulas}
+Las aulas disponibles de cada facultad se distribuyen acorde con los horarios
+lectivos obtenidos en el proceso anterior. Este proceso nos proporciona una
+lista de aulas asignadas. 
+
+\subsection{Fijación de fechas, horarios y localizaciones de evaluación de
+  asignaturas}
+Para este proceso se necesitan los planes de estudio, así como el calendario
+académico y las aulas que se necesitan para la evaluación de asignaturas. El
+resultado de este proceso genera una lista que contiene el nombre de la
+asignatura, fechas de evaluación, hora y emplazamiento. 
 
 \section{Análisis de las necesidades de información}
+Según los procesos identificados en la sección anterior se establecen las
+necesidades de información: 
+
+\subsection{Contratación de personal}
+     Información sobre posibles empleados. Establecer convenios con universidades,
+etc. También sería bueno recoger toda la información relativa a procesos de selección
+para poder recuperar a solicitantes que no fueron seleccionados, o evitar a otros.
+
+\subsection{Implantación de los planes de estudios de cada carrera}
+Se necesita un mecanismo eficaz por el cual se identifiquen los planes de
+estudio públicos. También hay que mantener actualizado y estudiar qué
+tecnologías se están demandando actualmente.  
+
+\subsection{Asignación del profesorado a las distintas asignaturas}
+La información necesaria para este proceso pasa por tener un buen equipo de
+selección y por lo tanto la UMA debe tener información sobre capacidades,
+experiencia, etc.
+Se tiene una base de datos con los profesores y sus principales
+características para agilizar la selección. 
+
+\subsection{Establecimiento de horarios lectivos de cada facultad}
+Es necesario tener una herramienta que elabore los horarios de clase
+relacionando los créditos de las asignaturas, horas magistrales, conflictos
+entre diferentes carreras de la misma facultad, etc.
+
+\subsection{Organización de aulas}
+Se tiene una base de datos con información sobre localización, estado,
+capacidad, recursos, etc. 
+
+\subsection{Fijación de  fechas, horarios y localizaciones de evaluación de
+  asignaturas}
+Utilización de una herramienta que complete de manera eficiente y automática
+el calendario de evaluación de asignaturas teniendo en cuenta las aulas de
+las facultades, asignaturas del plan de estudios, calendario académico,
+tiempo de realización de la evaluación, etc.
 
 \section{Catalogación de requisitos}
+\begin{table}[!h]
+\centering
+  \begin{tabular}{clc}
+    \textbf{Proceso} & \textbf{Requisitos} & \textbf{Prioridad} \\ \hline
+    \hline \hline
+     \multirow{}{*}{Contratación de personal}
+     \multirow{2}{*}{Implantación de los planes de estudio de cada
+       carrera}
+     & Servicios web para la obtención y consulta de los planes de estudio &
+     Alta\\
+     & Herramienta de administración de todas las características de cada
+     asignatura & Media\\ 
+
+     \multirow{3}{*}{Asignación del profesorado a las distintas asignaturas}
+     & Base de datos de profesores que imparten clase en la UMA & Alta \\ 
+     & Herramienta de búsqueda del profesorado, aplicando criterios de selección
+     & Media\\ 
+     & Herramienta de asignación de los distintos profesores a las
+     asignaturas correspondientes & Media\\ 
+     
+     \multirow{}{*}{Establecimiento de horarios lectivos de cada facultad}
+     & Base de datos de los planes de estudio & Alta\\ 
+     & Herramienta de elaboración de horarios según las características de
+     las asignaturas & Media \\
+
+     \multirow{}{*}{Organización de aulas}
+     & Base de datos de las aulas disponibles en cada facultad & Alta\\
+     & Horario elaborado en el proceso anterior & Alta \\
+     & Herramienta que realice automáticamente la asignación
+     aulas-asignaturas teniendo en cuenta localización, estado, capacidad,
+     recursos, etc & Media \\
+
+     \multirow{}{*}{Fijación de fechas, horarios y localizaciones de
+       evaluación de asignaturas} 
+     & Base de datos de los planes de estudio & Alta \\
+     & Base de datos de las aulas disponibles & Alta \\
+     & Calendario académico para conocer las fechas de los exámenes & Alta \\
+     & Herramienta que genere de forma automática la organización de los
+     exámenes, contando con la duración del examen, profesores implicados,
+     facultades donde se imparte la asignatura, ... & Media-Alta \\
+     
+  \end{tabular}
+\caption{Catálogo de requisitos de los procesos}
+\end{table}
 
 
 \chapter{Estudio de los sistemas de información actuales}

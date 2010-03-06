@@ -9,7 +9,7 @@
 \usepackage{fancybox}
 
 % Ruta para las imágenes
-\graphicspath{{img/}}
+\graphicspath{{imagenes/}}
 
 % Rotaciones
 \usepackage[twoside]{rotating}
@@ -17,10 +17,6 @@
 % Colores
 \usepackage{color}
 \usepackage{colortbl}
-
-% Margenes
-%\usepackage[margin=2.5cm,top=3cm]{geometry}
-%\usepackage{geometry}
 
 % Párrafos
 \setlength{\parskip}{6pt}
@@ -116,30 +112,53 @@
 % -----------------------------------------------------------------------------
 \def\portada#1#2#3#4#5{
   \thispagestyle{empty}
-  \vspace*{-2cm}
+  \vspace*{-3.3cm}
 
-  \begin{center}
-    \includegraphics[scale=0.25]{logoesi}
+  \begin{minipage}[t]{14cm}
+    \begin{center}
+      \includegraphics[scale=0.25]{logoesi}
   
-    \vspace*{1.5cm}
-    {\Large \textbf{Universidad de Castilla-La Mancha\\ 
-        Escuela Superior de Informática}\\}
+      \vspace*{1.5cm}
+      {\Large \textbf{Universidad de Castilla-La Mancha\\ 
+          Escuela Superior de Informática}\\}
     
-    \vspace*{1.2cm}
-    {\huge \textbf{#1}\\}
+      \vspace*{1.2cm}
+      {\huge \textbf{#1}\\}
     
-    \vspace*{1.5cm}
-    {\huge #2}\\{\Large #3\\}
+      \vspace*{1.5cm}
+      {\huge #2}\\{\Large #3\\}
     
-    \vspace*{1.5cm}
-    {\large #4\\}
-    \vfill
-    \large{#5}
-  \end{center}
+      \vspace*{1.5cm}
+      {\large #4\\}
+      \vspace*{1.4cm}
+      \large{#5}
+    \end{center}
+  \end{minipage}
 
   \newpage
   \vspace*{1cm}
   \thispagestyle{empty} 
+  \newpage
+}
+% -----------------------------------------------------------------------------
+
+% ------------------ Macro para la licencia -----------------------------------
+%    Uso: \portada{asignatura}{titulo}{subtítulo}{autor}{fecha}
+% -----------------------------------------------------------------------------
+\def\licencia#1{
+  \thispagestyle{empty}  % Suprime la numeración de esta página
+  \vspace*{16cm}
+  \begin{small}
+    \copyright~ #1. Se permite la copia, distribución y/o 
+    modificación de este documento bajo los términos de la licencia de
+    documentación libre GNU, versión 1.1 o cualquier versión posterior publicada
+    por la {\em Free Software Foundation}, sin secciones invariantes. Puede
+    consultar esta licencia en http://www.gnu.org. \\[0.2cm]
+    Este documento fue compuesto con \LaTeX{}. 
+  \end{small}
+  \newpage
+  \thispagestyle{empty}
+  \vspace*{0cm}
   \newpage
 }
 % -----------------------------------------------------------------------------

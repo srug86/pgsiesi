@@ -175,7 +175,7 @@ Proyecto, que será la figura principal. Como apoyo al Jefe de Proyecto
 tendremos un responsable. También tenemos la figura del coordinador del plan 
 que será el encargado de ir dirigiendo su elaboración junto con su grupo de 
 trabajo. Estas figuras serán representadas por las siguientes personas:
-\begin{itemize}
+\begin{description}
 \item[Jefa de Proyecto]
 Dña. Adelaida de la Calle, rectora de la universidad.
 \item[Responsable]
@@ -187,7 +187,7 @@ D. Sergio de la Rubia García-Carpintero.
 D. Miguel Millán Sánchez-Grande.
 Dña. Alicia Serrano Sánchez.
 D. Juan Miguel Torres Triviño.
-\end{itemize}
+\end{description}
 
 Dña. Adelaida de la Calle será la encargada de administrar el plan,
 cumpliendo las tareas de seguimiento y control del mismo, revisión y 
@@ -523,10 +523,9 @@ tiempo de realización de la evaluación, etc.
     \textbf{Proceso} & \textbf{Requisitos} & \textbf{Prioridad} \\ \hline
     \hline \hline
      \multirow{2}{*}{Contratación de personal}
-     & Servicios web para la inscripción de personal interesado en el trabajo
-     & Alta\\
-     & Herramienta para la selección del personal más cualificado de acuerdo
-     a los objetivos de la UMA & Media-Alta\\
+     & Espacio en la web de la UMA para la solicitud de empleo & Alta\\
+     & Herramienta para gestionar los procesos de selección de personal &
+     Media-Alta\\
 
      \multirow{2}{*}{Implantación de los planes de estudio de cada
        carrera}
@@ -735,8 +734,84 @@ catálogo completo de requisitos para entender las necesidades de los procesos
 y proponer los entornos tecnológicos que mejor se adapten a las mismas. 
 
 \section{Identificación de las necesidades de infraestructura tecnológica}
+Lo que se pretende analizar en esta tarea es la infraestructura tecnológica
+que necesita la UMA, así como proponer algunas alternativas viables desde
+el punto de vista tecnológico. Para ello, primero se identifican las
+necesidades y a continuación se proponen posibles alternativas de
+infraestructura tecnológica. 
+
+\begin{table}[!h]
+\centering
+  \begin{tabular}{clc}
+    \textbf{Sistemas de información} & \textbf{Necesidades de TI} &
+    \textbf{¿Cubierta?} \\ \hline 
+    \hline \hline
+     \multirow{4}{*}{Página Web}
+     & Servidores & Sí \\
+     & SGBD & Sí, mejorable \\
+     & Equipo de diseño propio en cuanto a infraestructuras de TI & Sí\\
+     & Herramientas de desarrollo y mantenimiento web & Si\\
+
+     \multirow{4}{*}{Campus virtual}
+     & Servidores & Sí\\
+     & Herramienta de publicación de documentos & Sí\\
+     & Herramientas de traducción de documentos & Mejorable\\
+     & Equipo de diseño propio en cuanto a infraestructurasde TI & Sí\\
+     & Correo interno & Sí, mejorable\\
+
+     \multirow{3}{*}{Wifi UMA}
+     & Sistema de acceso a la wifi & Sí\\
+     & Puntos de acceso inalámbricos suficientes & No\\
+     & Cobertura de red inalámbrica suficiente & Sí, mejorable\\
+     & Calidad de la señal dentro del alcance wifi & Mejorable\\
+          
+  \end{tabular}
+\caption{Tabla de necesidades del TI}
+\end{table}
 
 \section{Selección de la arquitectura tecnológica}
+En este apartado se decide la mejor alternativa tecnológica
+dentro de los aspectos inexistentes o mejorables recogidos en el punto
+anterior.
+%Buscar las bibliografías de todo lo descrito posteriormente.
+
+\subsection{SGBD}
+
+\begin{table}[!h]
+\centering
+  \begin{tabular}{clc}
+    \textbf{Alternativas TI} & \textbf{Beneficios} &
+    \textbf{Costes} \\ \hline 
+    \hline \hline
+    Oracle & Gran capacidad y potencia & Coste elevado\\
+    SQL Server & Potencia suficiente para la mayoría de SI y fácil
+    integración al pertenecer a Microsoft, la plataforma utilizada & Coste
+    inferior a otras alterativas más potentes\\
+  \end{tabular}
+\caption{Tabla de necesidades del TI}
+\end{table}
+
+\subsection{Herramientas de traducción de documentos}
+Se utilizan programas como \emph{Textanalyser}, \emph{Stylewriter},
+\emph{Antidoto} y \emph{Duden Korrektor Plus} que permiten la corrección y el
+etiquetado de los trabajos en lengua inglesa, francesa y alemana,
+respectivamente. 
+
+\subsection{Correo interno}
+El sistema ADAMAIL y la gama de soluciones de comunicación privada, son
+software basados en tecnologías libres, que tienen como finalidad generar un
+gestor de correos, envíos de archivos comunicación y datos completos. El
+sistema basa su funcionamiento en el uso de una base de datos, lo que permite
+llevar un completo control del los mensajes enviados y recibidos, así mismo
+que un control de mensajes no deseados, y la documentación enviada por el
+mismo.
+
+\subsection{Equipamiento de la red inalámbrica}
+Aunque la UMA tiene cobertura wifi en todas sus bibliotecas y centros desde
+el 2006, el continuo crecimiento de la universidad tanto en infraestructuras
+como en alumnos, hace necesario un crecimiento proporcional de los servicios
+wifi. En función a esto, se propone la implantación de repetidores de señal
+con un coste asequible con respecto a la mejora de calidad de la señal.
 
 
 \chapter{Definición del plan de acción}

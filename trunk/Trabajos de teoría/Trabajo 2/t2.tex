@@ -193,9 +193,11 @@ fecha de entrega del proyecto se establece con el objetivo de utilizar dicho
 software para el curso 2010-2011. 
 \section{Análisis del proyecto}
 \subsection{Establecimiento de requisitos}
-En esta etapa se recogen los requisitos necesarios que debe cumplir el
-software teniendo en cuenta las necesidades actuales de la UMA y los usuarios
-que interactúan con esta herramienta. 
+En esta actividad se lleva a cabo la definición, análisis y validación de los
+requisitos a partir de la información facilitada por las diferentes
+facultades y organismos. Se recogen los requisitos necesarios que debe
+cumplir el software teniendo en cuenta las necesidades actuales de la UMA y
+los usuarios que interactúan con esta herramienta. 
 El objetivo de esta actividad es obtener un catálogo detallado de los
 requisitos, a partir del cual se pueda comprobar que los productos generados
 en las actividades de modelización se ajustan a los requisitos del usuario.
@@ -206,10 +208,139 @@ acerca de las funcionalidades a cubrir.
 El objetivo de esta actividad es facilitar el análisis del sistema de
 información llevando a cabo la descomposición del sistema en diversos
 subsistemas. 
-Cada subsistema corresponde con una de las etapas del proceso.
+En esta tarea se estudia la información capturada previamente en esta
+actividad, para detectar inconsistencias, ambigüedades, duplicidad o escasez
+de información, etc. También se analizan las prioridades establecidas por el
+usuario y se asocian los requisitos relacionados entre sí.
+Mediante distintas pruebas de trabajo con los diferentes tipos de usuarios
+se recoge la información para mejorar la herramienta software.
 \subsection{Elaboración del modelo de datos}
+La finalidad de esta actividad es identificar las necesidades de información
+de cada uno de los procesos que constituyen el sistema de información, con el
+fin de obtener un modelo de datos que contemple todas las entidades,
+atributos e información necesarios para dar respuesta a dichas necesidades. 
+El modelo de datos se elabora siguiendo un enfoque descendente (top-down).
+
+Es necesario tener en cuenta el catálogo de requisitos y el modelo
+de procesos, productos que se están generando en paralelo en las actividades
+Establecimiento de Requisitos \vref{}, Identificación de Subsistemas de
+Análisis \vref{} y Elaboración del Modelo de Procesos \vref{}.
+
+\subsubsection{Elaboración del modelo conceptual de datos}
+El objetivo de esta tarea es identificar y definir las entidades que quedan
+dentro del ámbito del sistema de información, los atributos de cada entidad,
+los dominios de los atributos y las relaciones existentes entre las
+entidades. 
+El modelo conceptual de datos se obtiene con la aplicación de técnicas de modelo
+entidad E/R extendido, a partir del contexto del sistema y el modelo
+conceptual obtenido en \vref{tarea 1.1}.
+
+\subsubsection{Elaboración del modelo lógico de datos}
+En esta tarea se obtiene el modelo lógico de datos a partir del modelo
+conceptual para lo cual se realizarán las acciones siguientes:
+\begin{itemize}
+
+\item Resolver las relaciones complejas que pudieran existir entre las
+  distintas entidades.
+\item Eliminar las relaciones redundantes que puedan surgir como consecuencia
+  de la resolución de las relaciones complejas.
+\item Eliminar cualquier ambigüedad sobre el significado de los atributos.
+\item Identificar las relaciones de dependencia entre entidades.
+\item Completar la información de las entidades y los atributos, una vez
+  resueltas las relaciones complejas.
+\item Revisar y completar los identificadores de cada entidad.
+\end{itemize}
+
+\subsubsection{Normalización del modelo lógico de datos}
+El objetivo de esta tarea es revisar el modelo lógico de datos. Se eliminan
+redundancias e inconsistencias en las entidades de datos, 
+evitando anomalías en la manipulación de éstas y facilitando su
+mantenimiento. La técnica de normalización puede exigir la modificación de
+entidades, la creación de nuevas entidades y la reorganización de atributos,
+por lo tanto, es necesaria una revisión del modelo.
+
+\subsubsection{Especificación de necesidades de migración de datos y carga
+  inicial}
+Se especifican las necesidades de migración o carga inicial de los datos
+requeridos por el sistema. Como punto de partida, se toma el modelo lógico de
+datos normalizado, junto con las estructuras de datos del sistema o sistemas
+origen. 
+Los aspectos que se tienen en cuenta son los siguientes:
+\begin{itemize}
+\item Planificación de la migración y carga inicial.
+\item Prioridad en las cargas.
+\item Requisitos de conversión de información: necesidades de depuración de
+  información, importación de información complementaria, validaciones y
+  controles, etc.
+\item Plan de pruebas específico.
+\item Necesidades especiales de equipamiento hardware y estimaciones de
+  capacidad, en función de los volúmenes de las estructuras de datos origen.
+\item Necesidades especiales de utilidades software.
+\item Posibles modificaciones del sistema origen, que faciliten la ejecución
+  o verificación de la migración o carga inicial.
+\end{itemize}
+
+Como resultado de esta tarea se obtiene una primera especificación del plan de
+migración de datos y carga inicial del sistema, que se completará en el
+proceso Diseño del Sistema de Información (DSI).
+
 \subsection{Elaboración del modelo de procesos}
+La finalidad de esta actividad se analizan las necesidades del usuario para
+establecer el conjunto de procesos que conforma el sistema de información.
+Esta actividad se lleva a cabo para cada uno de los subsistemas identificados
+en la actividad Identificación de Subsistemas de Análisis.
+
+\subsubsection{Obtención del modelo de procesos del sistema}
+Para cada proceso primitivo identificado, se analizan las características
+propias con el fin de establecer su frecuencia de ejecución, procesos
+asociados y limitaciones o restricciones en su ejecución, como tiempos
+máximos de respuesta, franja horaria y períodos críticos, número máximo de
+usuarios concurrentes, etc. Este análisis permite establecer los criterios de
+distribución de los componentes software al definir, en el proceso de diseño,
+la arquitectura física del sistema. 
+Para cada proceso primitivo, también se debe especificar qué procesos van a
+estar bajo control del usuario y cuáles bajo control del sistema. 
+
+\subsubsection{Especificación de interfaces con otros sistemas}
+Para cada interfaz identificada, se especifica:
+\begin{itemize}
+\item Procesos del sistema de información asociados.
+\item Especificaciones funcionales de los sistemas origen o destino.
+\item Formatos de los datos intercambiados.
+\item Aspectos operativos de la interfaz.
+\item Evento que desencadena la interfaz.
+\item Validaciones, requisitos especiales de seguridad, etc.
+\end{itemize}
+
 \subsection{Definición de interfaces de usuario}
+El objetivo es realizar un análisis de los procesos del sistema de
+información en los que se requiere una interacción del usuario, con el fin de
+crear una interfaz que satisfaga todos los requisitos establecidos, teniendo
+en cuenta los diferentes perfiles a quiénes va dirigido.
+Al comienzo de este análisis es necesario seleccionar el entorno en el que es
+operativa la interfaz, considerando estándares internacionales y de la
+instalación, y establecer las directrices aplicables en los procesos de
+diseño y construcción. 
+
+El propósito es construir una interfaz de usuario acorde a sus necesidades,
+flexible, coherente, eficiente y sencilla de utilizar, teniendo en cuenta la
+facilidad de cambio a otras plataformas, si fuera necesario. 
+
+\subsubsection{Especificación de principios generales de la interfaz}
+En esta tarea se especifican los estándares, directrices y elementos
+generales a tener en cuenta en la definición de la interfaz de usuario, tanto
+para la interfaz interactiva (gráfica o carácter), como para los informes y
+formularios impresos. 
+
+\subsubsection{Identificación de perfiles y diálogos}
+Se identifican los perfiles de usuario, de acuerdo a su nivel de
+responsabilidad y al alcance o naturaleza de las funciones que realizan, así
+como analizar las características más relevantes de los usuarios que van a
+asumir esos perfiles. 
+Los procesos que se especifican en esta tarea se clasifican en función de su
+prioridad, frecuencia, comunicación con otros procesos, seguridad,
+restricciones de horario, etc.
+
 \subsection{Análisis de consistencia y especificación de requisitos}
 Esta actividad se centra en garantizar la calidad de los distintos modelos
 generados en el proceso de Análisis del Sistema de Información, y asegurar

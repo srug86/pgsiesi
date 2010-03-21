@@ -215,10 +215,112 @@ Cada subsistema corresponde con una de las etapas del proceso.
 \subsection{Especificación del plan de pruebas}
 \subsection{Aprobación del análisis del sistema de información}
 \section{Diseño del proceso}
+Esta sección tiene como objetivo la definición de la arquitectura del sistema y
+del entorno tecnológico que le va a dar soporte. En base a lo anterior se
+generarán todas las especificaciones de construcción del sistema así como la
+descripción técnica del plan de pruebas, el diseño de los procedimientos de
+migración y carga inicial y la definición de los requisitos de información.
+
+Podemos dividir este proceso en dos partes
+\begin{itemize}
+\item Obtención del diseño de detalle del sistema de información, ya que se
+  puede estructurar en diversos tipos de subsistemas de diseño dependiendo
+  del propósito que tienen que desempeñar. El diseño detallado del sistema de
+  información comprende las siguientes actividades: 
+  \begin{itemize}
+  \item Diseño de la arquitectura de soporte.
+  \item Diseño de la arquitectura de módulos.
+  \item Diseño físico de datos.
+  \end{itemize}
+  Seguidamente, se procede al diseño físico en la siguiente
+  actividad. Finalmente realizaremos la parte de revisión y validación.
+
+\item Generación de todas las especificaciones necesarias para la
+  construcción del sistema de información. La metodología a seguir para la
+  realización de este bloque es:
+  \begin{itemize}
+  \item Generación de especificaciones de construcción.
+  \item Diseño de la migración y carga inicial de datos.
+  \item Especificación técnica del plan de pruebas.
+  \item Establecimiento de requisitos de implantación
+  \end{itemize}
+  Finalmente se realizará la Presentación y Aprobación del Diseño del Sistema
+  de Información.
+
 \subsection{Definición de la arquitectura del sistema}
+En esta actividad se define la arquitectura general de información
+especificando las distintas particiones físicas del mismo, la descomposición
+lógica en subsistemas de diseño y la ubicación de cada subsistema en cada
+partición, así como la especificación detallada de la infraestructura
+tecnológica para dar soporte al sistema de información.
+
+Como resultado de esta actividad, se actualizan los catálogos de requisitos y
+normas, y se generan los siguientes productos:
+\begin{itemize}
+\item Diseño de la Arquitectura del Sistema, como producto que engloba el
+  particionamiento físico del sistema de información y la descripción de
+  subsistemas de diseño.
+\item Entorno Tecnológico del Sistema, que a su vez comprende la
+  especificación del entorno tecnológico, las restricciones técnicas y la
+  planificación de capacidades.
+\item Catálogo de Excepciones.
+\item Procedimientos de Operación y Administración del Sistema.
+\item Procedimientos de Seguridad y Control de Acceso.
+\end{itemize}
+
 \subsection{Diseño de la arquitectura de soporte}
+En esta tarea se describen los niveles de la arquitectura software, mediante
+la definición de las principales particiones físicas del sistema de
+información, representadas como nodos y comunicaciones entre nodos.
+
+Se entiende por nodo cada partición física o parte significativa del sistema
+de información, con características propias de ejecución o función, e incluso
+de diseño y construcción.
+
+Los elementos que vamos a especificar son los siguientes:
+\begin{itemize}
+\item Gestores de datos.
+\item Tipos de puesto cliente.
+\item Tipos de dispositivos de impresión.
+\item Monitores de teleproceso.
+\item Servidores y comunicaciones.
+\end{itemize}
+
+Para diseñar la arquitectura vamos a tener en cuenta los aspectos
+relacionados con los usuarios (ubicación, movilidad\...), datos
+(variabilidad, volúmenes\...) y procesos (distribución, concurrencia\...).
+
 \subsection{Diseño de la arquitectura de módulos del sistema}
+En esta tarea se realiza la especificación de los requisitos que están
+directamente relacionados con la adopción o diseño de una arquitectura o
+infraestructura concreta, y que pueden condicionar el diseño o la
+construcción del sistema de información. 
+
+Como resultado de esta tarea se actualizará el catálogo de requisitos
+elaborado en el proceso de Análisis.
+
 \subsection{Diseño físico de datos}
+Esta tarea define los comportamientos no habituales en el sistema, que reflejan
+situaciones anómalas o secundarias en el funcionamiento y ejecución del
+mismo. Para esto, estableceremos el nivel de especificación de dichas
+situaciones, así como los criterios de catalogación y clasificación.
+
+Describiremos las excepciones incluyendo los siguientes conceptos:
+\begin{itemize}
+\item Tipo y descripción de la excepción.
+\item Condiciones previas del sistema de información.
+\item Elemento afectado.
+\item Respuesta del sistema de información.
+\item Elemento asociado a la respuesta esperada del sistema.
+\end{itemize}
+
+Y las excepciones asociadas a:
+\begin{itemize}
+\item Nodos y comunicaciones del particionamiento físico del sistema de
+  información. 
+\item Rangos o valores no válidos en la entrada de datos.
+\end{itemize}
+
 \subsection{Verificación y aceptación de la arquitectura del sistema}
 \subsection{Generación de especificaciones de construcción}
 \subsection{Diseño de la migración y carga inicial de datos}

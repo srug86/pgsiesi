@@ -208,119 +208,103 @@ información llevando a cabo la descomposición del sistema en diversos
 subsistemas. 
 Cada subsistema corresponde con una de las etapas del proceso.
 \subsection{Elaboración del modelo de datos}
-
 \subsection{Elaboración del modelo de procesos}
 \subsection{Definición de interfaces de usuario}
 \subsection{Análisis de consistencia y especificación de requisitos}
+Esta actividad se centra en garantizar la calidad de los distintos modelos
+generados en el proceso de Análisis del Sistema de Información, y asegurar
+que los usuarios y los analistas tienen el mismo concepto del sistema. Para
+cumplir dicho objetivo, se llevan a cabo las acciones definidas abajo.  
+
+\subsubsection{Verificación de los Modelos}
+Con esta tarea se asegura calidad formal en los distintos modelos, conforme a 
+la técnica seguida para la elaboración de cada producto.
+
+\subsubsection{Análisis de Consistencia de los Modelos}
+Se asegura la coherencia en los modelos, comprobando la ausencia de
+ambigüedades y/o duplicación de información. 
+
+\subsubsection{Validación de los Modelos}
+Se validan los distintos modelos con los requisitos especificados para el
+proyecto a través del catálogo de requisitos y a través de la validación
+directa del usuario. 
+
+
+\subsubsection{Elaboración de la Especificación de Requisitos Software (ERS)}
+Esta tarea incluye la elaboración de la Especificación de Requisitos Software
+(ERS),una vez validados los modelos. Incorpora la información necesaria para
+la aprobación final del análisis, según el siguiente índice:
+\begin{itemize}
+\item Introdicción.
+\item Ámbito y alcance.
+\item Participantes.
+\item Requitisitos del proyecto.
+\item Visión general del proyecto.
+\item Referencia de los productos a entregar.
+\item Plan de acción.
+\end{itemize}
+ 
 \subsection{Especificación del plan de pruebas}
+En esta actividad se inicia la definición del plan de pruebas, el cual sirve
+como guía para la realización de las pruebas, y permite verificar que el
+sistema de información cumple las necesidades establecidas por el usuario,
+con las debidas garantías de calidad. 
+\subsubsection{Definición del Alcance de las Pruebas}
+En esta tarea especificaremos y justificaremos los niveles de pruebas a
+realizar, así como el marco general de planificación de cada nivel de prueba,
+según el siguiente esquema:
+\begin{itemize}
+\item Definición de los perfiles implicados en los distintos niveles de prueba.
+\item Planificación temporal.
+\item Criterios de verificación y aceptación de cada nivel de prueba.
+\item Definición, generación y mantenimiento de verificaciones y casos de
+  prueba.  
+\item Análisis y evaluación de los resultados de cada nivel de prueba.
+\item Productos a entregar como resultado de la ejecución de las pruebas.
+\end{itemize}
+
+\subsubsection{Definición de Requisitos del Entorno de Pruebas}
+En esta sección se recopilan los requisitos relativos al entorno de pruebas,
+completando el plan de pruebas. La realización de las pruebas aconseja
+disponer de un entorno de pruebas separado del entorno de desarrollo y del
+entorno de operación, garantizando cierta independencia y estabilidad en los
+datos y elementos a probar, de modo que los resultados obtenidos sean
+objetivamente representativos, punto especialmente crítico en pruebas de
+rendimiento. Además, se inicia la definición de las especificaciones
+necesarias para la correcta ejecución de las distintas pruebas del sistema de
+información. Entre ellas podemos citar las siguientes:
+\begin{itemize}
+\item Requisitos básicos de hardware y software base: sistemas operativos,
+  gestores de bases de datos, monitores de teleproceso, etc.
+\item Requisitos de configuración de entorno: librerías, bases de datos,
+  ficheros, procesos, comunicaciones, necesidades de almacenamiento,
+  configuración de accesos, etc. 
+\item Herramientas auxiliares. Por ejemplo, de extracción de juegos de
+  ensayo, análisis de rendimiento y calidad, etc. 
+\item Procedimientos para la realización de pruebas y migración de elementos
+  entre entornos. 
+\end{itemize}
+
+\subsubsection{Definición de las pruebas de Aceptación del Sistema}
+En esta tarea, como su propio nombre indica, se realiza la especificación
+de las pruebas de aceptación del sistema. Los criterios de aceptación deben
+ser definidos de forma clara, prestando especial atención a aspectos como: 
+\begin{itemize}
+\item Procesos críticos del sistema.
+\item Rendimiento del sistema.
+\item Seguridad.
+\item Disponibilidad.
+\end{itemize}
+
 \subsection{Aprobación del análisis del sistema de información}
+En esta tarea se realiza la presentación del análisis del sistema de
+información a la Dirección, para la aprobación final del mismo.
+
 \section{Diseño del proceso}
-Esta sección tiene como objetivo la definición de la arquitectura del sistema y
-del entorno tecnológico que le va a dar soporte. En base a lo anterior se
-generarán todas las especificaciones de construcción del sistema así como la
-descripción técnica del plan de pruebas, el diseño de los procedimientos de
-migración y carga inicial y la definición de los requisitos de información.
-
-Podemos dividir este proceso en dos partes
-\begin{itemize}
-\item Obtención del diseño de detalle del sistema de información, ya que se
-  puede estructurar en diversos tipos de subsistemas de diseño dependiendo
-  del propósito que tienen que desempeñar. El diseño detallado del sistema de
-  información comprende las siguientes actividades: 
-  \begin{itemize}
-  \item Diseño de la arquitectura de soporte.
-  \item Diseño de la arquitectura de módulos.
-  \item Diseño físico de datos.
-  \end{itemize}
-  Seguidamente, se procede al diseño físico en la siguiente
-  actividad. Finalmente realizaremos la parte de revisión y validación.
-
-\item Generación de todas las especificaciones necesarias para la
-  construcción del sistema de información. La metodología a seguir para la
-  realización de este bloque es:
-  \begin{itemize}
-  \item Generación de especificaciones de construcción.
-  \item Diseño de la migración y carga inicial de datos.
-  \item Especificación técnica del plan de pruebas.
-  \item Establecimiento de requisitos de implantación
-  \end{itemize}
-  Finalmente se realizará la Presentación y Aprobación del Diseño del Sistema
-  de Información.
-
 \subsection{Definición de la arquitectura del sistema}
-En esta actividad se define la arquitectura general de información
-especificando las distintas particiones físicas del mismo, la descomposición
-lógica en subsistemas de diseño y la ubicación de cada subsistema en cada
-partición, así como la especificación detallada de la infraestructura
-tecnológica para dar soporte al sistema de información.
-
-Como resultado de esta actividad, se actualizan los catálogos de requisitos y
-normas, y se generan los siguientes productos:
-\begin{itemize}
-\item Diseño de la Arquitectura del Sistema, como producto que engloba el
-  particionamiento físico del sistema de información y la descripción de
-  subsistemas de diseño.
-\item Entorno Tecnológico del Sistema, que a su vez comprende la
-  especificación del entorno tecnológico, las restricciones técnicas y la
-  planificación de capacidades.
-\item Catálogo de Excepciones.
-\item Procedimientos de Operación y Administración del Sistema.
-\item Procedimientos de Seguridad y Control de Acceso.
-\end{itemize}
-
 \subsection{Diseño de la arquitectura de soporte}
-En esta tarea se describen los niveles de la arquitectura software, mediante
-la definición de las principales particiones físicas del sistema de
-información, representadas como nodos y comunicaciones entre nodos.
-
-Se entiende por nodo cada partición física o parte significativa del sistema
-de información, con características propias de ejecución o función, e incluso
-de diseño y construcción.
-
-Los elementos que vamos a especificar son los siguientes:
-\begin{itemize}
-\item Gestores de datos.
-\item Tipos de puesto cliente.
-\item Tipos de dispositivos de impresión.
-\item Monitores de teleproceso.
-\item Servidores y comunicaciones.
-\end{itemize}
-
-Para diseñar la arquitectura vamos a tener en cuenta los aspectos
-relacionados con los usuarios (ubicación, movilidad\...), datos
-(variabilidad, volúmenes\...) y procesos (distribución, concurrencia\...).
-
 \subsection{Diseño de la arquitectura de módulos del sistema}
-En esta tarea se realiza la especificación de los requisitos que están
-directamente relacionados con la adopción o diseño de una arquitectura o
-infraestructura concreta, y que pueden condicionar el diseño o la
-construcción del sistema de información. 
-
-Como resultado de esta tarea se actualizará el catálogo de requisitos
-elaborado en el proceso de Análisis.
-
 \subsection{Diseño físico de datos}
-Esta tarea define los comportamientos no habituales en el sistema, que reflejan
-situaciones anómalas o secundarias en el funcionamiento y ejecución del
-mismo. Para esto, estableceremos el nivel de especificación de dichas
-situaciones, así como los criterios de catalogación y clasificación.
-
-Describiremos las excepciones incluyendo los siguientes conceptos:
-\begin{itemize}
-\item Tipo y descripción de la excepción.
-\item Condiciones previas del sistema de información.
-\item Elemento afectado.
-\item Respuesta del sistema de información.
-\item Elemento asociado a la respuesta esperada del sistema.
-\end{itemize}
-
-Y las excepciones asociadas a:
-\begin{itemize}
-\item Nodos y comunicaciones del particionamiento físico del sistema de
-  información. 
-\item Rangos o valores no válidos en la entrada de datos.
-\end{itemize}
-
 \subsection{Verificación y aceptación de la arquitectura del sistema}
 \subsection{Generación de especificaciones de construcción}
 \subsection{Diseño de la migración y carga inicial de datos}
@@ -328,20 +312,7 @@ Y las excepciones asociadas a:
 \subsection{Establecimiento de los requisitos de implantación}
 \subsection{Presentación y aprobación del diseño del sistema de información}
 \section{Construcción y prueba del proyecto}
-En este apartado se genera el código de los componentes del Sistema de 
-Información, se desarrollan los procedimientos de operación y seguridad, y se 
-elaboran los manuales de usuario final y de explotación; con el objetivo de 
-asegurar el correcto funcionamiento del Sistema para su posterior implantación.
-
-Con el fin de conseguir estos objetivos y atendiendo al plan de pruebas que 
-se ha establecido, conforme se vayan desarrollando las diversas partes del 
-proyecto, se harán las siguientes pruebas: unitarias, de integración de los 
-subsistemas, de componentes y finalmente, las del sistema completo.
-
 \subsection{Preparación del entorno de generación y construcción}
-
-\subsubsection{Implantación de la base de datos}
-\subsubsection{Preparación del entorno de construcción}
 \subsection{Generación del código de los componentes y procedimientos}
 \subsection{Ejecución de las pruebas unitarias}
 \subsection{Ejecución del las pruebas de integración}

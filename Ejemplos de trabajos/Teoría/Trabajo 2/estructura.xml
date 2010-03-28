@@ -1,0 +1,4707 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--PlanEP: Fichero de Proyecto-->
+<Package xmlns="http://www.wfmc.org/2002/XPDL1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="0" Name="Informatización de la gestión inmobiliaria">
+  <PackageHeader>
+    <XPDLVersion>1.0</XPDLVersion>
+    <Vendor>PlanEP</Vendor>
+    <Created>12/03/2008 20:46:51</Created>
+    <Description>
+    </Description>
+  </PackageHeader>
+  <ConformanceClass GraphConformance="FULL_BLOCKED" />
+  <WorkflowProcesses>
+    <WorkflowProcess Id="0" Name="">
+      <ProcessHeader>
+        <Description>
+        </Description>
+      </ProcessHeader>
+      <Activities>
+        <Activity Id="1">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="IN">
+                  <Rectangle X="104" Y="180" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="2">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="OUT">
+                  <Rectangle X="398" Y="123" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="3">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="OUT">
+                  <Rectangle X="399" Y="249" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="0" Name="Informatización de la gestión inmobiliaria">
+          <Description>
+          </Description>
+          <Implementation>
+            <SubFlow Id="1" />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="0" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="200" Y="150" Width="125" Height="88" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="43" Name="Initial">
+          <Route />
+        </Activity>
+        <Activity Id="76" Name="Final">
+          <Route />
+        </Activity>
+      </Activities>
+      <Transitions>
+        <Transition Id="1" From="1" To="0">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="A" />
+                <Points />
+                <Rectangle X="124" Y="162" Width="67" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="2" From="0" To="2">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="B" />
+                <Points />
+                <Rectangle X="329" Y="111" Width="107" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="3" From="0" To="3">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="C" />
+                <Points />
+                <Rectangle X="350" Y="210" Width="114" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="91" From="43" To="1" />
+        <Transition Id="92" From="2" To="76" />
+        <Transition Id="93" From="3" To="76" />
+      </Transitions>
+      <ExtendedAttributes>
+        <ExtendedAttribute Name="StrId" Value="WFD0" />
+        <ExtendedAttribute Name="AreaWidth" Value="720" />
+        <ExtendedAttribute Name="AreaHeight" Value="1060" />
+      </ExtendedAttributes>
+    </WorkflowProcess>
+    <WorkflowProcess Id="1" Name="Informatización de la gestión inmobiliaria">
+      <ProcessHeader>
+        <Description>
+        </Description>
+      </ProcessHeader>
+      <Activities>
+        <Activity Id="10">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="IN">
+                  <Rectangle X="16" Y="252" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="4">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="OUT">
+                  <Rectangle X="659" Y="154" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="6">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="OUT">
+                  <Rectangle X="662" Y="365" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="7" Name="Analisis">
+          <Description>
+          </Description>
+          <Implementation>
+            <SubFlow Id="2" />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="1" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="86" Y="199" Width="124" Height="82" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="8" Name="Diseño">
+          <Description>
+          </Description>
+          <Implementation>
+            <SubFlow Id="3" />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="2" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="293" Y="324" Width="119" Height="80" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="9" Name="Construcción y pruebas">
+          <Description>
+          </Description>
+          <Implementation>
+            <SubFlow Id="4" />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="3" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="487" Y="221" Width="127" Height="82" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="81" Name="Initial">
+          <Route />
+        </Activity>
+        <Activity Id="82" Name="Final">
+          <Route />
+        </Activity>
+      </Activities>
+      <Transitions>
+        <Transition Id="6" From="9" To="4">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="C" />
+                <Points />
+                <Rectangle X="590" Y="141" Width="114" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="5" From="9" To="6">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="B" />
+                <Points />
+                <Rectangle X="580" Y="371" Width="107" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="4" From="10" To="7">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="A" />
+                <Points />
+                <Rectangle X="22" Y="217" Width="67" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="8" From="8" To="9">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="E" />
+                <Points />
+                <Rectangle X="351" Y="278" Width="114" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="7" From="7" To="8">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="D" />
+                <Points />
+                <Rectangle X="148" Y="311" Width="118" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="94" From="81" To="10" />
+        <Transition Id="95" From="4" To="82" />
+        <Transition Id="96" From="6" To="82" />
+      </Transitions>
+      <ExtendedAttributes>
+        <ExtendedAttribute Name="StrId" Value="WFD1" />
+        <ExtendedAttribute Name="AreaWidth" Value="720" />
+        <ExtendedAttribute Name="AreaHeight" Value="1060" />
+      </ExtendedAttributes>
+    </WorkflowProcess>
+    <WorkflowProcess Id="2" Name="Analisis">
+      <ProcessHeader>
+        <Description>
+        </Description>
+      </ProcessHeader>
+      <Activities>
+        <Activity Id="21">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="IN">
+                  <Rectangle X="26" Y="91" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="5">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="OUT">
+                  <Rectangle X="1675" Y="347" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="11">
+          <Description>
+          </Description>
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Intermedium Type="SHARE">
+                  <Rectangle X="415" Y="294" Width="10" Height="10" />
+                </Intermedium>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="16" Name="Elaboración del modelo de procesos">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="1.5" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="587" Y="393" Width="125" Height="73" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="22">
+          <Description>
+          </Description>
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Intermedium Type="COMPOSE">
+                  <Rectangle X="987" Y="361" Width="10" Height="10" />
+                </Intermedium>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="23">
+          <Description>
+          </Description>
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Intermedium Type="SHARE">
+                  <Rectangle X="1118" Y="360" Width="10" Height="10" />
+                </Intermedium>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="20" Name="Aprobación del analisis del SI">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="1.9" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="1517" Y="320" Width="109" Height="60" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="17" Name="Definición de interfaces de usuario">
+          <Description>
+          </Description>
+          <Implementation>
+            <SubFlow Id="9" />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="1.6" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="592" Y="511" Width="119" Height="72" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="12" Name="Definición del sistema">
+          <Description>
+          </Description>
+          <Implementation>
+            <SubFlow Id="5" />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="1.1" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="154" Y="82" Width="110" Height="64" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="13" Name="Establecimiento de requisitos">
+          <Description>
+          </Description>
+          <Implementation>
+            <SubFlow Id="6" />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="1.2" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="150" Y="264" Width="114" Height="70" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="14" Name="Identificación de subsistemas de analisis">
+          <Description>
+          </Description>
+          <Implementation>
+            <SubFlow Id="7" />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="1.3" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="582" Y="119" Width="114" Height="71" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="15" Name="Elaboración del modelo de datos">
+          <Description>
+          </Description>
+          <Implementation>
+            <SubFlow Id="8" />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="1.4" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="582" Y="263" Width="129" Height="67" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="19" Name="Especificación del plan de pruebas">
+          <Description>
+          </Description>
+          <Implementation>
+            <SubFlow Id="11" />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="1.8" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="1266" Y="431" Width="116" Height="76" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="18" Name="Analisis de consistencia y especificación de requisitos">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="1.7" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="1257" Y="205" Width="134" Height="81" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="83" Name="Initial">
+          <Route />
+        </Activity>
+        <Activity Id="84" Name="Final">
+          <Route />
+        </Activity>
+      </Activities>
+      <Transitions>
+        <Transition Id="9" From="21" To="12">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="A" />
+                <Points />
+                <Rectangle X="46" Y="121" Width="67" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="11" From="12" To="13">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="F" />
+                <Points />
+                <Rectangle X="13" Y="207" Width="190" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="12" From="13" To="11">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="G" />
+                <Points />
+                <Rectangle X="267" Y="276" Width="127" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="14" From="11" To="15">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="G" />
+                <Points />
+                <Rectangle X="435" Y="278" Width="127" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="16" From="11" To="17">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="G" />
+                <Points>
+                  <Point X="465" Y="450" />
+                </Points>
+                <Rectangle X="413" Y="497" Width="127" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="15" From="11" To="16">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="G" />
+                <Points>
+                  <Point X="510" Y="397" />
+                </Points>
+                <Rectangle X="484" Y="354" Width="127" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="13" From="11" To="14">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="G" />
+                <Points>
+                  <Point X="448" Y="240" />
+                </Points>
+                <Rectangle X="414" Y="177" Width="127" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="20" From="17" To="22">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="K" />
+                <Points>
+                  <Point X="950" Y="514" />
+                </Points>
+                <Rectangle X="775" Y="497" Width="153" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="17" From="14" To="22">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="H" />
+                <Points>
+                  <Point X="920" Y="203" />
+                </Points>
+                <Rectangle X="763" Y="168" Width="116" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="18" From="15" To="22">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="I" />
+                <Points>
+                  <Point X="873" Y="305" />
+                </Points>
+                <Rectangle X="763" Y="281" Width="93" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="19" From="16" To="22">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="J" />
+                <Points>
+                  <Point X="932" Y="419" />
+                </Points>
+                <Rectangle X="810" Y="403" Width="114" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="21" From="22" To="23">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="L" />
+                <Points />
+                <Rectangle X="996" Y="343" Width="122" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="23" From="23" To="19">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="L" />
+                <Points />
+                <Rectangle X="1197" Y="384" Width="122" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="10" From="20" To="5">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="D" />
+                <Points />
+                <Rectangle X="1627" Y="321" Width="118" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="25" From="19" To="20">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="N" />
+                <Points />
+                <Rectangle X="1435" Y="419" Width="97" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="24" From="18" To="20">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="M" />
+                <Points />
+                <Rectangle X="1452" Y="272" Width="183" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="22" From="23" To="18">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="L" />
+                <Points />
+                <Rectangle X="1201" Y="320" Width="122" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="97" From="83" To="21" />
+        <Transition Id="98" From="5" To="84" />
+      </Transitions>
+      <ExtendedAttributes>
+        <ExtendedAttribute Name="StrId" Value="WFD2" />
+        <ExtendedAttribute Name="AreaWidth" Value="1700" />
+        <ExtendedAttribute Name="AreaHeight" Value="1060" />
+      </ExtendedAttributes>
+    </WorkflowProcess>
+    <WorkflowProcess Id="9" Name="Definición de interfaces de usuario">
+      <ProcessHeader>
+        <Description>
+        </Description>
+      </ProcessHeader>
+      <Activities>
+        <Activity Id="77" Name="Especificación de principios generales de la interfaz">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="1.6.1" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="69" Y="262" Width="164" Height="84" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="79">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="IN">
+                  <Rectangle X="88" Y="96" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="69">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="OUT">
+                  <Rectangle X="907" Y="354" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="78" Name="Identificación de perfiles y diálogos">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="1.6.2" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="567" Y="295" Width="173" Height="89" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="85" Name="Initial">
+          <Route />
+        </Activity>
+        <Activity Id="86" Name="Final">
+          <Route />
+        </Activity>
+      </Activities>
+      <Transitions>
+        <Transition Id="88" From="79" To="77">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="G" />
+                <Points />
+                <Rectangle X="129" Y="163" Width="127" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="89" From="78" To="69">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="K" />
+                <Points />
+                <Rectangle X="743" Y="316" Width="153" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="90" From="77" To="78">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AO" />
+                <Points />
+                <Rectangle X="257" Y="296" Width="289" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="99" From="85" To="79" />
+        <Transition Id="103" From="69" To="86" />
+      </Transitions>
+      <ExtendedAttributes>
+        <ExtendedAttribute Name="StrId" Value="WFD9" />
+        <ExtendedAttribute Name="AreaWidth" Value="1000" />
+        <ExtendedAttribute Name="AreaHeight" Value="1060" />
+      </ExtendedAttributes>
+    </WorkflowProcess>
+    <WorkflowProcess Id="5" Name="Definición del sistema">
+      <ProcessHeader>
+        <Description>
+        </Description>
+      </ProcessHeader>
+      <Activities>
+        <Activity Id="59">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="OUT">
+                  <Rectangle X="649" Y="328" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="57" Name="Determinación del alcance del sistema">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="1.1.1" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="51" Y="239" Width="127" Height="76" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="58" Name="Identificación del entorno tecnológico">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="1.1.2" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="369" Y="238" Width="130" Height="85" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="56">
+          <Description>
+          </Description>
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Intermedium Type="SHARE">
+                  <Rectangle X="119" Y="151" Width="10" Height="10" />
+                </Intermedium>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="60">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="IN">
+                  <Rectangle X="46" Y="102" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="87" Name="Initial">
+          <Route />
+        </Activity>
+        <Activity Id="92" Name="Final">
+          <Route />
+        </Activity>
+      </Activities>
+      <Transitions>
+        <Transition Id="71" From="58" To="59">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="F" />
+                <Points />
+                <Rectangle X="511" Y="281" Width="190" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="70" From="60" To="56">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="A" />
+                <Points />
+                <Rectangle X="88" Y="112" Width="67" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="72" From="56" To="57">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="A" />
+                <Points />
+                <Rectangle X="120" Y="180" Width="67" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="73" From="56" To="58">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="A" />
+                <Points>
+                  <Point X="318" Y="177" />
+                </Points>
+                <Rectangle X="246" Y="150" Width="67" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="74" From="57" To="58">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AJ" />
+                <Points />
+                <Rectangle X="220" Y="257" Width="125" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="104" From="59" To="92" />
+        <Transition Id="105" From="87" To="60" />
+      </Transitions>
+      <ExtendedAttributes>
+        <ExtendedAttribute Name="StrId" Value="WFD5" />
+        <ExtendedAttribute Name="AreaWidth" Value="720" />
+        <ExtendedAttribute Name="AreaHeight" Value="1060" />
+      </ExtendedAttributes>
+    </WorkflowProcess>
+    <WorkflowProcess Id="6" Name="Establecimiento de requisitos">
+      <ProcessHeader>
+        <Description>
+        </Description>
+      </ProcessHeader>
+      <Activities>
+        <Activity Id="62" Name="Obtención y analisis de requisitos">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="1.2.1" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="86" Y="250" Width="133" Height="75" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="64">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="IN">
+                  <Rectangle X="128" Y="142" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="63" Name="Validación de requisitos">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="1.2.2" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="401" Y="264" Width="142" Height="63" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="55">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="OUT">
+                  <Rectangle X="651" Y="405" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="93" Name="Initial">
+          <Route />
+        </Activity>
+        <Activity Id="94" Name="Final">
+          <Route />
+        </Activity>
+      </Activities>
+      <Transitions>
+        <Transition Id="76" From="63" To="55">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="G" />
+                <Points />
+                <Rectangle X="586" Y="347" Width="127" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="75" From="64" To="62">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="F" />
+                <Points />
+                <Rectangle X="144" Y="168" Width="190" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="77" From="62" To="63">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AK" />
+                <Points />
+                <Rectangle X="253" Y="270" Width="117" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="106" From="93" To="64" />
+        <Transition Id="107" From="55" To="94" />
+      </Transitions>
+      <ExtendedAttributes>
+        <ExtendedAttribute Name="StrId" Value="WFD6" />
+        <ExtendedAttribute Name="AreaWidth" Value="720" />
+        <ExtendedAttribute Name="AreaHeight" Value="1060" />
+      </ExtendedAttributes>
+    </WorkflowProcess>
+    <WorkflowProcess Id="7" Name="Identificación de subsistemas de analisis">
+      <ProcessHeader>
+        <Description>
+        </Description>
+      </ProcessHeader>
+      <Activities>
+        <Activity Id="66" Name="Determinación de subsistemas de analisis">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="1.3.1" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="187" Y="76" Width="175" Height="88" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="68">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="IN">
+                  <Rectangle X="41" Y="80" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="67" Name="Integración de subsistemas de analisis">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="1.3.2" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="188" Y="354" Width="172" Height="86" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="61">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="OUT">
+                  <Rectangle X="592" Y="391" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="95" Name="Initial">
+          <Route />
+        </Activity>
+        <Activity Id="96" Name="Final">
+          <Route />
+        </Activity>
+      </Activities>
+      <Transitions>
+        <Transition Id="78" From="68" To="66">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="G" />
+                <Points />
+                <Rectangle X="48" Y="128" Width="127" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="79" From="67" To="61">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="H" />
+                <Points />
+                <Rectangle X="434" Y="359" Width="116" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="80" From="66" To="67">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AL" />
+                <Points />
+                <Rectangle X="274" Y="239" Width="121" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="108" From="95" To="68" />
+        <Transition Id="109" From="61" To="96" />
+      </Transitions>
+      <ExtendedAttributes>
+        <ExtendedAttribute Name="StrId" Value="WFD7" />
+        <ExtendedAttribute Name="AreaWidth" Value="1020" />
+        <ExtendedAttribute Name="AreaHeight" Value="1060" />
+      </ExtendedAttributes>
+    </WorkflowProcess>
+    <WorkflowProcess Id="8" Name="Elaboración del modelo de datos">
+      <ProcessHeader>
+        <Description>
+        </Description>
+      </ProcessHeader>
+      <Activities>
+        <Activity Id="73">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="IN">
+                  <Rectangle X="51" Y="75" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="70" Name="Elaboración del modelo conceptual y lógico de datos">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="1.4.1" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="76" Y="216" Width="166" Height="79" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="65">
+          <Description>
+          </Description>
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Intermedium Type="SHARE">
+                  <Rectangle X="592" Y="369" Width="10" Height="10" />
+                </Intermedium>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="71" Name="Normalización">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="1.4.2" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="509" Y="219" Width="166" Height="74" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="72" Name="Especificación de necesidades de carga inicial">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="1.4.3" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="516" Y="424" Width="156" Height="86" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="75">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="OUT">
+                  <Rectangle X="987" Y="367" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="74">
+          <Description>
+          </Description>
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Intermedium Type="COMPOSE">
+                  <Rectangle X="808" Y="372" Width="10" Height="10" />
+                </Intermedium>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="97" Name="Initial">
+          <Route />
+        </Activity>
+        <Activity Id="98" Name="Final">
+          <Route />
+        </Activity>
+      </Activities>
+      <Transitions>
+        <Transition Id="81" From="73" To="70">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="G" />
+                <Points />
+                <Rectangle X="98" Y="130" Width="127" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="83" From="70" To="71">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AM" />
+                <Points />
+                <Rectangle X="276" Y="235" Width="209" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="85" From="65" To="72">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AN" />
+                <Points />
+                <Rectangle X="596" Y="382" Width="123" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="84" From="71" To="65">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AN" />
+                <Points />
+                <Rectangle X="596" Y="311" Width="123" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="82" From="74" To="75">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="I" />
+                <Points />
+                <Rectangle X="864" Y="345" Width="93" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="86" From="65" To="74">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AN" />
+                <Points />
+                <Rectangle X="637" Y="352" Width="123" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="87" From="72" To="74">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="I.A" />
+                <Points>
+                  <Point X="789" Y="437" />
+                </Points>
+                <Rectangle X="692" Y="453" Width="121" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="110" From="97" To="73" />
+        <Transition Id="111" From="75" To="98" />
+      </Transitions>
+      <ExtendedAttributes>
+        <ExtendedAttribute Name="StrId" Value="WFD8" />
+        <ExtendedAttribute Name="AreaWidth" Value="1020" />
+        <ExtendedAttribute Name="AreaHeight" Value="1060" />
+      </ExtendedAttributes>
+    </WorkflowProcess>
+    <WorkflowProcess Id="11" Name="Especificación del plan de pruebas">
+      <ProcessHeader>
+        <Description>
+        </Description>
+      </ProcessHeader>
+      <Activities>
+        <Activity Id="89" Name="Definición del alcance y requisitos de las pruebas">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="1.8.1" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="138" Y="168" Width="150" Height="86" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="90" Name="Definición de las pruebas de aceptación del sistema">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="1.8.2" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="517" Y="167" Width="160" Height="87" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="91">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="IN">
+                  <Rectangle X="71" Y="71" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="80">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="OUT">
+                  <Rectangle X="966" Y="210" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="99" Name="Initial">
+          <Route />
+        </Activity>
+        <Activity Id="100" Name="Final">
+          <Route />
+        </Activity>
+      </Activities>
+      <Transitions>
+        <Transition Id="102" From="89" To="90">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AT" />
+                <Points />
+                <Rectangle X="300" Y="189" Width="196" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="100" From="91" To="89">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="L" />
+                <Points />
+                <Rectangle X="111" Y="91" Width="122" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="101" From="90" To="80">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="N" />
+                <Points />
+                <Rectangle X="789" Y="193" Width="97" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="112" From="99" To="91" />
+        <Transition Id="113" From="80" To="100" />
+      </Transitions>
+      <ExtendedAttributes>
+        <ExtendedAttribute Name="StrId" Value="WFD11" />
+        <ExtendedAttribute Name="AreaWidth" Value="1600" />
+        <ExtendedAttribute Name="AreaHeight" Value="1060" />
+      </ExtendedAttributes>
+    </WorkflowProcess>
+    <WorkflowProcess Id="3" Name="Diseño">
+      <ProcessHeader>
+        <Description>
+        </Description>
+      </ProcessHeader>
+      <Activities>
+        <Activity Id="37">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="OUT">
+                  <Rectangle X="2366" Y="323" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="36">
+          <Description>
+          </Description>
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Intermedium Type="SHARE">
+                  <Rectangle X="340" Y="263" Width="10" Height="10" />
+                </Intermedium>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="24" Name="Diseño de la arquitectura de soporte">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="2.2" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="552" Y="106" Width="112" Height="67" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="25">
+          <Description>
+          </Description>
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Intermedium Type="COMPOSE">
+                  <Rectangle X="972" Y="279" Width="10" Height="10" />
+                </Intermedium>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="38">
+          <Description>
+          </Description>
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Intermedium Type="SHARE">
+                  <Rectangle X="1408" Y="281" Width="10" Height="10" />
+                </Intermedium>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="33" Name="Especificación técnica del plan de pruebas">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="2.8" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="1619" Y="328" Width="140" Height="78" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="35" Name="Aprobación del diseño y SI">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="2.10" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="2070" Y="253" Width="147" Height="90" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="32" Name="Diseño de migración y carga inicial de datos">
+          <Description>
+          </Description>
+          <Implementation>
+            <SubFlow Id="17" />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="2.7" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="1619" Y="205" Width="145" Height="77" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="34" Name="Establecimiento de requisitos de implantación">
+          <Description>
+          </Description>
+          <Implementation>
+            <SubFlow Id="18" />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="2.9" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="1621" Y="456" Width="141" Height="75" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="29" Name="Diseño físico de datos">
+          <Description>
+          </Description>
+          <Implementation>
+            <SubFlow Id="14" />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="2.4" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="552" Y="389" Width="116" Height="73" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="28" Name="Diseño de la arquitectura de módulos del sistema">
+          <Description>
+          </Description>
+          <Implementation>
+            <SubFlow Id="13" />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="2.3" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="554" Y="238" Width="125" Height="85" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="88">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="IN">
+                  <Rectangle X="47" Y="83" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="26" Name="Definición de la arquitectura del sistema">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="2.1" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="30" Y="230" Width="102" Height="69" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="27" Name="Generación y especificaciones de construcción">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="2.6" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="1621" Y="72" Width="142" Height="75" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="30" Name="Verificación y aceptación de la arquitectura del sistema">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="2.5" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="1115" Y="237" Width="127" Height="87" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="101" Name="Initial">
+          <Route />
+        </Activity>
+        <Activity Id="102" Name="Final">
+          <Route />
+        </Activity>
+      </Activities>
+      <Transitions>
+        <Transition Id="31" From="36" To="29">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="O" />
+                <Points>
+                  <Point X="347" Y="391" />
+                </Points>
+                <Rectangle X="347" Y="414" Width="198" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="30" From="36" To="28">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="O" />
+                <Points />
+                <Rectangle X="351" Y="279" Width="198" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="29" From="36" To="24">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="O" />
+                <Points>
+                  <Point X="354" Y="180" />
+                </Points>
+                <Rectangle X="336" Y="132" Width="198" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="35" From="29" To="25">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="S" />
+                <Points>
+                  <Point X="879" Y="396" />
+                </Points>
+                <Rectangle X="732" Y="422" Width="126" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="32" From="24" To="25">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="P" />
+                <Points>
+                  <Point X="746" Y="147" />
+                </Points>
+                <Rectangle X="780" Y="154" Width="202" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="33" From="28" To="25">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="Q" />
+                <Points>
+                  <Point X="703" Y="242" />
+                </Points>
+                <Rectangle X="678" Y="269" Width="241" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="34" From="28" To="25">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="R" />
+                <Points>
+                  <Point X="774" Y="326" />
+                </Points>
+                <Rectangle X="688" Y="327" Width="172" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="39" From="38" To="32">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="U" />
+                <Points />
+                <Rectangle X="1474" Y="244" Width="135" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="40" From="38" To="33">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="U" />
+                <Points />
+                <Rectangle X="1477" Y="292" Width="135" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="41" From="38" To="34">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="U" />
+                <Points />
+                <Rectangle X="1406" Y="381" Width="135" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="43" From="32" To="35">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="W" />
+                <Points />
+                <Rectangle X="1769" Y="242" Width="222" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="44" From="33" To="35">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="X" />
+                <Points />
+                <Rectangle X="1822" Y="314" Width="96" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="45" From="34" To="35">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="Y" />
+                <Points />
+                <Rectangle X="1872" Y="419" Width="126" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="27" From="35" To="37">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="E" />
+                <Points />
+                <Rectangle X="2242" Y="287" Width="114" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="26" From="88" To="26">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="D" />
+                <Points />
+                <Rectangle X="75" Y="140" Width="118" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="28" From="26" To="36">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="O" />
+                <Points />
+                <Rectangle X="137" Y="272" Width="198" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="38" From="38" To="27">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="U" />
+                <Points />
+                <Rectangle X="1444" Y="156" Width="135" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="42" From="27" To="35">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="V" />
+                <Points />
+                <Rectangle X="1867" Y="162" Width="198" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="36" From="25" To="30">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="T" />
+                <Points />
+                <Rectangle X="977" Y="257" Width="134" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="37" From="30" To="38">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="U" />
+                <Points />
+                <Rectangle X="1261" Y="261" Width="135" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="114" From="37" To="102" />
+        <Transition Id="115" From="101" To="88" />
+      </Transitions>
+      <ExtendedAttributes>
+        <ExtendedAttribute Name="StrId" Value="WFD3" />
+        <ExtendedAttribute Name="AreaWidth" Value="2500" />
+        <ExtendedAttribute Name="AreaHeight" Value="1060" />
+      </ExtendedAttributes>
+    </WorkflowProcess>
+    <WorkflowProcess Id="17" Name="Diseño de migración y carga inicial de datos">
+      <ProcessHeader>
+        <Description>
+        </Description>
+      </ProcessHeader>
+      <Activities>
+        <Activity Id="135">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="IN">
+                  <Rectangle X="47" Y="135" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="132" Name="Especificación del entorno de Carga Inicial">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="2.7.1" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="224" Y="206" Width="167" Height="96" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="133" Name="Diseño de procedimientos de carga inicial">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="2.7.2" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="515" Y="402" Width="175" Height="95" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="134" Name="Diseño Detallado de Componentes de Carga Inicial">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="2.7.3" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="806" Y="205" Width="176" Height="94" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="124">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="OUT">
+                  <Rectangle X="1294" Y="267" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="115" Name="Initial">
+          <Route />
+        </Activity>
+        <Activity Id="117" Name="Final">
+          <Route />
+        </Activity>
+      </Activities>
+      <Transitions>
+        <Transition Id="146" From="135" To="132">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="U" />
+                <Points />
+                <Rectangle X="93" Y="137" Width="135" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="147" From="134" To="124">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="W" />
+                <Points />
+                <Rectangle X="1028" Y="239" Width="222" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="148" From="132" To="133">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="BH" />
+                <Points />
+                <Rectangle X="427" Y="318" Width="229" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="149" From="133" To="134">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="BI" />
+                <Points />
+                <Rectangle X="753" Y="352" Width="172" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="116" From="115" To="135" />
+        <Transition Id="117" From="124" To="117" />
+      </Transitions>
+      <ExtendedAttributes>
+        <ExtendedAttribute Name="StrId" Value="WFD17" />
+        <ExtendedAttribute Name="AreaWidth" Value="2200" />
+        <ExtendedAttribute Name="AreaHeight" Value="1060" />
+      </ExtendedAttributes>
+    </WorkflowProcess>
+    <WorkflowProcess Id="18" Name="Establecimiento de requisitos de implantación">
+      <ProcessHeader>
+        <Description>
+        </Description>
+      </ProcessHeader>
+      <Activities>
+        <Activity Id="137" Name="Especificación de requisitos de documentación de usuario">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="2.9.1" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="364" Y="118" Width="178" Height="90" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="138" Name="Especificación de requisitos de implantación">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="2.9.2" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="363" Y="315" Width="179" Height="85" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="136">
+          <Description>
+          </Description>
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Intermedium Type="SHARE">
+                  <Rectangle X="234" Y="265" Width="10" Height="10" />
+                </Intermedium>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="140">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="IN">
+                  <Rectangle X="41" Y="164" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="141">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="OUT">
+                  <Rectangle X="1016" Y="265" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="139">
+          <Description>
+          </Description>
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Intermedium Type="COMPOSE">
+                  <Rectangle X="850" Y="265" Width="10" Height="10" />
+                </Intermedium>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="118" Name="Initial">
+          <Route />
+        </Activity>
+        <Activity Id="119" Name="Final">
+          <Route />
+        </Activity>
+      </Activities>
+      <Transitions>
+        <Transition Id="150" From="140" To="136">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="U" />
+                <Points />
+                <Rectangle X="89" Y="176" Width="135" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="152" From="136" To="137">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="U" />
+                <Points />
+                <Rectangle X="304" Y="218" Width="135" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="153" From="136" To="138">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="U" />
+                <Points />
+                <Rectangle X="304" Y="278" Width="135" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="151" From="139" To="141">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="Y" />
+                <Points />
+                <Rectangle X="882" Y="274" Width="126" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="154" From="137" To="139">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="Y.A" />
+                <Points />
+                <Rectangle X="649" Y="192" Width="156" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="155" From="138" To="139">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="Y.B" />
+                <Points />
+                <Rectangle X="652" Y="325" Width="143" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="132" From="118" To="140" />
+        <Transition Id="133" From="141" To="119" />
+      </Transitions>
+      <ExtendedAttributes>
+        <ExtendedAttribute Name="StrId" Value="WFD18" />
+        <ExtendedAttribute Name="AreaWidth" Value="2200" />
+        <ExtendedAttribute Name="AreaHeight" Value="1060" />
+      </ExtendedAttributes>
+    </WorkflowProcess>
+    <WorkflowProcess Id="14" Name="Siseño físico de datos">
+      <ProcessHeader>
+        <Description>
+        </Description>
+      </ProcessHeader>
+      <Activities>
+        <Activity Id="110">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="OUT">
+                  <Rectangle X="772" Y="457" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="116">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="IN">
+                  <Rectangle X="20" Y="168" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="113" Name="Especificación de los caminos de acceso a los datos">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="2.4.2" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="406" Y="291" Width="167" Height="80" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="114" Name="Especificación de la distribución de datos">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="2.4.3" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="409" Y="416" Width="168" Height="87" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="111">
+          <Description>
+          </Description>
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Intermedium Type="SHARE">
+                  <Rectangle X="192" Y="264" Width="10" Height="10" />
+                </Intermedium>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="112" Name="Diseño del modelo físico de datos">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="2.4.1" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="404" Y="126" Width="171" Height="91" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="120" Name="Initial">
+          <Route />
+        </Activity>
+        <Activity Id="121" Name="Final">
+          <Route />
+        </Activity>
+      </Activities>
+      <Transitions>
+        <Transition Id="129" From="111" To="114">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="O" />
+                <Points>
+                  <Point X="172" Y="426" />
+                </Points>
+                <Rectangle X="160" Y="448" Width="198" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="128" From="111" To="113">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="O" />
+                <Points>
+                  <Point X="254" Y="328" />
+                </Points>
+                <Rectangle X="201" Y="340" Width="198" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="127" From="111" To="112">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="O" />
+                <Points>
+                  <Point X="239" Y="205" />
+                </Points>
+                <Rectangle X="193" Y="164" Width="198" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="125" From="116" To="111">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="O" />
+                <Points />
+                <Rectangle X="0" Y="143" Width="198" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="131" From="113" To="114">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="BA" />
+                <Points />
+                <Rectangle X="493" Y="386" Width="176" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="126" From="114" To="110">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="S" />
+                <Points />
+                <Rectangle X="617" Y="473" Width="126" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="130" From="112" To="113">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AZ" />
+                <Points />
+                <Rectangle X="490" Y="234" Width="164" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="134" From="110" To="121" />
+        <Transition Id="135" From="120" To="116" />
+      </Transitions>
+      <ExtendedAttributes>
+        <ExtendedAttribute Name="StrId" Value="WFD14" />
+        <ExtendedAttribute Name="AreaWidth" Value="1000" />
+        <ExtendedAttribute Name="AreaHeight" Value="1060" />
+      </ExtendedAttributes>
+    </WorkflowProcess>
+    <WorkflowProcess Id="13" Name="Diseño de la arquitectura de módulos del sistema">
+      <ProcessHeader>
+        <Description>
+        </Description>
+      </ProcessHeader>
+      <Activities>
+        <Activity Id="109">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="IN">
+                  <Rectangle X="24" Y="144" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="103">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="OUT">
+                  <Rectangle X="972" Y="287" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="104">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="OUT">
+                  <Rectangle X="963" Y="108" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="107" Name="Diseño comunicación entre módulos">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="2.3.2" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="416" Y="312" Width="154" Height="76" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="108" Name="Revisión interfaz de usuario">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="2.3.3" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="692" Y="180" Width="158" Height="73" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="106" Name="Diseño de módulos del sistema">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="2.3.1" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="137" Y="189" Width="147" Height="71" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="105">
+          <Description>
+          </Description>
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Intermedium Type="SHARE">
+                  <Rectangle X="448" Y="213" Width="10" Height="10" />
+                </Intermedium>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="122" Name="Initial">
+          <Route />
+        </Activity>
+        <Activity Id="123" Name="Final">
+          <Route />
+        </Activity>
+      </Activities>
+      <Transitions>
+        <Transition Id="118" From="109" To="106">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="O" />
+                <Points />
+                <Rectangle X="51" Y="140" Width="198" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="120" From="108" To="104">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="R" />
+                <Points />
+                <Rectangle X="812" Y="91" Width="172" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="119" From="108" To="103">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="Q" />
+                <Points />
+                <Rectangle X="759" Y="319" Width="241" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="122" From="107" To="108">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AY" />
+                <Points />
+                <Rectangle X="629" Y="288" Width="166" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="121" From="106" To="105">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AX" />
+                <Points />
+                <Rectangle X="366" Y="200" Width="124" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="123" From="105" To="107">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AX" />
+                <Points />
+                <Rectangle X="468" Y="248" Width="124" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="124" From="105" To="108">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AX" />
+                <Points />
+                <Rectangle X="575" Y="197" Width="124" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="136" From="122" To="109" />
+        <Transition Id="137" From="103" To="123" />
+        <Transition Id="138" From="104" To="123" />
+      </Transitions>
+      <ExtendedAttributes>
+        <ExtendedAttribute Name="StrId" Value="WFD13" />
+        <ExtendedAttribute Name="AreaWidth" Value="1000" />
+        <ExtendedAttribute Name="AreaHeight" Value="1060" />
+      </ExtendedAttributes>
+    </WorkflowProcess>
+    <WorkflowProcess Id="4" Name="Construcción y pruebas">
+      <ProcessHeader>
+        <Description>
+        </Description>
+      </ProcessHeader>
+      <Activities>
+        <Activity Id="39">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="OUT">
+                  <Rectangle X="1329" Y="457" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="41">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="OUT">
+                  <Rectangle X="1302" Y="618" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="51">
+          <Description>
+          </Description>
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Intermedium Type="DECOMPOSE">
+                  <Rectangle X="84" Y="104" Width="10" Height="10" />
+                </Intermedium>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="52">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="IN">
+                  <Rectangle X="19" Y="26" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="40">
+          <Description>
+          </Description>
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Intermedium Type="SHARE">
+                  <Rectangle X="638" Y="100" Width="10" Height="10" />
+                </Intermedium>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="53">
+          <Description>
+          </Description>
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Intermedium Type="SHARE">
+                  <Rectangle X="764" Y="235" Width="10" Height="10" />
+                </Intermedium>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="54">
+          <Description>
+          </Description>
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Intermedium Type="SHARE">
+                  <Rectangle X="94" Y="415" Width="10" Height="10" />
+                </Intermedium>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="47" Name="Elaboración de los Manuales de Usuario">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="3.6" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="664" Y="431" Width="131" Height="85" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="50" Name="Aprobación del Diseño del Sistema de Información">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="3.9" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="1106" Y="470" Width="134" Height="80" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="44" Name="Ejecución de las Pruebas Unitarias">
+          <Description>
+          </Description>
+          <Implementation>
+            <SubFlow Id="21" />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="3.3" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="1169" Y="44" Width="134" Height="84" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="46" Name="Ejecución de las Pruebas del Sistema">
+          <Description>
+          </Description>
+          <Implementation>
+            <SubFlow Id="23" />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="3.5" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="977" Y="263" Width="133" Height="80" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="48" Name="Definición de la Formación de Usuarios Finales">
+          <Description>
+          </Description>
+          <Implementation>
+            <SubFlow Id="24" />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="3.7" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="667" Y="565" Width="127" Height="66" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="49" Name="Construcción de los Componentes y Procedimientos de Carga Inicial de Datos">
+          <Description>
+          </Description>
+          <Implementation>
+            <SubFlow Id="25" />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="3.8" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="658" Y="694" Width="146" Height="94" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="45" Name="Ejecución de las Pruebas de Integración">
+          <Description>
+          </Description>
+          <Implementation>
+            <SubFlow Id="22" />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="3.4" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="1029" Y="146" Width="138" Height="91" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="31" Name="Preparación del Entorno de Generación y Construcción">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="3.1" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="105" Y="186" Width="135" Height="83" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="42" Name="Generación del Código de los Componentes y Procedimientos">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="3.2" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="465" Y="180" Width="130" Height="101" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="125" Name="Initial">
+          <Route />
+        </Activity>
+        <Activity Id="126" Name="Final">
+          <Route />
+        </Activity>
+      </Activities>
+      <Transitions>
+        <Transition Id="46" From="52" To="51">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="E" />
+                <Points />
+                <Rectangle X="56" Y="50" Width="114" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="49" From="51" To="40">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="Z" />
+                <Points />
+                <Rectangle X="240" Y="86" Width="96" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="50" From="40" To="44">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="Z" />
+                <Points>
+                  <Point X="773" Y="79" />
+                </Points>
+                <Rectangle X="773" Y="59" Width="96" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="58" From="53" To="46">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AB" />
+                <Points>
+                  <Point X="798" Y="292" />
+                </Points>
+                <Rectangle X="798" Y="272" Width="114" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="51" From="40" To="45">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="Z" />
+                <Points>
+                  <Point X="893" Y="118" />
+                </Points>
+                <Rectangle X="772" Y="93" Width="96" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="52" From="40" To="46">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="Z" />
+                <Points />
+                <Rectangle X="680" Y="158" Width="96" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="59" From="51" To="54">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AC" />
+                <Points />
+                <Rectangle X="108" Y="340" Width="138" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="60" From="51" To="49">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="E.B" />
+                <Points>
+                  <Point X="35" Y="123" />
+                  <Point X="35" Y="687" />
+                </Points>
+                <Rectangle X="135" Y="662" Width="175" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="62" From="54" To="48">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AC" />
+                <Points>
+                  <Point X="191" Y="531" />
+                </Points>
+                <Rectangle X="264" Y="515" Width="138" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="63" From="53" To="47">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AB" />
+                <Points />
+                <Rectangle X="644" Y="319" Width="114" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="48" From="50" To="39">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="B" />
+                <Points />
+                <Rectangle X="1258" Y="489" Width="107" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="47" From="50" To="41">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="C" />
+                <Points />
+                <Rectangle X="1202" Y="624" Width="114" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="61" From="54" To="47">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AC" />
+                <Points />
+                <Rectangle X="300" Y="416" Width="138" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="56" From="53" To="44">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AB" />
+                <Points>
+                  <Point X="813" Y="161" />
+                </Points>
+                <Rectangle X="937" Y="95" Width="114" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="57" From="53" To="45">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AB" />
+                <Points />
+                <Rectangle X="907" Y="184" Width="114" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="64" From="47" To="50">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AD" />
+                <Points />
+                <Rectangle X="868" Y="463" Width="72" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="65" From="48" To="50">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AE" />
+                <Points />
+                <Rectangle X="813" Y="526" Width="198" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="66" From="49" To="50">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AF" />
+                <Points>
+                  <Point X="1090" Y="700" />
+                </Points>
+                <Rectangle X="821" Y="682" Width="266" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="67" From="46" To="50">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AG" />
+                <Points />
+                <Rectangle X="908" Y="385" Width="191" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="68" From="45" To="50">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AH" />
+                <Points>
+                  <Point X="1188" Y="351" />
+                </Points>
+                <Rectangle X="1129" Y="289" Width="204" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="69" From="44" To="50">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AI" />
+                <Points>
+                  <Point X="1390" Y="292" />
+                  <Point X="1286" Y="362" />
+                </Points>
+                <Rectangle X="1307" Y="162" Width="172" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="53" From="51" To="31">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="E.A" />
+                <Points />
+                <Rectangle X="118" Y="130" Width="121" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="54" From="31" To="42">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AA" />
+                <Points />
+                <Rectangle X="251" Y="206" Width="208" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="55" From="42" To="53">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AB" />
+                <Points />
+                <Rectangle X="614" Y="213" Width="114" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="139" From="39" To="126" />
+        <Transition Id="140" From="41" To="126" />
+        <Transition Id="141" From="125" To="52" />
+      </Transitions>
+      <ExtendedAttributes>
+        <ExtendedAttribute Name="StrId" Value="WFD4" />
+        <ExtendedAttribute Name="AreaWidth" Value="1500" />
+        <ExtendedAttribute Name="AreaHeight" Value="1060" />
+      </ExtendedAttributes>
+    </WorkflowProcess>
+    <WorkflowProcess Id="21" Name="Ejecución de las Pruebas Unitarias">
+      <ProcessHeader>
+        <Description>
+        </Description>
+      </ProcessHeader>
+      <Activities>
+        <Activity Id="155">
+          <Description>
+          </Description>
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Intermedium Type="SHARE">
+                  <Rectangle X="274" Y="162" Width="10" Height="10" />
+                </Intermedium>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="157">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="IN">
+                  <Rectangle X="274" Y="58" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="149">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="IN">
+                  <Rectangle X="602" Y="43" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="151">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="OUT">
+                  <Rectangle X="728" Y="548" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="156">
+          <Description>
+          </Description>
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Intermedium Type="SHARE">
+                  <Rectangle X="605" Y="171" Width="10" Height="10" />
+                </Intermedium>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="153" Name="Preparación del Entorno de las Pruebas Unitarias">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="3.3.1" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="331" Y="235" Width="170" Height="94" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="154" Name="Realización y Evaluación de las Pruebas Unitarias">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="3.3.2" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="324" Y="428" Width="183" Height="89" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="127" Name="Initial">
+          <Route />
+        </Activity>
+        <Activity Id="128" Name="Final">
+          <Route />
+        </Activity>
+      </Activities>
+      <Transitions>
+        <Transition Id="164" From="157" To="155">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="Z" />
+                <Points />
+                <Rectangle X="164" Y="99" Width="96" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="168" From="156" To="153">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AB" />
+                <Points />
+                <Rectangle X="429" Y="184" Width="114" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="167" From="155" To="153">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="Z" />
+                <Points />
+                <Rectangle X="316" Y="184" Width="96" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="169" From="155" To="154">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="Z" />
+                <Points>
+                  <Point X="277" Y="465" />
+                </Points>
+                <Rectangle X="174" Y="366" Width="96" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="166" From="154" To="151">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AI" />
+                <Points />
+                <Rectangle X="618" Y="504" Width="172" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="171" From="153" To="154">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="BL" />
+                <Points />
+                <Rectangle X="416" Y="358" Width="158" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="165" From="149" To="156">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AB" />
+                <Points />
+                <Rectangle X="615" Y="94" Width="114" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="170" From="156" To="154">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AB" />
+                <Points>
+                  <Point X="606" Y="469" />
+                </Points>
+                <Rectangle X="624" Y="350" Width="114" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="142" From="127" To="157" />
+        <Transition Id="143" From="127" To="149" />
+        <Transition Id="144" From="151" To="128" />
+      </Transitions>
+      <ExtendedAttributes>
+        <ExtendedAttribute Name="StrId" Value="WFD21" />
+        <ExtendedAttribute Name="AreaWidth" Value="1500" />
+        <ExtendedAttribute Name="AreaHeight" Value="1060" />
+      </ExtendedAttributes>
+    </WorkflowProcess>
+    <WorkflowProcess Id="23" Name="Ejecución de las Pruebas del Sistema">
+      <ProcessHeader>
+        <Description>
+        </Description>
+      </ProcessHeader>
+      <Activities>
+        <Activity Id="170">
+          <Description>
+          </Description>
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Intermedium Type="SHARE">
+                  <Rectangle X="510" Y="124" Width="10" Height="10" />
+                </Intermedium>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="169">
+          <Description>
+          </Description>
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Intermedium Type="SHARE">
+                  <Rectangle X="133" Y="124" Width="10" Height="10" />
+                </Intermedium>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="171">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="IN">
+                  <Rectangle X="73" Y="24" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="159">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="IN">
+                  <Rectangle X="602" Y="25" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="165">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="OUT">
+                  <Rectangle X="466" Y="561" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="167" Name=" Preparación del Entorno de las Pruebas del Sistema">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="3.5.1" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="239" Y="243" Width="156" Height="86" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="168" Name="Realización y Evaluación de las Pruebas del Sistema">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="3.5.2" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="240" Y="410" Width="154" Height="89" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="129" Name="Initial">
+          <Route />
+        </Activity>
+        <Activity Id="130" Name="Final">
+          <Route />
+        </Activity>
+      </Activities>
+      <Transitions>
+        <Transition Id="183" From="169" To="167">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="Z" />
+                <Points />
+                <Rectangle X="216" Y="196" Width="96" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="185" From="170" To="167">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AB" />
+                <Points />
+                <Rectangle X="438" Y="198" Width="114" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="180" From="171" To="169">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="Z" />
+                <Points />
+                <Rectangle X="108" Y="59" Width="96" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="181" From="159" To="170">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AB" />
+                <Points />
+                <Rectangle X="435" Y="63" Width="114" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="186" From="170" To="168">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AB" />
+                <Points>
+                  <Point X="502" Y="452" />
+                </Points>
+                <Rectangle X="517" Y="385" Width="114" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="184" From="169" To="168">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="Z" />
+                <Points>
+                  <Point X="135" Y="459" />
+                </Points>
+                <Rectangle X="31" Y="390" Width="96" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="187" From="167" To="168">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="BP" />
+                <Points />
+                <Rectangle X="257" Y="356" Width="196" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="182" From="168" To="165">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AG" />
+                <Points />
+                <Rectangle X="422" Y="510" Width="191" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="145" From="129" To="171" />
+        <Transition Id="156" From="129" To="159" />
+        <Transition Id="157" From="165" To="130" />
+      </Transitions>
+      <ExtendedAttributes>
+        <ExtendedAttribute Name="StrId" Value="WFD23" />
+        <ExtendedAttribute Name="AreaWidth" Value="1500" />
+        <ExtendedAttribute Name="AreaHeight" Value="1060" />
+      </ExtendedAttributes>
+    </WorkflowProcess>
+    <WorkflowProcess Id="24" Name="Definición de la Formación de Usuarios Finales">
+      <ProcessHeader>
+        <Description>
+        </Description>
+      </ProcessHeader>
+      <Activities>
+        <Activity Id="175">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="IN">
+                  <Rectangle X="293" Y="151" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="166">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="OUT">
+                  <Rectangle X="291" Y="608" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="173" Name="Definición del Esquema de Formación">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="3.7.1" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="219" Y="273" Width="158" Height="77" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="174" Name="Especificación de los Recursos y Entornos de Formación">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="3.7.2" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="222" Y="436" Width="156" Height="64" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="131" Name="Initial">
+          <Route />
+        </Activity>
+        <Activity Id="142" Name="Final">
+          <Route />
+        </Activity>
+      </Activities>
+      <Transitions>
+        <Transition Id="189" From="174" To="166">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AE" />
+                <Points />
+                <Rectangle X="313" Y="553" Width="198" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="188" From="175" To="173">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AC" />
+                <Points />
+                <Rectangle X="306" Y="204" Width="138" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="190" From="173" To="174">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="BN" />
+                <Points />
+                <Rectangle X="298" Y="381" Width="137" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="158" From="131" To="175" />
+        <Transition Id="159" From="166" To="142" />
+      </Transitions>
+      <ExtendedAttributes>
+        <ExtendedAttribute Name="StrId" Value="WFD24" />
+        <ExtendedAttribute Name="AreaWidth" Value="1200" />
+        <ExtendedAttribute Name="AreaHeight" Value="1060" />
+      </ExtendedAttributes>
+    </WorkflowProcess>
+    <WorkflowProcess Id="25" Name="Construcción de los Componentes y Procedimientos de Carga Inicial de Datos">
+      <ProcessHeader>
+        <Description>
+        </Description>
+      </ProcessHeader>
+      <Activities>
+        <Activity Id="177" Name="">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="3.8.1" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="262" Y="166" Width="144" Height="84" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="178" Name="">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="3.8.2" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="267" Y="292" Width="141" Height="82" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="180">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="IN">
+                  <Rectangle X="7" Y="120" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="179">
+          <Description>
+          </Description>
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Intermedium Type="SHARE">
+                  <Rectangle X="201" Y="120" Width="10" Height="10" />
+                </Intermedium>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="172">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="OUT">
+                  <Rectangle X="333" Y="468" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="143" Name="Initial">
+          <Route />
+        </Activity>
+        <Activity Id="144" Name="Final">
+          <Route />
+        </Activity>
+      </Activities>
+      <Transitions>
+        <Transition Id="191" From="180" To="179">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="E.B" />
+                <Points />
+                <Rectangle X="20" Y="100" Width="175" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="193" From="179" To="177">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="E.B" />
+                <Points />
+                <Rectangle X="240" Y="127" Width="175" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="194" From="179" To="178">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="E.B" />
+                <Points>
+                  <Point X="215" Y="332" />
+                </Points>
+                <Rectangle X="33" Y="249" Width="175" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="192" From="178" To="172">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AF" />
+                <Points />
+                <Rectangle X="347" Y="417" Width="266" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="195" From="177" To="178">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="BO" />
+                <Points />
+                <Rectangle X="339" Y="260" Width="154" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="160" From="143" To="180" />
+        <Transition Id="161" From="172" To="144" />
+      </Transitions>
+      <ExtendedAttributes>
+        <ExtendedAttribute Name="StrId" Value="WFD25" />
+        <ExtendedAttribute Name="AreaWidth" Value="1200" />
+        <ExtendedAttribute Name="AreaHeight" Value="1060" />
+      </ExtendedAttributes>
+    </WorkflowProcess>
+    <WorkflowProcess Id="22" Name="Ejecución de las Pruebas de Integración">
+      <ProcessHeader>
+        <Description>
+        </Description>
+      </ProcessHeader>
+      <Activities>
+        <Activity Id="162">
+          <Description>
+          </Description>
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Intermedium Type="SHARE">
+                  <Rectangle X="217" Y="156" Width="10" Height="10" />
+                </Intermedium>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="164">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="IN">
+                  <Rectangle X="218" Y="44" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="152">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="IN">
+                  <Rectangle X="543" Y="53" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="163">
+          <Description>
+          </Description>
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Intermedium Type="SHARE">
+                  <Rectangle X="579" Y="147" Width="10" Height="10" />
+                </Intermedium>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="158">
+          <Route />
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Extreme Type="OUT">
+                  <Rectangle X="678" Y="562" Width="10" Height="10" />
+                </Extreme>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="160" Name="Preparación del Entorno de las Pruebas de Integración">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="3.4.1" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="289" Y="213" Width="171" Height="108" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="161" Name="Evaluación del Resultado de las Pruebas de Integración">
+          <Description>
+          </Description>
+          <Implementation>
+            <No />
+          </Implementation>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="StrId" Value="3.4.2" />
+            <ExtendedAttribute Name="ActivityData">
+              <ActivityData xmlns="ActivityData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Task>
+                  <Rectangle X="289" Y="396" Width="169" Height="94" />
+                  <Duration Value="0" />
+                  <Risks>No detectados</Risks>
+                </Task>
+              </ActivityData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="145" Name="Initial">
+          <Route />
+        </Activity>
+        <Activity Id="146" Name="Final">
+          <Route />
+        </Activity>
+      </Activities>
+      <Transitions>
+        <Transition Id="172" From="164" To="162">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="Z" />
+                <Points />
+                <Rectangle X="226" Y="85" Width="96" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="175" From="162" To="160">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="Z" />
+                <Points />
+                <Rectangle X="262" Y="168" Width="96" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="176" From="163" To="160">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AB" />
+                <Points />
+                <Rectangle X="414" Y="167" Width="114" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="173" From="152" To="163">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AB" />
+                <Points />
+                <Rectangle X="564" Y="98" Width="114" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="177" From="162" To="161">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="Z" />
+                <Points>
+                  <Point X="226" Y="434" />
+                </Points>
+                <Rectangle X="122" Y="374" Width="96" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="179" From="160" To="161">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="BM" />
+                <Points />
+                <Rectangle X="374" Y="338" Width="211" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="178" From="163" To="161">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AB" />
+                <Points>
+                  <Point X="627" Y="437" />
+                </Points>
+                <Rectangle X="628" Y="374" Width="114" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="174" From="161" To="158">
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="TransitionData">
+              <TransitionData xmlns="TransitionData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Deliverable Id="AH" />
+                <Points />
+                <Rectangle X="568" Y="501" Width="204" Height="16" />
+              </TransitionData>
+            </ExtendedAttribute>
+          </ExtendedAttributes>
+        </Transition>
+        <Transition Id="162" From="145" To="164" />
+        <Transition Id="163" From="145" To="152" />
+        <Transition Id="196" From="158" To="146" />
+      </Transitions>
+      <ExtendedAttributes>
+        <ExtendedAttribute Name="StrId" Value="WFD22" />
+        <ExtendedAttribute Name="AreaWidth" Value="1500" />
+        <ExtendedAttribute Name="AreaHeight" Value="1060" />
+      </ExtendedAttributes>
+    </WorkflowProcess>
+  </WorkflowProcesses>
+  <ExtendedAttributes>
+    <ExtendedAttribute Name="Resources">
+      <Resources xmlns="Resources" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <Resource Id="R0" Name="Jefe de Proyecto" HourCost="0" UseCost="0" />
+        <Resource Id="R1" Name="Analista" HourCost="0" UseCost="0" />
+        <Resource Id="R2" Name="Programador" HourCost="0" UseCost="0" />
+        <Resource Id="R3" Name="Usuario Experto" HourCost="0" UseCost="0" />
+        <Resource Id="R4" Name="Secretario" HourCost="0" UseCost="0" />
+        <Resource Id="R5" Name="Servicio Técnico" HourCost="0" UseCost="0" />
+      </Resources>
+    </ExtendedAttribute>
+    <ExtendedAttribute Name="Deliverables">
+      <Deliverables xmlns="Deliverables" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <Deliverable Id="X" Name="Plan de pruebas" Creator="3">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="B" Name="Manual de usuario" Creator="0">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="C" Name="Aplicación Software" Creator="0">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="E" Name="Diseño del proyecto" Creator="1">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="Z" Name="Plan de pruebas" Creator="4">
+          <Description>
+          </Description>
+          <ParentDeliverables>
+            <ParentDeliverable Id="E" Intermedium="51" />
+          </ParentDeliverables>
+        </Deliverable>
+        <Deliverable Id="AC" Name="Catalogo de Requisitos" Creator="4">
+          <Description>
+          </Description>
+          <ParentDeliverables>
+            <ParentDeliverable Id="E" Intermedium="51" />
+          </ParentDeliverables>
+        </Deliverable>
+        <Deliverable Id="E.B" Name="Plan de Carga inicial de Datos" Creator="4">
+          <Description>
+          </Description>
+          <ParentDeliverables>
+            <ParentDeliverable Id="E" Intermedium="51" />
+          </ParentDeliverables>
+        </Deliverable>
+        <Deliverable Id="E.A" Name="Diseño de proyecto" Creator="4">
+          <Description>
+          </Description>
+          <ParentDeliverables>
+            <ParentDeliverable Id="E" Intermedium="51" />
+          </ParentDeliverables>
+        </Deliverable>
+        <Deliverable Id="AD" Name="Manuales" Creator="4">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="A" Name="Propuesta" Creator="0">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="AJ" Name="Contexto del sistema" Creator="5">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="F" Name="Descripción del entorno tecnológico" Creator="2">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="AK" Name="Requisitos iniciales" Creator="6">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="AL" Name="Modelo de procesos" Creator="7">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="AM" Name="Modelos conceptual y lógico de datos" Creator="8">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="G" Name="Catálogo de requisitos" Creator="2">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="AO" Name="Principios generales de la especificación de la interfaz" Creator="9">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="AS" Name="Modelos validados, verificados y consistentes" Creator="10">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="AP" Name="Modelos verificados" Creator="10">
+          <Description>
+          </Description>
+          <ParentDeliverables>
+            <ParentDeliverable Id="AS" Intermedium="76" />
+          </ParentDeliverables>
+        </Deliverable>
+        <Deliverable Id="AQ" Name="Modelos consistentes" Creator="10">
+          <Description>
+          </Description>
+          <ParentDeliverables>
+            <ParentDeliverable Id="AS" Intermedium="76" />
+          </ParentDeliverables>
+        </Deliverable>
+        <Deliverable Id="AR" Name="Modelos validados" Creator="10">
+          <Description>
+          </Description>
+          <ParentDeliverables>
+            <ParentDeliverable Id="AS" Intermedium="76" />
+          </ParentDeliverables>
+        </Deliverable>
+        <Deliverable Id="AT" Name="Alcance y requisitos de las pruebas" Creator="11">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="N" Name="Plan de pruebas" Creator="2">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="AU" Name="Diseño arquitectura del sistema" Creator="12">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="AY" Name="Comunicación entre Módulos" Creator="13">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="AX" Name="Módulos del sistema" Creator="13">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="O" Name="Diseño de la arquitectura del sistema" Creator="3">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="AZ" Name="Modelo físico de datos inicial" Creator="14">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="BA" Name="Caminos de acceso a los datos" Creator="14">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="BD" Name="Especificaciones consistentes" Creator="15">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="BB" Name="Especificaciones de diseño" Creator="15">
+          <Description>
+          </Description>
+          <ParentDeliverables>
+            <ParentDeliverable Id="BD" Intermedium="115" />
+          </ParentDeliverables>
+        </Deliverable>
+        <Deliverable Id="BC" Name="Estudio de consistencia de especificaciones de diseño" Creator="15">
+          <Description>
+          </Description>
+          <ParentDeliverables>
+            <ParentDeliverable Id="BD" Intermedium="115" />
+          </ParentDeliverables>
+        </Deliverable>
+        <Deliverable Id="BE" Name="Especificación entorno construcción" Creator="16">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="BF" Name="Especificaciones de construcción" Creator="16">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="BG" Name="Componentes y subsistemas de construcción" Creator="16">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="W" Name="Plan de migración y carga inicial de datos" Creator="3">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="BH" Name="Especificación del entorno de carga inicial" Creator="17">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="BI" Name="Procedimientos de carga inicial" Creator="17">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="Y" Name="Catálogo de requisitos" Creator="3">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="Y.A" Name="Requisitos documentación" Creator="18">
+          <Description>
+          </Description>
+          <ParentDeliverables>
+            <ParentDeliverable Id="Y" Intermedium="139" />
+          </ParentDeliverables>
+        </Deliverable>
+        <Deliverable Id="Y.B" Name="Requisitos Implantación" Creator="18">
+          <Description>
+          </Description>
+          <ParentDeliverables>
+            <ParentDeliverable Id="Y" Intermedium="139" />
+          </ParentDeliverables>
+        </Deliverable>
+        <Deliverable Id="BJ" Name="Base de datos implantada" Creator="19">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="BK" Name="Código componentes" Creator="20">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="AI" Name="Resultado de pruebas unitarias" Creator="4">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="BL" Name="Entorno pruebas de usuario" Creator="21">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="BM" Name="Entorno de las pruebas de integración" Creator="22">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="AH" Name="Resultado de pruebas de integracion" Creator="4">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="BP" Name="Entorno de las pruebas del sistema" Creator="23">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="AB" Name="Producto Software" Creator="4">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="AG" Name="Resultado de pruebas del sistema" Creator="4">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="AE" Name="Programa de formación de usuarios" Creator="4">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="BN" Name="Esquema de formación" Creator="24">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="BO" Name="Entorno de carga de datos" Creator="25">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="AF" Name="Código y procedimientos de carga inicial de datos" Creator="4">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="D" Name="Análisis del proyecto" Creator="1">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="L" Name="Definición del sistema" Creator="2">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="H" Name="Modelo de procesos" Creator="2">
+          <Description>
+          </Description>
+          <ParentDeliverables>
+            <ParentDeliverable Id="L" Intermedium="22" />
+          </ParentDeliverables>
+        </Deliverable>
+        <Deliverable Id="I" Name="Modelo de datos" Creator="2">
+          <Description>
+          </Description>
+          <ParentDeliverables>
+            <ParentDeliverable Id="L" Intermedium="22" />
+          </ParentDeliverables>
+        </Deliverable>
+        <Deliverable Id="AN" Name="Modelo normalizado" Creator="8">
+          <Description>
+          </Description>
+          <ParentDeliverables>
+            <ParentDeliverable Id="I" Intermedium="74" />
+          </ParentDeliverables>
+        </Deliverable>
+        <Deliverable Id="I.A" Name="Plan de carga inicial" Creator="8">
+          <Description>
+          </Description>
+          <ParentDeliverables>
+            <ParentDeliverable Id="I" Intermedium="74" />
+          </ParentDeliverables>
+        </Deliverable>
+        <Deliverable Id="J" Name="Modelo de procesos" Creator="2">
+          <Description>
+          </Description>
+          <ParentDeliverables>
+            <ParentDeliverable Id="L" Intermedium="22" />
+          </ParentDeliverables>
+        </Deliverable>
+        <Deliverable Id="K" Name="Especificación de la interfaz" Creator="2">
+          <Description>
+          </Description>
+          <ParentDeliverables>
+            <ParentDeliverable Id="L" Intermedium="22" />
+          </ParentDeliverables>
+        </Deliverable>
+        <Deliverable Id="M" Name="Especificación requisitos software" Creator="2">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="U" Name="Arquitectura del sistema" Creator="3">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="V" Name="Especificación de construcción del SI" Creator="3">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="T" Name="Arquitectura del sistema" Creator="3">
+          <Description>
+          </Description>
+        </Deliverable>
+        <Deliverable Id="S" Name="Modelo físico de datos" Creator="3">
+          <Description>
+          </Description>
+          <ParentDeliverables>
+            <ParentDeliverable Id="T" Intermedium="25" />
+          </ParentDeliverables>
+        </Deliverable>
+        <Deliverable Id="P" Name="Diseño de los subsistemas de soporte" Creator="3">
+          <Description>
+          </Description>
+          <ParentDeliverables>
+            <ParentDeliverable Id="T" Intermedium="25" />
+          </ParentDeliverables>
+        </Deliverable>
+        <Deliverable Id="Q" Name="Diseño de la arquitectura modular del sistema" Creator="3">
+          <Description>
+          </Description>
+          <ParentDeliverables>
+            <ParentDeliverable Id="T" Intermedium="25" />
+          </ParentDeliverables>
+        </Deliverable>
+        <Deliverable Id="R" Name="Diseño de la interfaz de usuario" Creator="3">
+          <Description>
+          </Description>
+          <ParentDeliverables>
+            <ParentDeliverable Id="T" Intermedium="25" />
+          </ParentDeliverables>
+        </Deliverable>
+        <Deliverable Id="AA" Name="Entorno de generación y construcción" Creator="4">
+          <Description>
+          </Description>
+        </Deliverable>
+      </Deliverables>
+    </ExtendedAttribute>
+  </ExtendedAttributes>
+</Package>

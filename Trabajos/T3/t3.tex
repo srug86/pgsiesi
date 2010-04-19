@@ -1,0 +1,337 @@
+% Clase
+\documentclass[11pt,a4paper,spanish,twoside]{report}
+
+% Órdenes auxiliares
+\input{inc/includes.tex}
+
+% Encabezado y pie de página
+\encabezado
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+\begin{document}
+
+% Silabación extra
+\input{inc/hyphenations.tex}
+
+% Portada
+\portada{Planificación y Gestión de\\Sistemas de Información}
+{Trabajo 3}{Calendario del proyecto}
+{Sergio de la Rubia García-Carpintero\\Miguel Millán Sánchez-Grande\\
+  Luis Muñoz Villarreal\\Alicia Serrano Sánchez\\
+  Juan Miguel Torres Triviño}{26 de Abril de 2010}
+
+% Licencia
+\licencia{Sergio de la Rubia García-Carpintero, Miguel Millán Sánchez-Grande,
+  Luis Muñoz Villarreal, Alicia Serrano Sánchez, Juan Miguel Torres Triviño}
+
+\chapter*{Ficha de trabajo}
+\begin{description}
+\item[Código] T3
+\item[Fecha] 26 de Abril de 2010
+\item[Título] Calendario del proyecto
+\end{description}
+
+\begin{table}[!ht]
+  \centering
+  \begin{tabular}{lp{5cm}c}
+    \multicolumn{3}{l}{\Large \textbf{Equipo} G4} \\ \\
+    \multicolumn{1}{c}{\emph{Apellidos y nombre}} & 
+    \multicolumn{1}{c}{\emph{Firma}} & \emph{Puntos} \\
+    \hline \\
+    de la Rubia García-Carpintero, Sergio & & 6 \\ \\
+    Millán Sánchez-Grande, Miguel         & & 6 \\ \\
+    Muñoz Villarreal, Luis                & & 6 \\ \\
+    Serrano Sánchez, Alicia               & & 6 \\ \\
+    Torres Triviño, Juan Miguel           & & 6 \\ \\
+    \hline
+  \end{tabular}
+%  \caption{}\label{}
+\end{table}
+
+% Índices
+\tableofcontents
+% \listoffigures
+% \listoftables
+
+%% INICIO DEL DOCUMENTO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter*{Introducción}
+En este trabajo se realiza la elaboración del calendario del proyecto
+mediante el uso de la técnica PERT (Program Evaluation and Review Technique),
+la cual proporciona un método para realizar una estimación de la duración
+total del proyecto a partir de las actividades, su secuencia y la estimación
+ponderada de la duración media de estas. 
+
+Para la estimación de los tiempos PERT se aplica la técnica DELPHI, reuniendo
+a 5 expertos en el tema, de tal modo que por su nivel de formación y grado de
+conocimiento puedan aportar ideas y puntos de vistas diferentes al problema
+en cuestión, con el fin de obtener juicios coherentes y enriquecidos con
+respecto al problema. 
+\chapter{Técnica DELPHI}
+Mediante la técnica DELPHI se intenta obtener un consenso lo más fiable
+posible del grupo de expertos.
+\section{Tabla de tareas}
+En la tabla \ref{Tab:tareas} se especifican los paquetes de trabajo
+utilizados en el proyecto. 
+\begin{table}[!h]
+\centering
+  \begin{tabular}{p{3cm}|p{3cm}|p{7cm}|}
+    \textbf{Etapa} & \textbf{Identificador} & \textbf{Tarea} \\
+    \hline \hline
+    Análisis & 1.1 & Definición del sistema\\ 
+    \cline{2-3}
+    & 1.2 & Establecimiento de requisitos\\
+    \cline{2-3}
+    & 1.3 & Identificación de subsistemas\\
+    \cline{2-3}
+    & 1.4.1 & Elaboración del modelo conceptual y lógica de datos\\
+    \cline{2-3}
+    & 1.4.2 & Normalización\\
+    \cline{2-3}
+    & 1.4.3 & Especificación de necesidades de carga inicial\\
+    \cline{2-3}
+    & 1.5 & Elaboración del modelo de procesos\\
+    \cline{2-3}
+    & 1.6 & Definición de interfaz de usuario\\
+    \cline{2-3}
+    & 1.7 & Análisis de consistencia y especificación de requisitos\\
+    \cline{2-3}
+    & 1.8 & Especificación del plan de pruebas\\
+    \cline{2-3}
+    & 1.9 & Aprobación del análisis del SI\\
+    \hline
+    Diseño & 2.1 & Definición de la arquitectura del sistema\\
+    \cline{2-3}
+    & 2.2 & Diseño de arquitectura de soporte\\
+    \cline{2-3}
+    & 2.3.1 & Diseño de módulos del sistema\\
+    \cline{2-3}
+    & 2.3.2 & Diseño de comunicación entre módulos\\
+    \cline{2-3}
+    & 2.3.3 & Revisión de la interfaz de usuario\\
+    \cline{2-3}
+    & 2.4.1 & Diseño del modelo físico de datos\\
+    \cline{2-3}
+    & 2.4.2 & Especificación de los caminos de acceso a los datos\\
+    \cline{2-3}
+    & 2.4.3 & Especificación de la distribución de datos\\
+    \cline{2-3}
+    & 2.5 & Verificación y aceptación de la arquitectura del sistema\\
+    \cline{2-3}
+    & 2.6 & Generación y especificación de construcción\\
+    \cline{2-3}
+    & 2.7 & Diseño de migración y carga inicial de datos\\
+    \cline{2-3}
+    & 2.8 & Especificación técnica del plan de prueba\\
+    \cline{2-3}
+    & 2.9 & Establecimiento de requisitos de implantación\\
+    \cline{2-3}
+    & 2.10 & Aprobación de diseño y SI\\
+    \hline
+    Implementación & 3.1 & Preparación del entorno de generación y
+    construcción\\
+    \cline{2-3}
+    & 3.2 & Generación del código de los componentes y los procedimientos\\
+    \cline{2-3}
+    & 3.3 & Elaboración del manual de usuario\\
+    \cline{2-3}
+    & 3.4 & Definición de la formación de los usuarios finales\\
+    \cline{2-3}
+    & 3.5 & Construcción de los componentes y procedimientos de carga inicial
+    de datos \\
+    \hline
+    Pruebas & 4.1 & Ejecución de las pruebas unitarias\\
+    \cline{2-3}
+    & 4.2 & Ejecución de las pruebas de integración\\
+    \cline{2-3}
+    & 4.3 & Ejecución de las pruebas del sistema\\
+    \cline{2-3}
+    & 4.4 & Aprobación del SI\\
+    \hline
+  \end{tabular}
+  \caption{Tabla de tareas} \label{Tab:tareas}
+\end{table}
+
+\section{Tablas de tiempos DELPHI}
+En la tabla \ref{Tab:delphi} se pueden observar los tiempos DELPHI. El
+criterio de convergencia para todos los casos se ha cumplido en la primera
+iteracción.
+
+\begin{table}[!h]
+\centering
+  \begin{tabular}{|p{2.5cm}|c|c|c|c|c|c|c|}
+    \hline
+    \textbf{Etapa} & \textbf{Tarea} & \textbf{Exp.1} & \textbf{Exp.2} &
+    \textbf{Exp.3} & \textbf{Exp.4} & \textbf{Exp.5} & \textbf{Media} \\
+    \hline \hline
+    Análisis & 1.1 & 4 & 4 & 5 & 3 & 6 & 4,4\\
+    \cline{2-8}
+    & 1.2 & 5 & 5 & 4 & 7 & 5 & 5,2\\
+    \cline{2-8}
+    & 1.3 & 2 & 3 & 10 & 3 & 5 & 4,6\\
+    \cline{2-8}
+    & 1.4.1 & 2 & 4 & 7 & 4 & 3 & 4\\
+    \cline{2-8}
+    & 1.4.2 & 2 & 2 & 4 & 3 & 2 & 2,6\\
+    \cline{2-8}
+    & 1.4.3 & 2 & 2 & 2 & 2 & 1 & 1,8\\
+    \cline{2-8}
+    & 1.5 & 9 & 5 & 4 & 6 & 5 & 5,8\\
+    \cline{2-8}
+    & 1.6 & 4 & 10 & 2 & 3 & 5 & 4,8\\
+    \cline{2-8}
+    & 1.7 & 4 & 5 & 3 & 2 & 2 & 3,2\\
+    \cline{2-8}
+    & 1.8 & 4 & 3 & 6 & 3 & 2 & 3,6\\
+    \cline{2-8}
+    & 1.9 & 1 & 1 & 1 & 1 & 1 & 1\\
+    \hline
+    Diseño & 2.1 & 6 & 3 & 6 & 5 & 3 & 4,6\\
+    \cline{2-8}
+    & 2.2 & 6 & 6 & 7 & 2 & 2 & 4,6\\
+    \cline{2-8}
+    & 2.3.1 & 3 & 11 & 15 & 8 & 6 & 8,6\\
+    \cline{2-8}
+    & 2.3.2 & 4 & 9 & 7 & 10 & 5 & 7\\
+    \cline{2-8}
+    & 2.3.3 & 2 & 4 & 5 & 4 & 5 & 4\\
+    \cline{2-8}
+    & 2.4.1 & 5 & 2 & 5 & 4 & 2 & 3,6\\
+    \cline{2-8}
+    & 2.4.2 & 4 & 8 & 4 & 3 & 1 & 4\\
+    \cline{2-8}
+    & 2.4.3 & 5 & 3 & 4 & 1 & 3 & 3,2\\
+    \cline{2-8}
+    & 2.5 & 1 & 2 & 1 & 1 & 3 & 1,6\\
+    \cline{2-8}
+    & 2.6 & 4 & 12 & 5 & 4 & 3 & 5,6\\
+    \cline{2-8}
+    & 2.7 & 2 & 4 & 2 & 2 & 5 & 3\\
+    \cline{2-8}
+    & 2.8 & 3 & 6 & 5 & 2 & 2 & 3,6\\
+    \cline{2-8}
+    & 2.9 & 4 & 20 & 3 & 4 & 3 & 6,8\\
+    \cline{2-8}
+    & 2.10 & 2 & 1 & 1 & 2 & 1 & 1,4\\
+    \hline
+    Implementación & 3.1 & 2 & 3 & 3 & 2 & 4 & 2,8\\
+    \cline{2-8}
+    & 3.2 & 14 & 8 & 7 & 5 & 12 & 9,2\\
+    \cline{2-8}
+    & 3.3 & 18 & 5 & 10 & 3 & 6 & 8,4\\
+    \cline{2-8}
+    & 3.4 & 7 & 3 & 2 & 2 & 3 & 3,4\\
+    \cline{2-8}
+    & 3.5 & 7 & 3 & 6 & 5 & 4 & 5\\
+    \hline
+    Pruebas & 4.1 & 5 & 3 & 4 & 2 & 4 & 3,6\\
+    \cline{2-8}
+    & 4.2 & 5 & 7 & 5 & 3 & 3 & 4,6\\
+    \cline{2-8}
+    & 4.3 & 6 & 4 & 10 & 3 & 3 & 5,2\\
+    \cline{2-8}
+    & 4.4 & 3 & 2 & 1 & 3 & 1 & 2\\
+    \hline
+  \end{tabular}
+  \caption{Tabla de tiempos DELPHI} \label{Tab:delphi}
+\end{table}
+
+En la tabla \ref{Tab:val} se muestran el tiempo más probable (la media
+ponderada), el tiempo optimista (mínimo significativo), y el tiempo pesimista
+(máximo significativo) de cada tarea.
+\begin{table}[!h]
+\centering
+  \begin{tabular}{|p{2.5cm}|c|c|c|c|}
+    \hline
+    \textbf{Etapa} & \textbf{Tarea} & \textbf{Valor Medio} & \textbf{Valor
+      Optimista} & \textbf{Valor pesimista}\\
+    \hline \hline
+    Análisis & 1.1 & 4,4 & 3 & 6\\
+    \cline{2-5}
+    & 1.2 & 5,2 & 4 & 7\\
+    \cline{2-5}
+    & 1.3 & 4,6 & 2 & 10\\
+    \cline{2-5}
+    & 1.4.1 & 4 & 2 & 7\\
+    \cline{2-5}
+    & 1.4.2 & 2,6 & 2 & 4\\
+    \cline{2-5}
+    & 1.4.3 & 1,8 & 1 & 2\\
+    \cline{2-5}
+    & 1.5 & 5,8 & 4 & 9\\
+    \cline{2-5}
+    & 1.6 & 4,8 & 2 & 10\\
+    \cline{2-5}
+    & 1.7 & 3,2 & 2 & 5\\
+    \cline{2-5}
+    & 1.8 & 3,6 & 2 & 6\\
+    \cline{2-5}
+    & 1.9 & 1 & 1 & 1\\
+    \hline
+    Diseño & 2.1 & 4,6 & 3 & 6\\
+    \cline{2-5}
+    & 2.2 & 4,6 & 2 & 7\\
+    \cline{2-5}
+    & 2.3.1 & 8,6 & 3 & 15\\
+    \cline{2-5}
+    & 2.3.2 & 7 & 4 & 10\\
+    \cline{2-5}
+    & 2.3.3 & 4 & 2 & 5\\
+    \cline{2-5}
+    & 2.4.1 & 3,6 & 2 & 5\\
+    \cline{2-5}
+    & 2.4.2 & 4 & 1 & 8\\
+    \cline{2-5}
+    & 2.4.3 & 3,2 & 1 & 5\\
+    \cline{2-5}
+    & 2.5 & 1,6 & 1 & 3\\
+    \cline{2-5}
+    & 2.6 & 5,6 & 3 & 12\\
+    \cline{2-5}
+    & 2.7 & 3 6 & 2 & 5\\
+    \cline{2-5}
+    & 2.8 & 3,6 & 2 & 6\\
+    \cline{2-5}
+    & 2.9 & 6,8 & 3 & 20\\
+    \cline{2-5}
+    & 2.10 & 1,4 & 1 & 2\\
+    \hline
+    Implementación & 3.1 & 2,8 & 2 & 4\\
+    \cline{2-5}
+    & 3.2 & 9,2 & 5 & 14\\
+    \cline{2-5}
+    & 3.3 & 8,4 & 3 & 18\\
+    \cline{2-5}
+    & 3.4 & 3,4 & 2 & 7\\
+    \cline{2-5}
+    & 3.5 & 5 & 3 & 7\\
+    \hline
+    Pruebas & 4.1 & 3,6 & 2 & 5\\
+    \cline{2-5}
+    & 4.2 & 4,6 & 3 & 7\\
+    \cline{2-5}
+    & 4.3 & 5,2 & 3 & 10\\
+    \cline{2-5}
+    & 4.4 & 2 & 1 & 3\\
+    \hline
+  \end{tabular}
+  \caption{Resultados de la técnica DELPHI} \label{Tab:val}
+\end{table}
+\chapter{Técnica PERT}
+\section{Cálculos de los tiempos PERT}
+\section{Cálculos de tiempos early y late}
+\section{Cálculo de las holguras}
+\section{Determinación de los tiempos críticos}
+
+\chapter{Calendario}
+\section{Tabla de tiempos de comienzo y finalizacion}
+\section{Tabla de dependencias}
+\section{Grafo de actividades}
+
+
+\bibliographystyle{plain} 
+\bibliography{t2}
+
+\end{document}

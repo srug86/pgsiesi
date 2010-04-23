@@ -229,67 +229,136 @@ ponderada), el tiempo optimista (mínimo significativo), y el tiempo pesimista
     \hline
   \end{tabular}
   \caption{Resultados de la técnica DELPHI para las tareas de
-    Análisis} \label{Tab:val}
+    Análisis} \label{Tab:anal}
 \end{table}
 
 \begin{table}[!h]
 \centering
-  \begin{tabular}{|p{2.7cm}||c|c||c|c|c|c|c||c|c|c||c|}
+  \begin{tabular}{|c|c||c|c|c|c|c||c|c|c||c|}
     \hline
-    \textbf{Etapa} & \textbf{T} & \textbf{I} & \textbf{1} &
+    \textbf{T} & \textbf{I} & \textbf{1} &
     \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{m}
     &\textbf{$\bar{x}$} &\textbf{M} & \textbf{C}\\
     \hline \hline
     \hline
-    Diseño & 2.1 & 4,6 & 3 & 6\\
-    \cline{2-5}
-    & 2.2 & 4,6 & 2 & 7\\
-    \cline{2-5}
-    & 2.3.1 & 8,6 & 3 & 15\\
-    \cline{2-5}
-    & 2.3.2 & 7 & 4 & 10\\
-    \cline{2-5}
-    & 2.3.3 & 4 & 2 & 5\\
-    \cline{2-5}
-    & 2.4.1 & 3,6 & 2 & 5\\
-    \cline{2-5}
-    & 2.4.2 & 4 & 1 & 8\\
-    \cline{2-5}
-    & 2.4.3 & 3,2 & 1 & 5\\
-    \cline{2-5}
-    & 2.5 & 1,6 & 1 & 3\\
-    \cline{2-5}
-    & 2.6 & 5,6 & 3 & 12\\
-    \cline{2-5}
-    & 2.7 & 3 6 & 2 & 5\\
-    \cline{2-5}
-    & 2.8 & 3,6 & 2 & 6\\
-    \cline{2-5}
-    & 2.9 & 6,8 & 3 & 20\\
-    \cline{2-5}
-    & 2.10 & 1,4 & 1 & 2\\
+    \multirow{}{*}{2.1}& 1 & 6 & 3 & 6 & 5 & 3 & 3 & 4.6 & 6 & \textbf{S} \\
     \hline
-    Implementación & 3.1 & 2,8 & 2 & 4\\
-    \cline{2-5}
-    & 3.2 & 9,2 & 5 & 14\\
-    \cline{2-5}
-    & 3.3 & 8,4 & 3 & 18\\
-    \cline{2-5}
-    & 3.4 & 3,4 & 2 & 7\\
-    \cline{2-5}
-    & 3.5 & 5 & 3 & 7\\
+    \multirow{}{*}{2.2}& 1 & 6 & 6 & 7 & 2 & 2 & 2 & 4.6 & 7 & \textbf{S} \\
     \hline
-    Pruebas & 4.1 & 3,6 & 2 & 5\\
-    \cline{2-5}
-    & 4.2 & 4,6 & 3 & 7\\
-    \cline{2-5}
-    & 4.3 & 5,2 & 3 & 10\\
-    \cline{2-5}
-    & 4.4 & 2 & 1 & 3\\
+    \multirow{}{*}{2.3.1}& 1 & 3 & 11 & 15 & 8 & 6 & 3 & 8.6 & 15 & N \\
+    & 2 & 3 & 11 & 14 & 8 & 8 & 3 & 8.8 & 14 & N \\
+    & 3 & 3 & 11 & 14 & 7 & 7 & 3 & 8.4 & 14 & \textbf{S} \\
+    \hline
+
+    \multirow{}{*}{2.3.2} & 1 & 4 & 7 & 3 & 5 & 2 & 2 & 4.2 & 7 & N \\
+    & 2 & 5 & 6 & 3 & 6 & 2 & 2 & 4.4 & 6 & \textbf{S} \\
+    \hline
+
+    \multirow{}{*}{2.3.3}& 1 & 4 & 5 & 4 & 5 & 2 & 2 & 4 & 5 & N \\
+    & 2 & 3 & 5 & 4 & 5 & 2 & 2 & 3.8 & 5 & N \\
+    & 3 & 3 & 5 & 4 & 5 & 2.5 & 2.5 & 3.9 & 5 & \textbf{S} \\
+    \hline
+
+    \multirow{}{*}{2.4.1}& 1 & 5 & 2 & 5 & 4 & 2 & 2 & 3.6 & 5 & \textbf{S} \\
+    \hline
+
+    \multirow{}{*}{2.4.2}& 1 & 4 & 8 & 4 & 3 & 1 & 1 & 4 & 8 & N \\
+    & 2 & 5 & 7 & 5 & 3 & 1 & 1 & 4.2 & 7 & N \\
+    & 3 & 5 & 7 & 5 & 3 & 2 & 2 & 4.4 & 7 & \textbf{S} \\
+    \hline
+
+    \multirow{}{*}{2.4.3}& 1 & 5 & 3 & 4 & 1 & 3 & 1 & 3.2 & 5 & N \\
+    & 2 & 5 & 4 & 5 & 2 & 3 & 2 & 3.8 & 5 & N \\
+    & 3 & 4 & 4 & 5 & 2 & 3 & 2 & 3.6 & 5 & N \\
+    & 4 & 4 & 4 & 5 & 2.5 & 3 & 2.5 & 3.7 & 5 & \textbf{S} \\
+    \hline
+
+    \multirow{}{*}{2.5}& 1 & 1 & 2 & 1 & 1 & 3 & 1 & 1.6 & 3 & N \\
+    & 2 & 1 & 2 & 1 & 1 & 2 & & 1 & 1.4 & 2 & \textbf{S} \\
+
+    \multirow{}{*}{2.6}& 1 & 4 & 12 & 5 & 4 & 3 & 3 & 5.6 & 12 & N \\
+    & 2 & 4 & 11 & 8 & 4 & 3 & 3 & 6 & 11 & N \\
+    & 3 & 4 & 9 & 8 & 4 & 3 & 3 & 5.6 & 9 & \textbf{S} \\
+    \hline
+
+    \multirow{}{*}{2.7}& 1 & 2 & 4 & 2 & 2 & 5 & 2 & 3 & 5 & N \\
+    & 2 & 2 & 4 & 2 & 2 & 4 & 2 & 2.8 & 4 & \textbf{S} \\
+    \hline
+
+    & 2.8 & 1 & 3 & 6 & 5 & 2 & 2 & 2 & 3.6 & 6 & \textbf{S} \\
+    \hline
+    \multirow{}{*}{2.9}& 1 & 4 & 20 & 3 & 4 & 3 & 3 & 6.8 & 20 & N \\
+    & 2 & 6 & 15 & 4 & 4 & 5 & 4 & 6.8 & 15 & N \\
+    & 3 & 6 & 13 & 6 & 6 & 8 & 6 & 7.8 & 13 & N \\
+    & 4 & 6 & 11 & 6 & 6 & 10 & 6 & 7.8 & 11 & \textbf{S} \\
+    \hline
+
+    & 2.10 & 1 & 2 & 1 & 1 & 2 & 1 & 1 & 1.4 & 2 & \textbf{S} \\
     \hline
   \end{tabular}
-  \caption{Resultados de la técnica DELPHI} \label{Tab:val}
+  \caption{Resultados de la técnica DELPHI para las tareas de
+    Diseño} \label{Tab:dis}
 \end{table}
+
+\begin{table}[!h]
+\centering
+  \begin{tabular}{|c|c||c|c|c|c|c||c|c|c||c|}
+    \hline
+    \textbf{T} & \textbf{I} & \textbf{1} &
+    \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{m}
+    &\textbf{$\bar{x}$} &\textbf{M} & \textbf{C}\\    
+    
+    \multirow{}{*}{3.1}& 1 & 2 & 3 & 3 & 2 & 4 & 2 & 2.8 & 4 & N \\
+    & 2 & 2 & 4 & 4 & 2 & 4 & 2 & 3.2 & 4 & \textbf{S} \\
+    \hline
+
+    & 3.2 & 1 & 14 & 8 & 7 & 5 & 12 & 5 & 9.2 & 14 & \textbf{S} \\
+    \hline
+
+    \multirow{}{*}{3.3}& 1 & 18 & 5 & 10 & 3 & 6 & 3 & 8.4 & 18 & N \\
+    & 2 & 15 & 7 & 11 & 5 & 7 & 5 & 9 & 15 & N \\
+    & 3 & 15 & 9 & 13 & 7 & 8 & 7 & 10.4 & 15 & \textbf{S} \\
+    \hline
+
+    \multirow{}{*}{3.4}& 1 & 7 & 3 & 2 & 2 & 3 & 2 & 3.4 & 7 & N \\
+    & 2 & 5 & 3 & 3 & 3 & 4 & 3 & 3.6 & 5 & N \\
+    & 3 & 4 & 3 & 4 & 3 & 4 & 3 & 3.6 & 4 & \textbf{S} \\
+    \hline
+
+    & 3.5 & 1 & 7 & 3 & 6 & 5 & 4 & 3 & 5 & 7 & \textbf{S} \\
+    \hline
+
+  \end{tabular}
+  \caption{Resultados de la técnica DELPHI para las tareas de
+    Implementación} \label{Tab:imp}
+\end{table}
+
+\begin{table}[!h]
+\centering
+  \begin{tabular}{|c|c||c|c|c|c|c||c|c|c||c|}
+    \hline
+    \textbf{T} & \textbf{I} & \textbf{1} &
+    \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{m}
+    &\textbf{$\bar{x}$} &\textbf{M} & \textbf{C}\\    
+
+    \multirow{}{*}{4.1}& 1 & 5 & 3 & 4 & 2 & 4 & 2 & 3.6 & 5 & N \\
+    & 2 & 5 & 4 & 4 & 2.5 & 4 & 2.5 & 3.9 & 5 & N \\
+    & 3 & 5 & 4 & 4 & 3 & 4 & 3 & 4 & 5 & N \\
+    & 5 & 4.5 & 4.5 & 3.5 & 3.5 & 4 & 3.5 & 4 & 4.5 & \textbf{S} \\    
+    \hline
+    
+    \multirow{}{*}{4.2}& 1 & 5 & 7 & 5 & 3 & 3 & 3 & 4.6 & 7 & N \\
+    & 2 & 5 & 6 & 6 & 3 & 3 & 3 & 4.6 & 6 & \textbf{S} \\
+    \hline
+    \multirow{}{*}{4.3}& 1 & 6 & 4 & 10 & 3 & 3 & 3 & 5.2 & 10 & N \\
+    & 2 & 6 & 4 & 8 & 3 & 4 & 3 & 5 & 8 & N \\
+    & 3 & 7 & 4 & 8 & 3 & 4 & 3 & 5.2 & 8 & \textbf{S} \\
+    \hline
+    & 4.4 & 1 & 3 & 2 & 1 & 3 & 1 & 1 & 2 & 3 & \textbf{S} \\
+    \hline
+  \end{tabular}
+  \caption{Resultados de la técnica DELPHI para las tareas de Pruebas \label{Tab:pru}
+\end{table} 
 \section{Tabla resumen de DELPHI}
 En las tablas \ref{Tab:tareas1}, \ref{Tab:tareas2}, \ref{Tab:tareas3} y \ref{Tab:tareas4} se especifican los paquetes de trabajo
 utilizados en el proyecto, así como las etapas a las que pertenecen y los

@@ -4,7 +4,6 @@
 % Órdenes auxiliares
 \input{inc/includes.tex}
 
-%paquetes
 
 % Encabezado y pie de página
 \encabezado
@@ -75,92 +74,17 @@ respecto al problema.
 Mediante la técnica DELPHI se intenta obtener un consenso lo más fiable
 posible del grupo de expertos.
 \section{Tablas de tiempos DELPHI}
-En la tabla \ref{Tab:delphi} se pueden observar los tiempos DELPHI. El
-criterio de convergencia para todos los casos se ha cumplido en la primera
-iteracción.
-
-\begin{table}[!h]
-\centering
-  \begin{tabular}{|p{2.5cm}|c|c|c|c|c|c|c|}
-    \hline
-    \textbf{Etapa} & \textbf{Tarea} & \textbf{Exp.1} & \textbf{Exp.2} &
-    \textbf{Exp.3} & \textbf{Exp.4} & \textbf{Exp.5} & \textbf{Media} \\
-    \hline \hline
-    Análisis & 1.1 & 4 & 4 & 5 & 3 & 6 & 4,4\\
-    \cline{2-8}
-    & 1.2 & 5 & 5 & 4 & 7 & 5 & 5,2\\
-    \cline{2-8}
-    & 1.3 & 2 & 3 & 10 & 3 & 5 & 4,6\\
-    \cline{2-8}
-    & 1.4.1 & 2 & 4 & 7 & 4 & 3 & 4\\
-    \cline{2-8}
-    & 1.4.2 & 2 & 2 & 4 & 3 & 2 & 2,6\\
-    \cline{2-8}
-    & 1.4.3 & 2 & 2 & 2 & 2 & 1 & 1,8\\
-    \cline{2-8}
-    & 1.5 & 9 & 5 & 4 & 6 & 5 & 5,8\\
-    \cline{2-8}
-    & 1.6 & 4 & 10 & 2 & 3 & 5 & 4,8\\
-    \cline{2-8}
-    & 1.7 & 4 & 5 & 3 & 2 & 2 & 3,2\\
-    \cline{2-8}
-    & 1.8 & 4 & 3 & 6 & 3 & 2 & 3,6\\
-    \cline{2-8}
-    & 1.9 & 1 & 1 & 1 & 1 & 1 & 1\\
-    \hline
-    Diseño & 2.1 & 6 & 3 & 6 & 5 & 3 & 4,6\\
-    \cline{2-8}
-    & 2.2 & 6 & 6 & 7 & 2 & 2 & 4,6\\
-    \cline{2-8}
-    & 2.3.1 & 3 & 11 & 15 & 8 & 6 & 8,6\\
-    \cline{2-8}
-    & 2.3.2 & 4 & 9 & 7 & 10 & 5 & 7\\
-    \cline{2-8}
-    & 2.3.3 & 2 & 4 & 5 & 4 & 5 & 4\\
-    \cline{2-8}
-    & 2.4.1 & 5 & 2 & 5 & 4 & 2 & 3,6\\
-    \cline{2-8}
-    & 2.4.2 & 4 & 8 & 4 & 3 & 1 & 4\\
-    \cline{2-8}
-    & 2.4.3 & 5 & 3 & 4 & 1 & 3 & 3,2\\
-    \cline{2-8}
-    & 2.5 & 1 & 2 & 1 & 1 & 3 & 1,6\\
-    \cline{2-8}
-    & 2.6 & 4 & 12 & 5 & 4 & 3 & 5,6\\
-    \cline{2-8}
-    & 2.7 & 2 & 4 & 2 & 2 & 5 & 3\\
-    \cline{2-8}
-    & 2.8 & 3 & 6 & 5 & 2 & 2 & 3,6\\
-    \cline{2-8}
-    & 2.9 & 4 & 20 & 3 & 4 & 3 & 6,8\\
-    \cline{2-8}
-    & 2.10 & 2 & 1 & 1 & 2 & 1 & 1,4\\
-    \hline
-    Implementación & 3.1 & 2 & 3 & 3 & 2 & 4 & 2,8\\
-    \cline{2-8}
-    & 3.2 & 14 & 8 & 7 & 5 & 12 & 9,2\\
-    \cline{2-8}
-    & 3.3 & 18 & 5 & 10 & 3 & 6 & 8,4\\
-    \cline{2-8}
-    & 3.4 & 7 & 3 & 2 & 2 & 3 & 3,4\\
-    \cline{2-8}
-    & 3.5 & 7 & 3 & 6 & 5 & 4 & 5\\
-    \hline
-    Pruebas & 4.1 & 5 & 3 & 4 & 2 & 4 & 3,6\\
-    \cline{2-8}
-    & 4.2 & 5 & 7 & 5 & 3 & 3 & 4,6\\
-    \cline{2-8}
-    & 4.3 & 6 & 4 & 10 & 3 & 3 & 5,2\\
-    \cline{2-8}
-    & 4.4 & 3 & 2 & 1 & 3 & 1 & 2\\
-    \hline
-  \end{tabular}
-  \caption{Tabla de tiempos DELPHI} \label{Tab:delphi}
-\end{table}
+En las tablas \ref{Tab:anal}, \ref{Tab:dis},\ref{Tab:imp} y \ref{Tab:pru}  se
+pueden observar la evolución seguida a la hora de clacular los tiempos
+DELPHI. Cada tabla contiene el identificador de cada tarea, la iteraciín en
+la que se encuentra, las valoraciones de los distintos expertos, así como los
+valores mínimo, medio y máximo, y finalmente, si se comple el criterio de
+convergencia o no.
 
 En la tabla \ref{Tab:val} se muestran el tiempo más probable (la media
 ponderada), el tiempo optimista (mínimo significativo), y el tiempo pesimista
 (máximo significativo) de cada tarea.
+
 \begin{table}[!h]
 \centering
   \begin{tabular}{|c|c||c|c|c|c|c||c|c|c||c|}
@@ -173,16 +97,19 @@ ponderada), el tiempo optimista (mínimo significativo), y el tiempo pesimista
     & 2 & 4 & 5 & 3 & 4 & 5 & 3 & 4.2 & 5 & N\\
     & 3 & 5 & 5 & 4 & 4 & 5 & 4 & 4.6 & 5 & \textbf{S}\\
     \hline
+
     \multirow{3}{*}{1.2} & 1 & 5 & 5 & 4 & 7 & 5 & 4 & 5,2 & 7 & N\\
     & 2 & 6 & 5 & 4 & 6 & 5 & 4 & 5.2 & 6 & N\\
     & 3 & 6 & 5 & 4 & 6 & 4 & 4 & 5 & 6 & \textbf{S} \\    
     \hline
+
     \multirow{5}{*}{1.3} & 1 & 2 & 3 & 10 & 3 & 5 & 2 & 4,6 & 10& N\\
     & 2 & 2 & 3 & 8 & 3 & 5 & 2 & 4.2 & 8 & N \\
     & 3 & 3 & 3 & 6 & 3 & 5 & 3 & 4 & 6 & N \\
     & 4 & 3 & 3 & 6 & 4 & 5 & 3 & 4.2 & 6 & N \\
     & 5 & 3 & 3 & 5 & 4 & 5 & 3 & 4 & 5 & \textbf{S} \\
     \hline
+
     \multirow{7}{*}{1.4.1} & 1 & 2 & 4 & 7 & 4 & 3 & 2 & 4 & 7 & N\\
     & 2 & 4 & 4 & 3 & 7 & 4 & 3 & 4.4 & 7 & N \\
     & 3 & 4 & 4 & 4 & 7 & 5 & 4 & 4.8 & 7 & N \\
@@ -191,28 +118,34 @@ ponderada), el tiempo optimista (mínimo significativo), y el tiempo pesimista
     & 6 & 4 & 6 & 5 & 5 & 5 & 4 & 5 & 6 & N \\
     & 7 & 5 & 5 & 5 & 5 & 5 & 5 & 5 & 5 & \textbf{S} \\
     \hline
+
     \multirow{2}{*}{1.4.2} & 1 & 2 & 2 & 4 & 3 & 2 & 2 & 2,6 & 4 & N\\
     & 2 & 2 & 2 & 3 & 3 & 2 & 2 & 2.4 & 3 & \textbf{S} \\
     \hline
+
     \multirow{3}{*}{1.4.3} & 1 & 2 & 2 & 2 & 2 & 1 & 1 & 1,8 & 2 & N\\
     & 2 & 2 & 2 & 2 & 2 & 3 & 2 & 2.2 & 3 & N \\
     & 3 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & \textbf{S} \\
     \hline
+
     \multirow{5}{*}{1.5} & 1 & 9 & 5 & 4 & 6 & 5 & 4 & 5.8 & 9 & N \\
     & 2 & 8 & 5.5 & 4.5 & 6 & 5.5 & 4.5 & 5.9 & 8 & N \\
     & 3 & 7.5 & 5.5 & 4.5 & 6 & 5.5 & 4.5 & 5.8 & 7.5 & N \\
     & 4 & 5.5 & 6 & 5.5 & 6 & 5 & 5 & 5.6 & 6 & N \\
     & 5 & 5.5 & 6 & 5.5 & 6 & 6 & 5.5 & 5.8 & 6 & \textbf{S} \\
     \hline
+
     \multirow{5}{*}{1.6} & 1 & 4 & 10 & 2 & 3 & 5 & 2 & 4.8 & 10 & N \\
     & 2 & 6 & 8 & 3 & 5 & 6 & 3 & 5.6 & 8 & N \\
     & 3 & 5 & 8 & 3.5 & 5 & 6 & 3.5 & 5.5 & 8 & N \\
     & 4 & 5 & 8 & 6 & 4 & 5.5 & 4 & 5.7 & 8 & N \\
     & 5 & 5 & 7 & 6 & 4 & 5.5 & 4 & 5.5 & 7 & \textbf{S} \\
     \hline
+
     \multirow{2}{*}{1.7} & 1 & 4 & 5 & 3 & 2 & 2 & 2 & 3.2 & 5 & N \\
     & 2 & 4 & 4.5 & 4 & 2 & 2 & 2 & 3.3 & 4.5 & \textbf{S} \\
     \hline
+
     \multirow{11}{*}{1.8} & 1 & 4 & 3 & 6 & 3 & 2 & 2 & 3.6 & 6   & N \\
     & 2 & 4 & 3   & 5.5 & 3   & 2.5 & 2.5 & 3.6 & 5.5 & N \\
     & 3 & 4 & 3.5 & 5.5 & 3   & 2.5 & 2.5 & 3.7 & 5.5 & N \\
@@ -225,6 +158,7 @@ ponderada), el tiempo optimista (mínimo significativo), y el tiempo pesimista
     & 10 & 4 & 4 & 4.5 & 4 & 4 & 4 & 4.1 & 4.5 & N \\
     & 11 & 4.5 & 4 & 4.5 & 4 & 4 & 4 & 4.2 & 4.5 & \textbf{S} \\
     \hline
+
     1.9 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & \textbf{S} \\
     \hline
   \end{tabular}
@@ -240,60 +174,63 @@ ponderada), el tiempo optimista (mínimo significativo), y el tiempo pesimista
     \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{m}
     &\textbf{$\bar{x}$} &\textbf{M} & \textbf{C}\\
     \hline \hline
+    2.1 & 1 & 6 & 3 & 6 & 5 & 3 & 3 & 4.6 & 6 & \textbf{S}\\
     \hline
-    \multirow{}{*}{2.1}& 1 & 6 & 3 & 6 & 5 & 3 & 3 & 4.6 & 6 & \textbf{S} \\
+
+    2.2 & 1 & 6 & 6 & 7 & 2 & 2 & 2 & 4.6 & 7 & \textbf{S}\\
     \hline
-    \multirow{}{*}{2.2}& 1 & 6 & 6 & 7 & 2 & 2 & 2 & 4.6 & 7 & \textbf{S} \\
-    \hline
-    \multirow{}{*}{2.3.1}& 1 & 3 & 11 & 15 & 8 & 6 & 3 & 8.6 & 15 & N \\
+
+    \multirow{3}{*}{2.3.1}& 1 & 3 & 11 & 15 & 8 & 6 & 3 & 8.6 & 15 & N \\
     & 2 & 3 & 11 & 14 & 8 & 8 & 3 & 8.8 & 14 & N \\
     & 3 & 3 & 11 & 14 & 7 & 7 & 3 & 8.4 & 14 & \textbf{S} \\
     \hline
 
-    \multirow{}{*}{2.3.2} & 1 & 4 & 7 & 3 & 5 & 2 & 2 & 4.2 & 7 & N \\
+    \multirow{2}{*}{2.3.2} & 1 & 4 & 7 & 3 & 5 & 2 & 2 & 4.2 & 7 & N \\
     & 2 & 5 & 6 & 3 & 6 & 2 & 2 & 4.4 & 6 & \textbf{S} \\
     \hline
 
-    \multirow{}{*}{2.3.3}& 1 & 4 & 5 & 4 & 5 & 2 & 2 & 4 & 5 & N \\
+    \multirow{3}{*}{2.3.3}& 1 & 4 & 5 & 4 & 5 & 2 & 2 & 4 & 5 & N \\
     & 2 & 3 & 5 & 4 & 5 & 2 & 2 & 3.8 & 5 & N \\
     & 3 & 3 & 5 & 4 & 5 & 2.5 & 2.5 & 3.9 & 5 & \textbf{S} \\
     \hline
 
-    \multirow{}{*}{2.4.1}& 1 & 5 & 2 & 5 & 4 & 2 & 2 & 3.6 & 5 & \textbf{S} \\
+    2.4.1 & 1 & 5 & 2 & 5 & 4 & 2 & 2 & 3.6 & 5 & \textbf{S} \\
     \hline
 
-    \multirow{}{*}{2.4.2}& 1 & 4 & 8 & 4 & 3 & 1 & 1 & 4 & 8 & N \\
+    \multirow{3}{*}{2.4.2}& 1 & 4 & 8 & 4 & 3 & 1 & 1 & 4 & 8 & N \\
     & 2 & 5 & 7 & 5 & 3 & 1 & 1 & 4.2 & 7 & N \\
     & 3 & 5 & 7 & 5 & 3 & 2 & 2 & 4.4 & 7 & \textbf{S} \\
     \hline
 
-    \multirow{}{*}{2.4.3}& 1 & 5 & 3 & 4 & 1 & 3 & 1 & 3.2 & 5 & N \\
+    \multirow{4}{*}{2.4.3}& 1 & 5 & 3 & 4 & 1 & 3 & 1 & 3.2 & 5 & N \\
     & 2 & 5 & 4 & 5 & 2 & 3 & 2 & 3.8 & 5 & N \\
     & 3 & 4 & 4 & 5 & 2 & 3 & 2 & 3.6 & 5 & N \\
     & 4 & 4 & 4 & 5 & 2.5 & 3 & 2.5 & 3.7 & 5 & \textbf{S} \\
     \hline
 
-    \multirow{}{*}{2.5}& 1 & 1 & 2 & 1 & 1 & 3 & 1 & 1.6 & 3 & N \\
-    & 2 & 1 & 2 & 1 & 1 & 2 & & 1 & 1.4 & 2 & \textbf{S} \\
+    \multirow{2}{*}{2.5}& 1 & 1 & 2 & 1 & 1 & 3 & 1 & 1.6 & 3 & N \\
+    & 2 & 1 & 2 & 1 & 1 & 2 & 1 & 1.4 & 2 & \textbf{S} \\
+    \hline
 
-    \multirow{}{*}{2.6}& 1 & 4 & 12 & 5 & 4 & 3 & 3 & 5.6 & 12 & N \\
+    \multirow{3}{*}{2.6}& 1 & 4 & 12 & 5 & 4 & 3 & 3 & 5.6 & 12 & N \\
     & 2 & 4 & 11 & 8 & 4 & 3 & 3 & 6 & 11 & N \\
     & 3 & 4 & 9 & 8 & 4 & 3 & 3 & 5.6 & 9 & \textbf{S} \\
     \hline
 
-    \multirow{}{*}{2.7}& 1 & 2 & 4 & 2 & 2 & 5 & 2 & 3 & 5 & N \\
+    \multirow{2}{*}{2.7}& 1 & 2 & 4 & 2 & 2 & 5 & 2 & 3 & 5 & N \\
     & 2 & 2 & 4 & 2 & 2 & 4 & 2 & 2.8 & 4 & \textbf{S} \\
     \hline
 
-    & 2.8 & 1 & 3 & 6 & 5 & 2 & 2 & 2 & 3.6 & 6 & \textbf{S} \\
+    2.8 & 1 & 3 & 6 & 5 & 2 & 2 & 2 & 3.6 & 6 & \textbf{S} \\
     \hline
-    \multirow{}{*}{2.9}& 1 & 4 & 20 & 3 & 4 & 3 & 3 & 6.8 & 20 & N \\
+
+    \multirow{4}{*}{2.9}& 1 & 4 & 20 & 3 & 4 & 3 & 3 & 6.8 & 20 & N \\
     & 2 & 6 & 15 & 4 & 4 & 5 & 4 & 6.8 & 15 & N \\
     & 3 & 6 & 13 & 6 & 6 & 8 & 6 & 7.8 & 13 & N \\
     & 4 & 6 & 11 & 6 & 6 & 10 & 6 & 7.8 & 11 & \textbf{S} \\
     \hline
 
-    & 2.10 & 1 & 2 & 1 & 1 & 2 & 1 & 1 & 1.4 & 2 & \textbf{S} \\
+    2.10 & 1 & 2 & 1 & 1 & 2 & 1 & 1 & 1.4 & 2 & \textbf{S} \\
     \hline
   \end{tabular}
   \caption{Resultados de la técnica DELPHI para las tareas de
@@ -307,25 +244,25 @@ ponderada), el tiempo optimista (mínimo significativo), y el tiempo pesimista
     \textbf{T} & \textbf{I} & \textbf{1} &
     \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{m}
     &\textbf{$\bar{x}$} &\textbf{M} & \textbf{C}\\    
-    
-    \multirow{}{*}{3.1}& 1 & 2 & 3 & 3 & 2 & 4 & 2 & 2.8 & 4 & N \\
+    \hline \hline
+    \multirow{2}{*}{3.1}& 1 & 2 & 3 & 3 & 2 & 4 & 2 & 2.8 & 4 & N \\
     & 2 & 2 & 4 & 4 & 2 & 4 & 2 & 3.2 & 4 & \textbf{S} \\
     \hline
 
-    & 3.2 & 1 & 14 & 8 & 7 & 5 & 12 & 5 & 9.2 & 14 & \textbf{S} \\
+    3.2 & 1 & 14 & 8 & 7 & 5 & 12 & 5 & 9.2 & 14 & \textbf{S} \\
     \hline
 
-    \multirow{}{*}{3.3}& 1 & 18 & 5 & 10 & 3 & 6 & 3 & 8.4 & 18 & N \\
+    \multirow{3}{*}{3.3}& 1 & 18 & 5 & 10 & 3 & 6 & 3 & 8.4 & 18 & N \\
     & 2 & 15 & 7 & 11 & 5 & 7 & 5 & 9 & 15 & N \\
     & 3 & 15 & 9 & 13 & 7 & 8 & 7 & 10.4 & 15 & \textbf{S} \\
     \hline
 
-    \multirow{}{*}{3.4}& 1 & 7 & 3 & 2 & 2 & 3 & 2 & 3.4 & 7 & N \\
+    \multirow{3}{*}{3.4}& 1 & 7 & 3 & 2 & 2 & 3 & 2 & 3.4 & 7 & N \\
     & 2 & 5 & 3 & 3 & 3 & 4 & 3 & 3.6 & 5 & N \\
     & 3 & 4 & 3 & 4 & 3 & 4 & 3 & 3.6 & 4 & \textbf{S} \\
     \hline
 
-    & 3.5 & 1 & 7 & 3 & 6 & 5 & 4 & 3 & 5 & 7 & \textbf{S} \\
+    3.5 & 1 & 7 & 3 & 6 & 5 & 4 & 3 & 5 & 7 & \textbf{S} \\
     \hline
 
   \end{tabular}
@@ -340,24 +277,24 @@ ponderada), el tiempo optimista (mínimo significativo), y el tiempo pesimista
     \textbf{T} & \textbf{I} & \textbf{1} &
     \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{m}
     &\textbf{$\bar{x}$} &\textbf{M} & \textbf{C}\\    
-
-    \multirow{}{*}{4.1}& 1 & 5 & 3 & 4 & 2 & 4 & 2 & 3.6 & 5 & N \\
+    \hline \hline
+    \multirow{4}{*}{4.1}& 1 & 5 & 3 & 4 & 2 & 4 & 2 & 3.6 & 5 & N \\
     & 2 & 5 & 4 & 4 & 2.5 & 4 & 2.5 & 3.9 & 5 & N \\
     & 3 & 5 & 4 & 4 & 3 & 4 & 3 & 4 & 5 & N \\
     & 5 & 4.5 & 4.5 & 3.5 & 3.5 & 4 & 3.5 & 4 & 4.5 & \textbf{S} \\    
     \hline
     
-    \multirow{}{*}{4.2}& 1 & 5 & 7 & 5 & 3 & 3 & 3 & 4.6 & 7 & N \\
+    \multirow{2}{*}{4.2}& 1 & 5 & 7 & 5 & 3 & 3 & 3 & 4.6 & 7 & N \\
     & 2 & 5 & 6 & 6 & 3 & 3 & 3 & 4.6 & 6 & \textbf{S} \\
     \hline
-    \multirow{}{*}{4.3}& 1 & 6 & 4 & 10 & 3 & 3 & 3 & 5.2 & 10 & N \\
+    \multirow{3}{*}{4.3}& 1 & 6 & 4 & 10 & 3 & 3 & 3 & 5.2 & 10 & N \\
     & 2 & 6 & 4 & 8 & 3 & 4 & 3 & 5 & 8 & N \\
     & 3 & 7 & 4 & 8 & 3 & 4 & 3 & 5.2 & 8 & \textbf{S} \\
     \hline
-    & 4.4 & 1 & 3 & 2 & 1 & 3 & 1 & 1 & 2 & 3 & \textbf{S} \\
+    4.4 & 1 & 3 & 2 & 1 & 3 & 1 & 1 & 2 & 3 & \textbf{S} \\
     \hline
   \end{tabular}
-  \caption{Resultados de la técnica DELPHI para las tareas de Pruebas \label{Tab:pru}
+  \caption{Resultados de la técnica DELPHI para las tareas de Pruebas} x\label{Tab:pru}
 \end{table} 
 \section{Tabla resumen de DELPHI}
 En las tablas \ref{Tab:tareas1}, \ref{Tab:tareas2}, \ref{Tab:tareas3} y \ref{Tab:tareas4} se especifican los paquetes de trabajo
@@ -367,110 +304,115 @@ máximo de cada tarea.
 
 \begin{table}[!h]
 \centering
-  \begin{tabular}{p{1.6cm}|p{1cm}|p{5cm}|p{1cm}|p{1cm}|p{1cm}}
-    \textbf{Etapa} & \textbf{Id.} & \textbf{Tarea} & \textbf{Min} &
+  \begin{tabular}{|p{0.8cm}||p{8cm}||p{0.75cm}|p{0.75cm}|p{0.75cm}|}
+    \hline
+    \textbf{Id.} & \textbf{Tarea} & \textbf{Min} &
     \textbf{Med} & \textbf{Max}\\
     \hline \hline
-    Análisis & 1.1 & Definición del sistema\\ 
-    \cline{2-3}
-    & 1.2 & Establecimiento de requisitos\\
-    \cline{2-3}
-    & 1.3 & Identificación de subsistemas\\
-    \cline{2-3}
-    & 1.4.1 & Elaboración del modelo conceptual y lógica de datos\\
-    \cline{2-3}
-    & 1.4.2 & Normalización\\
-    \cline{2-3}
-    & 1.4.3 & Especificación de necesidades de carga inicial\\
-    \cline{2-3}
-    & 1.5 & Elaboración del modelo de procesos\\
-    \cline{2-3}
-    & 1.6 & Definición de interfaz de usuario\\
-    \cline{2-3}
-    & 1.7 & Análisis de consistencia y especificación de requisitos\\
-    \cline{2-3}
-    & 1.8 & Especificación del plan de pruebas\\
-    \cline{2-3}
-    & 1.9 & Aprobación del análisis del SI\\
+    1.1 & Definición del sistema & 4 & 4.6 & 5\\ 
+    \hline
+    1.2 & Establecimiento de requisitos & 4 & 5 & 6\\
+    \hline
+    1.3 & Identificación de subsistemas & 3 & 4 & 5\\
+    \hline
+    1.4.1 & Elaboración del modelo conceptual y lógica de datos & 5 & 5 & 5\\
+    \hline
+    1.4.2 & Normalización & 2 & 2.4 & 3 \\
+    \hline
+    1.4.3 & Especificación de necesidades de carga inicial & 2 & 2 & 2\\
+    \hline
+    1.5 & Elaboración del modelo de procesos & 5.5 & 5.8 & 6\\
+    \hline
+    1.6 & Definición de interfaz de usuario & 4 & 5.5 & 7\\
+    \hline
+    1.7 & Análisis de consistencia y especificación de requisitos & 2 & 3.3 & 4.5\\
+    \hline
+    1.8 & Especificación del plan de pruebas & 4 & 4.3 & 4.5\\
+    \hline
+    1.9 & Aprobación del análisis del SI & 1 & 1 & 1\\
+    \hline
   \end{tabular}
-  \caption{Tabla de tareas} \label{Tab:tareas1}
+  \caption{Tabla de tareas de Análisis} \label{Tab:tareas1}
 \end{table}
 
 \begin{table}[!h]
 \centering
-  \begin{tabular}{p{1.6cm}|p{1cm}|p{5cm}|p{1cm}|p{1cm}|p{1cm}}
-    \textbf{Etapa} & \textbf{Id.} & \textbf{Tarea} & \textbf{Min} &
+  \begin{tabular}{|p{0.8cm}||p{8cm}||p{0.75cm}|p{0.75cm}|p{0.75cm}|}
+    \hline
+    \textbf{Id.} & \textbf{Tarea} & \textbf{Min} &
     \textbf{Med} & \textbf{Max}\\
     \hline
-    Diseño & 2.1 & Definición de la arquitectura del sistema\\
-    \cline{2-3}
-    & 2.2 & Diseño de arquitectura de soporte\\
-    \cline{2-3}
-    & 2.3.1 & Diseño de módulos del sistema\\
-    \cline{2-3}
-    & 2.3.2 & Diseño de comunicación ent
-re módulos\\
-    \cline{2-3}
-    & 2.3.3 & Revisión de la interfaz de usuario\\
-    \cline{2-3}
-    & 2.4.1 & Diseño del modelo físico de datos\\
-    \cline{2-3}
-    & 2.4.2 & Especificación de los caminos de acceso a los datos\\
-    \cline{2-3}
-    & 2.4.3 & Especificación de la distribución de datos\\
-    \cline{2-3}
-    & 2.5 & Verificación y aceptación de la arquitectura del sistema\\
-    \cline{2-3}
-    & 2.6 & Generación y especificación de construcción\\
-    \cline{2-3}
-    & 2.7 & Diseño de migración y carga inicial de datos\\
-    \cline{2-3}
-    & 2.8 & Especificación técnica del plan de prueba\\
-    \cline{2-3}
-    & 2.9 & Establecimiento de requisitos de implantación\\
-    \cline{2-3}
-    & 2.10 & Aprobación de diseño y SI\\
+    2.1 & Definición de la arquitectura del sistema & & & \\
+    \hline
+    2.2 & Diseño de arquitectura de soporte & & & \\
+    \hline
+    2.3.1 & Diseño de módulos del sistema & & & \\
+    \hline
+    2.3.2 & Diseño de comunicación entre módulos & & & \\
+    \hline
+    2.3.3 & Revisión de la interfaz de usuario & & & \\
+    \hline
+    2.4.1 & Diseño del modelo físico de datos & & & \\
+    \hline
+     2.4.2 & Especificación de los caminos de acceso a los datos & & & \\
+    \hline
+    2.4.3 & Especificación de la distribución de datos & & & \\
+    \hline
+    2.5 & Verificación y aceptación de la arquitectura del sistema & & & \\
+    \hline
+    2.6 & Generación y especificación de construcción & & & \\
+    \hline
+    2.7 & Diseño de migración y carga inicial de datos & & & \\
+    \hline
+    2.8 & Especificación técnica del plan de prueba & & & \\
+    \hline
+    2.9 & Establecimiento de requisitos de implantación & & & \\
+    \hline
+    2.10 & Aprobación de diseño y SI & & & \\
+    \hline
   \end{tabular}
   \caption{Tabla de tareas} \label{Tab:tareas2}
 \end{table}
 
 \begin{table}[!h]
 \centering
-  \begin{tabular}{p{1.6cm}|p{1cm}|p{5cm}|p{1cm}|p{1cm}|p{1cm}}
-    \textbf{Etapa} & \textbf{Id.} & \textbf{Tarea} & \textbf{Min} &
+  \begin{tabular}{|p{0.8cm}||p{8cm}||p{0.75cm}|p{0.75cm}|p{0.75cm}|}
+    \hline
+    \textbf{Id.} & \textbf{Tarea} & \textbf{Min} &
     \textbf{Med} & \textbf{Max}\\
     \hline
-    Implemen\-tación & 3.1 & Preparación del entorno de generación y
-    construcción\\
-    \cline{2-3}
-    & 3.2 & Generación del código de los componentes y los procedimientos\\
-    \cline{2-3}
-    & 3.3 & Elaboración del manual de usuario\\
-    \cline{2-3}
-    & 3.4 & Definición de la formación de los usuarios finales\\
-    \cline{2-3}
-    & 3.5 & Construcción de los componentes y procedimientos de carga inicial
-    de datos \\
+    3.1 & Preparación del entorno de generación y construcción &  &  & \\
+    \hline
+    3.2 & Generación del código de los componentes y los procedimientos & & &\\
+    \hline
+    3.3 & Elaboración del manual de usuario & & &\\
+    \hline
+    3.4 & Definición de la formación de los usuarios finales & & & \\
+    \hline
+    3.5 & Construcción de los componentes y procedimientos de carga inicial
+    de datos & & &\\
+    \hline
   \end{tabular}
-  \caption{Tabla de tareas} \label{Tab:tareas3}
+  \caption{Tabla de tareas de Implementación} \label{Tab:tareas3}
 \end{table}
 
 \begin{table}[!h]
 \centering
-  \begin{tabular}{p{1.6cm}|p{1cm}|p{5cm}|p{1cm}|p{1cm}|p{1cm}}
-    \textbf{Etapa} & \textbf{Id.} & \textbf{Tarea} & \textbf{Min} &
+  \begin{tabular}{|p{0.8cm}||p{8cm}||p{0.75cm}|p{0.75cm}|p{0.75cm}|}
+    \hline
+    \textbf{Id.} & \textbf{Tarea} & \textbf{Min} &
     \textbf{Med} & \textbf{Max}\\
     \hline
-    Pruebas & 4.1 & Ejecución de las pruebas unitarias\\
-    \cline{2-3}
-    & 4.2 & Ejecución de las pruebas de integración\\
-    \cline{2-3}
-    & 4.3 & Ejecución de las pruebas del sistema\\
-    \cline{2-3}
-    & 4.4 & Aprobación del SI\\
+    4.1 & Ejecución de las pruebas unitarias & & & \\
+    \hline
+    4.2 & Ejecución de las pruebas de integración & & &\\
+    \hline
+    4.3 & Ejecución de las pruebas del sistema & & &\\
+    \hline
+    4.4 & Aprobación del SI & & & \\
     \hline
   \end{tabular}
-  \caption{Tabla de tareas} \label{Tab:tareas4}
+  \caption{Tabla de tareas de Pruebas} \label{Tab:tareas4}
 \end{table}
 
 

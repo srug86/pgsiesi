@@ -4,6 +4,8 @@
 % Órdenes auxiliares
 \input{inc/includes.tex}
 
+%paquetes
+
 % Encabezado y pie de página
 \encabezado
 
@@ -72,88 +74,6 @@ respecto al problema.
 \chapter{Técnica DELPHI}
 Mediante la técnica DELPHI se intenta obtener un consenso lo más fiable
 posible del grupo de expertos.
-\section{Tabla de tareas}
-En la tabla \ref{Tab:tareas} se especifican los paquetes de trabajo
-utilizados en el proyecto. 
-\begin{table}[!h]
-\centering
-  \begin{tabular}{p{3cm}|p{3cm}|p{7cm}|}
-    \textbf{Etapa} & \textbf{Identificador} & \textbf{Tarea} \\
-    \hline \hline
-    Análisis & 1.1 & Definición del sistema\\ 
-    \cline{2-3}
-    & 1.2 & Establecimiento de requisitos\\
-    \cline{2-3}
-    & 1.3 & Identificación de subsistemas\\
-    \cline{2-3}
-    & 1.4.1 & Elaboración del modelo conceptual y lógica de datos\\
-    \cline{2-3}
-    & 1.4.2 & Normalización\\
-    \cline{2-3}
-    & 1.4.3 & Especificación de necesidades de carga inicial\\
-    \cline{2-3}
-    & 1.5 & Elaboración del modelo de procesos\\
-    \cline{2-3}
-    & 1.6 & Definición de interfaz de usuario\\
-    \cline{2-3}
-    & 1.7 & Análisis de consistencia y especificación de requisitos\\
-    \cline{2-3}
-    & 1.8 & Especificación del plan de pruebas\\
-    \cline{2-3}
-    & 1.9 & Aprobación del análisis del SI\\
-    \hline
-    Diseño & 2.1 & Definición de la arquitectura del sistema\\
-    \cline{2-3}
-    & 2.2 & Diseño de arquitectura de soporte\\
-    \cline{2-3}
-    & 2.3.1 & Diseño de módulos del sistema\\
-    \cline{2-3}
-    & 2.3.2 & Diseño de comunicación entre módulos\\
-    \cline{2-3}
-    & 2.3.3 & Revisión de la interfaz de usuario\\
-    \cline{2-3}
-    & 2.4.1 & Diseño del modelo físico de datos\\
-    \cline{2-3}
-    & 2.4.2 & Especificación de los caminos de acceso a los datos\\
-    \cline{2-3}
-    & 2.4.3 & Especificación de la distribución de datos\\
-    \cline{2-3}
-    & 2.5 & Verificación y aceptación de la arquitectura del sistema\\
-    \cline{2-3}
-    & 2.6 & Generación y especificación de construcción\\
-    \cline{2-3}
-    & 2.7 & Diseño de migración y carga inicial de datos\\
-    \cline{2-3}
-    & 2.8 & Especificación técnica del plan de prueba\\
-    \cline{2-3}
-    & 2.9 & Establecimiento de requisitos de implantación\\
-    \cline{2-3}
-    & 2.10 & Aprobación de diseño y SI\\
-    \hline
-    Implementación & 3.1 & Preparación del entorno de generación y
-    construcción\\
-    \cline{2-3}
-    & 3.2 & Generación del código de los componentes y los procedimientos\\
-    \cline{2-3}
-    & 3.3 & Elaboración del manual de usuario\\
-    \cline{2-3}
-    & 3.4 & Definición de la formación de los usuarios finales\\
-    \cline{2-3}
-    & 3.5 & Construcción de los componentes y procedimientos de carga inicial
-    de datos \\
-    \hline
-    Pruebas & 4.1 & Ejecución de las pruebas unitarias\\
-    \cline{2-3}
-    & 4.2 & Ejecución de las pruebas de integración\\
-    \cline{2-3}
-    & 4.3 & Ejecución de las pruebas del sistema\\
-    \cline{2-3}
-    & 4.4 & Aprobación del SI\\
-    \hline
-  \end{tabular}
-  \caption{Tabla de tareas} \label{Tab:tareas}
-\end{table}
-
 \section{Tablas de tiempos DELPHI}
 En la tabla \ref{Tab:delphi} se pueden observar los tiempos DELPHI. El
 criterio de convergencia para todos los casos se ha cumplido en la primera
@@ -243,32 +163,83 @@ ponderada), el tiempo optimista (mínimo significativo), y el tiempo pesimista
 (máximo significativo) de cada tarea.
 \begin{table}[!h]
 \centering
-  \begin{tabular}{|p{2.5cm}|c|c|c|c|}
+  \begin{tabular}{|c|c||c|c|c|c|c||c|c|c||c|}
     \hline
-    \textbf{Etapa} & \textbf{Tarea} & \textbf{Valor Medio} & \textbf{Valor
-      Optimista} & \textbf{Valor pesimista}\\
+    \textbf{T} & \textbf{I} & \textbf{1} &
+    \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{m}
+    &\textbf{$\bar{x}$} &\textbf{M} & \textbf{C}\\
     \hline \hline
-    Análisis & 1.1 & 4,4 & 3 & 6\\
-    \cline{2-5}
-    & 1.2 & 5,2 & 4 & 7\\
-    \cline{2-5}
-    & 1.3 & 4,6 & 2 & 10\\
-    \cline{2-5}
-    & 1.4.1 & 4 & 2 & 7\\
-    \cline{2-5}
-    & 1.4.2 & 2,6 & 2 & 4\\
-    \cline{2-5}
-    & 1.4.3 & 1,8 & 1 & 2\\
-    \cline{2-5}
-    & 1.5 & 5,8 & 4 & 9\\
-    \cline{2-5}
-    & 1.6 & 4,8 & 2 & 10\\
-    \cline{2-5}
-    & 1.7 & 3,2 & 2 & 5\\
-    \cline{2-5}
-    & 1.8 & 3,6 & 2 & 6\\
-    \cline{2-5}
-    & 1.9 & 1 & 1 & 1\\
+    \multirow{3}{*}{1.1} & 1 & 4 & 5 & 3 & 6 & 4 & 3 & 4.4 & 6 & N \\
+    & 2 & 4 & 5 & 3 & 4 & 5 & 3 & 4.2 & 5 & N\\
+    & 3 & 5 & 5 & 4 & 4 & 5 & 4 & 4.6 & 5 & \textbf{S}\\
+    \hline
+    \multirow{3}{*}{1.2} & 1 & 5 & 5 & 4 & 7 & 5 & 4 & 5,2 & 7 & N\\
+    & 2 & 6 & 5 & 4 & 6 & 5 & 4 & 5.2 & 6 & N\\
+    & 3 & 6 & 5 & 4 & 6 & 4 & 4 & 5 & 6 & \textbf{S} \\    
+    \hline
+    \multirow{5}{*}{1.3} & 1 & 2 & 3 & 10 & 3 & 5 & 2 & 4,6 & 10& N\\
+    & 2 & 2 & 3 & 8 & 3 & 5 & 2 & 4.2 & 8 & N \\
+    & 3 & 3 & 3 & 6 & 3 & 5 & 3 & 4 & 6 & N \\
+    & 4 & 3 & 3 & 6 & 4 & 5 & 3 & 4.2 & 6 & N \\
+    & 5 & 3 & 3 & 5 & 4 & 5 & 3 & 4 & 5 & \textbf{S} \\
+    \hline
+    \multirow{7}{*}{1.4.1} & 1 & 2 & 4 & 7 & 4 & 3 & 2 & 4 & 7 & N\\
+    & 2 & 4 & 4 & 3 & 7 & 4 & 3 & 4.4 & 7 & N \\
+    & 3 & 4 & 4 & 4 & 7 & 5 & 4 & 4.8 & 7 & N \\
+    & 4 & 4 & 4 & 4 & 5 & 6 & 4 & 4.6 & 6 & N \\
+    & 5 & 4 & 5 & 4 & 5 & 6 & 4 & 4.8 & 6 & N \\
+    & 6 & 4 & 6 & 5 & 5 & 5 & 4 & 5 & 6 & N \\
+    & 7 & 5 & 5 & 5 & 5 & 5 & 5 & 5 & 5 & \textbf{S} \\
+    \hline
+    \multirow{2}{*}{1.4.2} & 1 & 2 & 2 & 4 & 3 & 2 & 2 & 2,6 & 4 & N\\
+    & 2 & 2 & 2 & 3 & 3 & 2 & 2 & 2.4 & 3 & \textbf{S} \\
+    \hline
+    \multirow{3}{*}{1.4.3} & 1 & 2 & 2 & 2 & 2 & 1 & 1 & 1,8 & 2 & N\\
+    & 2 & 2 & 2 & 2 & 2 & 3 & 2 & 2.2 & 3 & N \\
+    & 3 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & \textbf{S} \\
+    \hline
+    \multirow{5}{*}{1.5} & 1 & 9 & 5 & 4 & 6 & 5 & 4 & 5.8 & 9 & N \\
+    & 2 & 8 & 5.5 & 4.5 & 6 & 5.5 & 4.5 & 5.9 & 8 & N \\
+    & 3 & 7.5 & 5.5 & 4.5 & 6 & 5.5 & 4.5 & 5.8 & 7.5 & N \\
+    & 4 & 5.5 & 6 & 5.5 & 6 & 5 & 5 & 5.6 & 6 & N \\
+    & 5 & 5.5 & 6 & 5.5 & 6 & 6 & 5.5 & 5.8 & 6 & \textbf{S} \\
+    \hline
+    \multirow{5}{*}{1.6} & 1 & 4 & 10 & 2 & 3 & 5 & 2 & 4.8 & 10 & N \\
+    & 2 & 6 & 8 & 3 & 5 & 6 & 3 & 5.6 & 8 & N \\
+    & 3 & 5 & 8 & 3.5 & 5 & 6 & 3.5 & 5.5 & 8 & N \\
+    & 4 & 5 & 8 & 6 & 4 & 5.5 & 4 & 5.7 & 8 & N \\
+    & 5 & 5 & 7 & 6 & 4 & 5.5 & 4 & 5.5 & 7 & \textbf{S} \\
+    \hline
+    \multirow{2}{*}{1.7} & 1 & 4 & 5 & 3 & 2 & 2 & 2 & 3.2 & 5 & N \\
+    & 2 & 4 & 4.5 & 4 & 2 & 2 & 2 & 3.3 & 4.5 & \textbf{S} \\
+    \hline
+    \multirow{11}{*}{1.8} & 1 & 4 & 3 & 6 & 3 & 2 & 2 & 3.6 & 6   & N \\
+    & 2 & 4 & 3   & 5.5 & 3   & 2.5 & 2.5 & 3.6 & 5.5 & N \\
+    & 3 & 4 & 3.5 & 5.5 & 3   & 2.5 & 2.5 & 3.7 & 5.5 & N \\
+    & 3 & 4 & 3.5 & 5.5 & 2.5 & 3   & 2.5 & 3.7 & 5.5 & N \\
+    & 5 & 4 & 3.5 & 5   & 2.5 & 3   & 2.5 & 3.6 & 5   & N \\
+    & 6 & 4 & 3.5 & 5   & 3   & 3   & 3   & 3.7 & 5   & N \\
+    & 7 & 4 & 3   & 5   & 4   & 4   & 3   & 4   & 5   & N \\
+    & 8 & 4 & 3.5 & 5   & 4   & 4   & 3.5 & 4.1 & 5   & N \\
+    & 9 & 4.5 & 4 & 5 & 4.5 & 4 & 4 & 4.4 & 5 & N \\
+    & 10 & 4 & 4 & 4.5 & 4 & 4 & 4 & 4.1 & 4.5 & N \\
+    & 11 & 4.5 & 4 & 4.5 & 4 & 4 & 4 & 4.2 & 4.5 & \textbf{S} \\
+    \hline
+    1.9 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & \textbf{S} \\
+    \hline
+  \end{tabular}
+  \caption{Resultados de la técnica DELPHI para las tareas de
+    Análisis} \label{Tab:val}
+\end{table}
+
+\begin{table}[!h]
+\centering
+  \begin{tabular}{|p{2.7cm}||c|c||c|c|c|c|c||c|c|c||c|}
+    \hline
+    \textbf{Etapa} & \textbf{T} & \textbf{I} & \textbf{1} &
+    \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{m}
+    &\textbf{$\bar{x}$} &\textbf{M} & \textbf{C}\\
+    \hline \hline
     \hline
     Diseño & 2.1 & 4,6 & 3 & 6\\
     \cline{2-5}
@@ -319,6 +290,121 @@ ponderada), el tiempo optimista (mínimo significativo), y el tiempo pesimista
   \end{tabular}
   \caption{Resultados de la técnica DELPHI} \label{Tab:val}
 \end{table}
+\section{Tabla resumen de DELPHI}
+En las tablas \ref{Tab:tareas1}, \ref{Tab:tareas2}, \ref{Tab:tareas3} y \ref{Tab:tareas4} se especifican los paquetes de trabajo
+utilizados en el proyecto, así como las etapas a las que pertenecen y los
+resultados de aplicar el juicio de expertos, con el tiempo mínimo, medio y
+máximo de cada tarea.
+
+\begin{table}[!h]
+\centering
+  \begin{tabular}{p{1.6cm}|p{1cm}|p{5cm}|p{1cm}|p{1cm}|p{1cm}}
+    \textbf{Etapa} & \textbf{Id.} & \textbf{Tarea} & \textbf{Min} &
+    \textbf{Med} & \textbf{Max}\\
+    \hline \hline
+    Análisis & 1.1 & Definición del sistema\\ 
+    \cline{2-3}
+    & 1.2 & Establecimiento de requisitos\\
+    \cline{2-3}
+    & 1.3 & Identificación de subsistemas\\
+    \cline{2-3}
+    & 1.4.1 & Elaboración del modelo conceptual y lógica de datos\\
+    \cline{2-3}
+    & 1.4.2 & Normalización\\
+    \cline{2-3}
+    & 1.4.3 & Especificación de necesidades de carga inicial\\
+    \cline{2-3}
+    & 1.5 & Elaboración del modelo de procesos\\
+    \cline{2-3}
+    & 1.6 & Definición de interfaz de usuario\\
+    \cline{2-3}
+    & 1.7 & Análisis de consistencia y especificación de requisitos\\
+    \cline{2-3}
+    & 1.8 & Especificación del plan de pruebas\\
+    \cline{2-3}
+    & 1.9 & Aprobación del análisis del SI\\
+  \end{tabular}
+  \caption{Tabla de tareas} \label{Tab:tareas1}
+\end{table}
+
+\begin{table}[!h]
+\centering
+  \begin{tabular}{p{1.6cm}|p{1cm}|p{5cm}|p{1cm}|p{1cm}|p{1cm}}
+    \textbf{Etapa} & \textbf{Id.} & \textbf{Tarea} & \textbf{Min} &
+    \textbf{Med} & \textbf{Max}\\
+    \hline
+    Diseño & 2.1 & Definición de la arquitectura del sistema\\
+    \cline{2-3}
+    & 2.2 & Diseño de arquitectura de soporte\\
+    \cline{2-3}
+    & 2.3.1 & Diseño de módulos del sistema\\
+    \cline{2-3}
+    & 2.3.2 & Diseño de comunicación ent
+re módulos\\
+    \cline{2-3}
+    & 2.3.3 & Revisión de la interfaz de usuario\\
+    \cline{2-3}
+    & 2.4.1 & Diseño del modelo físico de datos\\
+    \cline{2-3}
+    & 2.4.2 & Especificación de los caminos de acceso a los datos\\
+    \cline{2-3}
+    & 2.4.3 & Especificación de la distribución de datos\\
+    \cline{2-3}
+    & 2.5 & Verificación y aceptación de la arquitectura del sistema\\
+    \cline{2-3}
+    & 2.6 & Generación y especificación de construcción\\
+    \cline{2-3}
+    & 2.7 & Diseño de migración y carga inicial de datos\\
+    \cline{2-3}
+    & 2.8 & Especificación técnica del plan de prueba\\
+    \cline{2-3}
+    & 2.9 & Establecimiento de requisitos de implantación\\
+    \cline{2-3}
+    & 2.10 & Aprobación de diseño y SI\\
+  \end{tabular}
+  \caption{Tabla de tareas} \label{Tab:tareas2}
+\end{table}
+
+\begin{table}[!h]
+\centering
+  \begin{tabular}{p{1.6cm}|p{1cm}|p{5cm}|p{1cm}|p{1cm}|p{1cm}}
+    \textbf{Etapa} & \textbf{Id.} & \textbf{Tarea} & \textbf{Min} &
+    \textbf{Med} & \textbf{Max}\\
+    \hline
+    Implemen\-tación & 3.1 & Preparación del entorno de generación y
+    construcción\\
+    \cline{2-3}
+    & 3.2 & Generación del código de los componentes y los procedimientos\\
+    \cline{2-3}
+    & 3.3 & Elaboración del manual de usuario\\
+    \cline{2-3}
+    & 3.4 & Definición de la formación de los usuarios finales\\
+    \cline{2-3}
+    & 3.5 & Construcción de los componentes y procedimientos de carga inicial
+    de datos \\
+  \end{tabular}
+  \caption{Tabla de tareas} \label{Tab:tareas3}
+\end{table}
+
+\begin{table}[!h]
+\centering
+  \begin{tabular}{p{1.6cm}|p{1cm}|p{5cm}|p{1cm}|p{1cm}|p{1cm}}
+    \textbf{Etapa} & \textbf{Id.} & \textbf{Tarea} & \textbf{Min} &
+    \textbf{Med} & \textbf{Max}\\
+    \hline
+    Pruebas & 4.1 & Ejecución de las pruebas unitarias\\
+    \cline{2-3}
+    & 4.2 & Ejecución de las pruebas de integración\\
+    \cline{2-3}
+    & 4.3 & Ejecución de las pruebas del sistema\\
+    \cline{2-3}
+    & 4.4 & Aprobación del SI\\
+    \hline
+  \end{tabular}
+  \caption{Tabla de tareas} \label{Tab:tareas4}
+\end{table}
+
+
 \chapter{Técnica PERT}
 \section{Cálculos de los tiempos PERT}
 \section{Cálculos de tiempos early y late}

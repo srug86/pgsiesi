@@ -54,19 +54,147 @@
 
 %% INICIO DEL DOCUMENTO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Alcance}
-\section{Esquemas de actividades y tareas}
+En esta sección se definen los diferentes procesos que se hay que seguir y
+cumplir para asegurar el éxito del proyecto. Las distintas tareas que
+componen el proyecto deben realizarse satisfactoriamente en un plazo
+definido.
+Los requisitos del proyecto deben estar bien definidos y tener un control de
+cambios eficaz para evitar cambios no controlados que pueden ocasionar que el
+proyecto se desvíe de su propósito inicial.
 
+\section{Esquemas de actividades y tareas}
+\begin{description}
+\item[Análisis] \hfill
+  \begin{itemize}
+  \item Definición del sistema.
+  \item Establecimiento de requisitos.
+  \item Identificación de subsistemas.
+  \item Elaboración del modelo de datos.
+    \begin{itemize}
+    \item Elaboración del modelo conceptual y lógica de datos.
+    \item Normalización.
+    \item Especificación de necesidades de carga inicial.
+    \end{itemize}
+  \item Elaboración del modelo de procesos.
+  \item Definición de interfaz de usuario.
+  \item Análisis de consistencia y especificación de requisitos.
+  \item Especificación de plan de pruebas.
+  \item Aprobación del análisis del SI.
+  \end{itemize}
+\item[Diseño] \hfill
+  \begin{itemize}
+  \item Definición de la arquitectura del sistema.
+  \item Diseño de la arquitectura de soporte.
+  \item Diseño de la arquitectura de módulos del sistema.
+    \begin{itemize}
+    \item Diseño de módulos del sistema.
+    \item Diseño de comunicación entre módulos.
+    \item Revisión de la interfaz de usuario.
+    \end{itemize}
+  \item Diseño físico de datos.
+    \begin{itemize}
+    \item Diseño del modelo físico de datos.
+    \item Especificación de los caminos de acceso a los datos.
+    \item Especificación de la distribución de datos.
+    \end{itemize}
+  \item Verificación y aceptación de la arquitectura del sistema.
+  \item Generación y especificación de construcción.
+  \item Diseño de migración y carga inicial de datos.
+  \item Especificación técnica del plan de prueba.
+  \item Establecimiento de requisitos de implantación.
+  \item Aprobación del diseño y SI.
+  \end{itemize}
+\item[Implementación]\hfill
+  \begin{itemize}
+  \item Preparación del entorno de generación y construcción.
+  \item Generación del código de los componentes y los procedimientos.
+  \item Elaboración del manual de usuario.
+  \item Definición de la formación de los usuarios finales.
+  \item Construcción de los componentes y procedimientos de carga inicial de
+    datos. 
+  \end{itemize}
+\item[Pruebas] \hfill
+  \begin{itemize}
+  \item Ejecución de las pruebas unitarias.
+  \item Ejecución de las pruebas de integración.
+  \item Ejecución de las pruebas del sistema.
+  \item Aprobación del SI.
+  \end{itemize}
+\item[Tareas repetitivas] \hfill
+  \begin{itemize}
+  \item Reunión del grupo de trabajo. Esta tarea es semanal y comenzará desde
+    el inicio hasta el fin del proyecto.
+  \end{itemize}
+\end{description}
 \section{Hitos}
+Se consideran que cada fase del proyecto no puede empezar sin que haya
+terminado la anterior. Para ello, los hitos tienen lugar en la terminación de
+cada fase. La implantación de estos hitos ayudan al cumplimiento de los
+plazos establecidos.
+
+Los hitos del proyecto son los siguientes:
+\begin{itemize}
+\item Aprobación del análisis del SI.
+\item Aprobación del diseño y SI.
+\item Aprobación del SI.
+\end{itemize}
 
 \section{Vinculaciones de tareas (FC, CC, FF)}
+\begin{table}[!h]
+\centering
+\small
+  \begin{tabular}{c|p{5cm}|c}
+    \textbf{Tarea predecesora} & \textbf{Tarea actual} & \textbf{Dependencia} \\
+    \hline \hline
+    Definición del Sistema & Establecimiento de requisitos & FC \\
+    Establecimiento de requisitos & Identificación de subsistemas & FC \\
+    Identificación de subsistemas & Elaboración de modelo conceptual & 
+    
+  \end{tabular}
+  \caption{Dependencias entre tareas} \label{Tab:Dep}
+\end{table}
 
 \section{Tiempos de posposición y adelanto}
 
 \section{Visualización del camino crítico}
 
 \chapter{Recursos y costes}
+Los recursos, tanto materiales como personal contratado, se utilizan para
+completar las tareas de las que se compone un proyecto. 
+
+
 \section{Lista de recursos humanos y materiales y asignaciones a 
   tareas}
+
+\subsection{Recursos humanos}
+\begin{description}
+\item[Coordinador] es aquella persona responsable de un proyecto. Supervisa y
+  controla el trabajo de las personas del proyecto, así como el cumplimiento
+  de los plazos de entrega de las distintas tareas. 
+
+\item[Analista] es aquel individuo responsable de investigar y
+  recomendar opciones de software y sistemas para cumplir los requerimientos
+  de una empresa de negocios.  
+
+\item[Programador] es aquel que escribe, depura y mantiene el código fuente
+  de la aplicación.  
+
+\item[Secretario] es aquella persona que redacta los informes, organiza la
+  información relacionada con el proyecto, planifica las reuniones, \dots
+
+\item[Operario de servicio técnico] realiza labores de instalación y
+  mantenimiento de los recursos materiales disponibles.
+
+\item[Usuario experto] realiza pruebas a un alto nivel de especificación.
+
+\item[Miembro del grupo de trabajo] recopilar los requisitos iniciales de la
+  aplicación, realizar entrevistas, supervisar el trabajo del personal
+  contratado, conseguir los recursos necesarios y la contabilidad.
+
+\end{description}
+
+\subsection{Recursos materiales}
+
 
 \section{Definición de costes por uso}
 

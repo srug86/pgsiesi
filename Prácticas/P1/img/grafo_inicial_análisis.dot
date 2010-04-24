@@ -1,7 +1,6 @@
 digraph grafo_inicial {
 	rankdir = LR;
-	node [shape = point];
-	9;
+	"*" [shape=plaintext] 
 	node [shape = circle];
 	1 -> 2 [label = "A11"];
 	2 -> 3 [label = "A12"];
@@ -14,5 +13,5 @@ digraph grafo_inicial {
 	6 -> 7 [label = "A17"];
 	6 -> 7 [label = "A18"];
 	7 -> 8 [label = "A19"];
-	8 -> 9 [label = "*"];
+	8 -> "*";
 }

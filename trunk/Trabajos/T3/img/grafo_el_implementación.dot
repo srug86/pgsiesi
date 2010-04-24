@@ -1,0 +1,16 @@
+digraph grafo_inicial {
+	rankdir = LR; node[style=rounded]
+	17 [shape=record, label="{ 56'23 | 56'23 } | 17"];
+	18 [shape=record, label="{ 59'36 | 59'36 } | 18"];
+	19 [shape=record, label="{ 68'66 | 68'66 } | 19"];
+	ast1 [label = "*", shape=plaintext]
+	ast2 [label = "*", shape=plaintext]
+	node [shape = circle];
+	ast1 -> 17;
+	17 -> 18 [label = "D31 3'13"];
+	18 -> 19 [label = "D32 9'3"];
+	17 -> 19 [label = "D33 10'6"];
+	17 -> 19 [label = "D34 3'57"];
+	17 -> 19 [label = "D35 5"];
+	19 -> ast2;
+}

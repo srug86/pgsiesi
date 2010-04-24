@@ -4,12 +4,8 @@
 % Órdenes auxiliares
 \input{inc/includes.tex}
 
-
 % Encabezado y pie de página
 \encabezado
-
-\setcounter{secnumdepth}{3}
-\setcounter{tocdepth}{3}
 
 \begin{document}
 
@@ -48,7 +44,6 @@
     Torres Triviño, Juan Miguel           & & 6 \\ \\
     \hline
   \end{tabular}
-%  \caption{}\label{}
 \end{table}
 
 % Índices
@@ -73,13 +68,14 @@ respecto al problema. El criterio de convergencia utilizado es el dado, que
 consiste en que una votación de expertos se acepta como final cuando todas
 las valoraciones se encuentran en un rango acotado cuyo máximo corresponde
 con la media más 1'5
+
 \chapter{Técnica DELPHI}
 Mediante la técnica DELPHI se intenta obtener un consenso lo más fiable
 posible del grupo de expertos.
     
 \section{Tablas de tiempos DELPHI}
-
-En las tablas \ref{Tab:anal}, \ref{Tab:dis},\ref{Tab:imp} y \ref{Tab:pru}  se
+En las tablas \ref{Tab:DELPHIana}, \ref{Tab:DELPHIdis},\ref{Tab:DELPHIimp} y
+\ref{Tab:DELPHIpru} se
 pueden observar la evolución seguida a la hora de calcular los tiempos
 DELPHI. Cada tabla contiene el identificador de cada tarea, la iteración en
 la que se encuentra, las valoraciones de los distintos expertos, así como los
@@ -95,78 +91,98 @@ cada tarea), y finalmente, si se cumple el criterio de convergencia o no.
     \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{m}
     &\textbf{$\bar{x}$} &\textbf{M} & \textbf{C}\\
     \hline \hline
-    \multirow{3}{*}{1.1} & 1 & 4 & 5 & 3 & 6 & 4 & 3 & 4'4 & 6 & N \\
-    & 2 & 4 & 5 & 3 & 4 & 5 & 3 & 4'2 & 5 & N\\
-    &\textbf{3} &\textbf {5} &\textbf {5} &\textbf {4} &\textbf {4} &\textbf{5} & \textbf{4} & \textbf{4'6} &\textbf{5} & \textbf{S}\\
+
+    \multirow{3}{*}{1.1} 
+    & 1 & 4 & 5 & 3 & 6 & 4 & 3 & 4'4 & 6 & N \\
+    & 2 & 4 & 5 & 3 & 4 & 5 & 3 & 4'2 & 5 & N \\
+    &\textbf{3} &\textbf {5} &\textbf {5} &\textbf {4} &\textbf {4}
+    &\textbf{5} & \textbf{4} & \textbf{4'6} &\textbf{5} & \textbf{S}\\
     \hline
 
-    \multirow{3}{*}{1.2} & 1 & 5 & 5 & 4 & 7 & 5 & 4 & 5'2 & 7 & N\\
-    & 2 & 6 & 5 & 4 & 6 & 5 & 4 & 5'2 & 6 & N\\
+    \multirow{3}{*}{1.2} 
+    & 1 & 5 & 5 & 4 & 7 & 5 & 4 & 5'2 & 7 & N \\
+    & 2 & 6 & 5 & 4 & 6 & 5 & 4 & 5'2 & 6 & N \\
     &\textbf{3} & \textbf{6} & \textbf{5} & \textbf{4} & \textbf{6} &
     \textbf{4} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{S} \\    
     \hline
 
-    \multirow{5}{*}{1.3} & 1 & 2 & 3 & 10 & 3 & 5 & 2 & 4'6 & 10& N\\
-    & 2 & 2 & 3 & 8 & 3 & 5 & 2 & 4'2 & 8 & N \\
-    & 3 & 3 & 3 & 6 & 3 & 5 & 3 & 4 & 6 & N \\
-    & 4 & 3 & 3 & 6 & 4 & 5 & 3 & 4'2 & 6 & N \\
-    & \textbf{5} & \textbf{3} & \textbf{3} & \textbf{5} & \textbf{4} & \textbf{5} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{S} \\
+    \multirow{5}{*}{1.3} 
+    & 1 & 2 & 3 & 10 & 3 & 5 & 2 & 4'6 & 10 & N \\
+    & 2 & 2 & 3 & 8  & 3 & 5 & 2 & 4'2 & 8  & N \\
+    & 3 & 3 & 3 & 6  & 3 & 5 & 3 & 4   & 6  & N \\
+    & 4 & 3 & 3 & 6  & 4 & 5 & 3 & 4'2 & 6  & N \\
+    & \textbf{5} & \textbf{3} & \textbf{3} & \textbf{5} & \textbf{4} &
+    \textbf{5} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{S} \\
     \hline
 
-    \multirow{7}{*}{1.4.1} & 1 & 2 & 4 & 7 & 4 & 3 & 2 & 4 & 7 & N\\
+    \multirow{7}{*}{1.4.1} 
+    & 1 & 2 & 4 & 7 & 4 & 3 & 2 & 4   & 7 & N \\
     & 2 & 4 & 4 & 3 & 7 & 4 & 3 & 4'4 & 7 & N \\
     & 3 & 4 & 4 & 4 & 7 & 5 & 4 & 4'8 & 7 & N \\
     & 4 & 4 & 4 & 4 & 5 & 6 & 4 & 4'6 & 6 & N \\
     & 5 & 4 & 5 & 4 & 5 & 6 & 4 & 4'8 & 6 & N \\
-    & 6 & 4 & 6 & 5 & 5 & 5 & 4 & 5 & 6 & N \\
-    & \textbf{7} & \textbf{5} & \textbf{5} & \textbf{5} & \textbf{5} & \textbf{5} & \textbf{5} & \textbf{5} & \textbf{5} & \textbf{S} \\
+    & 6 & 4 & 6 & 5 & 5 & 5 & 4 & 5   & 6 & N \\
+    & \textbf{7} & \textbf{5} & \textbf{5} & \textbf{5} & \textbf{5} &
+    \textbf{5} & \textbf{5} & \textbf{5} & \textbf{5} & \textbf{S} \\
     \hline
 
     \multirow{2}{*}{1.4.2} & 1 & 2 & 2 & 4 & 3 & 2 & 2 & 2'6 & 4 & N\\
-    & \textbf{2} & \textbf{2} & \textbf{2} & \textbf{3} & \textbf{3} & \textbf{2} & \textbf{2} & \textbf{2'4} & \textbf{3} & \textbf{S} \\
+    & \textbf{2} & \textbf{2} & \textbf{2} & \textbf{3} & \textbf{3} &
+    \textbf{2} & \textbf{2} & \textbf{2'4} & \textbf{3} & \textbf{S} \\ 
     \hline
 
-    \multirow{3}{*}{1.4.3} & 1 & 2 & 2 & 2 & 2 & 1 & 1 & 1'8 & 2 & N\\
+    \multirow{3}{*}{1.4.3} 
+    & 1 & 2 & 2 & 2 & 2 & 1 & 1 & 1'8 & 2 & N \\
     & 2 & 2 & 2 & 2 & 2 & 3 & 2 & 2'2 & 3 & N \\
-    & \textbf{3} & \textbf{2} & \textbf{2} & \textbf{2} & \textbf{2} & \textbf{2} & \textbf{2} & \textbf{2} & \textbf{2} & \textbf{S} \\
+    & \textbf{3} & \textbf{2} & \textbf{2} & \textbf{2} & \textbf{2} &
+    \textbf{2} & \textbf{2} & \textbf{2} & \textbf{2} & \textbf{S} \\ 
     \hline
 
-    \multirow{5}{*}{1.5} & 1 & 9 & 5 & 4 & 6 & 5 & 4 & 5'8 & 9 & N \\
-    & 2 & 8 & 5'5 & 4'5 & 6 & 5'5 & 4'5 & 5'9 & 8 & N \\
+    \multirow{5}{*}{1.5} 
+    & 1 & 9   & 5   & 4   & 6 & 5   & 4   & 5'8 & 9   & N \\
+    & 2 & 8   & 5'5 & 4'5 & 6 & 5'5 & 4'5 & 5'9 & 8   & N \\
     & 3 & 7'5 & 5'5 & 4'5 & 6 & 5'5 & 4'5 & 5'8 & 7'5 & N \\
-    & 4 & 5'5 & 6 & 5'5 & 6 & 5 & 5 & 5'6 & 6 & N \\
-    & \textbf{5} & \textbf{5'5} & \textbf{6} & \textbf{5'5} & \textbf{6} & \textbf{6} & \textbf{5'5} & \textbf{5'8} & \textbf{6} & \textbf{S} \\
+    & 4 & 5'5 & 6   & 5'5 & 6 & 5   & 5   & 5'6 & 6   & N \\
+    & \textbf{5} & \textbf{5'5} & \textbf{6} & \textbf{5'5} & \textbf{6} &
+    \textbf{6} & \textbf{5'5} & \textbf{5'8} & \textbf{6} & \textbf{S} \\ 
     \hline
 
-    \multirow{5}{*}{1.6} & 1 & 4 & 10 & 2 & 3 & 5 & 2 & 4'8 & 10 & N \\
-    & 2 & 6 & 8 & 3 & 5 & 6 & 3 & 5'6 & 8 & N \\
-    & 3 & 5 & 8 & 3'5 & 5 & 6 & 3'5 & 5'5 & 8 & N \\
-    & 4 & 5 & 8 & 6 & 4 & 5'5 & 4 & 5'7 & 8 & N \\
-    & \textbf{5} & \textbf{5} & \textbf{7} & \textbf{6} & \textbf{4} & \textbf{5'5} & \textbf{4} & \textbf{5'5} & \textbf{7} & \textbf{S} \\
+    \multirow{5}{*}{1.6} 
+    & 1 & 4 & 10 & 2   & 3 & 5   & 2   & 4'8 & 10 & N \\
+    & 2 & 6 & 8  & 3   & 5 & 6   & 3   & 5'6 & 8  & N \\
+    & 3 & 5 & 8  & 3'5 & 5 & 6   & 3'5 & 5'5 & 8  & N \\
+    & 4 & 5 & 8  & 6   & 4 & 5'5 & 4   & 5'7 & 8  & N \\
+    & \textbf{5} & \textbf{5} & \textbf{7} & \textbf{6} & \textbf{4} &
+    \textbf{5'5} & \textbf{4} & \textbf{5'5} & \textbf{7} & \textbf{S} \\ 
     \hline
 
     \multirow{2}{*}{1.7} & 1 & 4 & 5 & 3 & 2 & 2 & 2 & 3'2 & 5 & N \\
-    & \textbf{2} & \textbf{4} & \textbf{4'5} & \textbf{4} & \textbf{2} & \textbf{2} & \textbf{2} & \textbf{3'3} & \textbf{4'5} & \textbf{S} \\
+    & \textbf{2} & \textbf{4} & \textbf{4'5} & \textbf{4} & \textbf{2} &
+    \textbf{2} & \textbf{2} & \textbf{3'3} & \textbf{4'5} & \textbf{S} \\ 
     \hline
 
-    \multirow{11}{*}{1.8} & 1 & 4 & 3 & 6 & 3 & 2 & 2 & 3'6 & 6   & N \\
-    & 2 & 4 & 3   & 5'5 & 3   & 2'5 & 2'5 & 3'6 & 5'5 & N \\
-    & 3 & 4 & 3'5 & 5'5 & 3   & 2'5 & 2'5 & 3'7 & 5'5 & N \\
-    & 3 & 4 & 3'5 & 5'5 & 2'5 & 3   & 2'5 & 3'7 & 5'5 & N \\
-    & 5 & 4 & 3'5 & 5   & 2'5 & 3   & 2'5 & 3'6 & 5   & N \\
-    & 6 & 4 & 3'5 & 5   & 3   & 3   & 3   & 3'7 & 5   & N \\
-    & 7 & 4 & 3   & 5   & 4   & 4   & 3   & 4   & 5   & N \\
-    & 8 & 4 & 3'5 & 5   & 4   & 4   & 3'5 & 4'1 & 5   & N \\
-    & 9 & 4'5 & 4 & 5 & 4'5 & 4 & 4 & 4'4 & 5 & N \\
-    & 10 & 4 & 4 & 4'5 & 4 & 4 & 4 & 4'1 & 4'5 & N \\
-    & \textbf{11} & \textbf{4'5} & \textbf{4} & \textbf{4'5} & \textbf{4} & \textbf{4} & \textbf{4} & \textbf{4'2} & \textbf{4'5} & \textbf{S} \\
+    \multirow{11}{*}{1.8} 
+    & 1  & 4   & 3   & 6   & 3   & 2   & 2   & 3'6 & 6   & N \\
+    & 2  & 4   & 3   & 5'5 & 3   & 2'5 & 2'5 & 3'6 & 5'5 & N \\
+    & 3  & 4   & 3'5 & 5'5 & 3   & 2'5 & 2'5 & 3'7 & 5'5 & N \\
+    & 3  & 4   & 3'5 & 5'5 & 2'5 & 3   & 2'5 & 3'7 & 5'5 & N \\
+    & 5  & 4   & 3'5 & 5   & 2'5 & 3   & 2'5 & 3'6 & 5   & N \\
+    & 6  & 4   & 3'5 & 5   & 3   & 3   & 3   & 3'7 & 5   & N \\
+    & 7  & 4   & 3   & 5   & 4   & 4   & 3   & 4   & 5   & N \\
+    & 8  & 4   & 3'5 & 5   & 4   & 4   & 3'5 & 4'1 & 5   & N \\
+    & 9  & 4'5 & 4   & 5   & 4'5 & 4   & 4   & 4'4 & 5   & N \\
+    & 10 & 4   & 4   & 4'5 & 4   & 4   & 4   & 4'1 & 4'5 & N \\
+    & \textbf{11} & \textbf{4'5} & \textbf{4} & \textbf{4'5} & \textbf{4} &
+    \textbf{4} & \textbf{4} & \textbf{4'2} & \textbf{4'5} & \textbf{S} \\ 
     \hline
 
-    \textbf{1.9} & \textbf{1} & \textbf{1} & \textbf{1} & \textbf{1} & \textbf{1} & \textbf{1} & \textbf{1} & \textbf{1} & \textbf{1} & \textbf{S} \\
+    1.9 & \textbf{1} & \textbf{1} & \textbf{1} & \textbf{1} &
+    \textbf{1} & \textbf{1} & \textbf{1} & \textbf{1} & \textbf{1} &
+    \textbf{S} \\
     \hline
   \end{tabular}
-  \caption{Resultados de la técnica DELPHI para las tareas de
-    Análisis} \label{Tab:anal}
+  \caption{\textbf{DELPHI} de tareas de \textbf{análisis}} 
+  \label{Tab:DELPHIana}
 \end{table}
 
 \begin{table}[!h]
@@ -177,68 +193,93 @@ cada tarea), y finalmente, si se cumple el criterio de convergencia o no.
     \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{m}
     &\textbf{$\bar{x}$} &\textbf{M} & \textbf{C}\\
     \hline \hline
-    \textbf{2.1} & \textbf{1} & \textbf{6} & \textbf{3} & \textbf{6} & \textbf{5} & \textbf{3} & \textbf{3} & \textbf{4'6} & \textbf{6} & \textbf{S}\\
+
+    2.1 & \textbf{1} & \textbf{6} & \textbf{3} & \textbf{6} &
+    \textbf{5} & \textbf{3} & \textbf{3} & \textbf{4'6} & \textbf{6} &
+    \textbf{S}\\
     \hline
 
-    \textbf{2.2} & \textbf{1} & \textbf{6} & \textbf{6} & \textbf{7} & \textbf{2} & \textbf{2} & \textbf{2} & \textbf{4'6} & \textbf{7} & \textbf{S}\\
+    2.2 & \textbf{1} & \textbf{6} & \textbf{6} & \textbf{7} &
+    \textbf{2} & \textbf{2} & \textbf{2} & \textbf{4'6} & \textbf{7} &
+    \textbf{S}\\ 
     \hline
 
-    \multirow{3}{*}{2.3.1}& 1 & 3 & 11 & 15 & 8 & 6 & 3 & 8'6 & 15 & N \\
+    \multirow{3}{*}{2.3.1}
+    & 1 & 3 & 11 & 15 & 8 & 6 & 3 & 8'6 & 15 & N \\
     & 2 & 3 & 11 & 14 & 8 & 8 & 3 & 8'8 & 14 & N \\
-    & \textbf{3} & \textbf{3} & \textbf{11} & \textbf{14} & \textbf{7} & \textbf{7} & \textbf{3} & \textbf{8'4} & \textbf{14} & \textbf{S} \\
+    & \textbf{3} & \textbf{3} & \textbf{11} & \textbf{14} & \textbf{7} &
+    \textbf{7} & \textbf{3} & \textbf{8'4} & \textbf{14} & \textbf{S} \\
     \hline
 
     \multirow{2}{*}{2.3.2} & 1 & 4 & 7 & 3 & 5 & 2 & 2 & 4.2 & 7 & N \\
-    & \textbf{2} & \textbf{5} & \textbf{6} & \textbf{3} & \textbf{6} & \textbf{2} & \textbf{2} & \textbf{4'4} & \textbf{6} & \textbf{S} \\
+    & \textbf{2} & \textbf{5} & \textbf{6} & \textbf{3} & \textbf{6} &
+    \textbf{2} & \textbf{2} & \textbf{4'4} & \textbf{6} & \textbf{S} \\
     \hline
 
-    \multirow{3}{*}{2.3.3}& 1 & 4 & 5 & 4 & 5 & 2 & 2 & 4 & 5 & N \\
+    \multirow{3}{*}{2.3.3}
+    & 1 & 4 & 5 & 4 & 5 & 2 & 2 & 4   & 5 & N \\
     & 2 & 3 & 5 & 4 & 5 & 2 & 2 & 3'8 & 5 & N \\
     & \textbf{3} & \textbf{3} & \textbf{5} & \textbf{4} & \textbf{5} &
     \textbf{2'5} & \textbf{2'5} & \textbf{3'9} & \textbf{5} & \textbf{S} \\
     \hline
 
-    \textbf{2.4.1} & \textbf{1} & \textbf{5} & \textbf{2} & \textbf{5} & \textbf{4} & \textbf{2} & \textbf{2} & \textbf{3'6} & \textbf{5} & \textbf{S} \\
+    2.4.1 & \textbf{1} & \textbf{5} & \textbf{2} & \textbf{5} &
+    \textbf{4} & \textbf{2} & \textbf{2} & \textbf{3'6} & \textbf{5} &
+    \textbf{S} \\ 
     \hline
 
-    \multirow{3}{*}{2.4.2}& 1 & 4 & 8 & 4 & 3 & 1 & 1 & 4 & 8 & N \\
+    \multirow{3}{*}{2.4.2}
+    & 1 & 4 & 8 & 4 & 3 & 1 & 1 & 4   & 8 & N \\
     & 2 & 5 & 7 & 5 & 3 & 1 & 1 & 4'2 & 7 & N \\
-    & \textbf{3} & \textbf{5} & \textbf{7} & \textbf{5} & \textbf{3} & \textbf{2} & \textbf{2} & \textbf{4'4} & \textbf{7} & \textbf{S} \\
+    & \textbf{3} & \textbf{5} & \textbf{7} & \textbf{5} & \textbf{3} &
+    \textbf{2} & \textbf{2} & \textbf{4'4} & \textbf{7} & \textbf{S} \\ 
     \hline
 
-    \multirow{4}{*}{2.4.3}& 1 & 5 & 3 & 4 & 1 & 3 & 1 & 3'2 & 5 & N \\
+    \multirow{4}{*}{2.4.3}
+    & 1 & 5 & 3 & 4 & 1 & 3 & 1 & 3'2 & 5 & N \\
     & 2 & 5 & 4 & 5 & 2 & 3 & 2 & 3'8 & 5 & N \\
     & 3 & 4 & 4 & 5 & 2 & 3 & 2 & 3'6 & 5 & N \\
-    & \textbf{4} & \textbf{4} & \textbf{4} & \textbf{5} & \textbf{2'5} & \textbf{3} & \textbf{2'5} & \textbf{3'7} & \textbf{5} & \textbf{S} \\
+    & \textbf{4} & \textbf{4} & \textbf{4} & \textbf{5} & \textbf{2'5} &
+    \textbf{3} & \textbf{2'5} & \textbf{3'7} & \textbf{5} & \textbf{S} \\ 
     \hline
 
     \multirow{2}{*}{2.5}& 1 & 1 & 2 & 1 & 1 & 3 & 1 & 1'6 & 3 & N \\
-    & \textbf{2} & \textbf{1} & \textbf{2} & \textbf{1} & \textbf{1} & \textbf{2} & \textbf{1} & \textbf{1'4} & \textbf{2} & \textbf{S} \\
+    & \textbf{2} & \textbf{1} & \textbf{2} & \textbf{1} & \textbf{1} &
+    \textbf{2} & \textbf{1} & \textbf{1'4} & \textbf{2} & \textbf{S} \\ 
     \hline
 
-    \multirow{3}{*}{2.6}& 1 & 4 & 12 & 5 & 4 & 3 & 3 & 5'6 & 12 & N \\
+    \multirow{3}{*}{2.6}
+    & 1 & 4 & 12 & 5 & 4 & 3 & 3 & 5'6 & 12 & N \\
     & 2 & 4 & 11 & 8 & 4 & 3 & 3 & 6 & 11 & N \\
-    & \textbf{3} & \textbf{4} & \textbf{9} & \textbf{8} & \textbf{4} & \textbf{3} & \textbf{3} & \textbf{5'6} & \textbf{9} & \textbf{S} \\
+    & \textbf{3} & \textbf{4} & \textbf{9} & \textbf{8} & \textbf{4} &
+    \textbf{3} & \textbf{3} & \textbf{5'6} & \textbf{9} & \textbf{S} \\
     \hline
 
     \multirow{2}{*}{2.7}& 1 & 2 & 4 & 2 & 2 & 5 & 2 & 3 & 5 & N \\
-    & \textbf{2} & \textbf{2} & \textbf{4} & \textbf{2} & \textbf{2} & \textbf{4} & \textbf{2} & \textbf{2'8} & \textbf{4} & \textbf{S} \\
+    & \textbf{2} & \textbf{2} & \textbf{4} & \textbf{2} & \textbf{2} &
+    \textbf{4} & \textbf{2} & \textbf{2'8} & \textbf{4} & \textbf{S} \\
     \hline
 
-    \textbf{2.8} & \textbf{1} & \textbf{3} & \textbf{6} & \textbf{5} & \textbf{2} & \textbf{2} & \textbf{2} & \textbf{3'6} & \textbf{6} & \textbf{S} \\
+    2.8 & \textbf{1} & \textbf{3} & \textbf{6} & \textbf{5} &
+    \textbf{2} & \textbf{2} & \textbf{2} & \textbf{3'6} & \textbf{6} &
+    \textbf{S} \\ 
     \hline
 
-    \multirow{4}{*}{2.9}& 1 & 4 & 20 & 3 & 4 & 3 & 3 & 6'8 & 20 & N \\
+    \multirow{4}{*}{2.9}
+    & 1 & 4 & 20 & 3 & 4 & 3 & 3 & 6'8 & 20 & N \\
     & 2 & 6 & 15 & 4 & 4 & 5 & 4 & 6'8 & 15 & N \\
     & 3 & 6 & 13 & 6 & 6 & 8 & 6 & 7'8 & 13 & N \\
-    & \textbf{4} & \textbf{6} & \textbf{11} & \textbf{6} & \textbf{6} & \textbf{10} & \textbf{6} & \textbf{7'8} & \textbf{11} & \textbf{S} \\
+    & \textbf{4} & \textbf{6} & \textbf{11} & \textbf{6} & \textbf{6} &
+    \textbf{10} & \textbf{6} & \textbf{7'8} & \textbf{11} & \textbf{S} \\ 
     \hline
 
-    \textbf{2.10} & \textbf{1} & \textbf{2} & \textbf{1} & \textbf{1} & \textbf{2} & \textbf{1} & \textbf{1} & \textbf{1'4} & \textbf{2} & \textbf{S} \\
+    2.10 & \textbf{1} & \textbf{2} & \textbf{1} & \textbf{1} &
+    \textbf{2} & \textbf{1} & \textbf{1} & \textbf{1'4} & \textbf{2} &
+    \textbf{S} \\
     \hline
   \end{tabular}
-  \caption{Resultados de la técnica DELPHI para las tareas de
-    Diseño} \label{Tab:dis}
+  \caption{\textbf{DELPHI} de tareas de \textbf{diseño}}
+  \label{Tab:DELPHIdis}
 \end{table}
 
 \begin{table}[!h]
@@ -249,29 +290,39 @@ cada tarea), y finalmente, si se cumple el criterio de convergencia o no.
     \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{m}
     &\textbf{$\bar{x}$} &\textbf{M} & \textbf{C}\\    
     \hline \hline
+
     \multirow{2}{*}{3.1}& 1 & 2 & 3 & 3 & 2 & 4 & 2 & 2'8 & 4 & N \\
-    & \textbf{2} & \textbf{2} & \textbf{4} & \textbf{4} & \textbf{2} & \textbf{4} & \textbf{2} & \textbf{3'2} & \textbf{4} & \textbf{S} \\
+    & \textbf{2} & \textbf{2} & \textbf{4} & \textbf{4} & \textbf{2} &
+    \textbf{4} & \textbf{2} & \textbf{3'2} & \textbf{4} & \textbf{S} \\
     \hline
 
-    \textbf{3.2} & \textbf{1} & \textbf{14} & \textbf{8} & \textbf{7} & \textbf{5} & \textbf{12} & \textbf{5} & \textbf{9'2} & \textbf{14} & \textbf{S} \\
+    3.2 & \textbf{1} & \textbf{14} & \textbf{8} & \textbf{7} &
+    \textbf{5} & \textbf{12} & \textbf{5} & \textbf{9'2} & \textbf{14} &
+    \textbf{S} \\ 
     \hline
 
-    \multirow{3}{*}{3.3}& 1 & 18 & 5 & 10 & 3 & 6 & 3 & 8'4 & 18 & N \\
-    & 2 & 15 & 7 & 11 & 5 & 7 & 5 & 9 & 15 & N \\
-    & \textbf{3} & \textbf{15} & \textbf{9} & \textbf{13} & \textbf{7} & \textbf{8} & \textbf{7} & \textbf{10'4} & \textbf{15} & \textbf{S} \\
+    \multirow{3}{*}{3.3}
+    & 1 & 18 & 5 & 10 & 3 & 6 & 3 & 8'4 & 18 & N \\
+    & 2 & 15 & 7 & 11 & 5 & 7 & 5 & 9   & 15 & N \\
+    & \textbf{3} & \textbf{15} & \textbf{9} & \textbf{13} & \textbf{7} &
+    \textbf{8} & \textbf{7} & \textbf{10'4} & \textbf{15} & \textbf{S} \\
     \hline
 
-    \multirow{3}{*}{3.4}& 1 & 7 & 3 & 2 & 2 & 3 & 2 & 3'4 & 7 & N \\
+    \multirow{3}{*}{3.4}
+    & 1 & 7 & 3 & 2 & 2 & 3 & 2 & 3'4 & 7 & N \\
     & 2 & 5 & 3 & 3 & 3 & 4 & 3 & 3'6 & 5 & N \\
-    & \textbf{3} & \textbf{4} & \textbf{3} & \textbf{4} & \textbf{3} & \textbf{4} & \textbf{3} & \textbf{3'6} & \textbf{4} & \textbf{S} \\
+    & \textbf{3} & \textbf{4} & \textbf{3} & \textbf{4} & \textbf{3} &
+    \textbf{4} & \textbf{3} & \textbf{3'6} & \textbf{4} & \textbf{S} \\
     \hline
 
-    \textbf{3.5} & \textbf{1} & \textbf{7} & \textbf{3} & \textbf{6} & \textbf{5} & \textbf{4} & \textbf{3} & \textbf{5} &\textbf{7} & \textbf{S} \\
+    3.5 & \textbf{1} & \textbf{7} & \textbf{3} & \textbf{6} &
+    \textbf{5} & \textbf{4} & \textbf{3} & \textbf{5} &\textbf{7} &
+    \textbf{S} \\ 
     \hline
 
   \end{tabular}
-  \caption{Resultados de la técnica DELPHI para las tareas de
-    Implementación} \label{Tab:imp}
+  \caption{\textbf{DELPHI} de tareas de \textbf{implementación}}
+  \label{Tab:DELPHIimp}
 \end{table}
 
 \begin{table}[!h]
@@ -282,37 +333,49 @@ cada tarea), y finalmente, si se cumple el criterio de convergencia o no.
     \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{m}
     &\textbf{$\bar{x}$} &\textbf{M} & \textbf{C}\\    
     \hline \hline
-    \multirow{4}{*}{4.1}& 1 & 5 & 3 & 4 & 2 & 4 & 2 & 3'6 & 5 & N \\
+
+    \multirow{4}{*}{4.1}
+    & 1 & 5 & 3 & 4 & 2   & 4 & 2   & 3'6 & 5 & N \\
     & 2 & 5 & 4 & 4 & 2'5 & 4 & 2'5 & 3'9 & 5 & N \\
-    & 3 & 5 & 4 & 4 & 3 & 4 & 3 & 4 & 5 & N \\
-    & \textbf{5} & \textbf{4'5} & \textbf{4'5} & \textbf{3'5} & \textbf{3'5} & \textbf{4} & \textbf{3'5} & \textbf{4} & \textbf{4'5} & \textbf{S} \\    
+    & 3 & 5 & 4 & 4 & 3   & 4 & 3   & 4   & 5 & N \\
+    & \textbf{5} & \textbf{4'5} & \textbf{4'5} & \textbf{3'5} & \textbf{3'5}
+    & \textbf{4} & \textbf{3'5} & \textbf{4} & \textbf{4'5} & \textbf{S} \\
     \hline
     
-    \multirow{2}{*}{4.2}& 1 & 5 & 7 & 5 & 3 & 3 & 3 & 4.6 & 7 & N \\
-    & \textbf{2} & \textbf{5} & \textbf{6} & \textbf{6} & \textbf{3} & \textbf{3} & \textbf{3} & \textbf{4'6} & \textbf{6} & \textbf{S} \\
+    \multirow{2}{*}{4.2} & 1 & 5 & 7 & 5 & 3 & 3 & 3 & 4.6 & 7 & N \\
+    & \textbf{2} & \textbf{5} & \textbf{6} & \textbf{6} & \textbf{3} &
+    \textbf{3} & \textbf{3} & \textbf{4'6} & \textbf{6} & \textbf{S} \\
     \hline
-    \multirow{3}{*}{4.3}& 1 & 6 & 4 & 10 & 3 & 3 & 3 & 5.2 & 10 & N \\
-    & 2 & 6 & 4 & 8 & 3 & 4 & 3 & 5 & 8 & N \\
-    & \textbf{3} & \textbf{7} & \textbf{4} & \textbf{8} & \textbf{3} & \textbf{4} & \textbf{3} & \textbf{5'2} & \textbf{8} & \textbf{S} \\
+
+    \multirow{3}{*}{4.3}
+    & 1 & 6 & 4 & 10 & 3 & 3 & 3 & 5.2 & 10 & N \\
+    & 2 & 6 & 4 & 8  & 3 & 4 & 3 & 5   & 8  & N \\
+    & \textbf{3} & \textbf{7} & \textbf{4} & \textbf{8} & \textbf{3} &
+    \textbf{4} & \textbf{3} & \textbf{5'2} & \textbf{8} & \textbf{S} \\
     \hline
-    \textbf{4.4} & \textbf{1} & \textbf{3} & \textbf{2} & \textbf{1} & \textbf{3} & \textbf{1} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{S} \\
+
+    4.4 & \textbf{1} & \textbf{3} & \textbf{2} & \textbf{1} &
+    \textbf{3} & \textbf{1} & \textbf{1} & \textbf{2} & \textbf{3} &
+    \textbf{S} \\
     \hline
   \end{tabular}
-  \caption{Resultados de la técnica DELPHI para las tareas de Pruebas} x\label{Tab:pru}
+  \caption{\textbf{DELPHI} de tareas de \textbf{pruebas}}
+  \label{Tab:DELPHIpru}
 \end{table} 
+
 \section{Tabla resumen de DELPHI}
-En las tablas \ref{Tab:tareas1}, \ref{Tab:tareas2}, \ref{Tab:tareas3} y
-\ref{Tab:tareas4} reprensentan los resultados abreviados de aplicar la
+En las tablas \ref{Tab:rDELPHIana}, \ref{Tab:rDELPHIdis},\ref{Tab:rDELPHIimp} y
+\ref{Tab:rDELPHIpru} reprensentan los resultados abreviados de aplicar la
 técnica DELPHI, cada tabla se corresponde con las tareas de cada etapa de
 elaboración del software. Cada incidencia de la tabla contiene las tareas, el
 tiempo mínimo, el medio y el máximo.
 
 \begin{table}[!h]
 \centering
-  \begin{tabular}{|p{0.8cm}||p{8cm}||p{0.75cm}|p{0.75cm}|p{0.75cm}|}
+  \begin{tabular}{|c||p{8cm}||c|c|c|}
     \hline
-    \textbf{Id.} & \textbf{Tarea} & \textbf{Min} &
-    \textbf{Med} & \textbf{Max}\\
+    \textbf{Id} & \textbf{Tarea} & \textbf{m} & 
+    \textbf{$\bar{x}$} &\textbf{M} \\
     \hline \hline
     1.1 & Definición del sistema & 4 & 4'6 & 5\\ 
     \hline
@@ -330,22 +393,24 @@ tiempo mínimo, el medio y el máximo.
     \hline
     1.6 & Definición de interfaz de usuario & 4 & 5'5 & 7\\
     \hline
-    1.7 & Análisis de consistencia y especificación de requisitos & 2 & 3'3 & 4.5\\
+    1.7 & Análisis de consistencia y especificación de requisitos & 2 & 3'3 &
+    4.5\\
     \hline
     1.8 & Especificación del plan de pruebas & 4 & 4'3 & 4'5\\
     \hline
     1.9 & Aprobación del análisis del SI & 1 & 1 & 1\\
     \hline
   \end{tabular}
-  \caption{Tabla resumen de tareas de Análisis} \label{Tab:tareas1}
+  \caption{Resumen: \textbf{DELPHI} de tareas de \textbf{análisis}}
+  \label{Tab:rDELPHIana}
 \end{table}
 
 \begin{table}[!h]
 \centering
-  \begin{tabular}{|p{0.8cm}||p{8cm}||p{0.75cm}|p{0.75cm}|p{0.75cm}|}
+  \begin{tabular}{|c||p{8cm}||c|c|c|}
     \hline
-    \textbf{Id.} & \textbf{Tarea} & \textbf{Min} &
-    \textbf{Med} & \textbf{Max}\\
+    \textbf{Id} & \textbf{Tarea} & \textbf{m} & 
+    \textbf{$\bar{x}$} &\textbf{M} \\
     \hline
     2.1 & Definición de la arquitectura del sistema & 3 & 4'6 & 6 \\
     \hline
@@ -359,8 +424,7 @@ tiempo mínimo, el medio y el máximo.
     \hline
     2.4.1 & Diseño del modelo físico de datos & 2 & 3'6 & 5 \\
     \hline
-    2.4.2 & Especificación de los caminos de acceso a los datos & 2 & 4'4 &
-    7\\
+    2.4.2 & Especificación de los caminos de acceso a los datos & 2 & 4'4 & 7\\
     \hline
     2.4.3 & Especificación de la distribución de datos & 2'5 & 3'7 & 5 \\
     \hline
@@ -378,15 +442,16 @@ tiempo mínimo, el medio y el máximo.
     2.10 & Aprobación de diseño y SI & 1 & 1'4 & 2 \\
     \hline
   \end{tabular}
-  \caption{Tabla resumen de tareas de diseño} \label{Tab:tareas2}
+  \caption{Resumen: \textbf{DELPHI} de tareas de \textbf{diseño}}
+  \label{Tab:rDELPHIdis}
 \end{table}
 
 \begin{table}[!h]
 \centering
-  \begin{tabular}{|p{0.8cm}||p{8cm}||p{0.75cm}|p{0.75cm}|p{0.75cm}|}
+  \begin{tabular}{|c||p{8cm}||c|c|c|}
     \hline
-    \textbf{Id.} & \textbf{Tarea} & \textbf{Min} &
-    \textbf{Med} & \textbf{Max}\\
+    \textbf{Id} & \textbf{Tarea} & \textbf{m} & 
+    \textbf{$\bar{x}$} &\textbf{M} \\
     \hline
     3.1 & Preparación del entorno de generación y construcción & 2 & 3'2  & 4 \\
     \hline
@@ -401,15 +466,16 @@ tiempo mínimo, el medio y el máximo.
     de datos & 3 & 5 & 7\\
     \hline
   \end{tabular}
-  \caption{Tabla resumen de tareas de Implementación} \label{Tab:tareas3}
+  \caption{Resumen: \textbf{DELPHI} de tareas de \textbf{implementación}}
+  \label{Tab:rDELPHIimp}
 \end{table}
 
 \begin{table}[!h]
 \centering
-  \begin{tabular}{|p{0.8cm}||p{8cm}||p{0.75cm}|p{0.75cm}|p{0.75cm}|}
+  \begin{tabular}{|c||p{8cm}||c|c|c|}
     \hline
-    \textbf{Id.} & \textbf{Tarea} & \textbf{Min} &
-    \textbf{Med} & \textbf{Max}\\
+    \textbf{Id} & \textbf{Tarea} & \textbf{m} & 
+    \textbf{$\bar{x}$} &\textbf{M} \\
     \hline
     4.1 & Ejecución de las pruebas unitarias & 3'5 & 4 & 4'5\\
     \hline
@@ -420,21 +486,20 @@ tiempo mínimo, el medio y el máximo.
     4.4 & Aprobación del SI & 1 & 2 & 3 \\
     \hline
   \end{tabular}
-  \caption{Tabla resumen de tareas de Pruebas} \label{Tab:tareas4}
+  \caption{Resumen: \textbf{DELPHI} de tareas de \textbf{pruebas}}
+  \label{Tab:rDELPHIpru}
 \end{table}
 
 
 \chapter{Técnica PERT}
-
 \section{Cálculos de los tiempos PERT}
 
 \begin{table}[!h]
-\centering
-  \begin{tabular}{|p{0.8cm}||p{4cm}||p{0.75cm}|p{0.75cm}|p{0.75cm}|p{1.10cm}|
-p{0.75cm}|}
+  \centering
+  \begin{tabular}{|c||p{5.3cm}||c|c|c||c|c|}
     \hline
-    \textbf{Id.} & \textbf{Tarea} & \textbf{Min} &
-    \textbf{Med} & \textbf{Max} & \textbf{PERT} & \textbf{Var}\\
+    \textbf{Id} & \textbf{Tarea} & \textbf{m} & 
+    \textbf{$\bar{x}$} &\textbf{M} & \textbf{PERT} & \textbf{Var}\\
     \hline \hline
     1.1 & Definición del sistema & 4 & 4.6 & 5 & 4.57 & 0.17\\ 
     \hline
@@ -461,17 +526,17 @@ p{0.75cm}|}
     1.9 & Aprobación del análisis del SI & 1 & 1 & 1 & 1 & 0\\
     \hline
   \end{tabular}
-  \caption{Tabla tiempos PERT para tareas de Análisis} \label{Tab:tareas1}
+  \caption{\textbf{PERT} de tareas de \textbf{análisis}} 
+  \label{Tab:tareas1}
 \end{table}
 
 \begin{table}[!h]
 \centering
-  \begin{tabular}{|p{0.8cm}||p{4cm}||p{0.75cm}|p{0.75cm}|p{0.75cm}|p{1.10cm}|
-p{0.75cm}|}
+  \begin{tabular}{|c||p{5.3cm}||c|c|c||c|c|}
     \hline
-    \textbf{Id.} & \textbf{Tarea} & \textbf{Min} &
-    \textbf{Med} & \textbf{Max} & \textbf{PERT} & \textbf{Var}\\
-    \hline
+    \textbf{Id} & \textbf{Tarea} & \textbf{m} & 
+    \textbf{$\bar{x}$} &\textbf{M} & \textbf{PERT} & \textbf{Var}\\
+    \hline \hline
     2.1 & Definición de la arquitectura del sistema & 3 & 4.6 & 6 & 4.57 & 0.5\\
     \hline
     2.2 & Diseño de arquitectura de soporte & 2 & 4.6 & 7 & 4.57 & 0.83\\
@@ -507,17 +572,17 @@ p{0.75cm}|}
     2.10 & Aprobación de diseño y SI & 1 & 1.4 & 2 & 1.43 & 0.17\\
     \hline
   \end{tabular}
-  \caption{Tabla de tiempos PERT para tareas de diseño} \label{Tab:tareas2}
+  \caption{\textbf{PERT} de tareas de \textbf{diseño}}
+  \label{Tab:tareas2}
 \end{table}
 
 \begin{table}[!h]
 \centering
-  \begin{tabular}{|p{0.8cm}||p{4cm}||p{0.75cm}|p{0.75cm}|p{0.75cm}|p{1.10cm}|
-p{0.75cm}|}
+  \begin{tabular}{|c||p{5.3cm}||c|c|c||c|c|}
     \hline
-    \textbf{Id.} & \textbf{Tarea} & \textbf{Min} &
-    \textbf{Med} & \textbf{Max} & \textbf{PERT} & \textbf{Var}\\
-    \hline
+    \textbf{Id} & \textbf{Tarea} & \textbf{m} & 
+    \textbf{$\bar{x}$} &\textbf{M} & \textbf{PERT} & \textbf{Var}\\
+    \hline \hline
     3.1 & Preparación del entorno de generación y construcción & 2 & 3.2  & 4
     & 3.13 & 0.33\\
     \hline
@@ -533,18 +598,17 @@ p{0.75cm}|}
     de datos & 3 & 5 & 7 & 5 & 0.67\\
     \hline
   \end{tabular}
-  \caption{Tabla de tiempos PERT para tareas de
-    Implementación} \label{Tab:tareas3}
+  \caption{\textbf{PERT} de tareas de \textbf{implementación}}
+  \label{Tab:tareas3}
 \end{table}
 
 \begin{table}[!h]
 \centering
-  \begin{tabular}{|p{0.8cm}||p{4cm}||p{0.75cm}|p{0.75cm}|p{0.75cm}|p{1.10cm}|
-p{0.75cm}|}
+  \begin{tabular}{|c||p{5.3cm}||c|c|c||c|c|}
     \hline
-    \textbf{Id.} & \textbf{Tarea} & \textbf{Min} &
-    \textbf{Med} & \textbf{Max} & \textbf{PERT} & \textbf{Var}\\
-    \hline
+    \textbf{Id} & \textbf{Tarea} & \textbf{m} & 
+    \textbf{$\bar{x}$} &\textbf{M} & \textbf{PERT} & \textbf{Var}\\
+    \hline \hline
     4.1 & Ejecución de las pruebas unitarias & 3.5 & 4 & 4.5 & 4 & 0.17\\
     \hline
     4.2 & Ejecución de las pruebas de integración & 3 & 4.6 & 6 & 4.57 & 0.5\\
@@ -554,7 +618,8 @@ p{0.75cm}|}
     4.4 & Aprobación del SI & 1 & 2 & 3 & 2 & 0.33\\
     \hline
   \end{tabular}
-  \caption{Tabla de tiempos PERT para tareas de Pruebas} \label{Tab:tareas4}
+  \caption{\textbf{PERT} de para tareas de \textbf{pruebas}}
+  \label{Tab:tareas4}
 \end{table}
 
 \section{Cálculos de tiempos early y late}

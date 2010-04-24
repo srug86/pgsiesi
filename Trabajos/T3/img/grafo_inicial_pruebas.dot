@@ -1,0 +1,10 @@
+digraph grafo_inicial {
+	rankdir = LR;
+	"*" [shape=plaintext]
+	node [shape = circle];
+	"*" -> 19;
+	19 -> 20 [label = "D41"];
+	19 -> 20 [label = "D42"];
+	19 -> 20 [label = "D43"];
+	20 -> 21 [label = "D44"];
+}

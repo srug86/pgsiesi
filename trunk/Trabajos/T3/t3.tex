@@ -67,24 +67,21 @@ en cuestión, con el fin de obtener juicios coherentes y enriquecidos con
 respecto al problema. El criterio de convergencia utilizado es el dado, que
 consiste en que una votación de expertos se acepta como final cuando todas
 las valoraciones se encuentran en un rango acotado cuyo máximo corresponde
-con la media más 1'5.
+con la media más 1'5
 
 \chapter{Técnica DELPHI}
 Mediante la técnica DELPHI se intenta obtener un consenso lo más fiable
 posible del grupo de expertos.
     
 \section{Tablas de tiempos DELPHI}
-En las tablas \ref{Tab:DELPHIanal}, \ref{Tab:DELPHIdis},\ref{Tab:DELPHIimp} y
+En las tablas \ref{Tab:DELPHIana}, \ref{Tab:DELPHIdis},\ref{Tab:DELPHIimp} y
 \ref{Tab:DELPHIpru} se
 pueden observar la evolución seguida a la hora de calcular los tiempos
-DELPHI. Cada tabla contiene el identificador de cada tarea (expresado en la
-columna \textbf{T}), la iteración en
-la que se encuentra (columna \textbf{I}), las valoraciones de los distintos
-expertos (columnas \textbf{1}, \textbf{2}, \textbf{3}, \textbf{4} y \textbf{5}, correspondiendo con los cinco expertos), así como los
-valores mínimo (que corresponde con el tiempo optimista, en la columna \textbf{m}), medio (que
-correspondeo con la media ponderada, en la columna \textbf{$\bar{x}$} ) y máximo (que es el tiempo pesimista de
-cada tarea, en la columna \textbf{M}), y finalmente, si se cumple el criterio de
-convergencia o no (columna \textbf{C}).
+DELPHI. Cada tabla contiene el identificador de cada tarea, la iteración en
+la que se encuentra, las valoraciones de los distintos expertos, así como los
+valores mínimo (que corresponde con el tiempo optimista), medio (que
+correspondeo con la media ponderada) y máximo (que es el tiempo pesimista de
+cada tarea), y finalmente, si se cumple el criterio de convergencia o no.
 
 \begin{table}[!h]
 \centering
@@ -185,7 +182,7 @@ convergencia o no (columna \textbf{C}).
     \hline
   \end{tabular}
   \caption{\textbf{DELPHI} de tareas de \textbf{análisis}} 
-  \label{Tab:DELPHIanal}
+  \label{Tab:DELPHIana}
 \end{table}
 
 \begin{table}[!h]
@@ -495,19 +492,7 @@ tiempo mínimo, el medio y el máximo.
 
 
 \chapter{Técnica PERT}
-El uso de la técina PERT permite realizar una estimación sobre la duración
-total del proyecto, a través de la estimación media de la duración de las
-actividades individualmente.
 \section{Cálculos de los tiempos PERT}
-En las tablas \ref{Tab:PERTanal}, \ref{Tab:PERTdis}, \ref{Tab:PERTimp} y
-\ref{Tab:PERTpru} se muestran los valores necesarios de DELPHI para calcular
-el tiempo PERT de cada tarea, estos son el valor mínimo (representado en la
-columna \textbf{m}), el valor medio (en la columna \textbf{$\bar{x}$}) y el
-valor máximo (en la columna \textbf{M}) a partir de estos se calcula el valor
-\textbf{PERT} usando la fórmula: \begin{displaymath} \frac{M +  
-4\overline{x} + m}{6} \end{displaymath} También se calcula la varianza
-(\textbf{Var}) a partir de los valores DELPHI, siguiendo la esta otra fórmula:
-{\begin{displaymath} \frac{M-m}{6} \end{displaymath}
 
 \begin{table}[!h]
   \centering
@@ -542,7 +527,7 @@ valor máximo (en la columna \textbf{M}) a partir de estos se calcula el valor
     \hline
   \end{tabular}
   \caption{\textbf{PERT} de tareas de \textbf{análisis}} 
-  \label{Tab:PERTanal}
+  \label{Tab:tareas1}
 \end{table}
 
 \begin{table}[!h]
@@ -775,15 +760,15 @@ valor máximo (en la columna \textbf{M}) a partir de estos se calcula el valor
      \textbf{Actividad} & \textbf{PERT} & \textbf{Total} & \textbf{Libre}
     & \textbf{Indep.}\\
     \hline \hline
-    D3.1 & 3.13 & 0 & 0 & 0\\
+    I3.1 & 3.13 & 0 & 0 & 0\\
     \hline
-    D3.2 & 9.3 & 0 & 0 & 0\\
+    I3.2 & 9.3 & 0 & 0 & 0\\
     \hline
-    D3.3 & 10.6 & 1.93 & 1.93 & 1.93\\
+    I3.3 & 10.6 & 1.93 & 1.93 & 1.93\\
     \hline
-    D3.4 & 3.57 & 8.96 & 8.96 & 8.96\\
+    I3.4 & 3.57 & 8.96 & 8.96 & 8.96\\
     \hline
-    D3.5 & 5 & 7.53 & 7.53 & 7.53\\
+    I3.5 & 5 & 7.53 & 7.53 & 7.53\\
     \hline
   \end{tabular}
   \caption{\textbf{Holgura} de tareas de \textbf{implementación}}
@@ -797,20 +782,32 @@ valor máximo (en la columna \textbf{M}) a partir de estos se calcula el valor
      \textbf{Actividad} & \textbf{PERT} & \textbf{Total} & \textbf{Libre}
     & \textbf{Indep.}\\
     \hline \hline
-    D4.1 & 4 & 1.3 & 1.3 & 1.3\\
+    P4.1 & 4 & 1.3 & 1.3 & 1.3\\
     \hline
-    D4.2 & 4.57 & 0.73 & 0.73 & 0.73\\
+    P4.2 & 4.57 & 0.73 & 0.73 & 0.73\\
     \hline
-    D4.3 & 5.3 & 0 & 0 & 0\\
+    P4.3 & 5.3 & 0 & 0 & 0\\
     \hline
-    D4.4 & 2 & 0 & 0 & 0\\
+    P4.4 & 2 & 0 & 0 & 0\\
     \hline
   \end{tabular}
   \caption{\textbf{Holgura} de para tareas de \textbf{pruebas}}
   \label{Tab:hol4}
 \end{table}
 
-\section{Determinación de los tiempos críticos}
+\section{Determinación de los caminos críticos}
+
+Tras realizar la tabla de holguras y el grafo observamos que el camino está formado por las siguientes actividades:
+\begin{itemize}
+\item En la etapa de análisis: A1.1, A1.2, A1.4.1, A1.4.2, A1.4.3, A1.8, A4.3, A1.9
+
+\item En la etapa de diseño: D2.1, D2.3.1, D2.3.2, D2.3.3, D2.5, D2.9, D2.10 
+
+\item En la etapa de implementación: I3.1, I3.2
+
+\item En la etapa de pruebas: P4.3, P4.4
+
+\end{itemize}
 
 \chapter{Calendario}
 

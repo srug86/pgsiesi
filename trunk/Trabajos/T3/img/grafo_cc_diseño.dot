@@ -1,0 +1,26 @@
+digraph grafo_inicial {
+	rankdir = LR;
+	ast1 [label = "*", shape=plaintext]
+	ast2 [label = "*", shape=plaintext]
+	node [color=red style=bold]
+	8 9 10 12 14 15 16 17;
+	node [color=black]
+	11 13
+	node [shape = circle];
+	ast1 -> 8 [color=red];
+	8 -> 9 [color=red, label = "D2.1"];
+	9 -> 14 [label = "D2.2"];
+	9 -> 10 [color=red, label = "D2.3.1"];
+	10 -> 12 [color=red, label = "D2.3.2"];
+	12 -> 14 [color=red, label = "D2.3.3"];
+	9 -> 11 [label = "D2.4.1"];
+	11 -> 13 [label = "D2.4.2"];
+	13 -> 14 [label = "D2.4.3"];
+	14 -> 15 [color=red, label = "D2.5"];
+	15 -> 16 [label = "D2.6"];
+	15 -> 16 [label = "D2.7"];
+	15 -> 16 [label = "D2.8"];
+	15 -> 16 [color=red, label = "D2.9"];
+	16 -> 17 [color=red, label = "D2.10"];
+	17 -> ast2 [color=red];
+}

@@ -1,5 +1,5 @@
 digraph grafo_inicial {
-	rankdir = LR; node[style=rounded]
+	rankdir = LR; node[style="rounded,bold"]
 	ast1 [label = "*", shape=plaintext]
 	ast2 [label = "*", shape=plaintext]
 	8 [shape=record, label="{ 24'22 | 24'22 } | 8"];
@@ -14,19 +14,19 @@ digraph grafo_inicial {
 	17 [shape=record, label="{ 56'23 | 56'23 } | 17"];
 	node [shape = circle];
 	ast1 -> 8;
-	8 -> 9 [label = "D21 4'57"];
-	9 -> 14 [label = "D22 4'57"];
-	9 -> 10 [label = "D31 8'43"];
-	10 -> 12 [label = "D32 4'27"];
-	12 -> 14 [label = "D33 3'83"];
-	9 -> 11 [label = "D41 3'57"];
-	11 -> 13 [label = "D42 4'43"];
-	13 -> 14 [label = "D43 3'72"];
-	14 -> 15 [label = "D5 1'43"];
-	15 -> 16 [label = "D6 5'73"];
-	15 -> 16 [label = "D7 2'87"];
-	15 -> 16 [label = "D8 3'73"];
-	15 -> 16 [label = "D9 8'03"];
-	16 -> 17 [label = "D10 1'43"];
+	8 -> 9 [label = "4'57" + "\nD21"];
+	9 -> 14 [label = "4'57" + "\nD22"];
+	9 -> 10 [label = "8'43" + "\nD31"];
+	10 -> 12 [label = "4'27" + "\nD32"];
+	12 -> 14 [label = "3'83" + "\nD33"];
+	9 -> 11 [label = "3'57" + "\nD41"];
+	11 -> 13 [label = "4'43" + "\nD42"];
+	13 -> 14 [label = "3'72" + "\nD43"];
+	14 -> 15 [label = "1'43" + "\nD5"];
+	15 -> 16 [label = "5'73" + "\nD6"];
+	15 -> 16 [label = "2'87" + "\nD7"];
+	15 -> 16 [label = "3'73" + "\nD8"];
+	15 -> 16 [label = "8'03" + "\nD9"];
+	16 -> 17 [label = "1'43" + "\nD10"];
 	17 -> ast2;
 }

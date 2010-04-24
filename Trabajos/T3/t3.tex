@@ -69,19 +69,13 @@ Para la estimación de los tiempos PERT se aplica la técnica DELPHI, reuniendo
 a 5 expertos en el tema, de tal modo que por su nivel de formación y grado de
 conocimiento puedan aportar ideas y puntos de vistas diferentes al problema
 en cuestión, con el fin de obtener juicios coherentes y enriquecidos con
-respecto al problema. 
+respecto al problema. El criterio de convergencia utilizado es el dado, que
+consiste en que una votación de expertos se acepta como final cuando todas
+las valoraciones se encuentran en un rango acotado cuyo máximo corresponde
+con la media más 1'5
 \chapter{Técnica DELPHI}
 Mediante la técnica DELPHI se intenta obtener un consenso lo más fiable
-posible del grupo de expertos. Antes de empezar comenzar a fondo con la
-técnica DELPHI, en la tabla \ref{Tab:corr} se muestra la etapa a la que
-corresponde cada tarea, su nombre y su identificador.
-%\begin{table}[!h]
-%\centering
- % \begin{tabular}{|c|c|c|}
-  %  \hline
-   % \textbf{Etapa} & \textbf{Tarea} & \textbf{Identificador}
-   % \hline \hline
-   % \multirow{}{*}{} & & 1.1
+posible del grupo de expertos.
     
 \section{Tablas de tiempos DELPHI}
 
@@ -90,12 +84,8 @@ pueden observar la evolución seguida a la hora de calcular los tiempos
 DELPHI. Cada tabla contiene el identificador de cada tarea, la iteración en
 la que se encuentra, las valoraciones de los distintos expertos, así como los
 valores mínimo (que corresponde con el tiempo optimista), medio (que
-correspondeo con la media ponderada) y máximo( que es el tiempo pesimista de
+correspondeo con la media ponderada) y máximo (que es el tiempo pesimista de
 cada tarea), y finalmente, si se cumple el criterio de convergencia o no.
-
-En la tabla \ref{Tab:val} se muestran el tiempo más probable (la media
-ponderada), el tiempo optimista (mínimo significativo), y el tiempo pesimista
-(máximo significativo) de cada tarea.
 
 \begin{table}[!h]
 \centering
@@ -105,71 +95,71 @@ ponderada), el tiempo optimista (mínimo significativo), y el tiempo pesimista
     \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{m}
     &\textbf{$\bar{x}$} &\textbf{M} & \textbf{C}\\
     \hline \hline
-    \multirow{3}{*}{1.1} & 1 & 4 & 5 & 3 & 6 & 4 & 3 & 4.4 & 6 & N \\
-    & 2 & 4 & 5 & 3 & 4 & 5 & 3 & 4.2 & 5 & N\\
-    &\textbf{3} &\textbf {5} &\textbf {5} &\textbf {4} &\textbf {4} &\textbf{5} & \textbf{4} & \textbf{4.6} &\textbf{5} & \textbf{S}\\
+    \multirow{3}{*}{1.1} & 1 & 4 & 5 & 3 & 6 & 4 & 3 & 4'4 & 6 & N \\
+    & 2 & 4 & 5 & 3 & 4 & 5 & 3 & 4'2 & 5 & N\\
+    &\textbf{3} &\textbf {5} &\textbf {5} &\textbf {4} &\textbf {4} &\textbf{5} & \textbf{4} & \textbf{4'6} &\textbf{5} & \textbf{S}\\
     \hline
 
-    \multirow{3}{*}{1.2} & 1 & 5 & 5 & 4 & 7 & 5 & 4 & 5,2 & 7 & N\\
-    & 2 & 6 & 5 & 4 & 6 & 5 & 4 & 5.2 & 6 & N\\
+    \multirow{3}{*}{1.2} & 1 & 5 & 5 & 4 & 7 & 5 & 4 & 5'2 & 7 & N\\
+    & 2 & 6 & 5 & 4 & 6 & 5 & 4 & 5'2 & 6 & N\\
     &\textbf{3} & \textbf{6} & \textbf{5} & \textbf{4} & \textbf{6} &
     \textbf{4} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{S} \\    
     \hline
 
-    \multirow{5}{*}{1.3} & 1 & 2 & 3 & 10 & 3 & 5 & 2 & 4,6 & 10& N\\
-    & 2 & 2 & 3 & 8 & 3 & 5 & 2 & 4.2 & 8 & N \\
+    \multirow{5}{*}{1.3} & 1 & 2 & 3 & 10 & 3 & 5 & 2 & 4'6 & 10& N\\
+    & 2 & 2 & 3 & 8 & 3 & 5 & 2 & 4'2 & 8 & N \\
     & 3 & 3 & 3 & 6 & 3 & 5 & 3 & 4 & 6 & N \\
-    & 4 & 3 & 3 & 6 & 4 & 5 & 3 & 4.2 & 6 & N \\
+    & 4 & 3 & 3 & 6 & 4 & 5 & 3 & 4'2 & 6 & N \\
     & \textbf{5} & \textbf{3} & \textbf{3} & \textbf{5} & \textbf{4} & \textbf{5} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{S} \\
     \hline
 
     \multirow{7}{*}{1.4.1} & 1 & 2 & 4 & 7 & 4 & 3 & 2 & 4 & 7 & N\\
-    & 2 & 4 & 4 & 3 & 7 & 4 & 3 & 4.4 & 7 & N \\
-    & 3 & 4 & 4 & 4 & 7 & 5 & 4 & 4.8 & 7 & N \\
-    & 4 & 4 & 4 & 4 & 5 & 6 & 4 & 4.6 & 6 & N \\
-    & 5 & 4 & 5 & 4 & 5 & 6 & 4 & 4.8 & 6 & N \\
+    & 2 & 4 & 4 & 3 & 7 & 4 & 3 & 4'4 & 7 & N \\
+    & 3 & 4 & 4 & 4 & 7 & 5 & 4 & 4'8 & 7 & N \\
+    & 4 & 4 & 4 & 4 & 5 & 6 & 4 & 4'6 & 6 & N \\
+    & 5 & 4 & 5 & 4 & 5 & 6 & 4 & 4'8 & 6 & N \\
     & 6 & 4 & 6 & 5 & 5 & 5 & 4 & 5 & 6 & N \\
     & \textbf{7} & \textbf{5} & \textbf{5} & \textbf{5} & \textbf{5} & \textbf{5} & \textbf{5} & \textbf{5} & \textbf{5} & \textbf{S} \\
     \hline
 
-    \multirow{2}{*}{1.4.2} & 1 & 2 & 2 & 4 & 3 & 2 & 2 & 2,6 & 4 & N\\
-    & \textbf{2} & \textbf{2} & \textbf{2} & \textbf{3} & \textbf{3} & \textbf{2} & \textbf{2} & \textbf{2.4} & \textbf{3} & \textbf{S} \\
+    \multirow{2}{*}{1.4.2} & 1 & 2 & 2 & 4 & 3 & 2 & 2 & 2'6 & 4 & N\\
+    & \textbf{2} & \textbf{2} & \textbf{2} & \textbf{3} & \textbf{3} & \textbf{2} & \textbf{2} & \textbf{2'4} & \textbf{3} & \textbf{S} \\
     \hline
 
-    \multirow{3}{*}{1.4.3} & 1 & 2 & 2 & 2 & 2 & 1 & 1 & 1,8 & 2 & N\\
-    & 2 & 2 & 2 & 2 & 2 & 3 & 2 & 2.2 & 3 & N \\
+    \multirow{3}{*}{1.4.3} & 1 & 2 & 2 & 2 & 2 & 1 & 1 & 1'8 & 2 & N\\
+    & 2 & 2 & 2 & 2 & 2 & 3 & 2 & 2'2 & 3 & N \\
     & \textbf{3} & \textbf{2} & \textbf{2} & \textbf{2} & \textbf{2} & \textbf{2} & \textbf{2} & \textbf{2} & \textbf{2} & \textbf{S} \\
     \hline
 
-    \multirow{5}{*}{1.5} & 1 & 9 & 5 & 4 & 6 & 5 & 4 & 5.8 & 9 & N \\
-    & 2 & 8 & 5.5 & 4.5 & 6 & 5.5 & 4.5 & 5.9 & 8 & N \\
-    & 3 & 7.5 & 5.5 & 4.5 & 6 & 5.5 & 4.5 & 5.8 & 7.5 & N \\
-    & 4 & 5.5 & 6 & 5.5 & 6 & 5 & 5 & 5.6 & 6 & N \\
-    & \textbf{5} & \textbf{5.5} & \textbf{6} & \textbf{5.5} & \textbf{6} & \textbf{6} & \textbf{5.5} & \textbf{5.8} & \textbf{6} & \textbf{S} \\
+    \multirow{5}{*}{1.5} & 1 & 9 & 5 & 4 & 6 & 5 & 4 & 5'8 & 9 & N \\
+    & 2 & 8 & 5'5 & 4'5 & 6 & 5'5 & 4'5 & 5'9 & 8 & N \\
+    & 3 & 7'5 & 5'5 & 4'5 & 6 & 5'5 & 4'5 & 5'8 & 7'5 & N \\
+    & 4 & 5'5 & 6 & 5'5 & 6 & 5 & 5 & 5'6 & 6 & N \\
+    & \textbf{5} & \textbf{5'5} & \textbf{6} & \textbf{5'5} & \textbf{6} & \textbf{6} & \textbf{5'5} & \textbf{5'8} & \textbf{6} & \textbf{S} \\
     \hline
 
-    \multirow{5}{*}{1.6} & 1 & 4 & 10 & 2 & 3 & 5 & 2 & 4.8 & 10 & N \\
-    & 2 & 6 & 8 & 3 & 5 & 6 & 3 & 5.6 & 8 & N \\
-    & 3 & 5 & 8 & 3.5 & 5 & 6 & 3.5 & 5.5 & 8 & N \\
-    & 4 & 5 & 8 & 6 & 4 & 5.5 & 4 & 5.7 & 8 & N \\
-    & \textbf{5} & \textbf{5} & \textbf{7} & \textbf{6} & \textbf{4} & \textbf{5.5} & \textbf{4} & \textbf{5.5} & \textbf{7} & \textbf{S} \\
+    \multirow{5}{*}{1.6} & 1 & 4 & 10 & 2 & 3 & 5 & 2 & 4'8 & 10 & N \\
+    & 2 & 6 & 8 & 3 & 5 & 6 & 3 & 5'6 & 8 & N \\
+    & 3 & 5 & 8 & 3'5 & 5 & 6 & 3'5 & 5'5 & 8 & N \\
+    & 4 & 5 & 8 & 6 & 4 & 5'5 & 4 & 5'7 & 8 & N \\
+    & \textbf{5} & \textbf{5} & \textbf{7} & \textbf{6} & \textbf{4} & \textbf{5'5} & \textbf{4} & \textbf{5'5} & \textbf{7} & \textbf{S} \\
     \hline
 
-    \multirow{2}{*}{1.7} & 1 & 4 & 5 & 3 & 2 & 2 & 2 & 3.2 & 5 & N \\
-    & \textbf{2} & \textbf{4} & \textbf{4.5} & \textbf{4} & \textbf{2} & \textbf{2} & \textbf{2} & \textbf{3.3} & \textbf{4.5} & \textbf{S} \\
+    \multirow{2}{*}{1.7} & 1 & 4 & 5 & 3 & 2 & 2 & 2 & 3'2 & 5 & N \\
+    & \textbf{2} & \textbf{4} & \textbf{4'5} & \textbf{4} & \textbf{2} & \textbf{2} & \textbf{2} & \textbf{3'3} & \textbf{4'5} & \textbf{S} \\
     \hline
 
-    \multirow{11}{*}{1.8} & 1 & 4 & 3 & 6 & 3 & 2 & 2 & 3.6 & 6   & N \\
-    & 2 & 4 & 3   & 5.5 & 3   & 2.5 & 2.5 & 3.6 & 5.5 & N \\
-    & 3 & 4 & 3.5 & 5.5 & 3   & 2.5 & 2.5 & 3.7 & 5.5 & N \\
-    & 3 & 4 & 3.5 & 5.5 & 2.5 & 3   & 2.5 & 3.7 & 5.5 & N \\
-    & 5 & 4 & 3.5 & 5   & 2.5 & 3   & 2.5 & 3.6 & 5   & N \\
-    & 6 & 4 & 3.5 & 5   & 3   & 3   & 3   & 3.7 & 5   & N \\
+    \multirow{11}{*}{1.8} & 1 & 4 & 3 & 6 & 3 & 2 & 2 & 3'6 & 6   & N \\
+    & 2 & 4 & 3   & 5'5 & 3   & 2'5 & 2'5 & 3'6 & 5'5 & N \\
+    & 3 & 4 & 3'5 & 5'5 & 3   & 2'5 & 2'5 & 3'7 & 5'5 & N \\
+    & 3 & 4 & 3'5 & 5'5 & 2'5 & 3   & 2'5 & 3'7 & 5'5 & N \\
+    & 5 & 4 & 3'5 & 5   & 2'5 & 3   & 2'5 & 3'6 & 5   & N \\
+    & 6 & 4 & 3'5 & 5   & 3   & 3   & 3   & 3'7 & 5   & N \\
     & 7 & 4 & 3   & 5   & 4   & 4   & 3   & 4   & 5   & N \\
-    & 8 & 4 & 3.5 & 5   & 4   & 4   & 3.5 & 4.1 & 5   & N \\
-    & 9 & 4.5 & 4 & 5 & 4.5 & 4 & 4 & 4.4 & 5 & N \\
-    & 10 & 4 & 4 & 4.5 & 4 & 4 & 4 & 4.1 & 4.5 & N \\
-    & \textbf{11} & \textbf{4.5} & \textbf{4} & \textbf{4.5} & \textbf{4} & \textbf{4} & \textbf{4} & \textbf{4.2} & \textbf{4.5} & \textbf{S} \\
+    & 8 & 4 & 3'5 & 5   & 4   & 4   & 3'5 & 4'1 & 5   & N \\
+    & 9 & 4'5 & 4 & 5 & 4'5 & 4 & 4 & 4'4 & 5 & N \\
+    & 10 & 4 & 4 & 4'5 & 4 & 4 & 4 & 4'1 & 4'5 & N \\
+    & \textbf{11} & \textbf{4'5} & \textbf{4} & \textbf{4'5} & \textbf{4} & \textbf{4} & \textbf{4} & \textbf{4'2} & \textbf{4'5} & \textbf{S} \\
     \hline
 
     \textbf{1.9} & \textbf{1} & \textbf{1} & \textbf{1} & \textbf{1} & \textbf{1} & \textbf{1} & \textbf{1} & \textbf{1} & \textbf{1} & \textbf{S} \\
@@ -187,64 +177,64 @@ ponderada), el tiempo optimista (mínimo significativo), y el tiempo pesimista
     \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{m}
     &\textbf{$\bar{x}$} &\textbf{M} & \textbf{C}\\
     \hline \hline
-    \textbf{2.1} & \textbf{1} & \textbf{6} & \textbf{3} & \textbf{6} & \textbf{5} & \textbf{3} & \textbf{3} & \textbf{4.6} & \textbf{6} & \textbf{S}\\
+    \textbf{2.1} & \textbf{1} & \textbf{6} & \textbf{3} & \textbf{6} & \textbf{5} & \textbf{3} & \textbf{3} & \textbf{4'6} & \textbf{6} & \textbf{S}\\
     \hline
 
-    \textbf{2.2} & \textbf{1} & \textbf{6} & \textbf{6} & \textbf{7} & \textbf{2} & \textbf{2} & \textbf{2} & \textbf{4.6} & \textbf{7} & \textbf{S}\\
+    \textbf{2.2} & \textbf{1} & \textbf{6} & \textbf{6} & \textbf{7} & \textbf{2} & \textbf{2} & \textbf{2} & \textbf{4'6} & \textbf{7} & \textbf{S}\\
     \hline
 
-    \multirow{3}{*}{2.3.1}& 1 & 3 & 11 & 15 & 8 & 6 & 3 & 8.6 & 15 & N \\
-    & 2 & 3 & 11 & 14 & 8 & 8 & 3 & 8.8 & 14 & N \\
-    & \textbf{3} & \textbf{3} & \textbf{11} & \textbf{14} & \textbf{7} & \textbf{7} & \textbf{3} & \textbf{8.4} & \textbf{14} & \textbf{S} \\
+    \multirow{3}{*}{2.3.1}& 1 & 3 & 11 & 15 & 8 & 6 & 3 & 8'6 & 15 & N \\
+    & 2 & 3 & 11 & 14 & 8 & 8 & 3 & 8'8 & 14 & N \\
+    & \textbf{3} & \textbf{3} & \textbf{11} & \textbf{14} & \textbf{7} & \textbf{7} & \textbf{3} & \textbf{8'4} & \textbf{14} & \textbf{S} \\
     \hline
 
     \multirow{2}{*}{2.3.2} & 1 & 4 & 7 & 3 & 5 & 2 & 2 & 4.2 & 7 & N \\
-    & \textbf{2} & \textbf{5} & \textbf{6} & \textbf{3} & \textbf{6} & \textbf{2} & \textbf{2} & \textbf{4.4} & \textbf{6} & \textbf{S} \\
+    & \textbf{2} & \textbf{5} & \textbf{6} & \textbf{3} & \textbf{6} & \textbf{2} & \textbf{2} & \textbf{4'4} & \textbf{6} & \textbf{S} \\
     \hline
 
     \multirow{3}{*}{2.3.3}& 1 & 4 & 5 & 4 & 5 & 2 & 2 & 4 & 5 & N \\
-    & 2 & 3 & 5 & 4 & 5 & 2 & 2 & 3.8 & 5 & N \\
+    & 2 & 3 & 5 & 4 & 5 & 2 & 2 & 3'8 & 5 & N \\
     & \textbf{3} & \textbf{3} & \textbf{5} & \textbf{4} & \textbf{5} &
-    \textbf{2.5} & \textbf{2.5} & \textbf{3.9} & \textbf{5} & \textbf{S} \\
+    \textbf{2'5} & \textbf{2'5} & \textbf{3'9} & \textbf{5} & \textbf{S} \\
     \hline
 
-    \textbf{2.4.1} & \textbf{1} & \textbf{5} & \textbf{2} & \textbf{5} & \textbf{4} & \textbf{2} & \textbf{2} & \textbf{3.6} & \textbf{5} & \textbf{S} \\
+    \textbf{2.4.1} & \textbf{1} & \textbf{5} & \textbf{2} & \textbf{5} & \textbf{4} & \textbf{2} & \textbf{2} & \textbf{3'6} & \textbf{5} & \textbf{S} \\
     \hline
 
     \multirow{3}{*}{2.4.2}& 1 & 4 & 8 & 4 & 3 & 1 & 1 & 4 & 8 & N \\
-    & 2 & 5 & 7 & 5 & 3 & 1 & 1 & 4.2 & 7 & N \\
-    & \textbf{3} & \textbf{5} & \textbf{7} & \textbf{5} & \textbf{3} & \textbf{2} & \textbf{2} & \textbf{4.4} & \textbf{7} & \textbf{S} \\
+    & 2 & 5 & 7 & 5 & 3 & 1 & 1 & 4'2 & 7 & N \\
+    & \textbf{3} & \textbf{5} & \textbf{7} & \textbf{5} & \textbf{3} & \textbf{2} & \textbf{2} & \textbf{4'4} & \textbf{7} & \textbf{S} \\
     \hline
 
-    \multirow{4}{*}{2.4.3}& 1 & 5 & 3 & 4 & 1 & 3 & 1 & 3.2 & 5 & N \\
-    & 2 & 5 & 4 & 5 & 2 & 3 & 2 & 3.8 & 5 & N \\
-    & 3 & 4 & 4 & 5 & 2 & 3 & 2 & 3.6 & 5 & N \\
-    & \textbf{4} & \textbf{4} & \textbf{4} & \textbf{5} & \textbf{2.5} & \textbf{3} & \textbf{2.5} & \textbf{3.7} & \textbf{5} & \textbf{S} \\
+    \multirow{4}{*}{2.4.3}& 1 & 5 & 3 & 4 & 1 & 3 & 1 & 3'2 & 5 & N \\
+    & 2 & 5 & 4 & 5 & 2 & 3 & 2 & 3'8 & 5 & N \\
+    & 3 & 4 & 4 & 5 & 2 & 3 & 2 & 3'6 & 5 & N \\
+    & \textbf{4} & \textbf{4} & \textbf{4} & \textbf{5} & \textbf{2'5} & \textbf{3} & \textbf{2'5} & \textbf{3'7} & \textbf{5} & \textbf{S} \\
     \hline
 
-    \multirow{2}{*}{2.5}& 1 & 1 & 2 & 1 & 1 & 3 & 1 & 1.6 & 3 & N \\
-    & \textbf{2} & \textbf{1} & \textbf{2} & \textbf{1} & \textbf{1} & \textbf{2} & \textbf{1} & \textbf{1.4} & \textbf{2} & \textbf{S} \\
+    \multirow{2}{*}{2.5}& 1 & 1 & 2 & 1 & 1 & 3 & 1 & 1'6 & 3 & N \\
+    & \textbf{2} & \textbf{1} & \textbf{2} & \textbf{1} & \textbf{1} & \textbf{2} & \textbf{1} & \textbf{1'4} & \textbf{2} & \textbf{S} \\
     \hline
 
-    \multirow{3}{*}{2.6}& 1 & 4 & 12 & 5 & 4 & 3 & 3 & 5.6 & 12 & N \\
+    \multirow{3}{*}{2.6}& 1 & 4 & 12 & 5 & 4 & 3 & 3 & 5'6 & 12 & N \\
     & 2 & 4 & 11 & 8 & 4 & 3 & 3 & 6 & 11 & N \\
-    & \textbf{3} & \textbf{4} & \textbf{9} & \textbf{8} & \textbf{4} & \textbf{3} & \textbf{3} & \textbf{5.6} & \textbf{9} & \textbf{S} \\
+    & \textbf{3} & \textbf{4} & \textbf{9} & \textbf{8} & \textbf{4} & \textbf{3} & \textbf{3} & \textbf{5'6} & \textbf{9} & \textbf{S} \\
     \hline
 
     \multirow{2}{*}{2.7}& 1 & 2 & 4 & 2 & 2 & 5 & 2 & 3 & 5 & N \\
-    & \textbf{2} & \textbf{2} & \textbf{4} & \textbf{2} & \textbf{2} & \textbf{4} & \textbf{2} & \textbf{2.8} & \textbf{4} & \textbf{S} \\
+    & \textbf{2} & \textbf{2} & \textbf{4} & \textbf{2} & \textbf{2} & \textbf{4} & \textbf{2} & \textbf{2'8} & \textbf{4} & \textbf{S} \\
     \hline
 
-    \textbf{2.8} & \textbf{1} & \textbf{3} & \textbf{6} & \textbf{5} & \textbf{2} & \textbf{2} & \textbf{2} & \textbf{3.6} & \textbf{6} & \textbf{S} \\
+    \textbf{2.8} & \textbf{1} & \textbf{3} & \textbf{6} & \textbf{5} & \textbf{2} & \textbf{2} & \textbf{2} & \textbf{3'6} & \textbf{6} & \textbf{S} \\
     \hline
 
-    \multirow{4}{*}{2.9}& 1 & 4 & 20 & 3 & 4 & 3 & 3 & 6.8 & 20 & N \\
-    & 2 & 6 & 15 & 4 & 4 & 5 & 4 & 6.8 & 15 & N \\
-    & 3 & 6 & 13 & 6 & 6 & 8 & 6 & 7.8 & 13 & N \\
-    & \textbf{4} & \textbf{6} & \textbf{11} & \textbf{6} & \textbf{6} & \textbf{10} & \textbf{6} & \textbf{7.8} & \textbf{11} & \textbf{S} \\
+    \multirow{4}{*}{2.9}& 1 & 4 & 20 & 3 & 4 & 3 & 3 & 6'8 & 20 & N \\
+    & 2 & 6 & 15 & 4 & 4 & 5 & 4 & 6'8 & 15 & N \\
+    & 3 & 6 & 13 & 6 & 6 & 8 & 6 & 7'8 & 13 & N \\
+    & \textbf{4} & \textbf{6} & \textbf{11} & \textbf{6} & \textbf{6} & \textbf{10} & \textbf{6} & \textbf{7'8} & \textbf{11} & \textbf{S} \\
     \hline
 
-    \textbf{2.10} & \textbf{1} & \textbf{2} & \textbf{1} & \textbf{1} & \textbf{2} & \textbf{1} & \textbf{1} & \textbf{1.4} & \textbf{2} & \textbf{S} \\
+    \textbf{2.10} & \textbf{1} & \textbf{2} & \textbf{1} & \textbf{1} & \textbf{2} & \textbf{1} & \textbf{1} & \textbf{1'4} & \textbf{2} & \textbf{S} \\
     \hline
   \end{tabular}
   \caption{Resultados de la técnica DELPHI para las tareas de
@@ -259,21 +249,21 @@ ponderada), el tiempo optimista (mínimo significativo), y el tiempo pesimista
     \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{m}
     &\textbf{$\bar{x}$} &\textbf{M} & \textbf{C}\\    
     \hline \hline
-    \multirow{2}{*}{3.1}& 1 & 2 & 3 & 3 & 2 & 4 & 2 & 2.8 & 4 & N \\
-    & \textbf{2} & \textbf{2} & \textbf{4} & \textbf{4} & \textbf{2} & \textbf{4} & \textbf{2} & \textbf{3.2} & \textbf{4} & \textbf{S} \\
+    \multirow{2}{*}{3.1}& 1 & 2 & 3 & 3 & 2 & 4 & 2 & 2'8 & 4 & N \\
+    & \textbf{2} & \textbf{2} & \textbf{4} & \textbf{4} & \textbf{2} & \textbf{4} & \textbf{2} & \textbf{3'2} & \textbf{4} & \textbf{S} \\
     \hline
 
-    \textbf{3.2} & \textbf{1} & \textbf{14} & \textbf{8} & \textbf{7} & \textbf{5} & \textbf{12} & \textbf{5} & \textbf{9.2} & \textbf{14} & \textbf{S} \\
+    \textbf{3.2} & \textbf{1} & \textbf{14} & \textbf{8} & \textbf{7} & \textbf{5} & \textbf{12} & \textbf{5} & \textbf{9'2} & \textbf{14} & \textbf{S} \\
     \hline
 
-    \multirow{3}{*}{3.3}& 1 & 18 & 5 & 10 & 3 & 6 & 3 & 8.4 & 18 & N \\
+    \multirow{3}{*}{3.3}& 1 & 18 & 5 & 10 & 3 & 6 & 3 & 8'4 & 18 & N \\
     & 2 & 15 & 7 & 11 & 5 & 7 & 5 & 9 & 15 & N \\
-    & \textbf{3} & \textbf{15} & \textbf{9} & \textbf{13} & \textbf{7} & \textbf{8} & \textbf{7} & \textbf{10.4} & \textbf{15} & \textbf{S} \\
+    & \textbf{3} & \textbf{15} & \textbf{9} & \textbf{13} & \textbf{7} & \textbf{8} & \textbf{7} & \textbf{10'4} & \textbf{15} & \textbf{S} \\
     \hline
 
-    \multirow{3}{*}{3.4}& 1 & 7 & 3 & 2 & 2 & 3 & 2 & 3.4 & 7 & N \\
-    & 2 & 5 & 3 & 3 & 3 & 4 & 3 & 3.6 & 5 & N \\
-    & \textbf{3} & \textbf{4} & \textbf{3} & \textbf{4} & \textbf{3} & \textbf{4} & \textbf{3} & \textbf{3.6} & \textbf{4} & \textbf{S} \\
+    \multirow{3}{*}{3.4}& 1 & 7 & 3 & 2 & 2 & 3 & 2 & 3'4 & 7 & N \\
+    & 2 & 5 & 3 & 3 & 3 & 4 & 3 & 3'6 & 5 & N \\
+    & \textbf{3} & \textbf{4} & \textbf{3} & \textbf{4} & \textbf{3} & \textbf{4} & \textbf{3} & \textbf{3'6} & \textbf{4} & \textbf{S} \\
     \hline
 
     \textbf{3.5} & \textbf{1} & \textbf{7} & \textbf{3} & \textbf{6} & \textbf{5} & \textbf{4} & \textbf{3} & \textbf{5} &\textbf{7} & \textbf{S} \\
@@ -292,18 +282,18 @@ ponderada), el tiempo optimista (mínimo significativo), y el tiempo pesimista
     \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{m}
     &\textbf{$\bar{x}$} &\textbf{M} & \textbf{C}\\    
     \hline \hline
-    \multirow{4}{*}{4.1}& 1 & 5 & 3 & 4 & 2 & 4 & 2 & 3.6 & 5 & N \\
-    & 2 & 5 & 4 & 4 & 2.5 & 4 & 2.5 & 3.9 & 5 & N \\
+    \multirow{4}{*}{4.1}& 1 & 5 & 3 & 4 & 2 & 4 & 2 & 3'6 & 5 & N \\
+    & 2 & 5 & 4 & 4 & 2'5 & 4 & 2'5 & 3'9 & 5 & N \\
     & 3 & 5 & 4 & 4 & 3 & 4 & 3 & 4 & 5 & N \\
-    & \textbf{5} & \textbf{4.5} & \textbf{4.5} & \textbf{3.5} & \textbf{3.5} & \textbf{4} & \textbf{3.5} & \textbf{4} & \textbf{4.5} & \textbf{S} \\    
+    & \textbf{5} & \textbf{4'5} & \textbf{4'5} & \textbf{3'5} & \textbf{3'5} & \textbf{4} & \textbf{3'5} & \textbf{4} & \textbf{4'5} & \textbf{S} \\    
     \hline
     
     \multirow{2}{*}{4.2}& 1 & 5 & 7 & 5 & 3 & 3 & 3 & 4.6 & 7 & N \\
-    & \textbf{2} & \textbf{5} & \textbf{6} & \textbf{6} & \textbf{3} & \textbf{3} & \textbf{3} & \textbf{4.6} & \textbf{6} & \textbf{S} \\
+    & \textbf{2} & \textbf{5} & \textbf{6} & \textbf{6} & \textbf{3} & \textbf{3} & \textbf{3} & \textbf{4'6} & \textbf{6} & \textbf{S} \\
     \hline
     \multirow{3}{*}{4.3}& 1 & 6 & 4 & 10 & 3 & 3 & 3 & 5.2 & 10 & N \\
     & 2 & 6 & 4 & 8 & 3 & 4 & 3 & 5 & 8 & N \\
-    & \textbf{3} & \textbf{7} & \textbf{4} & \textbf{8} & \textbf{3} & \textbf{4} & \textbf{3} & \textbf{5.2} & \textbf{8} & \textbf{S} \\
+    & \textbf{3} & \textbf{7} & \textbf{4} & \textbf{8} & \textbf{3} & \textbf{4} & \textbf{3} & \textbf{5'2} & \textbf{8} & \textbf{S} \\
     \hline
     \textbf{4.4} & \textbf{1} & \textbf{3} & \textbf{2} & \textbf{1} & \textbf{3} & \textbf{1} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{S} \\
     \hline
@@ -324,7 +314,7 @@ tiempo mínimo, el medio y el máximo.
     \textbf{Id.} & \textbf{Tarea} & \textbf{Min} &
     \textbf{Med} & \textbf{Max}\\
     \hline \hline
-    1.1 & Definición del sistema & 4 & 4.6 & 5\\ 
+    1.1 & Definición del sistema & 4 & 4'6 & 5\\ 
     \hline
     1.2 & Establecimiento de requisitos & 4 & 5 & 6\\
     \hline
@@ -332,17 +322,17 @@ tiempo mínimo, el medio y el máximo.
     \hline
     1.4.1 & Elaboración del modelo conceptual y lógica de datos & 5 & 5 & 5\\
     \hline
-    1.4.2 & Normalización & 2 & 2.4 & 3 \\
+    1.4.2 & Normalización & 2 & 2'4 & 3 \\
     \hline
     1.4.3 & Especificación de necesidades de carga inicial & 2 & 2 & 2\\
     \hline
-    1.5 & Elaboración del modelo de procesos & 5.5 & 5.8 & 6\\
+    1.5 & Elaboración del modelo de procesos & 5'5 & 5'8 & 6\\
     \hline
-    1.6 & Definición de interfaz de usuario & 4 & 5.5 & 7\\
+    1.6 & Definición de interfaz de usuario & 4 & 5'5 & 7\\
     \hline
-    1.7 & Análisis de consistencia y especificación de requisitos & 2 & 3.3 & 4.5\\
+    1.7 & Análisis de consistencia y especificación de requisitos & 2 & 3'3 & 4.5\\
     \hline
-    1.8 & Especificación del plan de pruebas & 4 & 4.3 & 4.5\\
+    1.8 & Especificación del plan de pruebas & 4 & 4'3 & 4'5\\
     \hline
     1.9 & Aprobación del análisis del SI & 1 & 1 & 1\\
     \hline
@@ -357,35 +347,35 @@ tiempo mínimo, el medio y el máximo.
     \textbf{Id.} & \textbf{Tarea} & \textbf{Min} &
     \textbf{Med} & \textbf{Max}\\
     \hline
-    2.1 & Definición de la arquitectura del sistema & 3 & 4.6 & 6 \\
+    2.1 & Definición de la arquitectura del sistema & 3 & 4'6 & 6 \\
     \hline
-    2.2 & Diseño de arquitectura de soporte & 2 & 4.6 & 7 \\
+    2.2 & Diseño de arquitectura de soporte & 2 & 4'6 & 7 \\
     \hline
-    2.3.1 & Diseño de módulos del sistema & 3 & 8.4 & 14 \\
+    2.3.1 & Diseño de módulos del sistema & 3 & 8'4 & 14 \\
     \hline
-    2.3.2 & Diseño de comunicación entre módulos & 2 & 4.4 & 6 \\
+    2.3.2 & Diseño de comunicación entre módulos & 2 & 4'4 & 6 \\
     \hline
-    2.3.3 & Revisión de la interfaz de usuario &2.5 & 3.9 & 5 \\
+    2.3.3 & Revisión de la interfaz de usuario &2'5 & 3'9 & 5 \\
     \hline
-    2.4.1 & Diseño del modelo físico de datos & 2 & 3.6 & 5 \\
+    2.4.1 & Diseño del modelo físico de datos & 2 & 3'6 & 5 \\
     \hline
-    2.4.2 & Especificación de los caminos de acceso a los datos & 2 & 4.4 &
+    2.4.2 & Especificación de los caminos de acceso a los datos & 2 & 4'4 &
     7\\
     \hline
-    2.4.3 & Especificación de la distribución de datos & 2.5 & 3.7 & 5 \\
+    2.4.3 & Especificación de la distribución de datos & 2'5 & 3'7 & 5 \\
     \hline
-    2.5 & Verificación y aceptación de la arquitectura del sistema & 1 & 1.4
+    2.5 & Verificación y aceptación de la arquitectura del sistema & 1 & 1'4
     & 2 \\
     \hline
-    2.6 & Generación y especificación de construcción & 3 & 5.6 & 9 \\
+    2.6 & Generación y especificación de construcción & 3 & 5'6 & 9 \\
     \hline
-    2.7 & Diseño de migración y carga inicial de datos & 2 & 2.8 & 4 \\
+    2.7 & Diseño de migración y carga inicial de datos & 2 & 2'8 & 4 \\
     \hline
-    2.8 & Especificación técnica del plan de prueba & 2 & 3.6 & 6 \\
+    2.8 & Especificación técnica del plan de prueba & 2 & 3'6 & 6 \\
     \hline
-    2.9 & Establecimiento de requisitos de implantación & 6 & 7.8 & 11 \\
+    2.9 & Establecimiento de requisitos de implantación & 6 & 7'8 & 11 \\
     \hline
-    2.10 & Aprobación de diseño y SI & 1 & 1.4 & 2 \\
+    2.10 & Aprobación de diseño y SI & 1 & 1'4 & 2 \\
     \hline
   \end{tabular}
   \caption{Tabla resumen de tareas de diseño} \label{Tab:tareas2}
@@ -398,14 +388,14 @@ tiempo mínimo, el medio y el máximo.
     \textbf{Id.} & \textbf{Tarea} & \textbf{Min} &
     \textbf{Med} & \textbf{Max}\\
     \hline
-    3.1 & Preparación del entorno de generación y construcción & 2 & 3.2  & 4 \\
+    3.1 & Preparación del entorno de generación y construcción & 2 & 3'2  & 4 \\
     \hline
     3.2 & Generación del código de los componentes y los procedimientos & 5 &
-    9.2 & 14\\
+    9'2 & 14\\
     \hline
-    3.3 & Elaboración del manual de usuario & 7 & 10.4 & 15\\
+    3.3 & Elaboración del manual de usuario & 7 & 10'4 & 15\\
     \hline
-    3.4 & Definición de la formación de los usuarios finales & 3 & 3.6 & 4 \\
+    3.4 & Definición de la formación de los usuarios finales & 3 & 3'6 & 4 \\
     \hline
     3.5 & Construcción de los componentes y procedimientos de carga inicial
     de datos & 3 & 5 & 7\\
@@ -421,13 +411,13 @@ tiempo mínimo, el medio y el máximo.
     \textbf{Id.} & \textbf{Tarea} & \textbf{Min} &
     \textbf{Med} & \textbf{Max}\\
     \hline
-    4.1 & Ejecución de las pruebas unitarias & 3.5 & 4 & 4.5\\
+    4.1 & Ejecución de las pruebas unitarias & 3'5 & 4 & 4'5\\
     \hline
-    4.2 & Ejecución de las pruebas de integración & 3 & 4.6 & 6\\
+    4.2 & Ejecución de las pruebas de integración & 3 & 4'6 & 6\\
     \hline
-    4.3 & Ejecución de las pruebas del sistema & 3 & 5.2 & 8\\
+    4.3 & Ejecución de las pruebas del sistema & 3 & 5'2 & 8\\
     \hline
-    4.4 & Aprobación del SI & 3 & 5.2 & 8 \\
+    4.4 & Aprobación del SI & 3 & 5'2 & 8 \\
     \hline
   \end{tabular}
   \caption{Tabla resumen de tareas de Pruebas} \label{Tab:tareas4}

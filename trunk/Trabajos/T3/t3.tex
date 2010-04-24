@@ -427,6 +427,136 @@ tiempo mínimo, el medio y el máximo.
 \chapter{Técnica PERT}
 
 \section{Cálculos de los tiempos PERT}
+
+\begin{table}[!h]
+\centering
+  \begin{tabular}{|p{0.8cm}||p{4cm}||p{0.75cm}|p{0.75cm}|p{0.75cm}|p{1.10cm}|
+p{0.75cm}|}
+    \hline
+    \textbf{Id.} & \textbf{Tarea} & \textbf{Min} &
+    \textbf{Med} & \textbf{Max} & \textbf{PERT} & \textbf{Var}\\
+    \hline \hline
+    1.1 & Definición del sistema & 4 & 4.6 & 5 & 4.57 & 0.17\\ 
+    \hline
+    1.2 & Establecimiento de requisitos & 4 & 5 & 6 & 5 & 0.33\\
+    \hline 
+    1.3 & Identificación de subsistemas & 3 & 4 & 5 & 4 & 0.33\\
+    \hline
+    1.4.1 & Elaboración del modelo conceptual y lógica de datos & 5 & 5 & 5 &
+    5 & 0\\
+    \hline
+    1.4.2 & Normalización & 2 & 2.4 & 3 & 2.43 & 0.17\\
+    \hline
+    1.4.3 & Especificación de necesidades de carga inicial & 2 & 2 & 2 & 2 & 0\\
+    \hline
+    1.5 & Elaboración del modelo de procesos & 5.5 & 5.8 & 6 & 5.78 & 0.08\\
+    \hline
+    1.6 & Definición de interfaz de usuario & 4 & 5.5 & 7 & 5.5 & 0.5\\
+    \hline
+    1.7 & Análisis de consistencia y especificación de requisitos & 2 & 3.3
+    & 4.5 & 3.28 & 0.42\\
+    \hline
+    1.8 & Especificación del plan de pruebas & 4 & 4.3 & 4.5 & 4.22 & 0.08\\
+    \hline
+    1.9 & Aprobación del análisis del SI & 1 & 1 & 1 & 1 & 0\\
+    \hline
+  \end{tabular}
+  \caption{Tabla tiempos PERT para tareas de Análisis} \label{Tab:tareas1}
+\end{table}
+
+\begin{table}[!h]
+\centering
+  \begin{tabular}{|p{0.8cm}||p{4cm}||p{0.75cm}|p{0.75cm}|p{0.75cm}|p{1.10cm}|
+p{0.75cm}|}
+    \hline
+    \textbf{Id.} & \textbf{Tarea} & \textbf{Min} &
+    \textbf{Med} & \textbf{Max} & \textbf{PERT} & \textbf{Var}\\
+    \hline
+    2.1 & Definición de la arquitectura del sistema & 3 & 4.6 & 6 & 4.57 & 0.5\\
+    \hline
+    2.2 & Diseño de arquitectura de soporte & 2 & 4.6 & 7 & 4.57 & 0.83\\
+    \hline
+    2.3.1 & Diseño de módulos del sistema & 3 & 8.4 & 14 & 8.43 & 1.83\\
+    \hline
+    2.3.2 & Diseño de comunicación entre módulos & 2 & 4.4 & 6 & 4.27 & 0.67\\
+    \hline
+    2.3.3 & Revisión de la interfaz de usuario &2.5 & 3.9 & 5 & 3.85 & 0.42\\
+    \hline
+    2.4.1 & Diseño del modelo físico de datos & 2 & 3.6 & 5 & 3.57 & 0.5\\
+    \hline
+    2.4.2 & Especificación de los caminos de acceso a los datos & 2 & 4.4 &
+    7 & 4.43 & 0.83\\
+    \hline
+    2.4.3 & Especificación de la distribución de datos & 2.5 & 3.7 & 5 & 3.72
+    & 0.42\\
+    \hline
+    2.5 & Verificación y aceptación de la arquitectura del sistema & 1 & 1.4
+    & 2 & 1.43 & 0.17\\
+    \hline
+    2.6 & Generación y especificación de construcción & 3 & 5.6 & 9 & 5.73 & 1\\
+    \hline
+    2.7 & Diseño de migración y carga inicial de datos & 2 & 2.8 & 4 & 2.87 &
+    0.33\\
+    \hline
+    2.8 & Especificación técnica del plan de prueba & 2 & 3.6 & 6 & 3.73 &
+    0.67 \\
+    \hline
+    2.9 & Establecimiento de requisitos de implantación & 6 & 7.8 & 11 & 8.03
+    & 0.83\\
+    \hline
+    2.10 & Aprobación de diseño y SI & 1 & 1.4 & 2 & 1.43 & 0.17\\
+    \hline
+  \end{tabular}
+  \caption{Tabla de tiempos PERT para tareas de diseño} \label{Tab:tareas2}
+\end{table}
+
+\begin{table}[!h]
+\centering
+  \begin{tabular}{|p{0.8cm}||p{4cm}||p{0.75cm}|p{0.75cm}|p{0.75cm}|p{1.10cm}|
+p{0.75cm}|}
+    \hline
+    \textbf{Id.} & \textbf{Tarea} & \textbf{Min} &
+    \textbf{Med} & \textbf{Max} & \textbf{PERT} & \textbf{Var}\\
+    \hline
+    3.1 & Preparación del entorno de generación y construcción & 2 & 3.2  & 4
+    & 3.13 & 0.33\\
+    \hline
+    3.2 & Generación del código de los componentes y los procedimientos & 5 &
+    9.2 & 14 & 9.3 & 1.5\\
+    \hline
+    3.3 & Elaboración del manual de usuario & 7 & 10.4 & 15 & 10.6 & 1.33\\
+    \hline
+    3.4 & Definición de la formación de los usuarios finales & 3 & 3.6 & 4
+    &3.57 & 0.17\\
+    \hline
+    3.5 & Construcción de los componentes y procedimientos de carga inicial
+    de datos & 3 & 5 & 7 & 5 & 0.67\\
+    \hline
+  \end{tabular}
+  \caption{Tabla de tiempos PERT para tareas de
+    Implementación} \label{Tab:tareas3}
+\end{table}
+
+\begin{table}[!h]
+\centering
+  \begin{tabular}{|p{0.8cm}||p{4cm}||p{0.75cm}|p{0.75cm}|p{0.75cm}|p{1.10cm}|
+p{0.75cm}|}
+    \hline
+    \textbf{Id.} & \textbf{Tarea} & \textbf{Min} &
+    \textbf{Med} & \textbf{Max} & \textbf{PERT} & \textbf{Var}\\
+    \hline
+    4.1 & Ejecución de las pruebas unitarias & 3.5 & 4 & 4.5 & 4 & 0.17\\
+    \hline
+    4.2 & Ejecución de las pruebas de integración & 3 & 4.6 & 6 & 4.57 & 0.5\\
+    \hline
+    4.3 & Ejecución de las pruebas del sistema & 3 & 5.2 & 8 & 5.3 & 0.83\\
+    \hline
+    4.4 & Aprobación del SI & 1 & 2 & 3 & 2 & 0.33\\
+    \hline
+  \end{tabular}
+  \caption{Tabla de tiempos PERT para tareas de Pruebas} \label{Tab:tareas4}
+\end{table}
+
 \section{Cálculos de tiempos early y late}
 \section{Cálculo de las holguras}
 \section{Determinación de los tiempos críticos}

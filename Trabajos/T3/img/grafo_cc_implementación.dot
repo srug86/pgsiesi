@@ -2,12 +2,12 @@ digraph grafo_inicial {
 	rankdir = LR;
 	ast1 [label = "*", shape=plaintext]
 	ast2 [label = "*", shape=plaintext]
-	node [shape = circle style=bold];
-	ast1 -> 17;
-	17 -> 18 [label = "I3.1"];
-	18 -> 19 [label = "I3.2"];
+	node [shape = circle color=red style=bold];
+	ast1 -> 17 [color=red];
+	17 -> 18 [color=red, label = "I3.1"];
+	18 -> 19 [color=red, label = "I3.2"];
 	17 -> 19 [label = "I3.3"];
 	17 -> 19 [label = "I3.4"];
 	17 -> 19 [label = "I3.5"];
-	19 -> ast2;
+	19 -> ast2 [color=red];
 }

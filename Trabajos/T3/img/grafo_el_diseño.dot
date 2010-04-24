@@ -1,0 +1,32 @@
+digraph grafo_inicial {
+	rankdir = LR; node[style=rounded]
+	ast1 [label = "*", shape=plaintext]
+	ast2 [label = "*", shape=plaintext]
+	8 [shape=record, label="{ 24'22 | 24'22 } | 8"];
+	9 [shape=record, label="{ 28'79 | 28'79 } | 9"];
+	10 [shape=record, label="{ 37'22 | 37'22 } | 10"];
+	11 [shape=record, label="{ 32'36 | 37'19 } | 11"];
+	12 [shape=record, label="{ 41'49 | 41'49 } | 12"];
+	13 [shape=record, label="{ 36'79 | 41'62 } | 13"];
+	14 [shape=record, label="{ 45'34 | 45'34 } | 14"];
+	15 [shape=record, label="{ 46'77 | 46'77 } | 15"];
+	16 [shape=record, label="{ 54'8 | 54'8 } | 16"];
+	17 [shape=record, label="{ 56'23 | 56'23 } | 17"];
+	node [shape = circle];
+	ast1 -> 8;
+	8 -> 9 [label = "D21 4'57"];
+	9 -> 14 [label = "D22 4'57"];
+	9 -> 10 [label = "D31 8'43"];
+	10 -> 12 [label = "D32 4'27"];
+	12 -> 14 [label = "D33 3'83"];
+	9 -> 11 [label = "D41 3'57"];
+	11 -> 13 [label = "D42 4'43"];
+	13 -> 14 [label = "D43 3'72"];
+	14 -> 15 [label = "D5 1'43"];
+	15 -> 16 [label = "D6 5'73"];
+	15 -> 16 [label = "D7 2'87"];
+	15 -> 16 [label = "D8 3'73"];
+	15 -> 16 [label = "D9 8'03"];
+	16 -> 17 [label = "D10 1'43"];
+	17 -> ast2;
+}

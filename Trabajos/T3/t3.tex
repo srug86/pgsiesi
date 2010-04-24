@@ -67,21 +67,24 @@ en cuestión, con el fin de obtener juicios coherentes y enriquecidos con
 respecto al problema. El criterio de convergencia utilizado es el dado, que
 consiste en que una votación de expertos se acepta como final cuando todas
 las valoraciones se encuentran en un rango acotado cuyo máximo corresponde
-con la media más 1'5
+con la media más 1'5.
 
 \chapter{Técnica DELPHI}
 Mediante la técnica DELPHI se intenta obtener un consenso lo más fiable
 posible del grupo de expertos.
     
 \section{Tablas de tiempos DELPHI}
-En las tablas \ref{Tab:DELPHIana}, \ref{Tab:DELPHIdis},\ref{Tab:DELPHIimp} y
+En las tablas \ref{Tab:DELPHIanal}, \ref{Tab:DELPHIdis},\ref{Tab:DELPHIimp} y
 \ref{Tab:DELPHIpru} se
 pueden observar la evolución seguida a la hora de calcular los tiempos
-DELPHI. Cada tabla contiene el identificador de cada tarea, la iteración en
-la que se encuentra, las valoraciones de los distintos expertos, así como los
-valores mínimo (que corresponde con el tiempo optimista), medio (que
-correspondeo con la media ponderada) y máximo (que es el tiempo pesimista de
-cada tarea), y finalmente, si se cumple el criterio de convergencia o no.
+DELPHI. Cada tabla contiene el identificador de cada tarea (expresado en la
+columna \textbf{T}), la iteración en
+la que se encuentra (columna \textbf{I}), las valoraciones de los distintos
+expertos (columnas \textbf{1}, \textbf{2}, \textbf{3}, \textbf{4} y \textbf{5}, correspondiendo con los cinco expertos), así como los
+valores mínimo (que corresponde con el tiempo optimista, en la columna \textbf{m}), medio (que
+correspondeo con la media ponderada, en la columna \textbf{$\bar{x}$} ) y máximo (que es el tiempo pesimista de
+cada tarea, en la columna \textbf{M}), y finalmente, si se cumple el criterio de
+convergencia o no (columna \textbf{C}).
 
 \begin{table}[!h]
 \centering
@@ -182,7 +185,7 @@ cada tarea), y finalmente, si se cumple el criterio de convergencia o no.
     \hline
   \end{tabular}
   \caption{\textbf{DELPHI} de tareas de \textbf{análisis}} 
-  \label{Tab:DELPHIana}
+  \label{Tab:DELPHIanal}
 \end{table}
 
 \begin{table}[!h]
@@ -492,7 +495,19 @@ tiempo mínimo, el medio y el máximo.
 
 
 \chapter{Técnica PERT}
+El uso de la técina PERT permite realizar una estimación sobre la duración
+total del proyecto, a través de la estimación media de la duración de las
+actividades individualmente.
 \section{Cálculos de los tiempos PERT}
+En las tablas \ref{Tab:PERTanal}, \ref{Tab:PERTdis}, \ref{Tab:PERTimp} y
+\ref{Tab:PERTpru} se muestran los valores necesarios de DELPHI para calcular
+el tiempo PERT de cada tarea, estos son el valor mínimo (representado en la
+columna \textbf{m}), el valor medio (en la columna \textbf{$\bar{x}$}) y el
+valor máximo (en la columna \textbf{M}) a partir de estos se calcula el valor
+\textbf{PERT} usando la fórmula: \begin{displaymath} \frac{M +  
+4\overline{x} + m}{6} \end{displaymath} También se calcula la varianza
+(\textbf{Var}) a partir de los valores DELPHI, siguiendo la esta otra fórmula:
+{\begin{displaymath} \frac{M-m}{6} \end{displaymath}
 
 \begin{table}[!h]
   \centering
@@ -527,7 +542,7 @@ tiempo mínimo, el medio y el máximo.
     \hline
   \end{tabular}
   \caption{\textbf{PERT} de tareas de \textbf{análisis}} 
-  \label{Tab:tareas1}
+  \label{Tab:PERTanal}
 \end{table}
 
 \begin{table}[!h]

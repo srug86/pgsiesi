@@ -3,20 +3,20 @@ digraph grafo_inicial {
 	ast1 [label = "*", shape=plaintext]
 	ast2 [label = "*", shape=plaintext]
 	node [shape = circle];
-	ast1 -> 9;
-	9 -> 10 [label = "D21"];
-	10 -> 15 [label = "D22"];
-	10 -> 11 [label = "D31"];
-	11 -> 13 [label = "D32"];
-	13 -> 15 [label = "D33"];
-	10 -> 12 [label = "D41"];
-	12 -> 14 [label = "D42"];
-	14 -> 15 [label = "D43"];
-	15 -> 16 [label = "D5"];
-	16 -> 17 [label = "D6"];
-	16 -> 17 [label = "D7"];
-	16 -> 17 [label = "D8"];
-	16 -> 17 [label = "D9"];
-	17 -> 18 [label = "D10"];
-	18 -> ast2;
+	ast1 -> 8;
+	8 -> 9 [label = "D21"];
+	9 -> 14 [label = "D22"];
+	9 -> 10 [label = "D31"];
+	10 -> 12 [label = "D32"];
+	12 -> 14 [label = "D33"];
+	9 -> 11 [label = "D41"];
+	11 -> 13 [label = "D42"];
+	13 -> 14 [label = "D43"];
+	14 -> 15 [label = "D5"];
+	15 -> 16 [label = "D6"];
+	15 -> 16 [label = "D7"];
+	15 -> 16 [label = "D8"];
+	15 -> 16 [label = "D9"];
+	16 -> 17 [label = "D10"];
+	17 -> ast2;
 }

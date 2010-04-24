@@ -810,93 +810,128 @@ Tras realizar la tabla de holguras y el grafo observamos que el camino está for
 \end{itemize}
 
 \chapter{Calendario}
-
+\section{Tabla de tiempos de comienzo y finalizacion}
 \begin{table}[!h]
 \centering
    \begin{tabular}{|p{0.8cm}||p{5cm}||p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
      \hline
-     \textbf{Id.} & \textbf{Tarea} & \textbf{TIE} & \textbf{TIL} &
-     \textbf{TFE} & \textbf{TFL}\\
+     \textbf{Id.} & \textbf{Tarea} & \textbf{FCE} & \textbf{FCL} &
+     \textbf{FFE} & \textbf{FFL}\\
      \hline
-      1.1 & Definición del sistema  &  &  &  &  \\
+      1.1 & Definición del sistema & 0 & 0 & 4,57 & 4,57 \\
       \hline
-      1.2 & Establecimiento de requisitos  &  &  &  &  \\
+      1.2 & Establecimiento de requisitos & 4,57 & 4,57 & 9,57  & 9,57 \\
       \hline
-      1.3 & Identificación de subsistemas  &  &  &  &  \\
+      1.3 & Identificación de subsistemas  & 9,57 & 15 & 13,57 & 19 \\
       \hline
-      1.4.1 & Elaboración del modelo conceptual y lógica de datos &  &  &  &  \\
+      1.4.1 & Elaboración del modelo conceptual y lógica de datos & 9,57 & 9,57 & 14,57 & 14,57 \\
       \hline
-      1.4.2 & Normalización  &  &  &  &  \\
+      1.4.2 & Normalización  & 14,57 & 14,57 & 17 & 17 \\
       \hline
-      1.4.3 & Especificación de necesidades de carga inicial  &  &  &  &  \\
+      1.4.3 & Especificación de necesidades de carga inicial  & 17 & 17 & 19 & 19 \\
       \hline
-      1.5 & Elaboración del modelo de procesos  &  &  &  &  \\
+      1.5 & Elaboración del modelo de procesos & 9,57  & 13,22 & 15,35 & 19 \\
       \hline
-      1.6 & Definición de interfaz de usuario  &  &  &  &  \\
+      1.6 & Definición de interfaz de usuario  & 9,57 & 13,5 & 15,07 & 19 \\
       \hline
-      1.7 & Análisis de consistencia y especificación de requisitos & & & &\\
+      1.7 & Análisis de consistencia y especificación de requisitos & 19 & 19,94 & 22,55 & 23,22\\
       \hline
-      1.8 & Especificación del plan de pruebas &  &  &  &\\
+      1.8 & Especificación del plan de pruebas & 19 & 19 & 23,22 & 23,22\\
       \hline
-      1.9 & Aprobación del análisis del SI &  &  &  &  \\
+      1.9 & Aprobación del análisis del SI & 23,22 & 23,22 & 24,22 & 24,22 \\
       \hline \hline
 
-      2.1 & Definición de la arquitectura del sistema &  &  &  &  \\
+      2.1 & Definición de la arquitectura del sistema & 24,22 & 24,22 & 28,79 & 28,79 \\
       \hline
-      2.2 & Diseño de arquitectura de soporte &  &  &  &  \\
+      2.2 & Diseño de arquitectura de soporte & 28,79 & 40,77 & 33,36 & 45,34 \\
       \hline
-      2.3.1 & Diseño de módulos del sistema  &  &  &  &  \\
+      2.3.1 & Diseño de módulos del sistema  & 28,79 & 28,79 & 37,22 & 37,22 \\
       \hline
-      2.3.2 & Diseño de comunicación entre módulos  &  &  &  &  \\
+      2.3.2 & Diseño de comunicación entre módulos & 37,22 & 37,22 & 41,49  & 41,49  \\
       \hline
-      2.3.3 & Revisión de la interfaz de usuario  &  &  &  &  \\
+      2.3.3 & Revisión de la interfaz de usuario  & 41,49 & 41,49 & 45,34 & 45,34 \\
       \hline
-      2.4.1 & Diseño del modelo físico de datos  &  &  &  &  \\
+      2.4.1 & Diseño del modelo físico de datos  & 28,79 & 33,65 & 32,36 & 37,19 \\
       \hline
-      2.4.2 & Especificación de los caminos de acceso a los datos &  &  &  &  \\
+      2.4.2 & Especificación de los caminos de acceso a los datos & 32,36 &37,19  & 36,79  & 41,62 \\
       \hline
-      2.4.3 & Especificación de la distribución de datos  &  &  &  &  \\
+      2.4.3 & Especificación de la distribución de datos  & 36,79 & 41,62 &45,34  & 45,34 \\
       \hline
-      2.5 & Verificación y aceptación de la arquitectura del sistema  &  &  &  &  \\
+      2.5 & Verificación y aceptación de la arquitectura del sistema & 45,34 & 45,34 & 46,67 & 46,77 \\
       \hline
-      2.6 & Generación y especificación de construcción &  &  &  &  \\
+      2.6 & Generación y especificación de construcción & 46,77 & 49,07 & 52,5 & 54,8 \\
       \hline
-      2.7 & Diseño de migración y carga inicial de datos &  &  &  &  \\
+      2.7 & Diseño de migración y carga inicial de datos & 46,77 & 51,93 & 49,64 & 54,8 \\
       \hline
-      2.8 & Especificación técnica del plan de prueba &  &  &  &  \\
+      2.8 & Especificación técnica del plan de prueba & 46,77 & 51,07 & 50,5 & 54,8 \\
       \hline
-      2.9 & Establecimiento de requisitos de implantación &  &  &  &  \\
+      2.9 & Establecimiento de requisitos de implantación & 46,77 & 46,77 &54,8 & 54,8 \\
       \hline
-      2.10 & Aprobación de diseño y SI &  &  &  &  \\
+      2.10 & Aprobación de diseño y SI & 54,8 & 54,8 & 56,23 & 56,23\\
       \hline \hline
 
-      3.1 & Preparación del entorno de generación y construcción & & & &\\
+      3.1 & Preparación del entorno de generación y construcción & 56,23 & 56,23 & 59,36 & 59,36\\
       \hline
-      3.2 & Generación del código de los componentes y los procedimientos K & & & &\\
+      3.2 & Generación del código de los componentes y los procedimientos &59,36 & 59,36 & 68,66 & 68,66\\
       \hline
-      3.3 & Elaboración del manual de usuario & & & &\\
+      3.3 & Elaboración del manual de usuario & 56,23 & 58,16 & 66,83 & 68,66\\
       \hline
-      3.4 & Definición de la formación de los usuarios finales & & & &\\
+      3.4 & Definición de la formación de los usuarios finales & 56,23 & 65,19 & 59,8 & 68,66\\
       \hline
       3.5 & Construcción de los componentes y procedimientos de carga inicial
-      de datos &  &  &  & \\
+      de datos & 56,23 & 63,76 & 61,23 & 68,66\\
       \hline \hline
 
-      4.1 & Ejecución de las pruebas unitarias &  &  &  &\\
+      4.1 & Ejecución de las pruebas unitarias & 68,66 & 69,96 & 72,66 & 73,96\\
       \hline
-      4.2 & Ejecución de las pruebas de integración &  &  &  & \\
+      4.2 & Ejecución de las pruebas de integración & 68,66 & 69,39 & 73,23 & 73,96\\
       \hline
-      4.3 & Ejecución de las pruebas del sistema &  &  &  &\\
+      4.3 & Ejecución de las pruebas del sistema & 68,66 & 68,66 & 73,96 & 73,96 \\
       \hline
-      4.4 & Aprobación del SI &  &  &  &\\
+      4.4 & Aprobación del SI & 73,96 & 73,96 & 75,96 & 75,96\\
       \end{tabular}
       \caption{Calendario ed tareas} \label{Tab:cal}
 \end{table}
-
-      
-
-\section{Tabla de tiempos de comienzo y finalizacion}
 \section{Tabla de dependencias}
+\begin{table}[!h]
+\centering
+\small
+  \begin{tabular}{l|l}
+    \textbf{Actividad} & \textbf{Precedentes}\\
+    \hline \hline
+    A1.1 & - \\
+    \hline
+    A1.2 & A1.1 \\
+    \hline
+    A1.3 & A1.2 \\
+    \hline
+    A1.4.1 & A1.2 \\
+    \hline
+    A1.4.2 & A1.4.1 \\
+    \hline
+    A1.4.3 & A1.4.2\\
+    \hline
+    A1.5 & A1.2 \\
+    \hline
+    A1.6 & A1.2\\
+    \hline
+    A1.7 & A1.3, A1.4.3, A1.5, A1.6\\
+    \hline
+    A1.8 & A1.3, A1.4.3, A1.5, A1.6\\
+    \hline
+    A1.9 & A1.7, A1.8\\
+    \hline
+    D2.1 & A1.9 \\
+    \hline
+    D2.2 & D2.1 \\
+    \hline
+    D2.3.1 & D2.1 \\
+    \hline
+    
+    
+  \end{tabular}
+  \caption{Dependencias entre tareas} \label{Tab:Dep}
+\end{table}
 \section{Grafo de actividades}
 
 

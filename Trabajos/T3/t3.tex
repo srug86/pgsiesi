@@ -61,7 +61,7 @@ total del proyecto a partir de las actividades, su secuencia y la estimación
 ponderada de la duración media de estas. 
 
 Para la estimación de los tiempos PERT se aplica la técnica DELPHI, reuniendo
-a 5 expertos en sistemas de información, de tal modo que por su nivel de
+a cinco expertos en sistemas de información, de tal modo que por su nivel de
 formación y grado de 
 conocimiento puedan aportar ideas y puntos de vistas diferentes al problema
 en cuestión, con el fin de obtener juicios coherentes y enriquecidos con
@@ -82,7 +82,7 @@ puede observar la evolución seguida a la hora de calcular los tiempos
 DELPHI. Cada tabla contiene el identificador de cada tarea, la iteración en
 la que se encuentra, las valoraciones de los distintos expertos, así como los
 valores mínimo (que corresponde con el tiempo optimista), medio (que
-correspondeo con la media aritmética) y máximo (que es el tiempo pesimista de
+corresponde con la media aritmética) y máximo (que es el tiempo pesimista de
 cada tarea), y finalmente, si se cumple el criterio de convergencia o no.
 
 \begin{table}[!h]
@@ -404,7 +404,7 @@ tiempo mínimo, el medio y el máximo.
     1.9 & Aprobación del análisis del SI & 1 & 1 & 1\\
     \hline
   \end{tabular}
-  \caption{Resumen: \textbf{DELPHI} de tareas de \textbf{análisis}}
+  \caption{Resumen \textbf{DELPHI} de tareas de \textbf{análisis}}
   \label{Tab:rDELPHIana}
 \end{table}
 
@@ -445,7 +445,7 @@ tiempo mínimo, el medio y el máximo.
     2.10 & Aprobación de diseño y SI & 1 & 1'4 & 2 \\
     \hline
   \end{tabular}
-  \caption{Resumen: \textbf{DELPHI} de tareas de \textbf{diseño}}
+  \caption{Resumen \textbf{DELPHI} de tareas de \textbf{diseño}}
   \label{Tab:rDELPHIdis}
 \end{table}
 
@@ -469,7 +469,7 @@ tiempo mínimo, el medio y el máximo.
     de datos & 3 & 5 & 7\\
     \hline
   \end{tabular}
-  \caption{Resumen: \textbf{DELPHI} de tareas de \textbf{implementación}}
+  \caption{Resumen \textbf{DELPHI} de tareas de \textbf{implementación}}
   \label{Tab:rDELPHIimp}
 \end{table}
 
@@ -489,7 +489,7 @@ tiempo mínimo, el medio y el máximo.
     4.4 & Aprobación del SI & 1 & 2 & 3 \\
     \hline
   \end{tabular}
-  \caption{Resumen: \textbf{DELPHI} de tareas de \textbf{pruebas}}
+  \caption{Resumen \textbf{DELPHI} de tareas de \textbf{pruebas}}
   \label{Tab:rDELPHIpru}
 \end{table}
 
@@ -631,7 +631,7 @@ actividades, el tiempo PERT y varianza.
     4.4 & Aprobación del SI & 1 & 2 & 3 & 2 & 0.33\\
     \hline
   \end{tabular}
-  \caption{\textbf{PERT} de para tareas de \textbf{pruebas}}
+  \caption{\textbf{PERT} para tareas de \textbf{pruebas}}
   \label{Tab:PERTpru}
 \end{table}
 
@@ -824,11 +824,10 @@ libre y la holgura independiente.
 Tras realizar la tabla de holguras y el grafo observamos que el camino está
 formado por las siguientes actividades:
 \begin{itemize}
-\item En la etapa de análisis: A1.1, A1.2, A1.4.1, A1.4.2, A1.4.3, A1.8,
-  A4.3, A1.9 
-\item En la etapa de diseño: D2.1, D2.3.1, D2.3.2, D2.3.3, D2.5, D2.9, D2.10 
-\item En la etapa de implementación: I3.1, I3.2
-\item En la etapa de pruebas: P4.3, P4.4
+\item En la etapa de análisis: A1.1, A1.2, A1.4.1, A1.4.2, A1.4.3, A1.8 y A1.9 
+\item En la etapa de diseño: D2.1, D2.3.1, D2.3.2, D2.3.3, D2.5, D2.9 y D2.10 
+\item En la etapa de implementación: I3.1 e I3.2
+\item En la etapa de pruebas: P4.3 y P4.4
 \end{itemize}
 
 \chapter{Calendario}
@@ -841,7 +840,7 @@ de cada fecha de comienzo y finalización.
 \section{Tabla de dependencias}
 Las dependencias corresponden a la secuencia que seguimos para realizar las
 secuencias. En la tabla \ref{Tab:tabdep}, de la página \pageref{Tab:tabdep},
-que posteriormente adjuntamos podemos
+que posteriormente adjuntamos podemos,
 ver las correspondientes a nuestro proyecto y que han sido definidas
 atendiendo a la planificación.
 
@@ -870,7 +869,7 @@ atendiendo a la planificación.
     D2.3.3 & D2.3.2                   \\
     D2.4.1 & D2.1                     \\
     D2.4.2 & D2.4.1                   \\
-    D2.4.3 & 2.4.2                    \\
+    D2.4.3 & D2.4.2                   \\
     D2.5   & D2.2, D2.3.3, D2.4.3     \\
     D2.6   & D2.5                     \\
     D2.7   & D2.5                     \\
@@ -905,8 +904,8 @@ se han elaborado los siguientes grafos de actividades:
   Late.
 \item En segundo lugar, en las figuras \ref{gCCana}, \ref{gCCdis},
   \ref{gCCimp} y \ref{gCCpru}, que están en las páginas \pageref{gELana} y
-  \pageref{gELpru}, vemos las etapas del grafo de actividades sin tiempos
-  Early y Late, pero en el que podemos ver señalado en rojo el camino crítico
+  \pageref{gELpru}, se ven las etapas del grafo de actividades sin tiempos
+  Early y Late, pero se puede ver señalado en rojo el camino crítico
   formado a partir de todas la actividades que tiene holgura total 0. En este
   caso, puede observarse que existe un único camino crítico.
 \end{itemize}
@@ -924,7 +923,7 @@ se han elaborado los siguientes grafos de actividades:
 \imagen{gCCpru}{8}
 {Camino crítico del grafo de actividades de la etapa de pruebas}{gCCpru}
 
-\section{Tabla de tiempos de comienzo y finalizacion}
+\section{Tabla de tiempos de comienzo y finalización}
 Las tablas \ref{Tab:CALana}, \ref{Tab:CALdis}, \ref{Tab:CALimp} y
 \ref{Tab:CALpru}, de las páginas \pageref{Tab:CALana}, \pageref{Tab:CALdis} y
 \pageref{Tab:CALpru}; reprensentan los resultados de aplicar las fórmulas de la
@@ -1074,7 +1073,7 @@ finalización tardía.
 \section{Fechas finales}
 Dadas las tablas \ref{Tab:CALana}, \ref{Tab:CALdis}, \ref{Tab:CALimp} y
 \ref{Tab:CALpru} del apartado anterior, elaboramos el calendario definitivo
-(ver figura\ref{Tab:calfec}) teniendo en cuenta que no se trabaja los fines
+(ver figura \ref{Tab:calfec}) teniendo en cuenta que no se trabaja los fines
 de semana y el horario laboral consta de 8 horas diarias.
  
 \begin{table}[!h]

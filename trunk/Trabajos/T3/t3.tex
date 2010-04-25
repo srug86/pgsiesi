@@ -48,8 +48,8 @@
 
 % Índices
 \tableofcontents
-% \listoffigures
-% \listoftables
+\listoftables
+\listoffigures
 
 %% INICIO DEL DOCUMENTO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -75,9 +75,10 @@ Mediante la técnica DELPHI se intenta obtener un consenso lo más fiable
 posible del grupo de expertos.
     
 \section{Tablas de tiempos DELPHI}
-En las tablas \ref{Tab:DELPHIana}, \ref{Tab:DELPHIdis},\ref{Tab:DELPHIimp} y
-\ref{Tab:DELPHIpru} se
-pueden observar la evolución seguida a la hora de calcular los tiempos
+En las tablas \ref{Tab:DELPHIana}, \ref{Tab:DELPHIdis}, \ref{Tab:DELPHIimp} y
+\ref{Tab:DELPHIpru}, de las páginas \pageref{Tab:DELPHIana},
+\pageref{Tab:DELPHIdis} y \pageref{Tab:DELPHIimp}; se
+puede observar la evolución seguida a la hora de calcular los tiempos
 DELPHI. Cada tabla contiene el identificador de cada tarea, la iteración en
 la que se encuentra, las valoraciones de los distintos expertos, así como los
 valores mínimo (que corresponde con el tiempo optimista), medio (que
@@ -286,7 +287,7 @@ cada tarea), y finalmente, si se cumple el criterio de convergencia o no.
 \begin{table}[!h]
 \centering
   \begin{tabular}{|c|c||c|c|c|c|c||c|c|c||c|}
-    \hline
+    \hline 
     \textbf{T} & \textbf{I} & \textbf{1} &
     \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{m}
     &\textbf{$\bar{x}$} &\textbf{M} & \textbf{C}\\    
@@ -365,9 +366,10 @@ cada tarea), y finalmente, si se cumple el criterio de convergencia o no.
 \end{table} 
 
 \section{Tabla resumen de DELPHI}
-En las tablas \ref{Tab:rDELPHIana}, \ref{Tab:rDELPHIdis},\ref{Tab:rDELPHIimp} y
-\ref{Tab:rDELPHIpru} reprensentan los resultados abreviados de aplicar la
-técnica DELPHI, cada tabla se corresponde con las tareas de cada etapa de
+Las tablas \ref{Tab:rDELPHIana}, \ref{Tab:rDELPHIdis}, \ref{Tab:rDELPHIimp} y
+\ref{Tab:rDELPHIpru}, de las páginas \pageref{Tab:rDELPHIana} y
+\pageref{Tab:rDELPHIdis}; reprensentan los resultados abreviados de aplicar
+la técnica DELPHI. Cada tabla se corresponde con las tareas de cada etapa de
 elaboración del software. Cada fila de la tabla contiene las tareas, el
 tiempo mínimo, el medio y el máximo.
 
@@ -412,7 +414,7 @@ tiempo mínimo, el medio y el máximo.
     \hline
     \textbf{Id} & \textbf{Tarea} & \textbf{m} & 
     \textbf{$\bar{x}$} &\textbf{M} \\
-    \hline
+    \hline \hline
     2.1 & Definición de la arquitectura del sistema & 3 & 4'6 & 6 \\
     \hline
     2.2 & Diseño de arquitectura de soporte & 2 & 4'6 & 7 \\
@@ -453,7 +455,7 @@ tiempo mínimo, el medio y el máximo.
     \hline
     \textbf{Id} & \textbf{Tarea} & \textbf{m} & 
     \textbf{$\bar{x}$} &\textbf{M} \\
-    \hline
+    \hline \hline
     3.1 & Preparación del entorno de generación y construcción & 2 & 3'2  & 4 \\
     \hline
     3.2 & Generación del código de los componentes y los procedimientos & 5 &
@@ -477,7 +479,7 @@ tiempo mínimo, el medio y el máximo.
     \hline
     \textbf{Id} & \textbf{Tarea} & \textbf{m} & 
     \textbf{$\bar{x}$} &\textbf{M} \\
-    \hline
+    \hline \hline
     4.1 & Ejecución de las pruebas unitarias & 3'5 & 4 & 4'5\\
     \hline
     4.2 & Ejecución de las pruebas de integración & 3 & 4'6 & 6\\
@@ -498,8 +500,9 @@ proyecto a partir de la secuencia de actividades y de una estimación
 ponderada de la duración media de cada una. 
 
 \section{Cálculos de los tiempos PERT}
-En las tablas \ref{Tab:PERTana}, \ref{Tab:PERTdis}, \ref{Tab:PERTimp} y
-\ref{Tab:PERTpru} reprensentan los resultados de aplicar las fórmulas de la
+Las tablas \ref{Tab:PERTana}, \ref{Tab:PERTdis}, \ref{Tab:PERTimp} y
+\ref{Tab:PERTpru}, de las páginas \pageref{Tab:PERTana}, \pageref{Tab:PERTdis} y
+\pageref{Tab:PERTpru}; reprensentan los resultados de aplicar las fórmulas de la
 técnica PERT, donde cada tabla se corresponde con las actividades de cada
 etapa de elaboración del software. Cada fila de la tabla contiene las
 actividades, el tiempo PERT y varianza.
@@ -632,15 +635,16 @@ actividades, el tiempo PERT y varianza.
   \label{Tab:PERTpru}
 \end{table}
 
-\section{Cálculos de tiempos early y late}
-En la tabla \ref{Tab:tearly} se reprensentan los resultados de aplicar las
-fórmulas de la técnica PERT para tiempos early y late, donde cada tabla se
+\section{Cálculos de tiempos Early y Late}
+En la tabla \ref{Tab:tearly}, de la página \pageref{Tab:tearly}, se
+reprensentan los resultados de aplicar las
+fórmulas de la técnica PERT para tiempos Early y Late, donde cada tabla se
 corresponde con los sucesos de cada etapa de elaboración del software. Cada
-fila de la tabla contiene los sucesos, el tiempo early y late.
+fila de la tabla contiene los sucesos, el tiempo Early y Late.
 
 \begin{table}[!h]
 \centering
-  \begin{tabular}{|c c c|}
+  \begin{tabular}{|c|c|c|}
     \hline
     \textbf{Sucesos} & \textbf{Early} & \textbf{Late} \\
     \hline \hline
@@ -687,13 +691,14 @@ fila de la tabla contiene los sucesos, el tiempo early y late.
     21 & 75,96 & 75,96 \\
     \hline
   \end{tabular}
-  \caption{Tiempos early y late de los sucesos}
+  \caption{Tiempos Early y Late de los sucesos}
   \label{Tab:tearly}
 \end{table}
 
 \section{Cálculo de las holguras}
-En las tablas \ref{Tab:HOLana}, \ref{Tab:HOLdis}, \ref{Tab:HOLimp} y
-\ref{Tab:HOLpru} reprensentan los resultados de aplicar las fórmulas de la
+Las tablas \ref{Tab:HOLana}, \ref{Tab:HOLdis}, \ref{Tab:HOLimp} y
+\ref{Tab:HOLpru}, de las páginas \pageref{Tab:HOLana} y \pageref{Tab:HOLpru};
+reprensentan los resultados de aplicar las fórmulas de la
 técnica PERT para el cálculo de las holguras, donde cada tabla se corresponde
 con las actividades de cada etapa de elaboración del software. Cada fila de la
 tabla contiene las actividades, el tiempo PERT, la holgura total, la holgura
@@ -811,7 +816,7 @@ libre y la holgura independiente.
     P4.4 & 2 & 0 & 0 & 0\\
     \hline
   \end{tabular}
-  \caption{\textbf{Holgura} de para tareas de \textbf{pruebas}}
+  \caption{\textbf{Holgura} de tareas de \textbf{pruebas}}
   \label{Tab:HOLpru}
 \end{table}
 
@@ -827,15 +832,102 @@ formado por las siguientes actividades:
 \end{itemize}
 
 \chapter{Calendario}
-Para la realización de este calendario seguiremos la técnica PERT,ésta
+Para la realización de este calendario seguiremos la técnica PERT, ésta
 permite la determinación de las fechas, tanto de comienzo como de
 finalización. El calendario definitivo muestra las fechas tempranas y tardías
 de cada fecha de comienzo y finalización.
 
 
+\section{Tabla de dependencias}
+Las dependencias corresponden a la secuencia que seguimos para realizar las
+secuencias. En la tabla \ref{Tab:tabdep}, de la página \pageref{Tab:tabdep},
+que posteriormente adjuntamos podemos
+ver las correspondientes a nuestro proyecto y que han sido definidas
+atendiendo a la planificación.
+
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{|l||l|}
+    \hline
+    \textbf{Actividad} & \textbf{Precedentes}\\
+    \hline \hline
+    A1.1   & -                        \\
+    A1.2   & A1.1                     \\
+    A1.3   & A1.2                     \\
+    A1.4.1 & A1.2                     \\
+    A1.4.2 & A1.4.1                   \\
+    A1.4.3 & A1.4.2                   \\
+    A1.5   & A1.2                     \\
+    A1.6   & A1.2                     \\
+    A1.7   & A1.3, A1.4.3, A1.5, A1.6 \\
+    A1.8   & A1.3, A1.4.3, A1.5, A1.6 \\
+    A1.9   & A1.7, A1.8               \\
+    \hline
+    D2.1   & A1.9                     \\
+    D2.2   & D2.1                     \\
+    D2.3.1 & D2.1                     \\
+    D2.3.2 & D2.3.1                   \\
+    D2.3.3 & D2.3.2                   \\
+    D2.4.1 & D2.1                     \\
+    D2.4.2 & D2.4.1                   \\
+    D2.4.3 & 2.4.2                    \\
+    D2.5   & D2.2, D2.3.3, D2.4.3     \\
+    D2.6   & D2.5                     \\
+    D2.7   & D2.5                     \\
+    D2.8   & D2.5                     \\
+    D2.9   & D2.5                     \\
+    D2.10  & D2.6, D2.7, D2.8, D2.9   \\
+    \hline
+    I3.1   & D2.10                    \\
+    I3.2   & I3.1                     \\
+    I3.3   & I3.1                     \\
+    I3.4   & I3.1                     \\
+    I3.5   & I3.1                     \\
+    \hline
+    P4.1   & I3.2, I3.3, I3.4, I3.5   \\
+    P4.2   & I3.2, I3.3, I3.4, I3.5   \\
+    P4.3   & I3.2, I3.3, I3.4, I3.5   \\
+    P4.4   & P4.1, P4.2, P4.3, P4.4   \\
+    \hline
+    
+  \end{tabular}
+  \caption{Dependencias entre actividades} \label{Tab:tabdep}
+\end{table}
+
+\section{Grafo de actividades}
+Empleando la tabla de dependencias, los tiempos Early y Late; y las holguras,
+se han elaborado los siguientes grafos de actividades:
+
+\begin{itemize}
+\item En las figuras \ref{gELana}, \ref{gELdis}, \ref{gELimp} y \ref{gELpru},
+  que se encuentran en las páginas \pageref{gELana} y \pageref{gELpru}, se
+  pueden ver las etapas del grafo de actividades con los tiempos Early y
+  Late.
+\item En segundo lugar, en las figuras \ref{gCCana}, \ref{gCCdis},
+  \ref{gCCimp} y \ref{gCCpru}, que están en las páginas \pageref{gELana} y
+  \pageref{gELpru}, vemos las etapas del grafo de actividades sin tiempos
+  Early y Late, pero en el que podemos ver señalado en rojo el camino crítico
+  formado a partir de todas la actividades que tiene holgura total 0. En este
+  caso, puede observarse que existe un único camino crítico.
+\end{itemize}
+
+\imagen{gELana}{17.5}{Grafo Early-Late de la etapa de análisis}{gELana}
+\imagen{gELdis}{15.5}{Grafo Early-Late de la etapa de diseño}{gELdis}
+\imagen{gELimp}{8}{Grafo Early-Late de la etapa de implementación}{gELimp}
+\imagen{gELpru}{8}{Grafo Early-Late de la etapa de pruebas}{gELpru}
+\imagen{gCCana}{13}
+{Camino crítico del grafo de actividades de la etapa de análisis}{gCCana}
+\imagen{gCCdis}{13}
+{Camino crítico del grafo de actividades de la etapa de diseño}{gCCdis}
+\imagen{gCCimp}{8}
+{Camino crítico del grafo de actividades de la etapa de implementación}{gCCimp}
+\imagen{gCCpru}{8}
+{Camino crítico del grafo de actividades de la etapa de pruebas}{gCCpru}
+
 \section{Tabla de tiempos de comienzo y finalizacion}
-En las tablas \ref{Tab:CALana}, \ref{Tab:CALdis}, \ref{Tab:CALimp} y
-\ref{Tab:CALpru} reprensentan los resultados de aplicar las fórmulas de la
+Las tablas \ref{Tab:CALana}, \ref{Tab:CALdis}, \ref{Tab:CALimp} y
+\ref{Tab:CALpru}, de las páginas \pageref{Tab:CALana}, \pageref{Tab:CALdis} y
+\pageref{Tab:CALpru}; reprensentan los resultados de aplicar las fórmulas de la
 técnica PERT para cálculo de fechas, donde cada tabla se corresponde con las
 actividades de cada etapa de elaboración del software. Cada fila de la
 tabla contiene las actividades, la fecha de comienzo temprana, la fecha
@@ -848,7 +940,7 @@ finalización tardía.
     \hline
     \textbf{Id} & \textbf{Tarea} & \textbf{FCE} & \textbf{FCL} &
     \textbf{FFE} & \textbf{FFL}\\
-    \hline
+    \hline \hline
     1.1 & Definición del sistema & 0 & 0 & 4,57 & 4,57 \\
     \hline
     1.2 & Establecimiento de requisitos & 4,57 & 4,57 & 9,57  & 9,57 \\
@@ -885,7 +977,7 @@ finalización tardía.
     \hline
     \textbf{Id} & \textbf{Tarea} & \textbf{FCE} & \textbf{FCL} &
     \textbf{FFE} & \textbf{FFL}\\
-    \hline
+    \hline \hline
     2.1 & Definición de la arquitectura del sistema & 24,22 & 24,22 & 28,79
     & 28,79 \\ 
     \hline
@@ -936,7 +1028,7 @@ finalización tardía.
     \hline
     \textbf{Id} & \textbf{Tarea} & \textbf{FCE} & \textbf{FCL} &
     \textbf{FFE} & \textbf{FFL}\\
-    \hline
+    \hline \hline
     3.1 & Preparación del entorno de generación y construcción & 56,23 &
     56,23 & 59,36 & 59,36\\ 
     \hline
@@ -962,7 +1054,7 @@ finalización tardía.
     \hline
     \textbf{Id} & \textbf{Tarea} & \textbf{FCE} & \textbf{FCL} &
     \textbf{FFE} & \textbf{FFL}\\
-    \hline
+    \hline \hline
     4.1 & Ejecución de las pruebas unitarias & 68,66 & 69,96 & 72,66 & 73,96\\
     \hline
     4.2 & Ejecución de las pruebas de integración & 68,66 & 69,39 & 73,23 &
@@ -979,15 +1071,16 @@ finalización tardía.
 \end{table}
 
 
-\subsection{Calendario}
-Atendiendo a la tablas \ref{Tab:CALana}, \ref{Tab:CALdis}, \ref{Tab:CALimp} y
-\ref{Tab:CALpru} del apartado anterior elaboramos el calendario definitivo
-(\ref{Tab:calfec}) teniendo en cuenta que no se trabaja los fines de semana y
-el horario laboral consta de 8 horas diarias:
+\section{Fechas finales}
+Dadas las tablas \ref{Tab:CALana}, \ref{Tab:CALdis}, \ref{Tab:CALimp} y
+\ref{Tab:CALpru} del apartado anterior, elaboramos el calendario definitivo
+(ver figura\ref{Tab:calfec}) teniendo en cuenta que no se trabaja los fines
+de semana y el horario laboral consta de 8 horas diarias.
  
 \begin{table}[!h]
 \centering
-   \begin{tabular}{|b{1.8cm}||b{2.2cm}|b{2.2cm}||b{2.2cm}|b{2.2cm}|}
+   \begin{tabular}{|c||b{2.4cm}<{\centering}|b{2.1cm}<{\centering}
+       ||b{1.9cm}<{\centering}|b{1.6cm}<{\centering}|}
      \hline
      \textbf{Actividad} & \textbf{Cominezo más cercano} &\textbf{Comienzo más
      tardío} & \textbf{Fin más temprano}& \textbf{Fin más tardío}\\
@@ -1031,124 +1124,7 @@ el horario laboral consta de 8 horas diarias:
      4.4   & 13/08/10 & 13/08/10 & 17/08/10 & 17/08/10 \\
      \hline
   \end{tabular}
-  \caption{calendario en fechas} \label{Tab:calfec}
+  \caption{Calendario de fechas definitivas} \label{Tab:calfec}
 \end{table}
-
-\section{Tabla de dependencias}
-Las dependencias corresponden a la secuencia que seguimos para realizar las
-secuencias. En la tabla \ref{Tab:tabdep} que posteriormente adjuntamos podemos
-ver las correspondientes a nuestro proyecto y que han sido definidas
-atendiendo a la planificación.
-
-\begin{table}[!h]
-  \centering
-  \small
-  \begin{tabular}{l|l}
-    \textbf{Actividad} & \textbf{Precedentes}\\
-    \hline \hline
-    A1.1   & -                        \\
-    \hline
-    A1.2   & A1.1                     \\
-    \hline
-    A1.3   & A1.2                     \\
-    \hline
-    A1.4.1 & A1.2                     \\
-    \hline
-    A1.4.2 & A1.4.1                   \\
-    \hline
-    A1.4.3 & A1.4.2                   \\
-    \hline
-    A1.5   & A1.2                     \\
-    \hline
-    A1.6   & A1.2                     \\
-    \hline
-    A1.7   & A1.3, A1.4.3, A1.5, A1.6 \\
-    \hline
-    A1.8   & A1.3, A1.4.3, A1.5, A1.6 \\
-    \hline
-    A1.9   & A1.7, A1.8               \\
-    \hline
-    D2.1   & A1.9                     \\
-    \hline
-    D2.2   & D2.1                     \\
-    \hline
-    D2.3.1 & D2.1                     \\
-    \hline
-    D2.3.2 & D2.3.1                   \\
-    \hline
-    D2.3.3 & D2.3.2                   \\
-    \hline
-    D2.4.1 & D2.1                     \\
-    \hline
-    D2.4.2 & D2.4.1                   \\
-    \hline
-    D2.4.3 & 2.4.2                    \\
-    \hline
-    D2.5   & D2.2, D2.3.3, D2.4.3     \\
-    \hline
-    D2.6   & D2.5                     \\
-    \hline
-    D2.7   & D2.5                     \\
-    \hline
-    D2.8   & D2.5                     \\
-    \hline
-    D2.9   & D2.5                     \\
-    \hline
-    D2.10  & D2.6, D2.7, D2.8, D2.9   \\
-    \hline
-    I3.1   & D2.10                    \\
-    \hline
-    I3.2   & I3.1                     \\
-    \hline
-    I3.3   & I3.1                     \\
-    \hline
-    I3.4   & I3.1                     \\
-    \hline
-    I3.5   & I3.1                     \\
-    \hline
-    P4.1   & I3.2, I3.3, I3.4, I3.5   \\
-    \hline
-    P4.2   & I3.2, I3.3, I3.4, I3.5   \\
-    \hline
-    P4.3   & I3.2, I3.3, I3.4, I3.5   \\
-    \hline
-    P4.4   & P4.1, P4.2, P4.3, P4.4   \\
-    \hline
-    
-  \end{tabular}
-  \caption{Dependencias entre actividades} \label{Tab:tabdep}
-\end{table}
-
-\section{Grafo de actividades}
-Usando la tabla de dependencias, los tiempos Early y Late y las holguras, se 
-han elaborado los siguientes grafos de actividades:
-
-\begin{itemize}
-\item En el primero vemos el grafo de actividades con los tiempos Early y Late:
-\item Y en el segundo vemos el grafo anterior, sin tiempos Early y Late, 
-pero en el que podemos ver señalado en rojo el camino crítico formado a
-partir de todas la actividades que tiene holgura total 0. En este caso, puede 
-observarse que existe un único camino crítico.
-\end{itemize}
-
-\imagen{grafo_el_análisis.pdf}{18}
-{Grafo Early-Late de la etapa de análisis}{GelA}
-\imagen{grafo_el_diseño.pdf}{18}
-{Grafo Early-Late de la etapa de diseño}{GelD}
-\imagen{grafo_el_implementación.pdf}{10}
-{Grafo Early-Late de la etapa de implementación}{GelI}
-\imagen{grafo_el_pruebas.pdf}{10}
-{Grafo Early-Late de la etapa de pruebas}{GelP}
-\imagen{grafo_cc_análisis.pdf}{18}
-{Camino crítico del grafo de actividades de la etapa de análisis}{GccA}
-\imagen{grafo_cc_diseño.pdf}{18}
-{Camino crítico del grafo de actividades de la etapa de diseño}{GccD}
-\imagen{grafo_cc_implementación.pdf}{10}
-{Camino crítico del grafo de actividades de la etapa de implementación}{GccI}
-\imagen{grafo_cc_pruebas.pdf}{10}
-{Camino crítico del grafo de actividades de la etapa de pruebas}{GccP}
-
-\bibliographystyle{plain} 
-\bibliography{t2}
 
 \end{document}

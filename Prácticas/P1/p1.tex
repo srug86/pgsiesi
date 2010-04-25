@@ -1,8 +1,11 @@
 % Clase
-\documentclass[11pt,a4paper,spanish,twoside]{report}
+\documentclass[11pt,a4paper,spanish,twoside]{book}
 
 % Órdenes auxiliares
 \input{inc/includes.tex}
+
+% Árboles de directorios
+\usepackage{dirtree}
 
 % Encabezado y pie de página
 \encabezado
@@ -44,7 +47,6 @@
     Torres Triviño, Juan Miguel           & & 14 \\ \\
     \hline
   \end{tabular}
-%  \caption{}\label{}
 \end{table}
 
 % Índices
@@ -54,80 +56,62 @@
 
 %% INICIO DEL DOCUMENTO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Alcance}
-En esta sección se definen los diferentes procesos que se hay que seguir y
+En este capítulo se definen los diferentes procesos que hay que seguir y
 cumplir para asegurar el éxito del proyecto. Las distintas tareas que
 componen el proyecto deben realizarse satisfactoriamente en un plazo
 definido.
-Los requisitos del proyecto deben estar bien definidos y tener un control de
-cambios eficaz para evitar cambios no controlados que pueden ocasionar que el
-proyecto se desvíe de su propósito inicial.
 
 \section{Esquemas de actividades y tareas}
-\begin{description}
-\item[Análisis] \hfill
-  \begin{itemize}
-  \item Definición del sistema.
-  \item Establecimiento de requisitos.
-  \item Identificación de subsistemas.
-  \item Elaboración del modelo de datos.
-    \begin{itemize}
-    \item Elaboración del modelo conceptual y lógica de datos.
-    \item Normalización.
-    \item Especificación de necesidades de carga inicial.
-    \end{itemize}
-  \item Elaboración del modelo de procesos.
-  \item Definición de interfaz de usuario.
-  \item Análisis de consistencia y especificación de requisitos.
-  \item Especificación de plan de pruebas.
-  \item Aprobación del análisis del SI.
-  \end{itemize}
-\item[Diseño] \hfill
-  \begin{itemize}
-  \item Definición de la arquitectura del sistema.
-  \item Diseño de la arquitectura de soporte.
-  \item Diseño de la arquitectura de módulos del sistema.
-    \begin{itemize}
-    \item Diseño de módulos del sistema.
-    \item Diseño de comunicación entre módulos.
-    \item Revisión de la interfaz de usuario.
-    \end{itemize}
-  \item Diseño físico de datos.
-    \begin{itemize}
-    \item Diseño del modelo físico de datos.
-    \item Especificación de los caminos de acceso a los datos.
-    \item Especificación de la distribución de datos.
-    \end{itemize}
-  \item Verificación y aceptación de la arquitectura del sistema.
-  \item Generación y especificación de construcción.
-  \item Diseño de migración y carga inicial de datos.
-  \item Especificación técnica del plan de prueba.
-  \item Establecimiento de requisitos de implantación.
-  \item Aprobación del diseño y SI.
-  \end{itemize}
-\item[Implementación]\hfill
-  \begin{itemize}
-  \item Preparación del entorno de generación y construcción.
-  \item Generación del código de los componentes y los procedimientos.
-  \item Elaboración del manual de usuario.
-  \item Definición de la formación de los usuarios finales.
-  \item Construcción de los componentes y procedimientos de carga inicial de
-    datos. 
-  \end{itemize}
-\item[Pruebas] \hfill
-  \begin{itemize}
-  \item Ejecución de las pruebas unitarias.
-  \item Ejecución de las pruebas de integración.
-  \item Ejecución de las pruebas del sistema.
-  \item Aprobación del SI.
-  \end{itemize}
-\item[Tareas repetitivas] \hfill
-  \begin{itemize}
-  \item Reunión del grupo de trabajo. Esta tarea es semanal y comenzará desde
-    el inicio hasta el fin del proyecto.
-  \end{itemize}
-\end{description}
+\dirtree{%
+  .1 \textbf{Análisis}.
+  .2 Definición del sistema.
+  .2 Establecimiento de requisitos.
+  .2 Identificación de subsistemas.
+  .2 Elaboración del modelo de datos.
+  .3 Elaboración del modelo conceptual y lógica de datos.
+  .3 Normalización.
+  .3 Especificación de necesidades de carga inicial.
+  .2 Elaboración del modelo de procesos.
+  .2 Definición de interfaz de usuario.
+  .2 Análisis de consistencia y especificación de requisitos.
+  .2 Especificación de plan de pruebas.
+  .2 Aprobación del análisis del SI.
+  .1 \textbf{Diseño}.
+  .2 Definición de la arquitectura del sistema.
+  .2 Diseño de la arquitectura de soporte.
+  .2 Diseño de la arquitectura de módulos del sistema.
+  .3 Diseño de módulos del sistema.
+  .3 Diseño de comunicación entre módulos.
+  .3 Revisión de la interfaz de usuario.
+  .2 Diseño físico de datos.
+  .3 Diseño del modelo físico de datos.
+  .3 Especificación de los caminos de acceso a los datos.
+  .3 Especificación de la distribución de datos.
+  .2 Verificación y aceptación de la arquitectura del sistema.
+  .2 Generación y especificación de construcción.
+  .2 Diseño de migración y carga inicial de datos.
+  .2 Especificación técnica del plan de prueba.
+  .2 Establecimiento de requisitos de implantación.
+  .2 Aprobación del diseño y SI.
+  .1 \textbf{Implementación}.
+  .2 Preparación del entorno de generación y construcción.
+  .2 Generación del código de los componentes y los procedimientos.
+  .2 Elaboración del manual de usuario.
+  .2 Definición de la formación de los usuarios finales.
+  .2 Construcción de los componentes y procedimientos de carga inicial de
+  datos.
+  .1 \textbf{Pruebas}.
+  .2 Ejecución de las pruebas unitarias.
+  .2 Ejecución de las pruebas de integración.
+  .2 Ejecución de las pruebas del sistema.
+  .2 Aprobación del SI.
+  .1 \textbf{Tareas repetitivas}.
+  .2 Reunión del grupo de trabajo: esta tarea es semanal y comenzará desde el
+  inicio hasta el fin del proyecto.
+}
+
 \section{Hitos}
-Se consideran que cada fase del proyecto no puede empezar sin que haya
+Se considera que cada fase del proyecto no puede empezar sin que haya
 terminado la anterior. Para ello, los hitos tienen lugar en la terminación de
 cada fase. La implantación de estos hitos ayudan al cumplimiento de los
 plazos establecidos.
@@ -136,16 +120,18 @@ Los hitos del proyecto son los siguientes:
 \begin{itemize}
 \item Aprobación del análisis del SI.
 \item Aprobación del diseño y SI.
+\item 
 \item Aprobación del SI.
 \end{itemize}
 
-\section{Vinculaciones de tareas (FC, CC, FF)}
+\section{Vinculaciones de tareas}
+En la tabla \ref{Tab:Dep} se pueden ver las vinculaciones entre las tareas.
 \begin{table}[!h]
-\centering
-\small
+  \centering
+  \small
   \begin{tabular}{l|p{5cm}|l}
     \textbf{Tarea predecesora} & \textbf{Tarea actual} & \textbf{Dependencia} \\
-    \hline \hline
+    \hline
     Definición del Sistema & Establecimiento de requisitos & FC \\
     \hline
     Establecimiento de requisitos & Identificación de subsistemas & FC \\
@@ -154,18 +140,19 @@ Los hitos del proyecto son los siguientes:
     & Normalización \\
     & Especificación de necesidades de carga inicial \\
     
-    
   \end{tabular}
   \caption{Dependencias entre tareas} \label{Tab:Dep}
 \end{table}
 
 \section{Tiempos de posposición y adelanto}
 
+
 \section{Visualización del camino crítico}
 
+
 \chapter{Recursos y costes}
-Los recursos, tanto materiales como personal contratado, se utilizan para
-completar las tareas de las que se compone un proyecto. 
+Los recursos, tanto materiales como humanos, se utilizan para completar las
+tareas de las que se compone el proyecto.
 
 
 \section{Lista de recursos humanos y materiales y asignaciones a 

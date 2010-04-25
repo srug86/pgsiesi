@@ -695,6 +695,13 @@ fila de la tabla contiene los sucesos, el tiempo early y late.
 
 \section{Cálculo de las holguras}
 
+En las tablas \ref{Tab:HOLana}, \ref{Tab:HOLdis},\ref{Tab:HOLimp} y
+\ref{Tab:HOLpru} reprensentan los resultados de aplicar las fórmulas de la
+técnica PERT para el cálculo de las holguras, donde cada tabla se corresponde
+con las actividades de cada etapa de elaboración del software. Cada fila de la
+tabla contiene las actividades, el tiempo PERT, la holgura total, la holgura
+libre y la holgura independiente.
+
 \begin{table}[!h]
   \centering
   \begin{tabular}{|c||c||c|c|c|}
@@ -812,6 +819,7 @@ fila de la tabla contiene los sucesos, el tiempo early y late.
 \end{table}
 
 \section{Determinación de los caminos críticos}
+
 Tras realizar la tabla de holguras y el grafo observamos que el camino está
 formado por las siguientes actividades:
 \begin{itemize}
@@ -824,7 +832,22 @@ formado por las siguientes actividades:
 
 \chapter{Calendario}
 
+Para la realización de este calendario seguiremos la técnica PERT,ésta
+permite la determinación de las fechas, tanto de comienzo como de
+finalización. El calendario definitivo muestra las fechas tempranas y tardías
+de cada fecha de comienzo y finalización.
+
+
 \section{Tabla de tiempos de comienzo y finalizacion}
+
+En las tablas \ref{Tab:CALana}, \ref{Tab:CALdis},\ref{Tab:CALimp} y
+\ref{Tab:CALpru} reprensentan los resultados de aplicar las fórmulas de la
+técnica PERT para cálculo de fechas, donde cada tabla se corresponde con las
+actividades de cada etapa de elaboración del software. Cada fila de la
+tabla contiene las actividades, la fecha de comienzo temprana, la fecha
+de comienzo tardía, la fecha de finalización temprana y la fecha de
+finalización tardía.
+
 \begin{table}[!h]
   \centering
   \begin{tabular}{|c||p{5.3cm}||c|c|c|c|}
@@ -962,7 +985,13 @@ formado por las siguientes actividades:
 \end{table}
 
 
-\subsection{Calendario} 
+\subsection{Calendario}
+
+Atendiendo a la tablas \ref{Tab:CALana}, \ref{Tab:CALdis},\ref{Tab:CALimp} y
+\ref{Tab:CALpru} del apartado anterior elaboramos el calendario definitivo
+(\ref{Tab:calfec}) teniendo en cuenta que no se trabaja los fines de semana y
+el horario laboral consta de 8 horas diarias:
+ 
 \begin{table}[!h]
 \centering
    \begin{tabular}{|b{1.8cm}||b{2.2cm}|b{2.2cm}||b{2.2cm}|b{2.2cm}|}
@@ -1013,6 +1042,12 @@ formado por las siguientes actividades:
 \end{table}
 
 \section{Tabla de dependencias}
+
+Las dependencias corresponden a la secuencia que seguimos para realizar las
+secuencias. En la tabla \ref{Tab:tabdep}que posteriormente adjuntamos podemos
+ver las correspondientes a nuestro proyecto y que han sido definidas
+atendiendo a la planificación.
+
 \begin{table}[!h]
   \centering
   \small

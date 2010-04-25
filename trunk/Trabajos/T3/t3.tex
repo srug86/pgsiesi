@@ -1128,7 +1128,33 @@ atendiendo a la planificación.
 \end{table}
 
 \section{Grafo de actividades}
+Usando la tabla de dependencias, los tiempos Early y Late y las holguras, se 
+han elaborado los siguientes grafos de actividades:
 
+\begin{itemize}
+\item En el primero vemos el grafo de actividades con los tiempos Early y Late:
+\item Y en el segundo vemos el grafo anterior, sin tiempos Early y Late, 
+pero en el que podemos ver señalado en rojo el camino crítico formado a
+partir de todas la actividades que tiene holgura total 0. En este caso, puede 
+observarse que existe un único camino crítico.
+\end{itemize}
+
+\imagen{grafo_el_análisis.pdf}{18}
+{Grafo Early-Late de la etapa de análisis}{GelA}
+\imagen{grafo_el_diseño.pdf}{18}
+{Grafo Early-Late de la etapa de diseño}{GelD}
+\imagen{grafo_el_implementación.pdf}{10}
+{Grafo Early-Late de la etapa de implementación}{GelI}
+\imagen{grafo_el_pruebas.pdf}{10}
+{Grafo Early-Late de la etapa de pruebas}{GelP}
+\imagen{grafo_cc_análisis.pdf}{18}
+{Camino crítico del grafo de actividades de la etapa de análisis}{GccA}
+\imagen{grafo_cc_diseño.pdf}{18}
+{Camino crítico del grafo de actividades de la etapa de diseño}{GccD}
+\imagen{grafo_cc_implementación.pdf}{10}
+{Camino crítico del grafo de actividades de la etapa de implementación}{GccI}
+\imagen{grafo_cc_pruebas.pdf}{10}
+{Camino crítico del grafo de actividades de la etapa de pruebas}{GccP}
 
 \bibliographystyle{plain} 
 \bibliography{t2}

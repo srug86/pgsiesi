@@ -51,8 +51,8 @@
 
 % Índices
 \tableofcontents
-% \listoffigures
-% \listoftables
+\listoffigures
+\listoftables
 
 %% INICIO DEL DOCUMENTO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Alcance}
@@ -288,6 +288,7 @@ con el objetivo de que dé su aprobación.
   \item Reunión del grupo de trabajo. Esta tarea es semanal y comenzará desde
     el inicio hasta el fin del proyecto.
   \end{itemize}
+
 \section{Hitos}
 Se considera que cada fase del proyecto no puede empezar sin que haya
 terminado la anterior. Para ello, los hitos tienen lugar en la terminación de
@@ -314,19 +315,37 @@ En la tabla \ref{Tab:Dep} se pueden ver las vinculaciones entre las tareas.
     \hline
     Establecimiento de requisitos & Identificación de subsistemas & FC \\
     \hline
-    \multirow{3}{*}{Identificación de subsistemas} & Elaboración del modelo 
-conceptual y logíca de datos & \multirow{3}{*}{FC} \\
+    \multirow{3}{*}{Identificación de subsistemas} & Elaboración del modelo
+    conceptual y logíca de datos & \multirow{3}{*}{FC} \\
     & Normalización \\
     & Especificación de necesidades de carga inicial \\
-    
   \end{tabular}
   \caption{Dependencias entre tareas} \label{Tab:Dep}
 \end{table}
 
 \section{Tiempos de posposición y adelanto}
+En nuestro proyecto la mayor parte de paquetes de trabajo poseen dependencias
+con tiempo de posposición y adelanto nulo, por circunstancia de que nuestro
+proyecto se desarrolla dentro de un marco principalmente secuencial.
 
+Las tareas con vinculación de tiempo de adelanto son:
+\begin{description}
+\item[Tarea 2.4.1] Diseño del modelo físico de datos $\to$ +2 días
+\item[Tarea 2.4.2] Especificación de los caminos de acceso a los datos $\to$
+  +2 días
+\end{description}
+
+Las tareas con vinculación de tiempo de posposición son:
+\begin{description}
+\item[Tarea 2.4.2] Especificación de los caminos de acceso a los datos $\to$
+  -1 días
+\item[Tarea 2.4.3] Especificación de la distribución de datos $\to$ -1 días
+\end{description}
 
 \section{Visualización del camino crítico}
+El camino crítico que sigue el proyecto es el recorrido formado por las
+siguientes tareas:
+
 \begin{description}
 \item[Tarea 1.1] Definición del sistema.
 \item[Tarea 1.2] Establecimiento de requisitos.
@@ -440,30 +459,89 @@ desarrollo del proyecto.
 \section{Definición de costes fijos de actividad}
 
 \section{Tablas variables de costo}
+Estas tablas se atienden en la \autoref{sec:tasas}
 
 \section{Disponibilidad variable de un recurso}
 
-\section{Tablas variables de tasas de costos}
+\section{Tablas variables de tasas de costos} \label{sec:tasas}
+Para el recurso \emph{Analista} existen dos tablas de costo, una primera en
+la que tiene un sueldo como \emph{analista} y una segunda en la que tiene un
+sueldo como \emph{diseñador}, con los siguientes costes:
+
+\begin{enumerate}
+\item \textbf{Tabla A} (Analista)
+  \\Tasa estándar $\to$ 38.534\euro/año
+  \\Hora extra $\to$ 30,58\euro/hora
+\item \textbf{Tabla B} (Diseñador) 
+  \\Tasa estándar $\to$ 32.047\euro/año
+  \\Hora extra $\to$ 27\euro/hora
+\end{enumerate}
 
 \section{Aplicación de distintas tablas de tasas de costo en tareas}
 
 \chapter{Calendarios}
 \section{Calendarios generales de recursos humanos}
+Por el siguiente calendario general se rigen los recursos \emph{analista},
+\emph{programador}, \emph{secretario}, \emph{usuario experto} y
+\emph{miembros del grupo de trabajo}:
+
+\begin{description}
+\item[Lunes - Viernes] \hfill
+  \begin{itemize}
+  \item Mañanas: 9h - 13h
+  \item Tardes: 15h - 19h
+  \end{itemize}
+\end{description}
+
+\subsection{Días festivos}
+El calendario general descrito en el apartado anterior se ve afectado por los
+siguientes días festivos:
+
+\begin{description}
+\item[Virgen de Alarcos] 24 de Mayo
+\item[Comunidad de Castilla-La Mancha] 31 de Mayo
+\item[La Virgen] 15 de Agosto
+\end{description}
 
 \section{Calendarios específicos de recursos humanos}
+El recurso \emph{coordinador} tiene un calendario específico que se rige por
+el calendario general con la excepción que se muestra a continuación:
+
+\begin{description}
+\item[Viernes] \hfill
+  \begin{itemize}
+  \item Mañanas: 9h - 14h
+  \end{itemize}
+\end{description}
+
 
 \chapter{Redistribución del proyecto}
 \section{Informe de sobre-asignaciones de recursos y de su 
   resolución}
-\subsection{Gantt de redistribución}
 
-\section{Incluir al menos 2 tipos de delimitaciones de tareas y 
-  analizar sus efectos en la programación de proyecto}
+\subsection{Gantt de redistribución}
+Debido a que se ha presentado el problema de que existían ordenadores
+sobreasignados se ha decidido alquilar 4 unidades más. 
+
+\section{Delimitaciones de tareas}
+% Incluir al menos 2 tipos de delimitaciones de Tareas y analizar sus efectos
+% en la programación de proyecto.
+
+Las delimitaciones introducidas en el proyecto son:
+\begin{description}
+\item[Tarea 2.3.3] Revisión de la interfaz de usuario.\\
+  No se debe finalizar antes del 20 de Julio de 2010. Esta condición es
+  \textbf{inflexible} y no produce efectos.
+\item[Tarea 2.4.3] Especificación de la distribución de datos.\\
+  Deberá finalizar lo más tarde posible. Esta condición es \textbf{flexible}.
+  Los efectos de esta delimitación no se puede resolver la sobreasignación
+  del recurso \emph{miembro del grupo de trabajo} el 27 de Julio de 2010.
+\end{description}
 
 \chapter{Alternativas al plan evaluando su repercusión en 
 coste y  calendario}
-* Nota: Establecer una fecha de fin y considerar un determinado coste por día
-de retraso.
+% * Nota: Establecer una fecha de fin y considerar un determinado coste por día
+% de retraso.
 
 \chapter{Seguimiento simulado del proyecto incluyendo como 
   mínimo un ejemplo de las siguientes acciones}

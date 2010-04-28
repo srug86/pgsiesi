@@ -71,7 +71,7 @@ universidad y sea la base del diseño posterior.
 \subsubsection{Definición del sistema}
 En esta tarea se realiza un exhaustivo análisis de las necesidades que se
 acordaron en las reuniones con los directivos de la UMA. Además se realiza una
-identificación del entorno tecnológico, uno de los requisitos vitales para el
+identificación del entorno tecnológico; uno de los requisitos vitales para el
 desarrollo de este proyecto software.
 
 \subsubsection{Establecimiento de requisitos}
@@ -81,16 +81,19 @@ usuario experto se confirman cuáles son válidos, consistentes y completos.
 
 \subsubsection{Identificación de subsistemas}
 La descomposición del sistema en subsistemas está orientada a los procesos de
-negocio, estos subsistemas coinciden con el primer nivel de descomposición
+negocio. Estos subsistemas coinciden con el primer nivel de descomposición
 del diagrama de flujo de datos. Se analizan los distintos modelos, para tener
 una visión global y unificada de estos.
 
 \subsubsection{Elaboración del modelo de datos}
-    \begin{itemize}
-    \item Elaboración del modelo conceptual y lógica de datos.
-    \item Normalización.
-    \item Especificación de necesidades de carga inicial.
-    \end{itemize}
+Para realizar esta tarea, en primer lugar, se elabora un modelo conceptual y 
+lógico de datos. Para el modelo conceptual, se identifican y definen las 
+entidades del SI, los atributos de cada entidad, el dominio de cada atributo y 
+las relaciones existentes entre las entidades. Seguidamente, se realiza una 
+normalización del modelo lógico de datos. La técnica de normalización puede 
+exigir la modificación de entidades, la creación de nuevas entidades y la 
+reorganización de atributos. Por último, se realiza una especificación de las 
+necesidades iniciales de información que requerirá la creación del proyecto.
 
 \subsubsection{Elaboración del modelo de procesos}
 Se analizan las necesidades del usuario para establecer el conjunto de procesos
@@ -135,25 +138,66 @@ en el desarrollo del software puedan realizar su trabajo de manera
 independiente. 
  
 \subsubsection{Diseño de la arquitectura de soporte}
+En esta actividad se llevará a cabo la especificación de la arquitectura de 
+soporte, que comprende el diseño de los subsistemas de soporte y la 
+determinación de los mecanismos genéricos de diseño. Una de las prioridades 
+será intentar aprovechar al máximo los posibles sistemas de apoyo ya existentes
+aunque, no obstante, no habrá más remedio que conseguir, por ejemplo, un 
+servidor; ya que este constituye el material de soporte básico que se utilizará
+para la implementación y el funcionamiento del sistema.
 
 \subsubsection{Diseño de la arquitectura de módulos del sistema}
-    \begin{itemize}
-    \item Diseño de módulos del sistema.
-    \item Diseño de comunicación entre módulos.
-    \item Revisión de la interfaz de usuario.
-    \end{itemize}
+En esta tarea se definen los módulos del SI y la manera en la que van a 
+interactuar unos con otros, intentando que cada módulo trate total o 
+parcialmente un proceso específico y tenga una interfaz sencilla y amigable.
+
 \subsubsection{Diseño físico de datos}
-    \begin{itemize}
-    \item Diseño del modelo físico de datos.
-    \item Especificación de los caminos de acceso a los datos.
-    \item Especificación de la distribución de datos.
-    \end{itemize}
+Esta tarea consiste en, a partir del modelo lógico de datos normalizado, 
+obtener como salida el diseño del modelo físico de datos, teniendo en cuenta 
+las características específicas de nuestro SGBD. Además, también se 
+determinarán los caminos de acceso a dichos datos por parte de cada uno de los 
+módulos de la aplicación, de acuerdo al modelo físico de datos, con el fin de 
+conseguir optimizar el tiempo de respuesta y el consumo de recursos. Por 
+último, se establecerá la ubicación del gestor de las bases de datos, en este
+caso el servidor central, así como los elementos de la estructura física de 
+datos de acuerdo a la organización del SI.
+
 \subsubsection{Verificación y aceptación de la arquitectura del sistema}
+Esta tarea consiste en garantizar la calidad de las especificaciones del diseño
+del SI, así como su viabilidad.
+
 \subsubsection{Generación y especificación de construcción}
+En esta tarea se generan, a partir del diseño detallado del sistema, las 
+especificaciones que definen las unidades básicas de construcción que 
+compondrán el SI.
+
 \subsubsection{Diseño de migración y carga inicial de datos}
+Esta tarea consta de una especificación del entorno, un diseño de 
+procedimientos y un diseño detallado de los componentes de la carga inicial. 
+Primero, se realiza una estimación de la capacidad necesaria para albergar 
+toda la información del sistema. Con ello podremos evaluar las necesidades a 
+nivel de infraestructuras que serán demandadas para tal fin. Seguidamente, se 
+procede a la definición de los procedimientos necesarios para sacar adelante 
+la carga inicial de datos del sistema. Estos procedimientos estan relacionados 
+con la preparación, realización y verificación de la carga inicial de datos. 
+Por último, se detalla la jerarquía y orden de la ejecución de cada uno de los 
+módulos de la carga inicial.
+
 \subsubsection{Especificación técnica del plan de prueba}
+En esta tarea se especifican en detalle los planes de prueba del SI para cada 
+uno de los niveles de prueba establecidos.
+
 \subsubsection{Establecimiento de requisitos de implantación}
+En esta tarea se recopila toda la información necesaria para, en la etapa de 
+implementación, elaborar los manuales de usuario y otros apartados en la 
+documentación. Y se determinan los conocimientos y/o aptitudes adicionales que 
+necesitan dominar los usuarios finales para trabajar con el sistema 
+desarrollado. Además, se recogen requisitos de equipamiento hardware, software 
+y comunicaciones que requiera el nuevo sistema.
+
 \subsubsection{Aprobación del diseño y SI}
+La última tarea de esta fase consiste en una presentación del diseño de este SI
+al jefe de proyecto para que este le dé el visto bueno y lo apruebe.
 
 \subsection{Implementación}
 En esta fase se genera el código de los componentes software del SI y se 

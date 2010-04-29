@@ -52,7 +52,7 @@
 % Índices
 \tableofcontents
 \listoffigures
-\listoftables
+%\listoftables
 
 %% INICIO DEL DOCUMENTO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Alcance}
@@ -430,14 +430,19 @@ desarrollo del proyecto.
 
 \section{Definición de costes por uso}
 El único recurso que tiene costes por uso es el Operario de Servicio Técnico,
-que se le pagará 100 \euro \ cada vez que se requieran sus servicios.
+que se le pagará 100\euro\ cada vez que se requieran sus servicios.
 
 \section{Definición de costes fijos de actividad}
+Se estipula que los gastos se iban justificando a medida que avanzaba el
+proyecto. Por lo tanto, no se incluyeron en la planificación inicial del
+proyecto costes fijos.
 
 \section{Tablas variables de costo}
 Estas tablas se atienden en la \autoref{sec:tasas}
 
 \section{Disponibilidad variable de un recurso}
+En la planificación existe el recurso ``Operador de servicio técnico'' que se
+contrata de manera temporal.
 
 \section{Tablas variables de tasas de costos} \label{sec:tasas}
 Para el recurso \emph{Analista} existen dos tablas de costo, una primera en
@@ -454,6 +459,15 @@ sueldo como \emph{diseñador}, con los siguientes costes:
 \end{enumerate}
 
 \section{Aplicación de distintas tablas de tasas de costo en tareas}
+La distribución del apartado \ref{sec:tasas} se aplican del siguiente modo:
+\begin{itemize}
+\item El analista trabajará como ``Analista'' y, por lo tanto, se aplicará la
+  \emph{Tabla A} del apartado anterior en las tareas en las que éste
+  participe y pertenezcan al grupo de tareas del análisis.
+\item El analista trabajará como ``Diseñador'' y, por lo tanto, se aplicará
+  la \emph{Tabla B} del apartado anterior en las tareas en las que éste
+  participe y pertenezcan al grupo de tareas del diseño.
+\end{itemize}
 
 \chapter{Calendarios}
 \section{Calendarios generales de recursos humanos}
@@ -492,12 +506,14 @@ el calendario general con la excepción que se muestra a continuación:
 
 
 \chapter{Redistribución del proyecto}
-\section{Informe de sobre-asignaciones de recursos y de su 
-  resolución}
-A continuación la imagen \ref{Rec_sob} incluye el informe que Project
-genera sobre los recursos sobreasignados.
+\newpage
+\section[Informe de sobre asignaciones]
+{Informe de sobre asignaciones de recursos y de su resolución}
+A continuación, las imagenes \ref{Rec_sob1}, \ref{Rec_sob2} incluye el
+informe que Microsoft Project genera sobre los recursos sobreasignados.
 
-\imagen{Recursosobre.pdf}{12.5}{Informe de Recursos Sobreasignados}{Rec_sob}
+\imagen{Recursosobre1}{13}{Informe de Recursos Sobreasignados 1}{Rec_sob1}
+\imagen{Recursosobre2}{13}{Informe de Recursos Sobreasignados 2}{Rec_sob2}
 
 \subsection{Gantt de redistribución}
 La redistribución ha sido totalmente automática a través de los algoritmos
@@ -521,11 +537,11 @@ del proyecto. Las tareas seleccionadas para ello son:
  con la tarea 2.3.3 y su grupo de tareas, la tarea 2.4.3 termina a la vez que
  la 2.3.3.
 \end{description}
-\chapter{Alternativas al plan evaluando su repercusión en 
-coste y  calendario}
+
+\chapter{Alternativas al plan de proyecto}
 % * Nota: Establecer una fecha de fin y considerar un determinado coste por día
 % de retraso.
-
+\newpage
 Se ha programado el proyecto a partir de una fecha de fin, 17 de Agosto de
 2010, la cual provocará una serie de repercusiones que modifican nuestra
 planificación actual: 
@@ -539,10 +555,10 @@ planificación actual:
 
 En la imagen \ref{ProyFe} se reflejan las estadísticas más importantes del
 proyecto reprogramado a partir de dicha fecha de fin.
-\imagen{captura}{12}{Resumen del proyecto a partir de una fecha de fin}{ProyFe}
+\imagen{resumenproyectofin}{12}{Resumen del proyecto a partir de una fecha de
+  fin}{ProyFe}
 
-\chapter{Seguimiento simulado del proyecto incluyendo como 
-  mínimo un ejemplo de las siguientes acciones}
+\chapter{Seguimiento simulado del proyecto}
 Para realizar el seguimiento simulado de nuestro proyecto, se guarda una línea 
 de base, a partir de la cual obtienen las estadísticas reflejadas en la figura 
 \ref{ResPL}.
@@ -565,6 +581,8 @@ un segundo sobre la introducción de una duracción real y restante.
 \item[Tarea 1.4.2] Normalización \hfill
   Duración real: 1'43 días
   Duración restante: 1 día
+\end{description}
+
 \end{description}
 
 \section{Introducción de un porcentaje completado}
@@ -606,24 +624,24 @@ las horas de trabajo, \...
 \section{Diagrama de Gantt}
 Las imágenes \ref{ga1}, \ref{ga2}, \ref{ga3} y \ref{ga4} contienen el
 diagrama de gant del proyecto.
+
 \begin{sidewaystable}
-\imagen{gant1.pdf}{20}{Primera Parte del Diagrama de Gant}{ga1}
+\imagen{gant1.pdf}{20}{Primera Parte del Diagrama de Gantt}{ga1}
 \end{sidewaystable}
 
 \begin{sidewaystable}
-\imagen{gant2.pdf}{20}{Segunda Parte del Diagrama de Gant}{ga2}
+\imagen{gant2.pdf}{20}{Segunda Parte del Diagrama de Gantt}{ga2}
 \end{sidewaystable}
 
 \begin{sidewaystable}
-\imagen{gant3.pdf}{20}{Tercera Parte del Diagrama de Gant}{ga3}
+\imagen{gant3.pdf}{20}{Tercera Parte del Diagrama de Gantt}{ga3}
 \end{sidewaystable}
 
 \begin{sidewaystable}
-\imagen{gant4.pdf}{20}{Cuarta Parte del Diagrama de Gant}{ga4}
+\imagen{gant4.pdf}{20}{Cuarta Parte del Diagrama de Gantt}{ga4}
 \end{sidewaystable}
 
 \section{Diagrama de Gant con camino crítico}
-
 Las imágenes \ref{CC1}, \ref{CC2}, \ref{CC3} y \ref{CC4} corresponden con el
 camino crítico de las tareas a seguir en el proyecto.
 
@@ -649,6 +667,7 @@ proyecto, así como sus características y costos.
 \begin{sidewaystable}
 \imagen{Recursos.pdf}{20}{Informe General de Recursos del Sistema}{Rec}
 \end{sidewaystable}
+
 \section{Costes}
 
 \subsection{Costes por actividades}
@@ -656,7 +675,8 @@ La imagen \ref{Cos_Ac} incluye los respectivos costes de cada una de las
 actividades básicas del proyecto. 
 
 \begin{sidewaystable}
-\imagen{costeactividades.pdf}{20}{Informe de los Costes de las Actividades}{Cos_Ac}
+\imagen{costeactividades.pdf}{20}{Informe de los Costes de las
+  Actividades}{Cos_Ac}
 \end{sidewaystable}
 
 \section{Informe de redistribución}
@@ -664,19 +684,23 @@ Las imágenes \ref{Gan_re1}, \ref{Gan_re2}, \ref{Gan_re3} y \ref{Gan_re4}
 incluyen los diagramas Gant del proyecto una vez redistribuido.
 
 \begin{sidewaystable}
-\imagen{gantredistribuido1.pdf}{20}{Primera Parte del Informe de Redistribución}{Gan_re1}
+\imagen{gantredistribuido1.pdf}{20}{Primera Parte del Informe de
+  Redistribución}{Gan_re1} 
 \end{sidewaystable}
 
 \begin{sidewaystable}
-\imagen{gantredistribuido2.pdf}{20}{Segunda Parte del Informe de Redistribución}{Gan_re2}
+\imagen{gantredistribuido2.pdf}{20}{Segunda Parte del Informe de
+  Redistribución}{Gan_re2} 
 \end{sidewaystable}
 
 \begin{sidewaystable}
-\imagen{gantredistribuido3.pdf}{20}{Tercera Parte del Informe de Redistribución}{Gan_re3}
+\imagen{gantredistribuido3.pdf}{20}{Tercera Parte del Informe de
+  Redistribución}{Gan_re3} 
 \end{sidewaystable}
 
 \begin{sidewaystable}
-\imagen{gantredistribuido4.pdf}{20}{Cuarta Parte del Informe de Redistribución}{Gan_re4}
+\imagen{gantredistribuido4.pdf}{20}{Cuarta Parte del Informe de
+  Redistribución}{Gan_re4} 
 \end{sidewaystable}
 
 \section{Informe de seguimiento}

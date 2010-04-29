@@ -312,18 +312,61 @@ En la tabla \ref{Tab:Dep} se pueden ver las vinculaciones entre las tareas.
     \hline
     \textbf{Tarea predecesora} & \textbf{Tarea actual} & \textbf{Dependencia}\\
     \hline \hline
-    Definición del Sistema & Establecimiento de requisitos & FC \\
+    1.1   & -                    & -  \\
+    1.2   & 1.1                  & FC \\
+    1.3   & 1.2                  & FC \\
+    1.3   & 1.4.1                & CC \\
+    1.4.1 & 1.2                  & FC \\
+    1.4.1 & 1.5                  & CC \\
+    1.4.2 & 1.4.1                & FC \\
+    1.4.3 & 1.4.2                & FC \\
+    1.5   & 1.2                  & FC \\
+    1.5   & 1.6                  & CC \\
+    1.6   & 1.2                  & FC \\
+    1.7   & 1.3, 1.4.3, 1.5, 1.6 & FC \\
+    1.7   & 1.8                  & CC \\
+    1.8   & 1.3, 1.4.3, 1.5, 1.6 & FC \\
+    1.9   & 1.7, 1.8             & FC \\
     \hline
-    Establecimiento de requisitos & Identificación de subsistemas & FC \\
+    2.1   & 1.9                  & FC \\
+    2.2   & 2.1                  & FC \\
+    2.2   & 2.3.1                & CC \\
+    2.3.1 & 2.1                  & FC \\
+    2.3.1 & 2.4.1                & CC \\
+    2.3.2 & 2.3.1                & FC \\
+    2.3.3 & 2.3.2                & FC \\
+    2.4.1 & 2.1                  & FC \\
+    2.4.2 & 2.4.1                & FC \\
+    2.4.3 & 2.4.2                & FC \\
+    2.5   & 2.2, 2.3.3, 2.4.3    & FC \\
+    2.6   & 2.5                  & FC \\
+    2.6   & 2.7                  & CC \\
+    2.7   & 2.5                  & FC \\
+    2.7   & 2.8                  & CC \\
+    2.8   & 2.5                  & FC \\
+    2.8   & 2.9                  & CC \\
+    2.9   & 2.5                  & FC \\
+    2.10  & 2.6, 2.7, 2.8, 2.9   & FC \\
     \hline
-    \multirow{3}{*}{Identificación de subsistemas} & Elaboración del modelo
-    conceptual y logíca de datos & \multirow{3}{*}{FC} \\
-    & Normalización & \\
-    & Especificación de necesidades de carga inicial & \\
+    3.1   & 2.10                 & FC \\
+    3.1   & 3.3                  & CC \\
+    3.2   & 3.1                  & FC \\
+    3.3   & 3.1                  & FC \\
+    3.3   & 3.4                  & CC \\
+    3.4   & 3.1                  & FC \\
+    3.4   & 3.5                  & CC \\
+    3.5   & 3.1                  & FC \\
     \hline
+    4.1   & 3.2, 3.3, 3.4, 3.5   & FC \\
+    4.2   & 3.2, 3.3, 3.4, 3.5   & FC \\
+    4.3   & 3.2, 3.3, 3.4, 3.5   & FC \\
+    4.4   & 4.1, 4.2, 4.3, 4.4   & FC \\
+    \hline
+    
   \end{tabular}
-  \caption{Dependencias entre tareas} \label{Tab:Dep}
+  \caption{Dependencias entre actividades} \label{Tab:Dep}
 \end{table}
+
 
 \section{Tiempos de posposición y adelanto}
 En nuestro proyecto la mayor parte de paquetes de trabajo poseen dependencias

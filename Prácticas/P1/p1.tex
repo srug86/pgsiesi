@@ -308,17 +308,19 @@ En la tabla \ref{Tab:Dep} se pueden ver las vinculaciones entre las tareas.
 \begin{table}[!h]
   \centering
   \small
-  \begin{tabular}{l|p{5cm}|l}
-    \textbf{Tarea predecesora} & \textbf{Tarea actual} & \textbf{Dependencia}\\
+  \begin{tabular}{|l|p{5cm}|l|}
     \hline
+    \textbf{Tarea predecesora} & \textbf{Tarea actual} & \textbf{Dependencia}\\
+    \hline \hline
     Definición del Sistema & Establecimiento de requisitos & FC \\
     \hline
     Establecimiento de requisitos & Identificación de subsistemas & FC \\
     \hline
     \multirow{3}{*}{Identificación de subsistemas} & Elaboración del modelo
     conceptual y logíca de datos & \multirow{3}{*}{FC} \\
-    & Normalización \\
-    & Especificación de necesidades de carga inicial \\
+    & Normalización & \\
+    & Especificación de necesidades de carga inicial & \\
+    \hline
   \end{tabular}
   \caption{Dependencias entre tareas} \label{Tab:Dep}
 \end{table}
@@ -555,7 +557,7 @@ planificación actual:
 
 En la imagen \ref{ProyFe} se reflejan las estadísticas más importantes del
 proyecto reprogramado a partir de dicha fecha de fin.
-\imagen{resumenproyectofin}{12}{Resumen del proyecto a partir de una fecha de
+\imagen{resumenproyectofin}{13}{Resumen del proyecto a partir de una fecha de
   fin}{ProyFe}
 
 \chapter{Seguimiento simulado del proyecto}
@@ -563,7 +565,7 @@ Para realizar el seguimiento simulado de nuestro proyecto, se guarda una línea
 de base, a partir de la cual obtienen las estadísticas reflejadas en la figura 
 \ref{ResPL}.
 
-\imagen{resumenproyectolinbase.pdf}{12.5}{Resumen del proyecto a partir de la 
+\imagen{resumenproyectolinbase}{13}{Resumen del proyecto a partir de la 
 línea base}{ResPL}
 
 \section{Introducción de duraciones reales y restantes}
@@ -576,6 +578,7 @@ un segundo sobre la introducción de una duracción real y restante.
 \item[Tarea 1.1] Definición del sistema \hfill
   Duración real: 3 días
 \end{description}
+
 \subsection{Segundo Ejemplo}
 \begin{description}
 \item[Tarea 1.4.2] Normalización \hfill
@@ -608,7 +611,7 @@ Se ha realizado una actualización del proyecto sobre el día 20 de julio del
 2010. Se observan los efectos producidos en la figura \ref{ResPA}, que contiene
 las estadísticas más importantes del proyecto hasta ese momento.
 
-\imagen{resumenproyectoactualizado.pdf}{12.5}{Resumen del plan de proyecto 
+\imagen{resumenproyectoactualizado}{13}{Resumen del plan de proyecto 
 actualizado}{ResPA}
 
 \chapter{Informes}
@@ -617,53 +620,55 @@ Esta sección incluye la imagen \ref{Res} con un resumen del proyecto, dónde
 se pueden encontrar diversos datos como por ejemplo: la duración, el coste,
 las horas de trabajo, \...
 
-\imagen{Resumen.pdf}{12.5}{Resumen del Plan del Proyecto}{Res}
+\imagen{Resumen}{13}{Resumen del Plan del Proyecto}{Res}
 
 \section{Diagrama de Gantt}
-Las imágenes \ref{ga1}, \ref{ga2}, \ref{ga3} y \ref{ga4} contienen el
-diagrama de gant del proyecto.
+Las imágenes \ref{ga1}, \ref{ga2}, \ref{ga3} y \ref{ga4}, de las páginas
+\pageref{ga1}, \pageref{ga2}, \pageref{ga3} y \pageref{ga4} respectivamente;
+contienen el diagrama de gant del proyecto.
 
 \begin{sidewaystable}
-\imagen{gant1.pdf}{20}{Primera Parte del Diagrama de Gantt}{ga1}
+\imagen{gant1}{20}{Primera Parte del Diagrama de Gantt}{ga1}
 \end{sidewaystable}
 
 \begin{sidewaystable}
-\imagen{gant2.pdf}{20}{Segunda Parte del Diagrama de Gantt}{ga2}
+\imagen{gant2}{20}{Segunda Parte del Diagrama de Gantt}{ga2}
 \end{sidewaystable}
 
 \begin{sidewaystable}
-\imagen{gant3.pdf}{20}{Tercera Parte del Diagrama de Gantt}{ga3}
+\imagen{gant3}{20}{Tercera Parte del Diagrama de Gantt}{ga3}
 \end{sidewaystable}
 
 \begin{sidewaystable}
-\imagen{gant4.pdf}{20}{Cuarta Parte del Diagrama de Gantt}{ga4}
+\imagen{gant4}{20}{Cuarta Parte del Diagrama de Gantt}{ga4}
 \end{sidewaystable}
 
-\section{Diagrama de Gant con camino crítico}
-Las imágenes \ref{CC1}, \ref{CC2}, \ref{CC3} y \ref{CC4} corresponden con el
-camino crítico de las tareas a seguir en el proyecto.
+\section{Diagrama de Gantt con camino crítico}
+Las imágenes \ref{CC1}, \ref{CC2}, \ref{CC3} y \ref{CC4}, de las páginas
+\pageref{CC1}, \pageref{CC2}, \pageref{CC3} y \pageref{CC4} respectivamente;
+corresponden con el camino crítico de las tareas a seguir en el proyecto.
 
 \begin{sidewaystable}
-\imagen{caminocritico1.pdf}{20}{Primera Parte del camino Crítico}{CC1}
-\end{sidewaystable}
-
-\begin{sidewaystable}
-\imagen{caminocritico2.pdf}{20}{Segunda Parte del camino Crítico}{CC2}
+\imagen{caminocritico1}{20}{Primera parte del camino crítico}{CC1}
 \end{sidewaystable}
 
 \begin{sidewaystable}
-\imagen{caminocritico3.pdf}{20}{Tercera Parte del camino Crítico}{CC3}
+\imagen{caminocritico2}{20}{Segunda parte del camino crítico}{CC2}
 \end{sidewaystable}
 
 \begin{sidewaystable}
-\imagen{caminocritico4.pdf}{20}{Cuarta Parte del camino Crítico}{CC4}
+\imagen{caminocritico3}{20}{Tercera parte del camino crítico}{CC3}
+\end{sidewaystable}
+
+\begin{sidewaystable}
+\imagen{caminocritico4}{20}{Cuarta parte del camino crítico}{CC4}
 \end{sidewaystable}
 
 \section{Informe general de recursos}
-La imagen \ref{Rec} incluye una tabla con todos los recursos utilizados en el
-proyecto, así como sus características y costos.
+La imagen \ref{Rec}, de la página \pageref{Rec}, incluye una tabla con todos
+los recursos utilizados en el proyecto, así como sus características y costos.
 \begin{sidewaystable}
-\imagen{Recursos.pdf}{20}{Informe General de Recursos del Sistema}{Rec}
+\imagen{Recursos}{20}{Informe General de Recursos del Sistema}{Rec}
 \end{sidewaystable}
 
 \section{Costes}
@@ -673,39 +678,78 @@ La imagen \ref{Cos_Ac} incluye los respectivos costes de cada una de las
 actividades básicas del proyecto. 
 
 \begin{sidewaystable}
-\imagen{costeactividades.pdf}{20}{Informe de los Costes de las
+\imagen{costeactividades}{20}{Informe de los Costes de las
   Actividades}{Cos_Ac}
 \end{sidewaystable}
 
 \section{Informe de redistribución}
-Las imágenes \ref{Gan_re1}, \ref{Gan_re2}, \ref{Gan_re3} y \ref{Gan_re4}
-incluyen los diagramas Gant del proyecto una vez redistribuido.
+Las imágenes \ref{Gan_re1}, \ref{Gan_re2}, \ref{Gan_re3} y \ref{Gan_re4}, de
+las páginas \pageref{Gan_re1}, \pageref{Gan_re2}, \pageref{Gan_re3} y
+\pageref{Gan_re4} respectivamente; incluyen los diagramas Gantt del proyecto
+una vez redistribuido.
 
 \begin{sidewaystable}
-\imagen{gantredistribuido1.pdf}{20}{Primera Parte del Informe de
-  Redistribución}{Gan_re1} 
+\imagen{gantredistribuido1}{20}{Primera parte del informe de
+  redistribución}{Gan_re1} 
 \end{sidewaystable}
 
 \begin{sidewaystable}
-\imagen{gantredistribuido2.pdf}{20}{Segunda Parte del Informe de
-  Redistribución}{Gan_re2} 
+\imagen{gantredistribuido2}{20}{Segunda parte del informe de
+  redistribución}{Gan_re2} 
 \end{sidewaystable}
 
 \begin{sidewaystable}
-\imagen{gantredistribuido3.pdf}{20}{Tercera Parte del Informe de
-  Redistribución}{Gan_re3} 
+\imagen{gantredistribuido3}{20}{Tercera parte del informe de
+  redistribución}{Gan_re3} 
 \end{sidewaystable}
 
 \begin{sidewaystable}
-\imagen{gantredistribuido4.pdf}{20}{Cuarta Parte del Informe de
-  Redistribución}{Gan_re4} 
+\imagen{gantredistribuido4}{20}{Cuarta parte del informe de
+  redistribución}{Gan_re4} 
 \end{sidewaystable}
 
 \section{Informe de seguimiento}
+Las imágenes \ref{Gan_se1}, \ref{Gan_se2}, \ref{Gan_se3}, \ref{Gan_se4},
+\ref{Gan_se5}, \ref{Gan_se6} y \ref{Gan_se7}, de las páginas
+\pageref{Gan_se1}, \pageref{Gan_se2}, \pageref{Gan_se3}, \pageref{Gan_se4},
+\pageref{Gan_se5}, \pageref{Gan_se6} y \pageref{Gan_se7} respectivamente;
+incluyen los diagramas Gantt del seguimiento del proyecto, teniendo en cuenta
+que las tareas previas al 20 de Julio de 2010 se han completado.
 
+\begin{sidewaystable}
+\imagen{gantseguimiento1}{20}{Primera parte del informe de
+  seguimiento}{Gan_se1} 
+\end{sidewaystable}
 
-\bibliographystyle{plain} 
-\bibliography{p1}
+\begin{sidewaystable}
+\imagen{gantseguimiento2}{20}{Segunda parte del informe de
+  seguimiento}{Gan_se2} 
+\end{sidewaystable}
+
+\begin{sidewaystable}
+\imagen{gantseguimiento3}{20}{Tercera parte del informe de
+  seguimiento}{Gan_se3} 
+\end{sidewaystable}
+
+\begin{sidewaystable}
+\imagen{gantseguimiento4}{20}{Cuarta parte del informe de
+  seguimiento}{Gan_se4} 
+\end{sidewaystable}
+\newpage
+\begin{sidewaystable}
+\imagen{gantseguimiento5}{20}{Quinta parte del informe de
+  seguimiento}{Gan_se5} 
+\end{sidewaystable}
+
+\begin{sidewaystable}
+\imagen{gantseguimiento6}{20}{Sexta parte del informe de
+  seguimiento}{Gan_se6} 
+\end{sidewaystable}
+
+\begin{sidewaystable}
+\imagen{gantseguimiento7}{20}{Séptima parte del informe de
+  seguimiento}{Gan_se7} 
+\end{sidewaystable}
 
 \end{document}
 

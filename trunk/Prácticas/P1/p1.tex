@@ -9,7 +9,7 @@
 
 % Encabezado y pie de página
 \encabezado
-
+\setcounter{secnumdepth}{3} 
 \begin{document}
 
 % Silabación extra
@@ -100,7 +100,7 @@ Se analizan las necesidades del usuario para establecer el conjunto de procesos
 que conforma el SI para cada uno de los subsistemas identificados.
 
 \subsubsection{Definición de interfaz de usuario}
-Esta actividad acomete el puente de información ente el sistema y el usuario, 
+Esta actividad acomete el puente de información entre el sistema y el usuario, 
 ocupándose de trabajos como el formato de pantalla o cuadros de diálogo. Se 
 define el formato y contenido de cada una de las interfaces de pantalla, 
 especificando su comportamiento dinámico.
@@ -115,7 +115,7 @@ marco general de planificación de cada nivel de prueba. Además, se recopilan
 los requisitos relativos al entorno de pruebas y se inicia la definición de las
 especificaciones necesarias para la correcta ejecución de las distintas
 pruebas del sistema de información. Los criterios de aceptación deben
-ser definidos de forma clara, prestando especial atención a aspectos como:
+ser definidos de forma clara, prestando especial atención a aspectos como
 procesos críticos del sistema, rendimiento del sistema, seguridad y 
 disponibilidad.
 
@@ -133,7 +133,7 @@ sistema de información.
 La decisión del software y hardware que se utiliza es fundamental. Se ha
 seleccionado como software Red Hat Enterprise Linux 5 de acuerdo a las
 expectativas de crecimiento y a los servicios que se quieren ofrecer. Se
-van a utilizar 13 ordenadores con el objetivo de que todos los que participan
+van a utilizar 6 ordenadores con el objetivo de que todos los que participan
 en el desarrollo del software puedan realizar su trabajo de manera 
 independiente. 
  
@@ -152,8 +152,8 @@ interactuar unos con otros, intentando que cada módulo trate total o
 parcialmente un proceso específico y tenga una interfaz sencilla y amigable.
 
 \subsubsection{Diseño físico de datos}
-Esta tarea consiste en, a partir del modelo lógico de datos normalizado, 
-obtener como salida el diseño del modelo físico de datos, teniendo en cuenta 
+A partir del modelo lógico de datos normalizado, esta tarea
+obtiene como salida el diseño del modelo físico de datos, teniendo en cuenta 
 las características específicas de nuestro SGBD. Además, también se 
 determinarán los caminos de acceso a dichos datos por parte de cada uno de los 
 módulos de la aplicación, de acuerdo al modelo físico de datos, con el fin de 
@@ -188,16 +188,16 @@ En esta tarea se especifican en detalle los planes de prueba del SI para cada
 uno de los niveles de prueba establecidos.
 
 \subsubsection{Establecimiento de requisitos de implantación}
-En esta tarea se recopila toda la información necesaria para, en la etapa de 
-implementación, elaborar los manuales de usuario y otros apartados en la 
-documentación. Y se determinan los conocimientos y/o aptitudes adicionales que 
-necesitan dominar los usuarios finales para trabajar con el sistema 
-desarrollado. Además, se recogen requisitos de equipamiento hardware, software 
-y comunicaciones que requiera el nuevo sistema.
+En esta tarea se recopila toda la información necesaria para que en la etapa de 
+implementación se elaboren los manuales de usuario y otros apartados en la 
+documentación. También, se determinan los conocimientos y/o aptitudes
+adicionales que necesitan dominar los usuarios finales para trabajar con el
+sistema desarrollado. Además, se recogen requisitos de equipamiento hardware,
+software y comunicaciones que requiera el nuevo sistema.  
 
 \subsubsection{Aprobación del diseño y SI}
 La última tarea de esta fase consiste en una presentación del diseño de este SI
-al jefe de proyecto para que este le dé el visto bueno y lo apruebe.
+al jefe de proyecto para que este realice la revisión pertinente y lo apruebe.
 
 \subsection{Implementación}
 En esta fase se genera el código de los componentes software del SI y se 
@@ -220,8 +220,8 @@ Posteriormente, se depuran dichos códigos, con el objetivo de obtener una
 herramienta robusta y eficiente.
 
 \subsubsection{Elaboración del manual de usuario}
-Esta tarea consiste en elaboración de una completa documentación que posibilite
-a los usuarios, primero conocer y más tarde dominar, las principales
+Esta tarea consiste en la elaboración de una completa documentación que
+posibilite a los usuarios, primero conocer y más tarde dominar, las principales
 funcionalidades de la herramienta software; y que describa los procedimientos 
 de actuación necesarios para realizar un correcto mantenimiento del sistema.
 
@@ -251,7 +251,7 @@ ayudado por el coordinador, el que se encargará de la ejecución y evaluación 
 dichas pruebas.
 
 \subsubsection{Ejecución de las pruebas unitarias}
-En esta tarea se realizan las pruebas unitarias cada uno de los componentes 
+En esta tarea se realizan las pruebas unitarias de cada uno de los componentes 
 del SI, con objeto de comprobar que su estructura es la correcta y que se 
 ajusta a la funcionalidad establecida. Para ello, primero se realiza una 
 preparación del entorno, donde quedarán aprobados todos los recursos necesarios
@@ -281,7 +281,7 @@ realización y evaluación de las pruebas.
 Para realizar esta tarea, a parte del coordinador y el usuario experto, se une 
 la labor del secretario. Esta tarea consiste en la recopilación de los 
 productos que componen el SI y la presentación al jefe de proyecto del mismo, 
-con el objetivo de que dé su aprobación.
+con el objetivo de obtener la aprobación definitiva.
 
 \subsection{Tareas repetitivas}
   \begin{itemize}
@@ -404,9 +404,9 @@ tareas de las que se compone el proyecto.
 
 \item[Usuario experto] realiza pruebas a un alto nivel de especificación.
 
-\item[Miembro del grupo de trabajo] recopilar los requisitos iniciales de la
-  aplicación, realizar entrevistas, supervisar el trabajo del personal
-  contratado, conseguir los recursos necesarios y la contabilidad.
+\item[Miembro del grupo de trabajo] se encarga de recopilar los requisitos
+  iniciales de la aplicación, realizar entrevistas, supervisar el trabajo del
+  personal  contratado, conseguir los recursos necesarios y la contabilidad.  
 
 \end{description}
 
@@ -429,32 +429,8 @@ desarrollo del proyecto.
 \end{description}
 
 \section{Definición de costes por uso}
-
-\begin{table}[!h]
-\centering
-  \begin{tabular}{|c|c|}
-    \hline
-    \textbf{Recursos} & \textbf{Costes/Uso} \\
-    \hline \hline
-    Sala de juntas & \\
-    \hline
-    Proyector & \\
-    \hline
-    Pizarra interactiva & \\
-    \hline
-    Impresora láser color & \\
-    \hline
-    Servidor central & \\
-    \hline
-    Red Hat Enterprise Linux 5 & \\
-    \hline
-    Equipo informático & \\
-    \hline
-
-  \end{tabular}
-  \caption{Costes fijos por actividad}
-  \label{Tab:costefijo}
-\end{table}
+El único recurso que tiene costes por uso es el Operario de Servicio Técnico,
+que se le pagará 100 \euro \ cada vez que se requieran sus servicios.
 
 \section{Definición de costes fijos de actividad}
 
@@ -500,7 +476,7 @@ siguientes días festivos:
 \begin{description}
 \item[Virgen de Alarcos] 24 de Mayo
 \item[Comunidad de Castilla-La Mancha] 31 de Mayo
-\item[La Virgen] 15 de Agosto
+\item[Día de la Asunción de la Virgen] 15 de Agosto
 \end{description}
 
 \section{Calendarios específicos de recursos humanos}
@@ -524,23 +500,23 @@ genera sobre los recursos sobreasignados.
 \imagen{Recursosobre.pdf}{12.5}{Informe de Recursos Sobreasignados}{Rec_sob}
 
 \subsection{Gantt de redistribución}
-Debido a que se ha presentado el problema de que existían ordenadores
-sobreasignados se ha decidido alquilar 4 unidades más. 
+La redistribución ha sido totalmente automática a través de los algoritmos
+que proporciona \emph{Microsoft Project 2003}.
 
 \section{Delimitaciones de tareas}
 % Incluir al menos 2 tipos de delimitaciones de Tareas y analizar sus efectos
 % en la programación de proyecto.
-Para probar el efecto de las delimitaciones en el proyecto se introdujeron
-dos tal y como se pide. Las tareas seleccionadas para ello son: 
+Se han introducido dos ejemplos para probar los efectos en la programación
+del proyecto. Las tareas seleccionadas para ello son: 
 \begin{description}
 \item [Tarea 2.3.3 Revisión de la interfaz de usuario].
- A la que se le ha aplicado la delimitación inflexible de \textbf{No
-   finalizar antes antes del quince de Julio del 2010.} Como resultado de esta acción, se
- produjo una postposición tal que la tarea finaliza dicho día, esto conlleva
+ Se ha aplicado la delimitación inflexible de \textbf{No
+   finalizar antes del 15 de Julio del 2010}. El resultado de esta acción
+ produce una postposición tal que la tarea finaliza dicho día. Esto ocasiona
  un retraso del camino crítico del proyecto.
 
 \item [Tarea 2.4.3 Especificación de la distribución de datos].
- Se le ha aplicado una distribución flexible consistente en que la tarea
+ Se aplica una distribución flexible consistente en que la tarea
  termine \textbf{Lo más tarde posible.} Debido a la vinculación fin-comienzo
  con la tarea 2.3.3 y su grupo de tareas, la tarea 2.4.3 termina a la vez que
  la 2.3.3.
@@ -669,7 +645,7 @@ camino crítico de las tareas a seguir en el proyecto.
 
 \section{Informe general de recursos}
 La imagen \ref{Rec} incluye una tabla con todos los recursos utilizados en el
-poryecto, así como sus características y costos.
+proyecto, así como sus características y costos.
 \begin{sidewaystable}
 \imagen{Recursos.pdf}{20}{Informe General de Recursos del Sistema}{Rec}
 \end{sidewaystable}
@@ -684,8 +660,8 @@ actividades básicas del proyecto.
 \end{sidewaystable}
 
 \section{Informe de redistribución}
-Las immágenes \ref{Gan_re1}, \ref{Gan_re2}, \ref{Gan_re3} y \ref{Gan_re4}
-incluye los diagramas Gant del proyecto una vez redistribuido.
+Las imágenes \ref{Gan_re1}, \ref{Gan_re2}, \ref{Gan_re3} y \ref{Gan_re4}
+incluyen los diagramas Gant del proyecto una vez redistribuido.
 
 \begin{sidewaystable}
 \imagen{gantredistribuido1.pdf}{20}{Primera Parte del Informe de Redistribución}{Gan_re1}

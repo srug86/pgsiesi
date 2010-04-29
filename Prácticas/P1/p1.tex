@@ -5,7 +5,7 @@
 \input{inc/includes.tex}
 
 % Árboles de directorios
-\usepackage{dirtree}
+%\usepackage{dirtree}
 
 % Encabezado y pie de página
 \encabezado
@@ -526,16 +526,21 @@ sobreasignados se ha decidido alquilar 4 unidades más.
 \section{Delimitaciones de tareas}
 % Incluir al menos 2 tipos de delimitaciones de Tareas y analizar sus efectos
 % en la programación de proyecto.
-
-Las delimitaciones introducidas en el proyecto son:
+Para probar el efecto de las delimitaciones en el proyecto se introdujeron
+dos tal y como se pide. Las tareas seleccionadas para ello son: 
 \begin{description}
-\item[Tarea 2.3.3] Revisión de la interfaz de usuario.\\
-  No se debe finalizar antes del 20 de Julio de 2010. Esta condición es
-  \textbf{inflexible} y no produce efectos.
-\item[Tarea 2.4.3] Especificación de la distribución de datos.\\
-  Deberá finalizar lo más tarde posible. Esta condición es \textbf{flexible}.
-  Los efectos de esta delimitación no se puede resolver la sobreasignación
-  del recurso \emph{miembro del grupo de trabajo} el 27 de Julio de 2010.
+\item [Tarea 2.3.3 Revisión de la interfaz de usuario].
+ A la que se le ha aplicado la delimitación inflexible de \textbf{No
+   finalizar antes antes del 15/07/2010.} Como resultado de esta acción, se
+ produjo una postposición tal que la tarea finaliza dicho día, esto conlleva
+ un retraso del camino crítico del proyecto.
+
+\item [Tarea 2.4.3 Especificación de la distribución de datos].
+ Se le ha aplicado una distribución flexible consistente en que la tarea
+ termine \textbf{Lo más tarde posible.} Debido a la vinculación fin-comienzo
+ con la tarea 2.3.3 y su grupo de tareas, la tarea 2.4.3 termina a la vez que
+ la 2.3.3.
+
 \end{description}
 
 \chapter{Alternativas al plan evaluando su repercusión en 

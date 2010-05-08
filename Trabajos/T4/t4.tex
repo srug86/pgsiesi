@@ -294,7 +294,99 @@ cada tarea), y finalmente, si se cumple el criterio de convergencia o no.
 
 
 \chapter{Priorización de exposición a riesgos}
+Tomando de la última iteración de la técnica Delphi los datos de probabilidad
+de ocurrencia y magnitud de pérdida de los riesgos, se ha procedido a
+calcular la exposición a riesgos. Este valor se obtiene al multiplicar la
+probabilidad de ocurrencia (en tanto por uno) y la magnitud de pérdida,
+realizando esta operación para cada riesgo.
 
+Una vez calculado este conjunto de valores, se ha realizado la separación de
+los riesgos por su importancia, considerando como criterio base de
+clasificación:
+
+\begin{itemize}
+\item Si la exposición a riesgos es mayor de horas, el riesgo se considera de
+importancia alta.
+\item Si la exposición a riesgos es menor de y mayor de , el riesgo se
+considera de importancia media.
+\item Si la exposición a riesgos es menor de , el riesgo
+se considera de importancia baja.
+\end{itemize}
+
+La lista de exposición a riesgos se puede ver en la tabla \ref{Tab:Expri}.
+
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{|c||p{2,5cm}||c||p{2,5cm}||c|}
+    \hline
+    \textbf{Riesgo} & \textbf{Magnitud de pérdida} & \textbf{Propabilidad} & 
+    \textbf{Exposición al riesgo} & \textbf{Importancia} \\
+    \hline \hline
+    A.7 &  &  &  &  \\ 
+    \hline
+    A.10 &  &  &  &  \\
+    \hline 
+    D.1 &  &  &  &  \\
+    \hline
+    D.4 &  &  &  &  \\
+    \hline
+    E.1 &  &  &  &  \\
+    \hline
+    F.1 &  &  &  &  \\
+    \hline
+    G.3 &  &  &  &  \\
+    \hline
+    H.9 &  &  &  &  \\
+    \hline
+    J.12 &  &  &  &  \\
+    \hline
+    J.22 &  &  &  &  \\
+    \hline
+    K.3 &  &  &  &  \\
+    \hline
+  \end{tabular}
+  \caption{Exposición al riesgo} 
+  \label{Tab:Expri}
+\end{table}
+
+Por tanto, si se ordena la tabla \ref{Tab:Expri} por importancia, de alta a
+baja prioridad, queda una tabla que se puede observar en el cuadro
+\ref{Tab:Expor}.
+
+
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{|c||p{2,5cm}||c||p{2,5cm}||c|}
+    \hline
+    \textbf{Riesgo} & \textbf{Magnitud de pérdida} & \textbf{Propabilidad} & 
+    \textbf{Exposición al riesgo} & \textbf{Importancia} \\
+    \hline \hline
+    A.7 &  &  &  &  \\ 
+    \hline
+    A.10 &  &  &  &  \\
+    \hline 
+    D.1 &  &  &  &  \\
+    \hline
+    D.4 &  &  &  &  \\
+    \hline
+    E.1 &  &  &  &  \\
+    \hline
+    F.1 &  &  &  &  \\
+    \hline
+    G.3 &  &  &  &  \\
+    \hline
+    H.9 &  &  &  &  \\
+    \hline
+    J.12 &  &  &  &  \\
+    \hline
+    J.22 &  &  &  &  \\
+    \hline
+    K.3 &  &  &  &  \\
+    \hline
+  \end{tabular}
+  \caption{Exposición al riesgo ordenada por importancia} 
+  \label{Tab:Expor}
+\end{table}
 \chapter{Planes de contingencia}
 \section{Riesgo tal}
 

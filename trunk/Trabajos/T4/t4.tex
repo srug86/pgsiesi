@@ -402,21 +402,100 @@ baja prioridad, queda una tabla que se puede observar en el cuadro
   \caption{Exposición al riesgo ordenada por importancia} 
   \label{Tab:Expor}
 \end{table}
+
 \chapter{Planes de contingencia}
 \section{Plan de contiengencia para el riesgo A.11}
-\section{Riesgo pascual}
-\subsection{Riesgo}
+Un retraso en una tarea produce retrasos en cascada en las tareas dependientes.
+
 \subsection{Descripción}
-\subsection{Aspectos del proyecto afectados}
-\subsection{Causas}
-\subsection{Efectos de los objetivos del proyecto}
-\subsection{Responsabilidad asignadas}
+Este riesgo ocurre cuando una tarea retrasa su finalización respecto del plazo
+planificado y otras tareas dependen de esta, bien sea para comenzar, 
+completarse o terminarse. Si además la tarea que se retrasa pertenece al camino
+crítico del proyecto, el riesgo causará un mayor impacto, ya que afectará
+a la duración total del proyecto.
+
+\subsection{Riesgos identificados}
+\subsubsection{Aspectos del proyecto afectados}
+El proyecto sigue un ciclo de vida en cascada, por lo que un retraso en 
+cualquiera de sus etapas se arrastrará a las siguientes etapas.
+
+\subsubsection{Causas}
+Las causas del retraso en la realización de una tarea pueden ser muy diversas.
+En cualquier caso, estos retrasos serán los causantes de dicho riesgo.
+
+\subsubsection{Efectos en los objetivos del proyecto}
+Un retraso en una tarea afecta a otras tareas cuando hay dependencias entre
+ambas. Las dependencias pueden ser de distintos tipos: fin-comienzo, 
+comienzo-comienzo, etc. En cada una de estas dependencias, si una de las tareas
+que intervienen se retrasa, retrasará a las relacionadas. Esto provocará un
+incumplimiento del calendario del proyecto, pudiendo provocar varios efectos
+indeseados, como incumplimiento de contratos, gastos extras en el alquiler de
+los equipos, trastornos en el funcionamiento normal de la gestión de datos de
+la universidad, etc.
+
+\subsection{Responsabilidades asignadas}
+El responsable del retraso en la realización y finalización a tiempo de una
+tarea es el coordinador. El coordinador debe preocuparse de gestionar los
+recursos para poder poder completar de forma exitosa la realización de las
+tareas, por lo que, cualquier retraso, puede en mayor o menor medida ser
+responsabilidad de una mala gestión por su parte.
+
 \subsection{Resultados del análisis del riesgo}
+Después de haber aplicado la técnica \emph{Delphi}, la probabilidad de
+ocurrencia es del 64\%, la magnitud de pérdida o impacto es de 18.4 días y, por
+tanto, la exposición al riesgo es de 11.77 días.
+
 \subsection{Respuestas previstas}
+Si una tarea se retrasa, pero esta no tiene dependencias con otras o bien
+causa un impacto mínimo en ellas, no hará falta planificar ninguna respuesta,
+siempre y cuando la tarea acabe antes de finalizar su fase del ciclo de vida;
+ya que este proyecto posee un ciclo de vida en cascada y para pasar de fase,
+las tareas de la anterior deben estar finalizadas. Si no es este el caso,
+deberán tomarse otras medidas.
+\begin{itemize}
+\item El retraso en la finalización de una tarea puede estar causada por una
+acumulación de trabajo. Una posible solución sería la de contratar a más
+personal o la de plantear al actual la realización de horas extras. Esta
+solución repercutiría en el presupuesto final, por lo que primero se tendría
+que contar con la aprobación de la universidad.
+Otra solución, aunque más discutible, sería la de disminuir en cantidad o
+calidad la realización de la tarea. Esto repercutiría en el producto final,
+pero si el peso de estas tareas no es muy significativo y la ganancia es
+aceptable, puede ser conveniente llevar a cabo esta respuesta. En tareas que
+afecten a la confiabilidad o la robustez del producto, deberán tomarse otras
+medidas.
+\item Otra posible causa puede ser la falta de material, en este de
+terminales, pizarras o salas de reuniones. Como se trata de recursos
+alquilados, la solución vendría por aumentar el número de recursos alquilados.
+Esta solución también repercutirá en el presupuesto, por lo que también
+deberá contar con la aprobación de la universidad.
+\end{itemize}
+
 \subsection{Nivel del riesgo residual}
+El retraso de una tarea afectará al calendario global del proyecto. Un retraso
+superior a las dos semanas no podrá ser asumible en nuestro sistema. Por lo
+que si después de aplicar una respuesta no obtenemos retrasos menores a los
+asumibles, deberemos aumentar el nivel de las respuestas, esto es, aumentar
+el número de personal contratado o el número de recursos materiales según sea
+conveniente. Si esto supone un coste inabordable para la universidad, se
+tendría que optar por la opción de reducir la calidad del software.
+
 \subsection{Acciones específicas para implementar la estrategia de respuesta
 a cambios}
+Sería conveniente contar con un listado de posibles empleados para, en caso
+de necesitar personal, tener accesible una serie de cantidatos a ser
+contratados. También puede tenerse un control de nuevos recursos a alquilar
+para poder disponer de ellos en el caso de que fueran necesarios. Además
+puede hacerse una lista con las funcionalidades mínimas, recomendables y
+optativas del software para, en caso de tener que reducir su calidad, tener
+claro qué es y qué no es imprescindible desarrollar.
+
 \subsection{Presupuesto y tiempos de respuesta}
+El presupuesto y los tiempos para solventar este riesgo dependerán de la
+gravedad del retraso. Cuanto mayor sea el retraso, mayor será el presupuesto
+a invertir. En cualquier caso, se tendrá que estudiar si la inversión a
+realizar aporta o no unos beneficios significativos.
+
 
 \section{Plan de contiengencia para el riesgo A.7}
 El esfuerzo es mayor que el estimado (por líneas de código, número de puntos

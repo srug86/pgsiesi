@@ -1,5 +1,5 @@
 % Clase
-\documentclass[11pt,a4paper,spanish,twoside]{report}
+\documentclass[11pt,a4paper,spanish,twoside]{book}
 
 % Órdenes auxiliares
 \input{inc/includes.tex}
@@ -14,10 +14,10 @@
 
 % Portada
 \portada{Planificación y Gestión de\\Sistemas de Información}
-{Trabajo 3}{Calendario del proyecto}
+{Trabajo 4}{Calendario del proyecto}
 {Sergio de la Rubia García-Carpintero\\Miguel Millán Sánchez-Grande\\
   Luis Muñoz Villarreal\\Alicia Serrano Sánchez\\
-  Juan Miguel Torres Triviño}{26 de Abril de 2010}
+  Juan Miguel Torres Triviño}{10 de Mayo de 2010}
 
 % Licencia
 \licencia{Sergio de la Rubia García-Carpintero, Miguel Millán Sánchez-Grande,
@@ -25,8 +25,8 @@
 
 \chapter*{Ficha de trabajo}
 \begin{description}
-\item[Código] T3
-\item[Fecha] 26 de Abril de 2010
+\item[Código] T4
+\item[Fecha] 10 de Mayo de 2010
 \item[Título] Calendario del proyecto
 \end{description}
 
@@ -49,37 +49,35 @@
 % Índices
 \tableofcontents
 \listoftables
-\listoffigures
+%\listoffigures
 
 %% INICIO DEL DOCUMENTO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \chapter*{Introducción}
-
-En este trabajo se pretende conocer los riesgos más habituales que se pueden 
-dar en el proyecto y algunos métodos para disminuir sus efectos negativos.
+En este documento se dan a conocer los riesgos que el equipo de trabajo ha
+considerado más significativos entre los que se pueden dar en este proyecto y
+algunos métodos para disminuir sus efectos negativos.
 
 Un \emph{riesgo} es un evento que, en caso de ocurrir, tiene un efecto
-positivo o negativo sobre los objetivos de un proyecto. Por tanto, en este
-trabajo se incluye un plan de riesgos con los más probables de nuestro
+positivo o negativo sobre los objetivos de un proyecto. Por tanto, este
+documento incluye un plan de riesgos con los más probables de este
 proyecto, clasificándolos según su importancia.
 
-De esa lista se han seleccionado los cinco riesgos más importantes, para los
-que se ha realizado su plan de respuestas particularizado, incluyendo su 
+De dicha lista se  seleccionan los cinco riesgos más importantes, para los
+que se ha realizado un plan de respuestas particularizado, incluyendo su 
 descripción, los aspectos del proyecto afectados, las responsabilidades 
 asignadas, los resultados del análisis del riesgo, el plan de contingencia,
 el nivel de riesgos residual, las acciones específicas y el presupuesto y 
 tiempos para las respuestas.
 
 \chapter{Selección de riesgos}
-Para determinar la lista de riesgos que se tratarán, se ha utilizado una
+Para determinar la lista de riesgos que se tratarán se ha utilizado una
 adaptación de la técnica \emph{Delphi}. Los riesgos han sido seleccionados de
-la lista de comprobación de riesgos (\emph{checklist}) publicada en el 
+la lista de comprobación de riesgos (\emph{checklist}) publicada en el libro 
 \emph{Connell, S. Desarrollo y Gestión de Proyectos Informáticos. McGraw-Hill
 Iberoamericana, 1997}.
 
 \section{Técnica de selección de riesgos}
 La técnica de selección de riesgos utilizada consta en los siguientes pasos:
-
 \begin{enumerate}
 \item Cada experto selecciona inicialmente veinte riesgos de entre todos los que
   forman la lista.
@@ -97,12 +95,11 @@ llegar a sobrepasar el máximo de riesgos a elegir.
 \end{enumerate}
 
 \section{Riesgos resultantes}
-Después de aplicar la técnica DELPHI adaptada, la lista de riesgos
+Después de aplicar la técnica \emph{Delphi} adaptada, la lista de riesgos
 seleccionada corresponde con la tabla \ref{Tab:tar_sel}.
-
 \begin{table}[!ht]
   \centering
-  \begin{tabular}{|p{3.5cm}||p{1.1cm}|p{6.3cm}|}
+  \begin{tabular}{|p{3.5cm}|c|p{6.5cm}|}
     \hline
     \textbf{Categoría} & \textbf{Riesgo} & \textbf{Descripción} \\
     \hline\hline
@@ -112,33 +109,33 @@ seleccionada corresponde con la tabla \ref{Tab:tar_sel}.
     \cline{2-3}
     & A.11 & Un retraso en una tarea produce retrasos en cascada en las
     tareas dependientes. \\
-    \hline
+    \hline \hline
     \multirow{2}{3cm}{Usuarios finales}
     & D.1 & Los usuarios finales insisten en nuevos requisitos\\
     \cline{2-3}
-    & D.4 & No se ha solicitado información al usuario, por lo que el prducto
+    & D.4 & No se ha solicitado información al usuario, por lo que el producto
     al final  no se ajusta a las necesidades del usuario, y hay que volver a
     crear el producto.\\
-    \hline
-    Cliente& E.1 & El cliente insiste en nuevos requisitos.\\
-    \hline
+    \hline \hline
+    Cliente & E.1 & El cliente insiste en nuevos requisitos.\\
+    \hline \hline
     Personal contratado & F.1 & El personal contratado no suministra los
     componentes en el periodo establecido.\\
-    \hline
-    Requisitos& G.3 & Se añaden requisitos extra.\\
-    \hline
+    \hline \hline
+    Requisitos & G.3 & Se añaden requisitos extra.\\
+    \hline \hline
     Producto & H.9 &  Los requisitos para crear interfaces con otros
     sistemas, otros sistemas complejos, u otros sistemas que no están bajo el
     control del equipo de desarrollo suponen un diseño, implementación y
     prueba no previstos.\\ 
-    \hline
+    \hline \hline
     \multirow{2}{3.5cm}{Personal}
     & J.12 & La incorporación de nuevo personal de desarrollo al proyecto ya
     avanzado, y el aprendizaje y comunicaciones extra imprevistas reducen la
     eficiencia de los miembros del equipo existentes.\\ 
     \cline{2-3}
     & J.22 & El personal trabaja más lento de lo esperado\\
-    \hline
+    \hline \hline
     \multirow{1}{3.5cm}{Diseño e implementación}
     & K.3 & Un mal diseño implica volver a diseñar e implementar.\\
    \hline
@@ -149,269 +146,324 @@ seleccionada corresponde con la tabla \ref{Tab:tar_sel}.
 
 \chapter{Probabilidad de ocurrencia y magnitud de pérdida} 
 En las tablas \ref{Tab:DELPHImag} y \ref{Tab:DELPHIpro}, de las páginas
-\pageref{Tab:DELPHImag} y \pageref{Tab:DELPHIpro}; se  
+\pageref{Tab:DELPHImag} y \pageref{Tab:DELPHIpro}, respectivamente; se  
 puede observar la evolución seguida a la hora de calcular la probabilidad de
-ocurrencia y la magnitud de pérdida con la técnica de DELPHI. Cada tabla
-contiene el identificador de cada riesgo, la iteración en 
-la que se encuentra, las valoraciones de los distintos expertos, así como los
-valores mínimo, medio (que
-corresponde con la media aritmética) y máximo, y finalmente, si se cumple el
-criterio de convergencia o no. 
+ocurrencia y la magnitud de pérdida con la técnica \emph{Delphi}. Además, en
+las tablas \ref{Tab:ResDELPHImag} y \ref{Tab:ResDELPHIpro}, de la página
+\pageref{Tab:ResDELPHIpro}, se puede encontrar los resúmenes de estos procesos.
+
+Como leyenda, cada tabla contiene el identificador de cada riesgo (R), la
+iteración (I) en la que se encuentra, las valoraciones de los distintos
+expertos, así como los valores mínimo (m), medio ($\bar{x}$) (que corresponde
+con la media aritmética) y máximo (M), y finalmente, si se cumple el criterio
+de convergencia o no.
 
 \begin{table}[!h]
-\centering
+  \centering
   \begin{tabular}{|c|c||c|c|c|c|c||c|c|c||c|}
     \hline
-    \textbf{R} & \textbf{I} & \textbf{1} &
-    \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{m}
-    &\textbf{$\bar{x}$} &\textbf{M} & \textbf{C}\\
-    \hline
-    \multirow{4}{*}{A.7} & 1 & 5 & 12 & 8 & 17 & 23 & 5 & 13 & 23 & N \\
-    & 2 & 9 & 13 & 10 & 18 & 19 & 9 & 13.8 & 19 & N \\
-    & 3 & 11 & 13 & 12 & 19 & 15 & 11 & 14 & 19 & N \\
+    \textbf{R} & \textbf{I} & \textbf{1} & \textbf{2} & 
+    \textbf{3} & \textbf{4} & \textbf{5} & \textbf{m} &
+    \textbf{$\bar{x}$} & \textbf{M} & \textbf{C} \\
+    \hline \hline
+
+    \hline \multirow{4}{*}{A.7} 
+    & 1 & 5  & 12 & 8  & 17 & 23 & 5  & 13   & 23 & N \\
+    & 2 & 9  & 13 & 10 & 18 & 19 & 9  & 13.8 & 19 & N \\
+    & 3 & 11 & 13 & 12 & 19 & 15 & 11 & 14   & 19 & N \\
     & \textbf{4} & \textbf{12} & \textbf{13} & \textbf{13} & \textbf{15} &
     \textbf{14} & \textbf{12} & \textbf{13.4} & \textbf{15} & \textbf{S} \\ 
-    \hline
-    \multirow{3}{*}{A.10} & 1 & 31 & 10 & 15 & 6 & 14 & 6 & 15.2 & 31 & N \\
+
+    \hline \multirow{3}{*}{A.11} 
+    & 1 & 31 & 10 & 15 & 6  & 14 & 6  & 15.2 & 31 & N \\
     & 2 & 15 & 12 & 19 & 25 & 20 & 12 & 18.2 & 25 & N \\
     & \textbf{3} & \textbf{15} & \textbf{15} & \textbf{20} & \textbf{22} &
     \textbf{20} & \textbf{15} & \textbf{18.4} & \textbf{22} & \textbf{S} \\ 
-    \hline
-    \multirow{3}{*}{D.1} & 1 & 10 & 10 & 9 & 6 & 18 & 6 & 10.6 & 18 & N \\
+    
+    \hline \multirow{3}{*}{D.1} 
+    & 1 & 10 & 10 & 9  & 6  & 18 & 6  & 10.6 & 18 & N \\
     & 2 & 10 & 12 & 10 & 12 & 15 & 10 & 11.8 & 15 & N \\
     & \textbf{3} & \textbf{10} & \textbf{12} & \textbf{10} & \textbf{13} &
     \textbf{14} & \textbf{10} & \textbf{11.8} & \textbf{14} & \textbf{S} \\ 
-    \hline
-    \multirow{5}{*}{D.4} & 1 & 15 & 18 & 16 & 23 & 33 & 15 & 21 & 33 & N \\
+    
+    \hline \multirow{5}{*}{D.4} 
+    & 1 & 15 & 18 & 16 & 23 & 33 & 15 & 21   & 33 & N \\
     & 2 & 15 & 25 & 20 & 27 & 15 & 15 & 20.4 & 27 & N \\
     & 3 & 16 & 23 & 22 & 24 & 18 & 16 & 20.6 & 24 & N \\
     & 4 & 16 & 22 & 23 & 23 & 17 & 16 & 20.2 & 23 & N \\
     & \textbf{5} & \textbf{15} & \textbf{20} & \textbf{20} & \textbf{20} &
     \textbf{15} & \textbf{15} & \textbf{18} & \textbf{20} & \textbf{S} \\
-    \hline
-    \multirow{5}{*}{E.1} & 1 & 12 & 10 & 6 & 5 & 19 & 5 & 10.4 & 19 & N \\
-    & 2 & 12 & 8 & 13 & 7 & 17 & 7 & 11.4 & 17 & N \\
-    & 3 & 10 & 10 & 10 & 10 & 15 & 10 & 11 & 15 & N \\
+    
+    \hline \multirow{5}{*}{E.1} 
+    & 1 & 12 & 10 & 6  & 5  & 19 & 5  & 10.4 & 19 & N \\
+    & 2 & 12 & 8  & 13 & 7  & 17 & 7  & 11.4 & 17 & N \\
+    & 3 & 10 & 10 & 10 & 10 & 15 & 10 & 11   & 15 & N \\
     & 4 & 10 & 10 & 12 & 11 & 14 & 10 & 11.4 & 14 & N \\
     & \textbf{5} & \textbf{10} & \textbf{11} & \textbf{12} & \textbf{12} &
     \textbf{13} & \textbf{10} & \textbf{11.6} & \textbf{13} & \textbf{S} \\ 
-    \hline
-    \multirow{3}{*}{F.1} & 1 & 8 & 6 & 4 & 14 & 5 & 4 & 7.4 & 14 & N \\
-    & 2 & 8 & 11 & 9 & 6 & 7 & 6 & 8.2 & 11 & N \\
+    
+    \hline \multirow{3}{*}{F.1} 
+    & 1 & 8 & 6  & 4 & 14 & 5 & 4 & 7.4 & 14 & N \\
+    & 2 & 8 & 11 & 9 & 6  & 7 & 6 & 8.2 & 11 & N \\
     & \textbf{3} & \textbf{8} & \textbf{10} & \textbf{9} & \textbf{8} &
     \textbf{8} & \textbf{8} & \textbf{8.6} & \textbf{10} & \textbf{S} \\ 
-    \hline
-    \multirow{3}{*}{G.3} & 1 & 7 & 10 & 7 & 13 & 7 & 7 & 8.8 & 13 & N \\
-    & 2 & 10 & 9 & 7 & 8 & 7 & 7 & 8.2 & 10 & N \\
+    
+    \hline \multirow{3}{*}{G.3} 
+    & 1 & 7  & 10 & 7 & 13 & 7 & 7 & 8.8 & 13 & N \\
+    & 2 & 10 & 9  & 7 & 8  & 7 & 7 & 8.2 & 10 & N \\
     & \textbf{3} & \textbf{10} & \textbf{9} & \textbf{7} & \textbf{9} &
     \textbf{8} & \textbf{7} & \textbf{8.6} & \textbf{10} & \textbf{S} \\ 
-    \hline
-    \multirow{2}{*}{H.9} & 1 & 13 & 14 & 11 & 11 & 4 & 4 & 10.6 & 14 & N \\
+    
+    \hline \multirow{2}{*}{H.9} 
+    & 1 & 13 & 14 & 11 & 11 & 4 & 4 & 10.6 & 14 & N \\
     & \textbf{2} & \textbf{12} & \textbf{12} & \textbf{10} & \textbf{12} &
     \textbf{9} & \textbf{9} & \textbf{11} & \textbf{12} & \textbf{S} \\ 
-    \hline
-    \multirow{3}{*}{J.12} & 1 & 6 & 9 & 5 & 7 & 8 & 5 & 7 & 9 & N \\
+
+    \hline \multirow{3}{*}{J.12} 
+    & 1 & 6 & 9 & 5 & 7 & 8 & 5 & 7   & 9 & N \\
     & 2 & 7 & 6 & 7 & 8 & 5 & 5 & 6.6 & 8 & N \\
     & \textbf{3} & \textbf{7} & \textbf{6} & \textbf{7} & \textbf{8} &
     \textbf{6} & \textbf{6} & \textbf{6.8} & \textbf{8} & \textbf{S} \\ 
-    \hline
-    \multirow{2}{*}{J.22} & 1 & 10 & 8 & 14 & 8 & 10 & 8 & 10 & 14 & N \\
+
+    \hline \multirow{2}{*}{J.22} 
+    & 1 & 10 & 8 & 14 & 8 & 10 & 8 & 10 & 14 & N \\
     & \textbf{2} & \textbf{11} & \textbf{8} & \textbf{8} & \textbf{12} &
     \textbf{11} & \textbf{8} & \textbf{10} & \textbf{12} & \textbf{S} \\ 
-    \hline
-    \multirow{3}{*}{K.3} & 1 & 20 & 19 & 23 & 36 & 19 & 19 & 23.4 & 36 & N \\
+
+    \hline \multirow{3}{*}{K.3} 
+    & 1 & 20 & 19 & 23 & 36 & 19 & 19 & 23.4 & 36 & N \\
     & 2 & 23 & 21 & 30 & 22 & 25 & 21 & 24.2 & 30 & N \\
     & \textbf{3} & \textbf{23} & \textbf{22} & \textbf{22} & \textbf{29} &
     \textbf{25} & \textbf{22} & \textbf{24.2} & \textbf{29} & \textbf{S} \\ 
-
-   \end{tabular}
-  \caption{\textbf{DELPHI} de la magnitud de pérdida (impacto)}
+    \hline
+  \end{tabular}
+  \caption{\emph{Delphi} de la magnitud de pérdida (impacto)}
   \label{Tab:DELPHImag}
 \end{table}
 
 \begin{table}[!h]
-\centering
+  \centering
   \begin{tabular}{|c|c||c|c|c|c|c||c|c|c||c|}
     \hline
-    \textbf{R} & \textbf{I} & \textbf{1} &
-    \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{m}
-    &\textbf{$\bar{x}$} &\textbf{M} & \textbf{C}\\
-    \hline
-    \multirow{3}{*}{A.7} & 1 & 70 & 50 & 65 & 25 & 98 & 25 & 61.6 & 98 & N \\
-    & 2 & 50 & 50 & 70 & 65 & 75 & 50 & 62 & 75 & N \\
+    \textbf{R} & \textbf{I} & \textbf{1} & \textbf{2} & 
+    \textbf{3} & \textbf{4} & \textbf{5} & \textbf{m} &
+    \textbf{$\bar{x}$} & \textbf{M} & \textbf{C} \\
+    \hline \hline
+
+    \hline \multirow{3}{*}{A.7} 
+    & 1 & 70 & 50 & 65 & 25 & 98 & 25 & 61.6 & 98 & N \\
+    & 2 & 50 & 50 & 70 & 65 & 75 & 50 & 62   & 75 & N \\
     & \textbf{3} & \textbf{50} & \textbf{50} & \textbf{70} & \textbf{60} &
     \textbf{70} & \textbf{50} & \textbf{60} & \textbf{70} & \textbf{S} \\ 
-    \hline
-    \multirow{4}{*}{A.10} & 1 & 80 & 40 & 90 & 25 & 80 & 25 & 63 & 90 & N \\
+    
+    \hline \multirow{4}{*}{A.10} 
+    & 1 & 80 & 40 & 90 & 25 & 80 & 25 & 63 & 90 & N \\
     & 2 & 65 & 45 & 70 & 70 & 75 & 45 & 65 & 75 & N \\
     & 3 & 55 & 50 & 70 & 65 & 75 & 50 & 63 & 75 & N \\
     & \textbf{4} & \textbf{55} & \textbf{55} & \textbf{70} & \textbf{65} &
     \textbf{75} & \textbf{55} & \textbf{64} & \textbf{75} & \textbf{S} \\ 
-    \hline
-    \multirow{4}{*}{D.1} & 1 & 20 & 20 & 35 & 15 & 35 & 15 & 25 & 35 & N \\
+
+    \hline \multirow{4}{*}{D.1} 
+    & 1 & 20 & 20 & 35 & 15 & 35 & 15 & 25 & 35 & N \\
     & 2 & 35 & 20 & 20 & 30 & 20 & 20 & 25 & 35 & N \\
     & 3 & 20 & 35 & 20 & 30 & 20 & 20 & 25 & 35 & N \\
     & \textbf{4} & \textbf{20} & \textbf{30} & \textbf{20} & \textbf{30} &
     \textbf{25} & \textbf{20} & \textbf{25} & \textbf{30} & \textbf{S} \\ 
-    \hline
-    \multirow{3}{*}{D.4} & 1 & 25 & 5 & 55 & 5 & 15 & 5 & 21 & 55 & N \\
+
+    \hline \multirow{3}{*}{D.4} 
+    & 1 & 25 & 5  & 55 & 5  & 15 & 5  & 21 & 55 & N \\
     & 2 & 25 & 15 & 15 & 20 & 35 & 15 & 22 & 35 & N \\
     & \textbf{3} & \textbf{25} & \textbf{20} & \textbf{25} & \textbf{20} &
     \textbf{25} & \textbf{20} & \textbf{23} & \textbf{25} & \textbf{S} \\ 
-    \hline
-    \multirow{4}{*}{E.1} & 1 & 20 & 15 & 70 & 40 & 50 & 15 & 39 & 70 & N \\
+    
+    \hline \multirow{4}{*}{E.1} 
+    & 1 & 20 & 15 & 70 & 40 & 50 & 15 & 39 & 70 & N \\
     & 2 & 50 & 65 & 20 & 35 & 40 & 20 & 42 & 65 & N \\
     & 3 & 55 & 55 & 30 & 35 & 40 & 30 & 43 & 55 & N \\
     & \textbf{4} & \textbf{55} & \textbf{55} & \textbf{40} & \textbf{40} &
     \textbf{50} & \textbf{40} & \textbf{48} & \textbf{55} & \textbf{S} \\ 
-    \hline
-    \multirow{3}{*}{F.1} & 1 & 35 & 40 & 20 & 10 & 32 & 10 & 27.4 & 40 & N \\
+
+    \hline \multirow{3}{*}{F.1} 
+    & 1 & 35 & 40 & 20 & 10 & 32 & 10 & 27.4 & 40 & N \\
     & 2 & 30 & 30 & 25 & 17 & 20 & 17 & 24.4 & 30 & N \\
     & \textbf{3} & \textbf{25} & \textbf{30} & \textbf{30} & \textbf{20} &
     \textbf{20} & \textbf{20} & \textbf{25} & \textbf{30} & \textbf{S} \\ 
-    \hline
-    \multirow{3}{*}{G.3} & 1 & 20 & 65 & 65 & 30 & 25 & 20 & 41 & 65 & N \\
+
+    \hline \multirow{3}{*}{G.3} 
+    & 1 & 20 & 65 & 65 & 30 & 25 & 20 & 41 & 65 & N \\
     & 2 & 40 & 30 & 50 & 55 & 35 & 30 & 42 & 55 & N \\
     & \textbf{3} & \textbf{45} & \textbf{40} & \textbf{45} & \textbf{50} &
     \textbf{35} & \textbf{35} & \textbf{43} & \textbf{50} & \textbf{S} \\ 
-    \hline
-    \multirow{5}{*}{H.9} & 1 & 30 & 5 & 40 & 10 & 3 & 3 & 17.6 & 40 & N \\
-    & 2 & 6 & 25 & 10 & 8 & 20 & 6 & 13.8 & 25 & N \\
+
+    \hline \multirow{5}{*}{H.9} 
+    & 1 & 30 & 5  & 40 & 10 & 3  & 3  & 17.6 & 40 & N \\
+    & 2 & 6  & 25 & 10 & 8  & 20 & 6  & 13.8 & 25 & N \\
     & 3 & 10 & 20 & 11 & 13 & 17 & 10 & 14.2 & 20 & N \\
-    & 4 & 10 & 15 & 11 & 12 & 17 & 10 & 13 & 17 & N \\
+    & 4 & 10 & 15 & 11 & 12 & 17 & 10 & 13   & 17 & N \\
     & \textbf{5} & \textbf{12} & \textbf{15} & \textbf{13} & \textbf{15} &
     \textbf{17} & \textbf{12} & \textbf{14.4} & \textbf{17} & \textbf{S} \\ 
-    \hline
-    \multirow{5}{*}{J.12} & 1 & 15 & 15 & 5 & 5 & 34 & 5 & 14.8 & 34 & N \\
-    & 2 & 14 & 9 & 25 & 13 & 10 & 9 & 14.2 & 25 & N \\
+    
+    \hline \multirow{5}{*}{J.12} 
+    & 1 & 15 & 15 & 5  & 5  & 34 & 5  & 14.8 & 34 & N \\
+    & 2 & 14 & 9  & 25 & 13 & 10 & 9  & 14.2 & 25 & N \\
     & 3 & 12 & 13 & 20 & 15 & 12 & 12 & 14.4 & 20 & N \\
     & 4 & 13 & 17 & 20 & 15 & 14 & 13 & 15.8 & 20 & N \\
     & \textbf{5} & \textbf{16} & \textbf{17} & \textbf{18} & \textbf{15} &
     \textbf{14} & \textbf{14} & \textbf{16} & \textbf{18} & \textbf{S} \\ 
-    \hline
-    \multirow{5}{*}{J.22} & 1 & 60 & 10 & 30 & 50 & 75 & 10 & 45 & 75 & N \\
-    & 2 & 50 & 40 & 50 & 60 & 25 & 25 & 45 & 60 & N \\
-    & 3 & 45 & 40 & 50 & 55 & 35 & 35 & 45 & 55 & N \\
+    
+    \hline \multirow{5}{*}{J.22} 
+    & 1 & 60 & 10 & 30 & 50 & 75 & 10 & 45   & 75 & N \\
+    & 2 & 50 & 40 & 50 & 60 & 25 & 25 & 45   & 60 & N \\
+    & 3 & 45 & 40 & 50 & 55 & 35 & 35 & 45   & 55 & N \\
     & 4 & 45 & 40 & 50 & 52 & 35 & 35 & 44.4 & 52 & N \\
     & \textbf{5} & \textbf{45} & \textbf{40} & \textbf{50} & \textbf{50} &
     \textbf{40} & \textbf{40} & \textbf{45} & \textbf{50} & \textbf{S} \\ 
-    \hline
-    \multirow{4}{*}{K.3} & 1 & 20 & 5 & 40 & 1 & 50 & 1 & 23.2 & 50 & N \\
+    
+    \hline \multirow{4}{*}{K.3} 
+    & 1 & 20 & 5  & 40 & 1  & 50 & 1  & 23.2 & 50 & N \\
     & 2 & 40 & 18 & 20 & 25 & 10 & 10 & 22.6 & 40 & N \\
     & 3 & 30 & 19 & 22 & 23 & 20 & 19 & 22.8 & 30 & N \\
     & \textbf{4} & \textbf{21} & \textbf{20} & \textbf{22} & \textbf{23} &
     \textbf{20} & \textbf{20} & \textbf{21.2} & \textbf{23} & \textbf{S} \\ 
-
+    \hline
    \end{tabular}
-  \caption{\textbf{DELPHI} de la probabilidad de ocurrencia}
+  \caption{\emph{Delphi} de la probabilidad de ocurrencia}
   \label{Tab:DELPHIpro}
 \end{table}
 
+\begin{table}[!h]
+\centering
+  \begin{tabular}{|c||c|c|c|c|c||c|c|c|}
+    \hline
+    \textbf{R} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} &
+    \textbf{5} & \textbf{m} &\textbf{$\bar{x}$} &\textbf{M} \\
+    \hline \hline
+    A.7  & 12 & 13 & 13 & 15 & 14 & 12 & 13.4 & 15 \\ \hline
+    A.11 & 15 & 15 & 20 & 22 & 20 & 15 & 18.4 & 22 \\ \hline
+    D.1  & 10 & 12 & 10 & 13 & 14 & 10 & 11.8 & 14 \\ \hline
+    D.4  & 15 & 20 & 20 & 20 & 15 & 15 & 18   & 20 \\ \hline
+    E.1  & 10 & 11 & 12 & 12 & 13 & 10 & 11.6 & 13 \\ \hline
+    F.1  & 8  & 10 & 9  & 8  & 8  & 8  & 8.6  & 10 \\ \hline
+    G.3  & 10 & 9  & 7  & 9  & 8  & 7  & 8.6  & 10 \\ \hline
+    H.9  & 12 & 12 & 10 & 12 & 9  & 9  & 11   & 12 \\ \hline
+    J.12 & 7  & 6  & 7  & 8  & 6  & 6  & 6.8  & 8  \\ \hline
+    J.22 & 11 & 8  & 8  & 12 & 11 & 8  & 10   & 12 \\ \hline
+    K.3  & 23 & 22 & 22 & 29 & 25 & 22 & 24.2 & 29 \\ \hline
+  \end{tabular}
+  \caption{Resumen: \emph{Delphi} de la magnitud de pérdida (impacto)}
+  \label{Tab:ResDELPHImag}
+\end{table}
+
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{|c||c|c|c|c|c||c|c|c|}
+    \hline
+    \textbf{R} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} &
+    \textbf{5} & \textbf{m} &\textbf{$\bar{x}$} &\textbf{M} \\
+    \hline \hline
+    A.7  & 50 & 50 & 70 & 60 & 70 & 50 & 60   & 70 \\ \hline
+    A.11 & 55 & 55 & 70 & 65 & 75 & 55 & 64   & 75 \\ \hline
+    D.1  & 20 & 30 & 20 & 30 & 25 & 20 & 25   & 30 \\ \hline
+    D.4  & 25 & 20 & 25 & 20 & 25 & 20 & 23   & 25 \\ \hline
+    E.1  & 55 & 55 & 40 & 40 & 50 & 40 & 48   & 55 \\ \hline
+    F.1  & 25 & 30 & 30 & 20 & 20 & 20 & 25   & 30 \\ \hline
+    G.3  & 45 & 40 & 45 & 50 & 35 & 35 & 43   & 50 \\ \hline
+    H.9  & 12 & 15 & 13 & 15 & 17 & 12 & 14.4 & 17 \\ \hline
+    J.12 & 16 & 17 & 18 & 15 & 14 & 14 & 16   & 18 \\ \hline
+    J.22 & 45 & 40 & 50 & 50 & 40 & 40 & 45   & 50 \\ \hline
+    K.3  & 21 & 20 & 22 & 23 & 20 & 20 & 21.2 & 23 \\ \hline
+  \end{tabular}
+  \caption{Resumen: \emph{Delphi} de la probabilidad de ocurrencia}
+\label{Tab:ResDELPHIpro}
+\end{table}
 
 \chapter{Priorización de exposición a riesgos}
-Tomando de la última iteración de la técnica Delphi los datos de probabilidad
-de ocurrencia y magnitud de pérdida de los riesgos, se ha procedido a
-calcular la exposición a riesgos. Este valor se obtiene al multiplicar la
-probabilidad de ocurrencia (en tanto por uno) y la magnitud de pérdida,
-realizando esta operación para cada riesgo.
+Tomando de la última iteración de la técnica \emph{Delphi} los datos de
+probabilidad de ocurrencia y magnitud de pérdida de los riesgos, se ha
+procedido a calcular la exposición a riesgos. Este valor se obtiene al
+multiplicar la probabilidad de ocurrencia (en tanto por uno) y la magnitud de
+pérdida, realizando esta operación para cada riesgo.
 
 Una vez calculado este conjunto de valores, se ha realizado la separación de
 los riesgos por su importancia, considerando como criterio base de
-clasificación:
-
+clasificación los siguientes puntos:
 \begin{itemize}
-\item Si la exposición a riesgos es mayor de 5 días, el riesgo se considera de
-importancia alta.
-\item Si la exposición a riesgos es menor de 5 y mayor de 2 días, el riesgo se
-considera de importancia media.
-\item Si la exposición a riesgos es menor de 2 días, el riesgo se considera
-de importancia baja.
+\item Si la exposición a riesgos es mayor que 5 días, el riesgo se considera de
+  importancia \textbf{alta}.
+\item Si la exposición a riesgos es menor que 5 y mayor que 2 días, el riesgo se
+  considera de importancia \textbf{media}.
+\item Si la exposición a riesgos es menor que 2 días, el riesgo se considera
+  de importancia \textbf{baja}.
 \end{itemize}
 
-La lista de exposición a riesgos se puede ver en la tabla \ref{Tab:Expri}.
+El listado de exposición a riesgos se puede ver en la tabla \ref{Tab:Expri}.
 
 \begin{table}[!h]
   \centering
-  \begin{tabular}{|c||p{2,5cm}||c||p{2,5cm}||c|}
+  \begin{tabular}{|c|b{2.1cm}<{\centering}|c|b{2cm}<{\centering}|c|}
     \hline
-    \textbf{Riesgo} & \textbf{Magnitud de pérdida} & \textbf{Propabilidad} & 
+    \textbf{Riesgo} & \textbf{Magnitud de pérdida} & \textbf{Probabilidad} & 
     \textbf{Exposición al riesgo} & \textbf{Importancia} \\
     \hline \hline
-    A.7 & 13.4 & 60 & 8.04 & Alta \\ 
-    \hline
-    A.11 & 18.4 & 64 & 11.77 & Alta \\
-    \hline 
-    D.1 & 11.8 & 25 & 2.95 & Media \\
-    \hline
-    D.4 & 18 & 23 & 4.14 & Media \\
-    \hline
-    E.1 & 11.6 & 48 & 5.56 & Alta \\
-    \hline
-    F.1 & 8.6 & 25 & 2.15 & Media \\
-    \hline
-    G.3 & 8.6 & 43 & 3.69 & Media \\
-    \hline
-    H.9 & 11 & 14.4 & 1.58 & Baja \\
-    \hline
-    J.12 & 6.8 & 16 & 1.08 & Baja \\
-    \hline
-    J.22 & 10 & 45 & 4.5 & Media \\
-    \hline
-    K.3 & 24.2 & 21.2 & 5.08 & Alta \\
-    \hline
+    A.7  & 13.4 & 60   & 8.04  & Alta  \\ \hline
+    A.11 & 18.4 & 64   & 11.77 & Alta  \\ \hline 
+    D.1  & 11.8 & 25   & 2.95  & Media \\ \hline
+    D.4  & 18   & 23   & 4.14  & Media \\ \hline
+    E.1  & 11.6 & 48   & 5.56  & Alta  \\ \hline
+    F.1  & 8.6  & 25   & 2.15  & Media \\ \hline
+    G.3  & 8.6  & 43   & 3.69  & Media \\ \hline
+    H.9  & 11   & 14.4 & 1.58  & Baja  \\ \hline
+    J.12 & 6.8  & 16   & 1.08  & Baja  \\ \hline
+    J.22 & 10   & 45   & 4.5   & Media \\ \hline
+    K.3  & 24.2 & 21.2 & 5.08  & Alta  \\ \hline
   \end{tabular}
-  \caption{Exposición al riesgo} 
+  \caption{Exposición a los riesgos} 
   \label{Tab:Expri}
 \end{table}
 
-Por tanto, si se ordena la tabla \ref{Tab:Expri} por importancia, de alta a
-baja prioridad, queda una tabla que se puede observar en el cuadro
+Si se ordena la tabla \ref{Tab:Expri} por importancia, de alta a
+baja prioridad, el listado resultante se puede observar en la tabla
 \ref{Tab:Expor}.
-
 
 \begin{table}[!h]
   \centering
-  \begin{tabular}{|c||p{2,5cm}||c||p{2,5cm}||c|}
+  \begin{tabular}{|c|b{2.1cm}<{\centering}|c|b{2cm}<{\centering}|c|}
     \hline
-    \textbf{Riesgo} & \textbf{Magnitud de pérdida} & \textbf{Propabilidad} & 
+    \textbf{Riesgo} & \textbf{Magnitud de pérdida} & \textbf{Probabilidad} & 
     \textbf{Exposición al riesgo} & \textbf{Importancia} \\
     \hline \hline
-    A.11 & 18.4 & 64 & 11.77 & Alta \\ 
-    \hline
-    A.7 & 13.4 & 60 & 8.04 & Alta \\
-    \hline 
-    E.1 & 11.6 & 48 & 5.56 & Alta \\
-    \hline
-    K.3 & 24.2 & 21.2 & 5.08 & Alta \\
-    \hline
-    J.22 & 10 & 45 & 4.5 & Media \\
-    \hline
-    D.4 & 18 & 23 & 4.14 & Media \\
-    \hline
-    G.3 & 8.6 & 43 & 3.69 & Media \\
-    \hline
-    D.1 & 11.8 & 25 & 2.95 & Media \\
-    \hline
-    F.1 & 8.6 & 25 & 2.15 & Media \\
-    \hline
-    H.9 & 11 & 14.4 & 1.58 & Baja \\
-    \hline
-    J.12 & 6.8 & 16 & 1.08 & Baja \\
-    \hline
+    A.11 & 18.4 & 64   & 11.77 & Alta  \\ \hline
+    A.7  & 13.4 & 60   & 8.04  & Alta  \\ \hline 
+    E.1  & 11.6 & 48   & 5.56  & Alta  \\ \hline
+    K.3  & 24.2 & 21.2 & 5.08  & Alta  \\ \hline
+    J.22 & 10   & 45   & 4.5   & Media \\ \hline
+    D.4  & 18   & 23   & 4.14  & Media \\ \hline
+    G.3  & 8.6  & 43   & 3.69  & Media \\ \hline
+    D.1  & 11.8 & 25   & 2.95  & Media \\ \hline
+    F.1  & 8.6  & 25   & 2.15  & Media \\ \hline
+    H.9  & 11   & 14.4 & 1.58  & Baja  \\ \hline
+    J.12 & 6.8  & 16   & 1.08  & Baja  \\ \hline
   \end{tabular}
-  \caption{Exposición al riesgo ordenada por importancia} 
+  \caption{Exposición a los riesgos (ordenado por importancia)} 
   \label{Tab:Expor}
 \end{table}
 
 \chapter{Planes de contingencia}
-\section{Plan de contiengencia para el riesgo A.11}
-Un retraso en una tarea produce retrasos en cascada en las tareas dependientes.
+En este capítulo se exponen los riesgos elegidos, ordenador por importancia,
+para analizarlos y plantear las contingencias correspondientes que permitan
+al proyecto subsanar las posibles consecuencias de que estos riesgos se den.
+
+\section{Riesgo A.11}
+\begin{quote}
+  \emph{Un retraso en una tarea produce retrasos en cascada en las tareas
+    dependientes.} 
+\end{quote}
 
 \subsection{Descripción}
 Este riesgo ocurre cuando una tarea retrasa su finalización respecto del plazo
 planificado y otras tareas dependen de esta, bien sea para comenzar, 
 completarse o terminarse. Si además la tarea que se retrasa pertenece al camino
-crítico del proyecto, el riesgo causará un mayor impacto, ya que afectará
+crítico del proyecto, el causará un mayor impacto, ya que afectará
 a la duración total del proyecto.
 
 \subsection{Riesgos identificados}
@@ -420,13 +472,15 @@ El proyecto sigue un ciclo de vida en cascada, por lo que un retraso en
 cualquiera de sus etapas se arrastrará a las siguientes etapas.
 
 \subsubsection{Causas}
-Las causas del retraso en la realización de una tarea pueden ser muy diversas.
-En cualquier caso, estos retrasos serán los causantes de dicho riesgo.
+Las causas del retraso en la realización de una tarea pueden ser muy
+diversas. En cualquier caso, estos retrasos serán los causantes de dicho
+riesgo.
 
 \subsubsection{Efectos en los objetivos del proyecto}
 Un retraso en una tarea afecta a otras tareas cuando hay dependencias entre
-ambas. Las dependencias pueden ser de distintos tipos: fin-comienzo, 
-comienzo-comienzo, etc. En cada una de estas dependencias, si una de las tareas
+ambas. Las dependencias pueden ser de distintos tipos: \emph{fin-comienzo}, 
+\emph{comienzo-comienzo}, etc. En cada una de estas dependencias, si una de
+las tareas 
 que intervienen se retrasa, retrasará a las relacionadas. Esto provocará un
 incumplimiento del calendario del proyecto, pudiendo provocar varios efectos
 indeseados, como incumplimiento de contratos, gastos extras en el alquiler de
@@ -436,56 +490,61 @@ la universidad, etc.
 \subsection{Responsabilidades asignadas}
 El responsable del retraso en la realización y finalización a tiempo de una
 tarea es el coordinador. El coordinador debe preocuparse de gestionar los
-recursos para poder poder completar de forma exitosa la realización de las
-tareas, por lo que, cualquier retraso, puede en mayor o menor medida ser
+recursos para poder completar de forma exitosa la realización de las
+tareas, por lo que, cualquier retraso, puede, en mayor o menor medida, ser
 responsabilidad de una mala gestión por su parte.
 
 \subsection{Resultados del análisis del riesgo}
-Después de haber aplicado la técnica \emph{Delphi}, la probabilidad de
-ocurrencia es del 64\%, la magnitud de pérdida o impacto es de 18.4 días y, por
-tanto, la exposición al riesgo es de 11.77 días.
+Después de haber aplicado la técnica \emph{Delphi}, la \textbf{probabilidad de
+ocurrencia es del 64\%}, la \textbf{magnitud de pérdida o impacto es de 18.4
+días } y, por tanto, la \textbf{exposición al riesgo es de 11.77 días}.
 
 \subsection{Respuestas previstas}
-Si una tarea se retrasa, pero esta no tiene dependencias con otras o bien
+Si una tarea se retrasa, pero ésta no tiene dependencias con otras, o bien
 causa un impacto mínimo en ellas, no hará falta planificar ninguna respuesta,
 siempre y cuando la tarea acabe antes de finalizar su fase del ciclo de vida;
-ya que este proyecto posee un ciclo de vida en cascada y para pasar de fase,
+ya que este proyecto posee un ciclo de vida en cascada y para pasar de fase
 las tareas de la anterior deben estar finalizadas. Si no es este el caso,
 deberán tomarse otras medidas.
-\begin{itemize}
-\item El retraso en la finalización de una tarea puede estar causada por una
-acumulación de trabajo. Una posible solución sería la de contratar a más
-personal o la de plantear al actual la realización de horas extras. Esta
+
+\subsubsection{Acumulación de trabajo}
+El retraso en la finalización de una tarea puede estar causado por una
+acumulación de trabajo. Una posible solución sería contratar a más
+personal o plantear al actual la realización de horas extras. Esta
 solución repercutiría en el presupuesto final, por lo que primero se tendría
-que contar con la aprobación de la universidad.
+que contar con la aprobación de los responsables de la institución
+universitaria.
+
 Otra solución, aunque más discutible, sería la de disminuir en cantidad o
 calidad la realización de la tarea. Esto repercutiría en el producto final,
 pero si el peso de estas tareas no es muy significativo y la ganancia es
 aceptable, puede ser conveniente llevar a cabo esta respuesta. En tareas que
 afecten a la confiabilidad o la robustez del producto, deberán tomarse otras
 medidas.
-\item Otra posible causa puede ser la falta de material, en este de
+
+\subsubsection{Falta de material}
+Otra posible causa puede ser la falta de material. En este caso se
+trataría de 
 terminales, pizarras o salas de reuniones. Como se trata de recursos
-alquilados, la solución vendría por aumentar el número de recursos alquilados.
+alquilados, la solución vendría por aumentar el número de estos recursos.
 Esta solución también repercutirá en el presupuesto, por lo que también
-deberá contar con la aprobación de la universidad.
-\end{itemize}
+deberá contar con la aprobación de los responsables de la universidad.
 
 \subsection{Nivel del riesgo residual}
 El retraso de una tarea afectará al calendario global del proyecto. Un retraso
 superior a las dos semanas no podrá ser asumible en nuestro sistema. Por lo
-que si después de aplicar una respuesta no obtenemos retrasos menores a los
-asumibles, deberemos aumentar el nivel de las respuestas, esto es, aumentar
+que, si después de aplicar una respuesta no obtenemos retrasos menores a los
+asumibles, deberemos aumentar el nivel de las respuestas; esto es, aumentar
 el número de personal contratado o el número de recursos materiales según sea
 conveniente. Si esto supone un coste inabordable para la universidad, se
 tendría que optar por la opción de reducir la calidad del software.
 
 \subsection{Acciones específicas para implementar la estrategia de respuesta
-a cambios}
+  a cambios}
 Sería conveniente contar con un listado de posibles empleados para, en caso
-de necesitar personal, tener accesible una serie de cantidatos a ser
+de necesitar personal, tener accesible una serie de candidatos a ser
 contratados. También puede tenerse un control de nuevos recursos a alquilar
-para poder disponer de ellos en el caso de que fueran necesarios. Además
+para poder disponer de ellos en el caso de que fueran necesarios. Además,
 puede hacerse una lista con las funcionalidades mínimas, recomendables y
 optativas del software para, en caso de tener que reducir su calidad, tener
 claro qué es y qué no es imprescindible desarrollar.
@@ -493,13 +552,15 @@ claro qué es y qué no es imprescindible desarrollar.
 \subsection{Presupuesto y tiempos de respuesta}
 El presupuesto y los tiempos para solventar este riesgo dependerán de la
 gravedad del retraso. Cuanto mayor sea el retraso, mayor será el presupuesto
-a invertir. En cualquier caso, se tendrá que estudiar si la inversión a
-realizar aporta o no unos beneficios significativos.
+a invertir, claro está. En cualquier caso, se tendrá que estudiar si la
+inversión a realizar aporta o no unos beneficios significativos.
 
+\section{Riesgo A.7}
+\begin{quote}
+\emph{El esfuerzo es mayor que el estimado (por líneas de código, número de
+  puntos función, módulos, etc.).}
+\end{quote}
 
-\section{Plan de contiengencia para el riesgo A.7}
-El esfuerzo es mayor que el estimado (por líneas de código, número de puntos
-función, módulos, etc.).
 \subsection{Descripción}
 Se han podido cometer errores en la planificación que a la hora de la
 implementación del software den lugar a mayores esfuerzos de construcción
@@ -513,10 +574,11 @@ cualquier etapa del proceso de desarrollo puede no haberse especificado
 adecuadamente y por tanto acarreará errores.
 
 \subsubsection{Causas}
-Las causas que pueden dar lugar a este riesgo son variadas. Pueden deberse a una mala
-planificación del proyecto, como por ejemplo tener un escaso conocimiento de
-la implementación a utilizar que a la hora del desarrollo, a una especificación
-poco clara de los requisitos, material de trabajo poco eficiente, etc.
+Las causas que pueden dar lugar a este riesgo son variadas: pueden deberse a
+una mala planificación del proyecto, como por ejemplo, tener un escaso
+conocimiento de la implementación a utilizar a la hora del desarrollo;
+también, a una especificación poco clara de los requisitos, material de
+trabajo poco eficiente, etc.
 
 \subsubsection{Efectos en los objetivos del proyecto}
 Este riesgo puede afectar al calendario del proyecto, ya que los trabajadores
@@ -525,28 +587,28 @@ conlleva a la acumulación de retrasos que afectarían a la entrega
 de producto final.
 
 \subsection{Responsabilidad asignadas}
-El principal responsable del retraso de las tareas recae en el coordinador, ya que
+El principal responsable del retraso de las tareas es el coordinador, ya que
 debe seguir el desarrollo del proyecto, asegurarse que los recursos estén
-disponibles cuando sean necesarios, y de diversas acciones de coordinación
+disponibles cuando sean necesarios y de diversas acciones de coordinación
 que pueden afectar a la duración de las tareas y por consiguiente al retraso
 del proyecto. En segunda instancia, los responsables serían el equipo de
 trabajo, el analista, el programador y el usuario experto, que son los
 responsables del retardo de su trabajo.
 
 \subsection{Resultados del análisis del riesgo}
-Después de haber aplicado la técnica de Delphi, la probabilidad de ocurrencia
-es del 60\%, la magnitud de pérdida o impacto son 13.5 días, y por tanto, la
-exposición al riesto es de  8.04 días.
+Después de haber aplicado la técnica \emph{Delphi}, la \textbf{probabilidad de
+ocurrencia es del 60\%}, la \textbf{magnitud de pérdida o impacto son 13.5
+días}, y por tanto, la \textbf{exposición al riesgo es de 8.04 días}.
 
 \subsection{Respuestas previstas}
 \begin{itemize}
-\item En primer lugar se debe hacer un estudio de cómo afectará este riesgo
+\item Hacer un estudio de cómo afectará este riesgo
   al calendario del proyecto para ver si es necesario llevar a cabo alguna
-  medida correctiva. Este estudio se entregará a la dirección junto con las
+  medida correctiva. Este estudio se entregará a la dirección, junto con las
   posibles acciones que se puedan llevar a cabo para mitigar el problema. 
 \item Revisar la planificación del proyecto, comparándola con los resultados
   reales de las revisiones anteriores. Con esto se puede observar si la
-  planificación de las tareas con retraso no ha sido realista, y en tal caso
+  planificación de las tareas con retraso no ha sido realistas y, en tal caso,
   modificar el calendario del proyecto con datos más realistas para prevenir
   la ocurrencia de este riesgo.
 \item Si la causa del riesgo es la deficiencia del personal, se podría
@@ -555,97 +617,192 @@ exposición al riesto es de  8.04 días.
 \end{itemize}
 
 \subsection{Nivel del riesgo residual}
-El nivel de riesgo residual deberá ser como máximo de una a dos semanas. No
+El nivel de riesgo residual deberá ser como máximo de una o dos semanas. No
 deberían suceder más riesgos de este tipo ya que cuando se aplica el plan de 
 contingencia se resuelve el problema y se revisa la planificación para
 corregir los posibles cambios que causa la aplicación de la solución. 
 
 \subsection{Acciones específicas para implementar la estrategia de respuesta
-a cambios}
-Las acciones a llevar a cabo serían en primer lugar informar al coordinador
-del proyecto. Se realizarían las acciones oportunas comunicando a todos los
-miembros afectados para tomar las medidas que estimen necesarias. 
+  a cambios}
+Las acciones a llevar a cabo sería informar al coordinador
+del proyecto. Además, se realizarían las acciones oportunas comunicando a
+todos los miembros afectados para tomar las medidas que estimen necesarias. 
 
 \subsection{Presupuesto y tiempos de respuesta}
-
 El presupuesto para afrontar este riesgo incrementará el presupuesto estimado
-inicialmente ya que puede que haya que volver a contratar algún miembro del
+inicialmente, ya que puede que haya que volver a contratar algún miembro del
 equipo de trabajo. También hay que afrontar los gastos de nuevas
-contrataciones de personal si estas fueran necesarias o incluir presupuesto
+contrataciones de personal, si éstas fueran necesarias, o incluir presupuesto
 para pagar las horas extras realizadas por los trabajadores. 
 
-El tiempo de respuesta sería el plazo para tener disponibles al nuevo
-personal contratado o en su defecto tener bien formados al personal para
+El tiempo de respuesta sería el plazo para tener disponible al nuevo
+personal contratado o, en su defecto, tener bien formados al personal para
 realizar más rápidamente el desarrollo del software.
 
-\section{Plan de contiengencia para el riesgo E.1}
-\subsection{Descripción}
-\subsection{Aspectos del proyecto afectados}
-\subsection{Causas}
-\subsection{Efectos de los objetivos del proyecto}
-\subsection{Responsabilidad asignadas}
-\subsection{Resultados del análisis del riesgo}
-\subsection{Respuestas previstas}
-\subsection{Nivel del riesgo residual}
-\subsection{Acciones específicas para implementar la estrategia de respuesta
-a cambios}
-\subsection{Presupuesto y tiempos de respuesta}
+\section{Riesgo E.1}
+\begin{quote}
+  \emph{El cliente insiste en nuevos requisitos.}
+\end{quote}
 
-\section{Plan de contiengencia para el riesgo K.3}
-Un mal diseño implica volver a diseñar e implementar
 \subsection{Descripción}
-El cumplimiento este riesgo conlleva casi volver al punto de partida y
-diseñar e implementar el sistema, con lo que esto acarrea.
+Este riesgo consiste en que el cliente, la empresa en este caso, al que se le 
+realiza el software, solicita nuevos requisitos para incluir en el proyecto 
+una vez que se definieron. La toma de requisitos normalmente se realiza en la 
+etapa de análisis, pero este riesgo implica que en cualquier otra etapa 
+posterior del proyecto la empresa añade más características al proyecto, lo que 
+obliga a volver a etapas anteriores e incluir estos requisitos en el
+proyecto.
+
 \subsection{Riesgos identificados}
 \subsubsection{Aspectos del proyecto afectados}
-Es un riesgo bastante importante, no ya por la probabilidad de que aparezca
-si no más bien por su penalización, ya que este riesgo paralizaría toda la
-producción y obligaría a iniciar todas las actividades.
+El proyecto se ve afectado en el momento en que la empresa incluye nuevos
+requisitos. El impacto depende de la etapa en la que se produce, sabiendo que 
+si ocurre en la etapa de \emph{pruebas}, el impacto será mucho mayor porque
+el número de etapas a revisar será mayor. Sin embargo, en la etapa de
+\emph{análisis} el impacto será menor. 
+
+Además, se deben tener en cuenta si los requisitos que quiere añadir la
+empresa contradicen alguno de los que ya existen. 
+
 \subsubsection{Causas}
-Este riesgo puede ser causado por diversos motivos, desde la incopetencia de
-el/los encargados de diseñar el sistema, diferencias no resueltas con el
-cliente, así como un mal entendido de las funciones del sistema.
+\begin{itemize}
+\item El cliente no sabe lo que necesita o no sabe cómo expresarlo.
+\item Falta de comunicación entre el equipo de proyecto y el cliente, lo cual 
+  repercute en una captura de requisitos deficiente.
+\item Los miembros del equipo de proyecto imponen su criterio e intentan
+  decirle al cliente qué requisitos debe proponer en lugar de escucharlo.
+\end{itemize}
+
 \subsubsection{Efectos en los objetivos del proyecto}
-Las consecuencias de este riesgo serían catastróficas para los obejtivos del
-proyecto, sería tarea imposible entregar el producto a tiempo si en una etapa
-mínimamente avanzada se descubre que hay que rehacer todo el diseño e
+\begin{itemize}
+\item Se puede alargar el proyecto como resultado de tener que revisar 
+  actividades ya completadas.
+\item El coste del proyecto puede aumentar, ya que el cliente puede pedir 
+  nuevos requisitos para los que no se tengan las herramientas adecuadas o el 
+  personal especializado.
+\item El cliente no acabe satisfecho con la calidad del producto final
+  entregado.
+\end{itemize}
+
+\subsection{Responsabilidades asignadas}
+Este riesgo puede ser debido, tanto a que la empresa no definió correctamente
+los requisitos que querían en un principio, como debido a una mala labor de
+consulta de requisitos por parte de los analistas. Por tanto, la
+responsabilidad recaerá en el grupo de analistas y el jefe del proyecto, los
+cuáles no supieron conseguir correctamente los requisitos de la herramienta
+que el cliente requiere.
+
+\subsection{Resultados del análisis del riesgo}
+Después de haber aplicado la técnica \emph{Delphi}, la \textbf{probabilidad de
+ocurrencia es del 48\%}, la \textbf{magnitud de pérdida o impacto son 11.6
+días}, y por tanto, la \textbf{exposición al riesgo es de 5.56 días}.
+
+\subsection{Respuestas previstas}
+Algunas de las respuestas previstas para este riesgo son:
+\begin{itemize}
+\item Contratar a más personal para paliar los efectos producidos por el
+  riesgo siempre y cuando el presupuesto lo permitiera.
+\item Asignar a todo el personal que no estuviera trabajando en otra tarea y
+  el personal del cual se pudiera prescindir en otras tareas a trabajar en los 
+  nuevos requisitos.
+\end{itemize}
+
+\subsection{Nivel del riesgo residual}
+La posibilidad de que el riesgo vuelva a suceder es baja, pero dependerá de 
+cómo se haya realizado y con qué eficacia se haya llevado a cabo el plan de 
+contingencia.
+
+\subsection{Acciones específicas para implementar la estrategia de respuesta
+  a cambios}
+Las acciones que habría que realizar dentro de la estrategia de respuesta a
+cambios serían las siguientes:
+\begin{itemize}
+\item Hacer una recogida de requisitos más exhaustiva añadiendo los nuevos 
+  requisitos.
+\item Validar los nuevos requisitos para evitar contradicciones con los ya 
+  realizados.
+\item Analizar qué actividades del proyecto se verán afectadas por los nuevos 
+  requisitos.
+\item Realizar de nuevo las tareas del proyecto que estén afectadas por los 
+  nuevos requisitos.
+\end{itemize}
+
+\subsection{Presupuesto y tiempos de respuesta}
+Dependiendo de la importancia y el número de requisitos a incluir, el tiempo y 
+presupuesto para realizar una adecuada respuesta al riesgo variará. Así, si los 
+requisitos afectan a un módulo importante, y del que dependen muchos otros, el 
+presupuesto y el tiempo serían considerables. Por el contrario, si el
+requisito afecta a una parte concreta del proyecto, sólo tendríamos que 
+modificar dicha parte y el incremento en tiempo o costo sería más pequeño.
+
+\section{Riesgo K.3}
+\begin{quote}
+  Un mal diseño implica volver a diseñar e implementar.
+\end{quote}
+
+\subsection{Descripción}
+El cumplimiento de este riesgo conlleva casi volver al punto de partida y
+diseñar e implementar el sistema de nuevo, con lo que esto acarrea.
+
+\subsection{Riesgos identificados}
+\subsubsection{Aspectos del proyecto afectados}
+Es un riesgo bastante importante, no ya por la probabilidad de que aparezca,
+si no más bien por su penalización, ya que este riesgo paralizaría toda la
+producción y obligaría a reiniciar todas las actividades.
+
+\subsubsection{Causas}
+Este riesgo puede ser causado por diversos motivos, desde la incompetencia de
+el/los encargado/s de diseñar el sistema, diferencias no resueltas con el
+cliente, así como un mal entendido de las funciones del sistema.
+
+\subsubsection{Efectos en los objetivos del proyecto}
+Las consecuencias de este riesgo serían catastróficas para los objetivos del
+proyecto; sería tarea imposible entregar el producto a tiempo si en una etapa
+mínimamente avanzada se descubre que hay que rehacer todo el diseño y la
 implementación. 
+
 \subsection{Responsabilidades asignadas}
 Dada la magnitud de este riesgo, la responsabilidad recaería sobre el
 responsable del proyecto, en este caso el coordinador del grupo. También
-recaería sobre el analista, ya que junto con el coordinador son los
+recaería sobre el analista, ya que, junto con el coordinador, son los
 principales encargados de realizar las reuniones con el cliente para aclarar
 los requisitos del sistema y plantear un diseño correcto y apropiado del
 proyecto.
+
 \subsection{Resultados del análisis del riesgo}
-Después de haber aplicado la técnica \emph{Delphi}, la probabilidad de
-ocurrencia es de 21.2\%, la magnitud de pérdida o impacto son 24.2 días y, por
-tanto, la exposición al riesgo es de 5.08 días.
+Después de haber aplicado la técnica \emph{Delphi}, la \textbf{probabilidad de
+ocurrencia es de 21.2\%}, la \textbf{magnitud de pérdida o impacto son 24.2
+días} y, por tanto, la \textbf{exposición al riesgo es de 5.08 días}.
+
 \subsection{Respuestas previstas}
 Dada la penalización de esta tarea, no hay que escatimar en esfuerzos, así
 que se proponen varías soluciones:
 \begin{itemize}
 \item La contratación de otro analista, para ayudar en la etapa de diseño del
-  sistema, así los dos analistas se encargan del diseño y el coordinador se
-  encargaría integramente de la supervisión del proceso.
+  sistema. Así, los dos analistas se encargan del diseño y el coordinador se
+  encargaría íntegramente de la supervisión del proceso.
 \item Aumentar la duración de las reuniones semanales durante la etapa de
-  diseño entre el coordinador y el grupo de trabajo, para asignarle una
+  diseño entre el coordinador y el grupo de trabajo para asignarle una
   importancia correspondiente a la que se merece.
 \item Igualmente en la etapa de implementación del sistema, centrar el
   contenido de las reuniones semanales en la revisión de la implementación de
   programador.
 \end{itemize}
+
 \subsection{Nivel del riesgo residual}
 Aún siguiendo las respuestas estipuladas a dicho problema, siempre puede
-suceder que el personal contratado no cubra las espectativas, en especial los
-analistas y el programador. De todas formas estos problemas se suponen
-cubiertos. Entonces se concluye que la probabilidad de que este problema
+suceder que el personal contratado no cubra las expectativas, en especial los
+analistas y el programador. De todas formas, estos problemas se suponen
+cubiertos. Entonces, se concluye que la probabilidad de que este problema
 suceda es escaso.
+
 \subsection{Acciones específicas para implementar la estrategia de respuesta
-a cambios}
+  a cambios}
 \begin{itemize}
 \item Contratar al personal especificado.
 \item Cambiar en el calendario la planificación de las reuniones semanales
+\end{itemize}
+
 \subsection{Presupuesto y tiempos de respuesta}
 En caso de suceder dicho problema sería fatal tanto para el presupuesto como
 para el tiempo de respuesta, llegando a duplicar e incluso triplicar los

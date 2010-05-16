@@ -136,29 +136,45 @@ Entrada generada para la incluir los profesores encargados de la docencia de
 cada asignatura.
 
 \subsection{Salidas externas}
+\subsubsection{Relación cursos/asignaturas}
+Información sobre las asginaturas que forman cada curso.
+
 \subsubsection{Relación asignaturas/profesores}
-Información 
-\subsubsection{Relación cursos/aulas}
+Información de los profesores que imparten la docencia de cada asignatura.
+
+\subsubsection{Relación asignaturas/aulas}
+Información sobre la relación entre las asignaturas y las aulas donde son
+impartidas. 
+
 \subsubsection{Cuadrante de horarios}
+Tabla de horarios por cursos con la información de cada asignatura, aula y
+profesor que la imparte.
 
 \subsection{Consultas externas}
 \subsubsection{Consultar relación asignaturas/profesores}
+
 \subsubsection{Consultar relación cursos/aulas}
 \subsubsection{Consultar cuadrante de horarios}
 
 \subsection{Archivos lógicos internos}
 \subsubsection{Datos de las asignaturas}
-\subsubsection{Datos de las cursos}
+Toda la información relacionada con cada asginatura, temario, créditos \dots
+
+\subsubsection{Datos de los cursos}
+Información relacionada con cada curso como las asignaturas que los forman.
+
 \subsubsection{Datos de las aulas}
+Información de las aulas disponibles y las utilizadas para la docencia de las asignaturas.
 
 \subsection{Archivos lógicos de interfaz externos}
 \subsubsection{Historial de guías docentes}
+Datos externos relacionados con las guías docentes de cursos anteriores. 
 
 \section{Interfaz}
 \subsection{Entradas externas}
 \subsubsection{Autentificación de los usuarios}
 Recoge los datos necesarios para ver si un usuario entra al sistema,
-dependiendo si éste es administrador o no.
+dependiendo si este es administrador o no.
 
 \subsubsection{Introducción de datos para la inserción/modificación/borrado 
 de información de un determinado usuario}
@@ -166,13 +182,6 @@ Por su similitud se explican juntas pero equivale a tres \emph{funciones de
 usuario} diferentes. El objetivo de estas funciones es recoger los datos
 necesarios para la de inserción, modificación o borrado de la información de
 un usuario en la aplicación.
-
-\subsubsection{Introducción de datos para la inserción/modificación/borrado 
-de información de un determinado curso }
-Por su similitud se explican juntas pero equivale a tres \emph{funciones de
-usuario} diferentes. El objetivo de estas funciones es recoger los datos
-necesarios para la de inserción, modificación o borrado de la información de
-un curso en la aplicación.
 
 \subsection{Salidas externas}
 \subsubsection{Mostar los datos para una búsqueda de información con
@@ -274,10 +283,83 @@ un registro y los datos elementales son catorce.
 
 \section{Gestión de cursos}
 \subsection{Entradas externas}
+\subsubsection{Añadir curso}
+La complejidad de esta función es \textbf{baja}, porque tiene un
+registro para la información del curso y el número de tipo de datos
+elementales es menor que quince.
+\subsubsection{Añadir asignaturas}
+La complejidad de esta función es \textbf{baja}, porque tiene un
+registro para la información de las asignaturas y el número de tipo de datos
+elementales es menor que quince.
+\subsubsection{Añadir aulas}
+La complejidad de esta función es \textbf{baja}, porque tiene un
+registro para la información de las aulas y el número de tipo de datos
+elementales es menor que quince.
+\subsubsection{Añadir profesores}
+La complejidad de esta función es \textbf{baja}, porque tiene un
+registro para la información de los profesores y el número de tipo de datos
+elementales es menor que quince.
+
 \subsection{Salidas externas}
+\subsubsection{Relación cursos/asignaturas}
+La complejidad de esta función es \textbf{media}, porque usa dos
+registros para la información del curso y las asignaturas y el número de tipo
+de datos elementales se encuentra entre seis y diecinueve.
+\subsubsection{Relación asignaturas/profesores}
+La complejidad de esta función es \textbf{media}, porque usa dos
+registros para la información de las asignaturas y los profesores y el número
+de tipo de datos elementales se encuentra entre seis y diecinueve. 
+\subsubsection{Relación asignaturas/aulas}
+La complejidad de esta función es \textbf{media}, porque usa dos
+registros para la información de las aulas y las asignaturas y el número de
+tipo de datos elementales se encuentra entre seis y diecinueve.
+\subsubsection{Cuadrante de horarios}
+La complejidad de esta función es \textbf{alta}, porque usa todos los
+registros de este módulo para mostrar el cuadrante y el número de
+tipo de datos elementales es mayor que veinte.
+
 \subsection{Consultas externas}
+\subsubsection{Consultar relación cursos/asignaturas}
+La complejidad de esta función es \textbf{media}, porque usa dos
+registros para la información de las asignaturas y los cursos de este
+módulo y el número de tipo de datos elementales se encuentra entre seis y
+deicinueve.
+\subsubsection{Consultar relación asignaturas/profesores}
+La complejidad de esta función es \textbf{media}, porque usa dos
+registros para la información de las asignaturas y los profesores de este
+móduloy el número de tipo de datos elementales se encuentra entre seis y
+deicinueve.
+\subsubsection{Consultar relación asignaturas/aulas}
+La complejidad de esta función es \textbf{media}, porque usa dos
+registros para la información de las asignaturas y las aular de este
+módulo y el número de tipo de datos elementales se encuentra entre seis y
+deicinueve.
+\subsubsection{Consultar cuadrante de horarios}
+La complejidad de esta función es \textbf{alta}, porque usa todos los
+registros disponibles en este módulo y el número de tipo de datos elementales
+es mayor que veinte.
+
 \subsection{Archivos lógicos internos}
+\subsubsection{Datos de las asignaturas}
+La complejidad de esta función es \textbf{baja}, porque usa un
+registros para la información de las asignaturas de este módulo y el número
+de tipo de datos elementales es menor que veinte.
+
+\subsubsection{Datos de los cursos}
+La complejidad de esta función es \textbf{baja}, porque usa un
+registros para la información de los cursos de este módulo y el número
+de tipo de datos elementales es menor que veinte.
+
+\subsubsection{Datos de las aulas}
+La complejidad de esta función es \textbf{baja}, porque usa un
+registros para la información de las aulas de este módulo y el número
+de tipo de datos elementales es menor que veinte.
 \subsection{Archivos lógicos de interfaz externos}
+\subsubsection{Historial de guías docentes}
+La complejidad de esta función es \textbf{alta}, porque usa todos los
+registros de este módulo y el número de tipo de datos elementales es mayor
+que cincuenta y uno. 
+
 
 \section{Interfaz}
 \subsection{Entradas externas}

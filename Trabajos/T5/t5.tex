@@ -1,0 +1,62 @@
+% Clase
+\documentclass[11pt,a4paper,spanish,twoside]{book}
+
+% Órdenes auxiliares
+\input{inc/includes.tex}
+
+% Encabezado y pie de página
+\encabezado
+
+\begin{document}
+
+% Silabación extra
+\input{inc/hyphenations.tex}
+
+% Portada
+\portada{Planificación y Gestión de\\Sistemas de Información}
+{Trabajo 5}{Estimación del software}
+{Sergio de la Rubia García-Carpintero\\Miguel Millán Sánchez-Grande\\
+  Luis Muñoz Villarreal\\Alicia Serrano Sánchez\\
+  Juan Miguel Torres Triviño}{10 de Mayo de 2010}
+
+% Licencia
+\licencia{Sergio de la Rubia García-Carpintero, Miguel Millán Sánchez-Grande,
+  Luis Muñoz Villarreal, Alicia Serrano Sánchez, Juan Miguel Torres Triviño}
+
+\chapter*{Ficha de trabajo}
+\begin{description}
+\item[Código] T4
+\item[Fecha] 10 de Mayo de 2010
+\item[Título] Planificación de los riesgos
+\end{description}
+
+\begin{table}[!ht]
+  \centering
+  \begin{tabular}{lp{5cm}c}
+    \multicolumn{3}{l}{\Large \textbf{Equipo} G4} \\ \\
+    \multicolumn{1}{c}{\emph{Apellidos y nombre}} & 
+    \multicolumn{1}{c}{\emph{Firma}} & \emph{Puntos} \\
+    \hline \\
+    de la Rubia García-Carpintero, Sergio & & 8 \\ \\
+    Millán Sánchez-Grande, Miguel         & & 8 \\ \\
+    Muñoz Villarreal, Luis                & & 8 \\ \\
+    Serrano Sánchez, Alicia               & & 8 \\ \\
+    Torres Triviño, Juan Miguel           & & 8 \\ \\
+    \hline
+  \end{tabular}
+\end{table}
+
+% Índices
+\tableofcontents
+\listoftables
+%\listoffigures
+
+%% INICIO DEL DOCUMENTO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{Introducción}
+\chapter{Identificación de los Módulos y sus Funciones}
+\chapter{Determinación de la Complejidad de las Funciones de los Módulos}
+\chapter{Tablas de Puntos Función Sin Ajustar}
+\chapter{Explicación de los Valores de los Factores de Influencia}
+\chapter{Cálculo de los Puntos Función Ajustados}
+
+\end{document}

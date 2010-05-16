@@ -94,6 +94,7 @@ El sistema muestra la información de cada asignatura que comprende:
 
 \subsection{Consultas externas}
 \subsubsection{Consultar currículum}
+
 Información del currículum de un determinado profesor.
 
 \subsubsection{Consultar datos de asignatura} 
@@ -114,6 +115,7 @@ asignaturas que imparte, \dots)
 En la base de datos de la universidad se tienen los datos de las asignaturas,
 tales como nombre, créditos, guión de la asignatura, contenidos, evaluación,
 \dots 
+
 
 \section{Gestión de cursos}
 \subsection{Entradas externas}
@@ -217,10 +219,58 @@ No se ha detectado ningún archivo lógico de interfaz externo.
   módulos}
 \section{Gestión de usuarios}
 \subsection{Entradas externas}
+\subsubsection{Identificación del usuario}
+La complejidad de esta función de usuario es \textbf{baja} porque se hace
+referencia a un registro para la información de usuario y el número de datos
+elementales es dos. 
+
+\subsubsection{Preferencia de horarios} 
+La complejidad de esta función es \textbf{media} porque se hace
+referencia a dos registros donde se tienen guardados los horarios y las
+asignaturas y el número de datos elementales son que se utilizan son seis. 
+
 \subsection{Salidas externas}
+\subsubsection{Datos personales}
+La complejidad de esta función es \textbf{media} porque se hace referencia a
+un registro para la información de usuario y los datos elementales que se
+utilizan son dieciséis.
+
+\subsubsection{Horario de un profesor}
+La complejidad de esta función es \textbf{media} porque se hace referencia a
+dos registros, horarios y asignaturas; y los datos elementales que
+se utilizan son seis.
+
+\subsubsection{Tutorías de los profesores} 
+La complejidad de esta función es \textbf{baja} porque se hace referencia a
+dos registros, profesores y tutorías; y el número de datos elementales que se
+utilizan son cuatro. 
+
+\subsubsection{Asignaturas impartidas por cada profesor}
+La complejidad de esta función es \textbf{medio} porque se hace referencia a
+dos registros, profesores y asignaturas; y el número de datos elementales que se
+utilizan son siete. 
+
 \subsection{Consultas externas}
-\subsection{Archivos lógicos internos}
+\subsubsection{Consultar currículum}
+La complejidad de esta función es \textbf{baja} porque se hace referencia a
+un registro y el número de datos elementales es dos.
+
+\subsubsection{Consultar datos de asignatura} 
+La complejidad de esta función es \textbf{baja} porque se hace referencia a
+un registro y el número de datos elementales es nueve.
+
+\subsubsection{Horarios de asignaturas}
+La complejidad de esta función es \textbf{baja} porque se hace referencia a
+tres registros y los datos elementales que se utilizan son cuatro.
+
 \subsection{Archivos lógicos de interfaz externos}
+\subsubsection{Datos de los profesores}
+La complejidad de esta función es \textbf{baja} porque se hace referencia a
+un registro y los datos elementales son siete.
+
+\subsubsection{Datos de las asignaturas}
+La complejidad de esta función es \textbf{baja} porque se hace referencia a
+un registro y los datos elementales son catorce.
 
 \section{Gestión de cursos}
 \subsection{Entradas externas}

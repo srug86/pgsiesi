@@ -1,0 +1,61 @@
+% Clase
+\documentclass[11pt,a4paper,spanish,twoside]{book}
+
+% Órdenes auxiliares
+\input{inc/includes.tex}
+
+% Árboles de directorios
+%\usepackage{dirtree}
+
+% Encabezado y pie de página
+\encabezado
+\setcounter{secnumdepth}{3} 
+\begin{document}
+
+% Silabación extra
+\input{inc/hyphenations.tex}
+
+% Portada
+\portada{Planificación y Gestión de\\Sistemas de Información}
+{Práctica 1}{Elaboración de un plan de proyecto\\utilizando Microsoft Project}
+{Sergio de la Rubia García-Carpintero\\Miguel Millán Sánchez-Grande\\
+  Luis Muñoz Villarreal\\Alicia Serrano Sánchez\\
+  Juan Miguel Torres Triviño}{26 de Mayo de 2010}
+
+% Licencia
+\licencia{Sergio de la Rubia García-Carpintero, Miguel Millán Sánchez-Grande,
+  Luis Muñoz Villarreal, Alicia Serrano Sánchez, Juan Miguel Torres Triviño}
+
+\chapter*{Ficha de trabajo}
+\begin{description}
+\item[Código] P2
+\item[Fecha] 26 de Abril de 2010
+\item[Título] Estimación del esfuerzo de desarrollo de un Software utilizando
+USC COCOMO II
+\end{description}
+
+\begin{table}[!ht]
+  \centering
+  \begin{tabular}{lp{5cm}c}
+    \multicolumn{3}{l}{\Large \textbf{Equipo} G4} \\ \\
+    \multicolumn{1}{c}{\emph{Apellidos y nombre}} & 
+    \multicolumn{1}{c}{\emph{Firma}} & \emph{Puntos} \\
+    \hline \\
+    de la Rubia García-Carpintero, Sergio & & 6 \\ \\
+    Millán Sánchez-Grande, Miguel         & & 6 \\ \\
+    Muñoz Villarreal, Luis                & & 6 \\ \\
+    Serrano Sánchez, Alicia               & & 6 \\ \\
+    Torres Triviño, Juan Miguel           & & 6 \\ \\
+    \hline
+  \end{tabular}
+\end{table}
+
+% Índices
+\tableofcontents
+\listoffigures
+%\listoftables
+
+%% INICIO DEL DOCUMENTO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\
+
+\end{document}

@@ -66,7 +66,7 @@ del sistema software se identificar entradas externas, salidas externas,
 consultas externas, archivos lógicos internos y archivos lógicos de interfaz
 externos. 
 
-\section{Visión general}
+\section*{Visión general}
 El desarrollo del sistema pretende facilitar el control de todos los aspectos
 relacionados con la generación automatizada de guías docentes para la
 Universidad de Málaga. El software tiene funcionalidad para construir una
@@ -76,7 +76,7 @@ los nuevos acordados por el EEES, asignar el profesorado a las distintas
 asignaturas, el establecimiento de los horarios lectivos y los horarios de
 exámenes. 
 
-\section{Objetivos}
+\section*{Objetivos}
 El objetivo principal es la agilización de la realización de guías
 docentes. Este objetivo principal conlleva otros objetivos que también son
 importantes para este sistema, como la actualización en tiempo real de los
@@ -94,10 +94,12 @@ Cada usuario debe identificarse mediante un nombre y una contraseña.
 Cada profesor introduce sus preferencias de horarios de trabajo para que el
 sistema lo tenga en cuenta a la hora de la realización del horario oficial
 del curso.
+
 \subsection{Salidas externas}
 \subsubsection{Datos personales}
 Muestra los datos personales de un determinado profesor, incluyendo
 nombre, correo electrónico, teléfono, publicaciones, currículum, \dots
+
 \subsubsection{Horario de un profesor}
 El sistema muestra el horario que tiene asignado un determinado profesor.
 
@@ -119,12 +121,12 @@ El sistema muestra la información de cada asignatura que comprende:
 
 \subsection{Consultas externas}
 \subsubsection{Consultar currículum}
-
 Información del currículum de un determinado profesor.
 
 \subsubsection{Consultar datos de asignatura} 
 Información sobre una determinada asignatura (créditos, profesor que la
 imparte, planificación, \dots
+
 \subsubsection{Horarios de asignaturas}
 Horarios de las asignaturas de cada curso. Cada horario
 también muestra información de la localización en la que cada asignatura se
@@ -140,7 +142,6 @@ asignaturas que imparte, \dots)
 En la base de datos de la universidad se tienen los datos de las asignaturas,
 tales como nombre, créditos, guión de la asignatura, contenidos, evaluación,
 \dots 
-
 
 \section{Gestión de cursos}
 \subsection{Entradas externas}
@@ -162,7 +163,7 @@ cada asignatura.
 
 \subsection{Salidas externas}
 \subsubsection{Relación cursos/asignaturas}
-Información sobre las asginaturas que forman cada curso.
+Información sobre las asignaturas que forman cada curso.
 
 \subsubsection{Relación asignaturas/profesores}
 Información de los profesores que imparten la docencia de cada asignatura.
@@ -176,31 +177,36 @@ Tabla de horarios por cursos con la información de cada asignatura, aula y
 profesor que la imparte.
 
 \subsection{Consultas externas}
-\subsubsection{Consultar relacion cursos/asignaturas}
+\subsubsection{Consultar relación cursos/asignaturas}
 Consulta de la información necesaria para relacionar las tablas de
-cursos con las tablas de asginaturas.
+cursos con las tablas de asignaturas.
+
 \subsubsection{Consultar relación asignaturas/profesores}
 Consulta de la información necesaria para relacionar las tablas de
 asignaturas con las tablas de profesores.
+
 \subsubsection{Consultar relación cursos/aulas}
 Consulta de la información necesaria para relacionar las tablas de
 cursos con las tablas de aulas.
+
 \subsubsection{Consultar cuadrante de horarios}
 Consulta de la información requerida para realizar los cuadrantes de horarios.
+
 \subsection{Archivos lógicos internos}
 \subsubsection{Datos de las asignaturas}
-Toda la información relacionada con cada asginatura, temario, créditos \dots
+Toda la información relacionada con cada asignatura, temario, créditos \dots
 
 \subsubsection{Datos de los cursos}
 Información relacionada con cada curso como las asignaturas que los forman.
 
 \subsubsection{Datos de las aulas}
-Información de las aulas disponibles y las utilizadas para la docencia de las asignaturas.
+Información de las aulas disponibles y las utilizadas para la docencia de las
+asignaturas. 
 
 \subsection{Archivos lógicos de interfaz externos}
 \subsubsection{Historial de guías docentes}
 Datos externos relacionados con las guías docentes de cursos anteriores. 
-
+ 
 \section{Interfaz}
 \subsection{Entradas externas}
 \subsubsection{Autentificación de los usuarios}
@@ -215,8 +221,8 @@ necesarios para la de inserción, modificación o borrado de la información de
 un usuario en la aplicación.
 
 \subsection{Salidas externas}
-\subsubsection{Mostar los datos para una búsqueda de información con
-posibilidad de ordenación por diferentes criterios}
+\subsubsection{Mostrar los datos para una búsqueda de información con
+  posibilidad de ordenación por diferentes criterios}
 El objetivo de este proceso es mostrar un listado de usuarios que cumplen las
 condiciones de búsqueda solicitadas y en el orden indicado.
 
@@ -231,7 +237,7 @@ curso, incluyendo horario, aulas, asignaturas, etc.
 \subsection{Consultas externas}
 \subsubsection{Búsqueda de información con posibilidad de ordenación por
   diferentes criterios}
-El objetivo de este proceso es la introdución de unos criterios para realizar 
+El objetivo de este proceso es la introducción de unos criterios para realizar 
 una búsqueda detallada tanto de cursos como de usuarios.
 
 \subsubsection{Consulta de los datos de un determinado usuario}
@@ -255,8 +261,8 @@ búsqueda solicitadas y en el orden indicado en un fichero de texto.
 \subsection{Archivos lógicos de interfaz externos}
 No se ha detectado ningún archivo lógico de interfaz externo.
 
-\chapter[Complejidad de las funciones de los módulos]{Determinación de la
-  complejidad de las funciones de los  módulos}
+\chapter[Complejidad de las funciones de los módulos]
+{Determinación de la complejidad de las funciones de los  módulos}
 \section{Gestión de usuarios}
 \subsection{Entradas externas}
 \subsubsection{Identificación del usuario}
@@ -318,14 +324,17 @@ un registro y los datos elementales son catorce.
 La complejidad de esta función es \textbf{baja}, porque tiene un
 registro para la información del curso y el número de tipo de datos
 elementales es menor que quince.
+
 \subsubsection{Añadir asignaturas}
 La complejidad de esta función es \textbf{baja}, porque tiene un
 registro para la información de las asignaturas y el número de tipo de datos
 elementales es menor que quince.
+
 \subsubsection{Añadir aulas}
 La complejidad de esta función es \textbf{baja}, porque tiene un
 registro para la información de las aulas y el número de tipo de datos
 elementales es menor que quince.
+
 \subsubsection{Añadir profesores}
 La complejidad de esta función es \textbf{baja}, porque tiene un
 registro para la información de los profesores y el número de tipo de datos
@@ -336,14 +345,17 @@ elementales es menor que quince.
 La complejidad de esta función es \textbf{media}, porque usa dos
 registros para la información del curso y las asignaturas y el número de tipo
 de datos elementales se encuentra entre seis y diecinueve.
+
 \subsubsection{Relación asignaturas/profesores}
 La complejidad de esta función es \textbf{media}, porque usa dos
 registros para la información de las asignaturas y los profesores y el número
 de tipo de datos elementales se encuentra entre seis y diecinueve. 
+
 \subsubsection{Relación asignaturas/aulas}
 La complejidad de esta función es \textbf{media}, porque usa dos
 registros para la información de las aulas y las asignaturas y el número de
 tipo de datos elementales se encuentra entre seis y diecinueve.
+
 \subsubsection{Cuadrante de horarios}
 La complejidad de esta función es \textbf{alta}, porque usa todos los
 registros de este módulo para mostrar el cuadrante y el número de
@@ -354,17 +366,20 @@ tipo de datos elementales es mayor que veinte.
 La complejidad de esta función es \textbf{media}, porque usa dos
 registros para la información de las asignaturas y los cursos de este
 módulo y el número de tipo de datos elementales se encuentra entre seis y
-deicinueve.
+diecinueve.
+
 \subsubsection{Consultar relación asignaturas/profesores}
 La complejidad de esta función es \textbf{media}, porque usa dos
 registros para la información de las asignaturas y los profesores de este
-móduloy el número de tipo de datos elementales se encuentra entre seis y
-deicinueve.
+módulo y el número de tipo de datos elementales se encuentra entre seis y
+diecinueve.
+
 \subsubsection{Consultar relación asignaturas/aulas}
 La complejidad de esta función es \textbf{media}, porque usa dos
-registros para la información de las asignaturas y las aular de este
+registros para la información de las asignaturas y las aulas de este
 módulo y el número de tipo de datos elementales se encuentra entre seis y
-deicinueve.
+diecinueve.
+
 \subsubsection{Consultar cuadrante de horarios}
 La complejidad de esta función es \textbf{alta}, porque usa todos los
 registros disponibles en este módulo y el número de tipo de datos elementales
@@ -385,12 +400,12 @@ de tipo de datos elementales es menor que veinte.
 La complejidad de esta función es \textbf{baja}, porque usa un
 registros para la información de las aulas de este módulo y el número
 de tipo de datos elementales es menor que veinte.
+
 \subsection{Archivos lógicos de interfaz externos}
 \subsubsection{Historial de guías docentes}
 La complejidad de esta función es \textbf{alta}, porque usa todos los
 registros de este módulo y el número de tipo de datos elementales es mayor
 que cincuenta y uno. 
-
 
 \section{Interfaz}
 \subsection{Entradas externas}
@@ -400,20 +415,20 @@ registro para la información del usuario y el número de tipo de datos
 elementales es dos. 
 
 \subsubsection{Introducción de datos para la inserción/modificación/borrado 
-de información de un determinado usuario}
+  de información de un determinado usuario}
 La complejidad para cada función de usuario (inserción, modificación y
 borrado) es \textbf{media}, porque tiene un registro para la información del
 usuario y el número de tipo de datos elementales es diecisiete.
 
 \subsubsection{Introducción de datos para la inserción/modificación/borrado 
-de información de un determinado curso }
+  de información de un determinado curso }
 La complejidad para cada función de usuario (inserción, modificación y
 borrado) es \textbf{baja}, porque tiene un registro para la información del
 curso y el número de tipo de datos elementales es diez.
 
 \subsection{Salidas externas}
-\subsubsection{Mostar los datos para una búsqueda de información con
-posibilidad de ordenación por diferentes criterios}
+\subsubsection{Mostrar los datos para una búsqueda de información con
+  posibilidad de ordenación por diferentes criterios}
 La complejidad de esta función de usuario es \textbf{media}, porque tiene un
 registro para la información y el número de tipo de datos elementales es veinte.
 
@@ -461,8 +476,8 @@ elementales es veinte.
   \centering
   \begin{tabular}{|b{2.1cm}<\centering|b{2.5cm}<{\centering} |c c c c c|}
     \hline
-    \textbf{Tipo de función} & \textbf{Nivel de complejidad} &
-    \textbf{Número} & \textbf{*} & \textbf{Peso} & \textbf{=} & \textbf{Total}\\
+    \textbf{Tipo de función} & \textbf{Nivel de complejidad} & \textbf{Número}
+    & \textbf{*} & \textbf{Peso} & \textbf{=} & \textbf{Total} \\
     \hline \hline
     \multirow{3}{*}{Entradas} 
     & Baja  & 1 & * & 3 & = & \textbf{3} \\
@@ -499,6 +514,7 @@ elementales es veinte.
   \caption{Puntos de función sin ajustar del módulo gestión de usuarios} 
   \label{Tab:PFSAusu}
 \end{table}
+
 \section{Gestión de cursos}
 \begin{table}[!h]
   \centering
@@ -594,7 +610,8 @@ elementales es veinte.
   \label{Tab:PFSAint}
 \end{table}
 
-\chapter[Explicación de los valores de fac. de inf.]{Explicación de los valores de los factores de influencia} 
+\chapter[Explicación de los valores de fac. de inf.]
+{Explicación de los valores de los factores de influencia} 
 En este apartado se especifican los pesos que se han asignado a cada factor
 de influencia. Estos valores han sido extraídos de la información que
 proporciona Métrica v.3. 
@@ -611,7 +628,7 @@ proporciona Métrica v.3.
 \item {\bf Objetivos de rendimiento:} \emph{Peso 1} Se establecen requisitos
   de rendimiento y diseño, pero no se requieren acciones especiales.
 
-\item {\bf Configuración de uso intensivo:} \emph{Peso2} Se incluyen algunas
+\item {\bf Configuración de uso intensivo:} \emph{Peso 2} Se incluyen algunas
   consideraciones sobre tiempo y seguridad. 
 
 \item {\bf Tasas de transacción rápida:} \emph{Peso 0} Las transacciones no
@@ -644,13 +661,40 @@ proporciona Métrica v.3.
   para una operación totalmente automática. La recuperación automática ante
   errores es una funcionalidad de la aplicación. 
 
-\item {\bf Múltiples localizaciones:} \emph{Peso 2} Se consideran en el diseño múltiples
-  instalaciones pero para operar con similar configuración HW y/o SW.
+\item {\bf Múltiples localizaciones:} \emph{Peso 2} Se consideran en el diseño
+  múltiples instalaciones pero para operar con similar configuración HW y/o SW.
 
 \item {\bf Facilidad de cambio:} \emph{Peso 1} Consultas y Generación de
   Informes Flexible que manejan peticiones simples.
-
 \end{enumerate}
+
+\begin{table}[!ht]
+  \centering
+  \begin{tabular}{|l|c|}
+    \hline
+    \textbf{Factores de influencia en la dificultad del sistema} & 
+    \textbf{GI} \\
+    \hline \hline
+    Comunicación de datos           & 4 \\ \hline
+    Procesamiento distribuido       & 4 \\ \hline
+    Objetivos de rendimiento        & 1 \\ \hline
+    Configuración de uso intensivo  & 2 \\ \hline
+    Tasas de transacción rápida     & 0 \\ \hline
+    Entradas de datos en línea      & 5 \\ \hline
+    Eficiencia de Usuario Final     & 5 \\ \hline
+    Actualización de datos en línea & 5 \\ \hline
+    Procesamiento complejo          & 1 \\ \hline
+    Reutilización                   & 3 \\ \hline
+    Facilidad de instalación        & 2 \\ \hline
+    Facilidad operacional           & 5 \\ \hline
+    Múltiples localizaciones        & 2 \\ \hline
+    Facilidad de cambio             & 1 \\ \hline \hline
+    \textbf{Total}                  & \textbf{40} \\ \hline
+  \end{tabular}
+  \label{}
+  \caption{}
+\end{table}
+
 
 \section{Gestión de cursos}
 \begin{enumerate}[{\bf 1.}]
@@ -697,13 +741,40 @@ proporciona Métrica v.3.
   para una operación totalmente automática. La recuperación automática ante
   errores es una funcionalidad de la aplicación. 
 
-\item {\bf Múltiples localizaciones:} \emph{Peso 2} Se consideran en el diseño múltiples
-  instalaciones pero para operar con similar configuración HW y/o SW.
+\item {\bf Múltiples localizaciones:} \emph{Peso 2} Se consideran en el diseño
+  múltiples instalaciones pero para operar con similar configuración HW y/o
+  SW.
 
 \item {\bf Facilidad de cambio:} \emph{Peso 3} Consultas y Generación de
   Informes Flexible que manejan peticiones complejas.
 
 \end{enumerate}
+\begin{table}[!ht]
+  \centering
+  \begin{tabular}{|l|c|}
+    \hline
+    \textbf{Factores de influencia en la dificultad del sistema} & 
+    \textbf{GI} \\
+    \hline \hline
+    Comunicación de datos           & 4 \\ \hline
+    Procesamiento distribuido       & 4 \\ \hline
+    Objetivos de rendimiento        & 1 \\ \hline
+    Configuración de uso intensivo  & 2 \\ \hline
+    Tasas de transacción rápida     & 0 \\ \hline
+    Entradas de datos en línea      & 5 \\ \hline
+    Eficiencia de Usuario Final     & 5 \\ \hline
+    Actualización de datos en línea & 5 \\ \hline
+    Procesamiento complejo          & 5 \\ \hline
+    Reutilización                   & 3 \\ \hline
+    Facilidad de instalación        & 3 \\ \hline
+    Facilidad operacional           & 5 \\ \hline
+    Múltiples localizaciones        & 2 \\ \hline
+    Facilidad de cambio             & 3 \\ \hline \hline
+    \textbf{Total}                  & \textbf{47} \\ \hline
+  \end{tabular}
+  \label{}
+  \caption{}
+\end{table}
 
 \section{Interfaz}
 \begin{enumerate}[{\bf 1.}]
@@ -757,12 +828,40 @@ proporciona Métrica v.3.
   Informes Flexible que manejan peticiones simples.
 
 \end{enumerate}
+
+\begin{table}[!ht]
+  \centering
+  \begin{tabular}{|l|c|}
+    \hline
+    \textbf{Factores de influencia en la dificultad del sistema} & 
+    \textbf{Peso} \\
+    \hline \hline
+    Comunicación de datos           & 4 \\ \hline
+    Procesamiento distribuido       & 4 \\ \hline
+    Objetivos de rendimiento        & 1 \\ \hline
+    Configuración de uso intensivo  & 2 \\ \hline
+    Tasas de transacción rápida     & 0 \\ \hline
+    Entradas de datos en línea      & 5 \\ \hline
+    Eficiencia de Usuario Final     & 5 \\ \hline
+    Actualización de datos en línea & 5 \\ \hline
+    Procesamiento complejo          & 1 \\ \hline
+    Reutilización                   & 3 \\ \hline
+    Facilidad de instalación        & 1 \\ \hline
+    Facilidad operacional           & 5 \\ \hline
+    Múltiples localizaciones        & 2 \\ \hline
+    Facilidad de cambio             & 1 \\ \hline \hline
+    \textbf{Total}                  & \textbf{39} \\ \hline
+  \end{tabular}
+  \label{}
+  \caption{}
+\end{table}
+
 \chapter{Cálculo de los puntos función ajustados}
 Para el cálculo de los puntos función totales se utiliza la fórmula:
 \[PF=PFSA*(0.65+0.01*SUMA(GI))\]
 \begin{table}[!h]
   \centering
-  \begin{tabular}{|b{3.5cm}<\centering|b{3cm}<\centering|b{3cm}<\centering|b{3cm}<\centering|}  
+  \begin{tabular}{|b{3.5cm}<\centering|b{3cm}<\centering|b{3cm}<\centering|b{3cm}<\centering|}
     \hline
     \textbf{Módulo} & \textbf{Puntos función sin ajustar} &
     \textbf{Total GI} & \textbf{Puntos función ajustados}\\

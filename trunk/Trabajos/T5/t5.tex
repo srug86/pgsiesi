@@ -7,6 +7,8 @@
 % Encabezado y pie de página
 \encabezado
 
+\usepackage{enumerate}
+
 \begin{document}
 
 % Silabación extra
@@ -151,11 +153,17 @@ Tabla de horarios por cursos con la información de cada asignatura, aula y
 profesor que la imparte.
 
 \subsection{Consultas externas}
+\subsubsection{Consultar relacion cursos/asignaturas}
+Consulta de la información necesaria para relacionar las tablas de
+cursos con las tablas de asginaturas.
 \subsubsection{Consultar relación asignaturas/profesores}
-
+Consulta de la información necesaria para relacionar las tablas de
+asignaturas con las tablas de profesores.
 \subsubsection{Consultar relación cursos/aulas}
+Consulta de la información necesaria para relacionar las tablas de
+cursos con las tablas de aulas.
 \subsubsection{Consultar cuadrante de horarios}
-
+Consulta de la información requerida para realizar los cuadrantes de horarios.
 \subsection{Archivos lógicos internos}
 \subsubsection{Datos de las asignaturas}
 Toda la información relacionada con cada asginatura, temario, créditos \dots
@@ -564,6 +572,163 @@ elementales es veinte.
 \end{table}
 
 \chapter{Explicación de los valores de los factores de influencia} 
+En este apartado se especifican los pesos que se han asignado a cada factor
+de influencia. Estos valores han sido extraídos de la información que
+proporciona Métrica v.3. 
+
+\section{Gestión de usuarios}
+\begin{enumerate}[{\bf 1.}]
+
+\item {\bf Comunicación de datos:} \emph{Peso 4} La aplicación está basada en
+  un teleproceso interactivo, pero con un solo protocolo de comunicaciones.
+
+\item {\bf Procesamiento distribuido:} \emph{Peso 4} Proceso distribuido
+  con transferencia de datos on line en ambas direcciones. 
+
+\item {\bf Objetivos de rendimiento:} \emph{Peso 1} Se establecen requisitos
+  de rendimiento y diseño, pero no se requieren acciones especiales.
+
+\item {\bf Configuración de uso intensivo:} \emph{Peso2} Se incluyen algunas
+  consideraciones sobre tiempo y seguridad. 
+
+\item {\bf Tasas de transacción rápida:} \emph{Peso 0} Las transacciones no
+  están afectadas por picos de tráfico. 
+
+\item {\bf Entradas de datos en línea:} \emph{Peso 5} Más del 30\% de las
+  funciones son entradas interactivas de datos. 
+
+\item {\bf Eficiencia de Usuario Final:} \emph{Peso 5} Además se requiere del
+  uso de herramientas y procesos para demostrar que se cumplen los requisitos
+  establecidos.
+
+\item {\bf Actualización de datos en línea:} \emph{Peso 5} Además, grandes
+  volúmenes implican consideraciones de coste en el proceso de
+  recuperación. Se incluyen procedimientos de recuperación que requieren
+  mínima intervención del operador. 
+
+\item {\bf Procesamiento complejo:} \emph{Peso 1} Es aplicable una de las
+  situaciones descritas. 
+
+\item {\bf Reutilización:} \emph{Peso 3} El 10\% o más de la aplicación se
+  considera reusable. 
+
+\item {\bf Facilidad de instalación:} \emph{Peso 2} El usuario ha declarado
+  consideraciones especiales para la conversión e instalación y se requieren
+  guías probadas de conversión e instalación. El impacto de la conversión
+  sobre el proyecto no se considera importante. 
+
+\item {\bf Facilidad operacional:} \emph{Peso 5} La aplicación debe diseñarse
+  para una operación totalmente automática. La recuperación automática ante
+  errores es una funcionalidad de la aplicación. 
+
+\item {\bf Múltiples localizaciones:} \emph{Peso 2} Se consideran en el diseño múltiples
+  instalaciones pero para operar con similar configuración HW y/o SW.
+
+\item {\bf Facilidad de cambio:} \emph{Peso 1} Consultas y Generación de
+  Informes Flexible que manejan peticiones simples.
+
+\end{enumerate}
+
+\section{Gestión de cursos}
+\begin{enumerate}[{\bf 1.}]
+
+\item {\bf Comunicación de datos:} \emph{Peso 4} La aplicación está basada en
+  un teleproceso interactivo, pero con un solo protocolo de comunicaciones.
+
+\item {\bf Procesamiento distribuido:} \emph{Peso 4} Proceso distribuido
+  con transferencia de datos on line en ambas direcciones. 
+
+\item {\bf Objetivos de rendimiento:} \emph{Peso 1} Se establecen requisitos
+  de rendimiento y diseño, pero no se requieren acciones especiales.
+
+\item {\bf Configuración de uso intensivo:} \emph{Peso2} Se incluyen algunas
+  consideraciones sobre tiempo y seguridad. 
+
+\item {\bf Tasas de transacción rápida:} \emph{Peso 0} Las transacciones no
+  están afectadas por picos de tráfico. 
+
+\item {\bf Entradas de datos en línea:} \emph{Peso 5} Más del 30\% de las
+  funciones son entradas interactivas de datos. 
+
+\item {\bf Eficiencia de Usuario Final:} \emph{Peso 5} Además se requiere del
+  uso de herramientas y procesos para demostrar que se cumplen los requisitos
+  establecidos.
+
+\item {\bf Actualización de datos en línea:} \emph{Peso 5} Además, grandes
+  volúmenes implican consideraciones de coste en el proceso de
+  recuperación. Se incluyen procedimientos de recuperación que requieren
+  mínima intervención del operador. 
+
+\item {\bf Procesamiento complejo:} \emph{Peso 5} Son aplicables todas las
+  situaciones descritas.
+ 
+\item {\bf Reutilización:} \emph{Peso 3} El 10\% o más de la aplicación se
+  considera reusable. 
+
+\item {\bf Facilidad de instalación:} \emph{Peso 3} El usuario ha declarado
+  consideraciones especiales para la conversión e instalación y se requieren
+  guías probadas de conversión e instalación. El impacto de la conversión
+  sobre el proyecto se considera importante. 
+
+\item {\bf Facilidad operacional:} \emph{Peso 5} La aplicación debe diseñarse
+  para una operación totalmente automática. La recuperación automática ante
+  errores es una funcionalidad de la aplicación. 
+
+\item {\bf Múltiples localizaciones:} \emph{Peso 2} Se consideran en el diseño múltiples
+  instalaciones pero para operar con similar configuración HW y/o SW.
+
+\item {\bf Facilidad de cambio:} \emph{Peso 3} Consultas y Generación de
+  Informes Flexible que manejan peticiones complejas.
+
+\end{enumerate}
+
+\section{Interfaz}
+\begin{enumerate}[{\bf 1.}]
+
+\item {\bf Comunicación de datos:} \emph{Peso 4} La aplicación está basada en
+  un teleproceso interactivo, pero con un solo protocolo de comunicaciones.
+
+\item {\bf Procesamiento distribuido:} \emph{Peso 4} Proceso distribuido
+  con transferencia de datos on line en ambas direcciones. 
+
+\item {\bf Objetivos de rendimiento:} \emph{Peso 1} Se establecen requisitos
+  de rendimiento y diseño, pero no se requieren acciones especiales.
+
+\item {\bf Configuración de uso intensivo:} \emph{Peso2} Se incluyen algunas
+  consideraciones sobre tiempo y seguridad. 
+
+\item {\bf Tasas de transacción rápida:} \emph{Peso 0} Las transacciones no
+  están afectadas por picos de tráfico. 
+
+\item {\bf Entradas de datos en línea:} \emph{Peso 5} Más del 30\% de las
+  funciones son entradas interactivas de datos. 
+
+\item {\bf Eficiencia de Usuario Final:} \emph{Peso 5} Además se requiere del
+  uso de herramientas y procesos para demostrar que se cumplen los requisitos
+  establecidos.
+
+\item {\bf Actualización de datos en línea:} \emph{Peso 5} Además, grandes
+  volúmenes implican consideraciones de coste en el proceso de
+  recuperación. Se incluyen procedimientos de recuperación que requieren
+  mínima intervención del operador. 
+
+\item {\bf Procesamiento complejo:} \emph{Peso 1} Es aplicable una de las
+  situaciones descritas. 
+
+\item {\bf Reutilización:} \emph{Peso 3} El 10\% o más de la aplicación se
+  considera reusable. 
+
+\item {\bf Facilidad de instalación:} \emph{Peso 1} El usuario no ha
+  declarado consideraciones especiales pero se requiere una configuración
+  especial para la instalación 
+
+\item {\bf Múltiples localizaciones:} \emph{Peso 2} Se consideran en el diseño múltiples
+  instalaciones pero para operar con similar configuración HW y/o SW.
+
+\item {\bf Facilidad de cambio:} \emph{Peso 1} Consultas y Generación de
+  Informes Flexible que manejan peticiones simples.
+
+\end{enumerate}
 \chapter{Cálculo de los puntos función ajustados}
 
 \end{document}

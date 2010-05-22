@@ -61,10 +61,11 @@ para poder realizar una estimación de costo en la etapa posterior.
 
 Se identifican los principales módulos de los que consta el software que se
 va a desarrollar. Para obtener los puntos función del software sin ajustar se
-utiliza el método de ``Puntos Función'' de \emph{Albrecht}. En cada módulo
-del sistema software se identificar entradas externas, salidas externas,
-consultas externas, archivos lógicos internos y archivos lógicos de interfaz
-externos. 
+utiliza el método de ``Puntos Función'' de \emph{Albrecht}. 
+
+En cada módulo del sistema software se identifican entradas externas, salidas
+externas, consultas externas, archivos lógicos internos y archivos lógicos de
+interfaz externos para estimar el tamaño de cada uno de ellos. 
 
 \section*{Visión general}
 El desarrollo del sistema pretende facilitar el control de todos los aspectos
@@ -121,6 +122,7 @@ El sistema muestra la información de cada asignatura que comprende:
 
 \subsection{Consultas externas}
 \subsubsection{Consultar currículum}
+
 Información del currículum de un determinado profesor.
 
 \subsubsection{Consultar datos de asignatura} 
@@ -142,6 +144,7 @@ asignaturas que imparte, \dots)
 En la base de datos de la universidad se tienen los datos de las asignaturas,
 tales como nombre, créditos, guión de la asignatura, contenidos, evaluación,
 \dots 
+
 
 \section{Gestión de cursos}
 \subsection{Entradas externas}
@@ -407,6 +410,7 @@ La complejidad de esta función es \textbf{alta}, porque usa todos los
 registros de este módulo y el número de tipo de datos elementales es mayor
 que cincuenta y uno. 
 
+
 \section{Interfaz}
 \subsection{Entradas externas}
 \subsubsection{Autentificación de los usuarios}
@@ -666,6 +670,7 @@ proporciona Métrica v.3.
 
 \item {\bf Facilidad de cambio:} \emph{Peso 1} Consultas y Generación de
   Informes Flexible que manejan peticiones simples.
+
 \end{enumerate}
 
 \begin{table}[!ht]

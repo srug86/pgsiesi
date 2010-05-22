@@ -61,7 +61,7 @@ USC COCOMO II
 Para la estimación del tamaño de los tres módulos de los que se compone el
 proyecto, se va a utilizar el método de \emph{puntos función}. Como lenguaje
 de implementación del proyecto se va a utilizar \emph{php} (un lenguaje
-orientado a objetos}. Además, se ha considerado que el porcentaje de código que
+orientado a objetos). Además, se ha considerado que el porcentaje de código que
 se va a desechar cuando finalice la implementación va a ser de nulo
 \emph{0.00}.
 
@@ -107,6 +107,86 @@ de la interfaz es de \textbf{2208}.
 
 \chapter{Multiplicadores y estimaciones de esfuerzo}
 \section{Gestión de usuarios}
+Para el Early Design Model, a partir de ahora EDM, 
+
+Para el Post Architecture Model, a partir de ahora PAM, en el valor de Effort
+Adjustment Factor (EAF), se va a describir los valores referentes a producto,
+plataforma, personal, proyecto y usuario. 
+\subsection{Factores de producto}
+Se refieren a las restricciones y requerimientos sobre el producto a
+desarrollar.
+\begin{description}
+\item [RELY], mide la confiabilidad del producto software,se le
+asigna un valor \textbf{bajo}, que implica unas mínimas pérdidas al usuario,
+fácilmente recuperables. 
+
+\item[DATA], mide el tamaño de la base de datos, es decir la
+relación entre el tamaño de las base de datos y el tamaño del código en
+líneas de código; se le asigna un valor \textbf{normal}, lo que significa que la
+relación se encuentra entre cien y mil.
+
+\item[CPLX], mide complejidad del producto, se le asigna un
+valor \textbf{nominal}, esto conlleva que use anidamientos sencillos, rutinas
+estándares de matemática y estadística, el uso simple de algunos dispositivos
+y consultas y actualizaciones complejas.
+
+\item [RUSE], requerimientos de reusabilidad, tiene un valor
+\textbf{normal} lo que significa que tendrá partes reusables dentro del mismo
+proyecto. 
+
+\item[DOCU] corresponde con la documentación de las diferentes etapas del
+ciclo de vida software. A este factor se le asigna un valor de \textbf{alto},
+esto significa que las neceisdades del ciclo de vida están cubiertas
+ampliamente. 
+
+\end{description}
+
+\subsection{Factores de plataforma}
+Analizan la complejidad de la plataforma subyacente.
+\begin{description}
+\item[PVOL],mide la volatilidad de la plataforma, representa la frecuencia de
+  los cambios en la paltaforma. Se le asigna un valor \textbf{bajo}, que
+  corresponde con un cambio principal cada doce meses y un cambio menor todos
+  los meses.
+
+\item[STOR], mide la restricción del almacenamiento principal. Es una función
+  que representa el grado de restricción del almacenamiento pricnipal
+  impuesto sobre un sistema de software. A este factor se le asigna un valor
+  \textbf{normal}, es decir, un uso del 50\% del porcetanje total de
+  almacenamiento o menor.
+
+\item[TIME],restricción del tiempo de ejecución. Se le asigna un valor
+  \textbf{alto}, que equivale a un 70\% del tiempo de ejecución disponible.
+\end{description}
+
+
+\subsection{Factores de personal}
+Estos factores están referidos al nivel de habilidad que posee el equipo de
+desarrollo.
+\begin{description}
+\item[ACAP]
+\item[PCAP]
+\item[PCON]
+\item[AEXP]
+\item[PEXP]
+\item[LTEX]
+\end{description}
+
+\subsection{Factores del proyecto}
+Se refieren a las condiciones y restricciones bajo las cuales se lleva a cabo
+el proyecto.
+\begin{description}
+\item[TOOL]
+\item[SITE]
+\end{description}
+
+\subsection{Factores de usuario}
+\begin{description}
+\item[USR1]
+\item[USR2]
+\end{description}
+
+
 \section{Gestión de cursos}
 \section{Interfaz}
 

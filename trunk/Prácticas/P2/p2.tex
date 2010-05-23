@@ -17,7 +17,8 @@
 
 % Portada
 \portada{Planificación y Gestión de\\Sistemas de Información}
-{Práctica 1}{Elaboración de un plan de proyecto\\utilizando Microsoft Project}
+{Práctica 2}{Estimación del esfuerzo de desarrollo de\\un software utilizando
+USC COCOMO II}
 {Sergio de la Rubia García-Carpintero\\Miguel Millán Sánchez-Grande\\
   Luis Muñoz Villarreal\\Alicia Serrano Sánchez\\
   Juan Miguel Torres Triviño}{26 de Mayo de 2010}
@@ -29,9 +30,9 @@
 \chapter*{Ficha de trabajo}
 \begin{description}
 \item[Código] P2
-\item[Fecha] 26 de Abril de 2010
-\item[Título] Estimación del esfuerzo de desarrollo de un Software utilizando
-USC COCOMO II
+\item[Fecha] 26 de Mayo de 2010
+\item[Título] Estimación del esfuerzo de desarrollo de un software utilizando
+  USC COCOMO II
 \end{description}
 
 \begin{table}[!ht]
@@ -56,11 +57,12 @@ USC COCOMO II
 %\listoftables
 
 %% INICIO DEL DOCUMENTO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Ajustes de tamaño aplicados}
+\chapter*{Introducción}
 
+\chapter{Ajustes de tamaño aplicados}
 Para la estimación del tamaño de los tres módulos de los que se compone el
 proyecto se va a utilizar el método de \emph{puntos función}. Como lenguaje
-de implementación del proyecto se va a utilizar \emph{php} (lenguaje
+de implementación del proyecto se va a utilizar \emph{PHP} (lenguaje
 orientado a objetos). Además, se ha considerado que el porcentaje de código que
 se va a desechar cuando finalice la implementación va a ser \emph{0\%}.
 
@@ -110,6 +112,7 @@ de la interfaz es de \textbf{2208}.
 Para el Post Architecture Model, a partir de ahora PAM, en el valor de Effort
 Adjustment Factor (EAF), se va a describir los valores referentes a producto,
 plataforma, personal, proyecto y usuario. 
+
 \subsubsection{Factores de producto}
 Se refieren a las restricciones y requerimientos sobre el producto a
 desarrollar.
@@ -137,7 +140,6 @@ proyecto. Tendrá un aumento del \textbf{25\%}.
 ciclo de vida software. A este factor se le asigna un valor \textbf{alto},
 esto significa que las necesidades del ciclo de vida están cubiertas
 ampliamente.
-
 \end{description}
 
 \subsubsection{Factores de plataforma}
@@ -268,7 +270,6 @@ proyecto. Tendrá un aumento del \textbf{25\%}.
 ciclo de vida software. A este factor se le asigna un valor de \textbf{alto},
 esto significa que las necesidades del ciclo de vida están cubiertas
 ampliamente.
-
 \end{description}
 
 \subsubsection{Factores de plataforma}
@@ -395,7 +396,6 @@ proyecto. Tendrá un aumento del \textbf{25\%}.
 ciclo de vida software. A este factor se le asigna un valor de \textbf{alto},
 esto significa que las necesidades del ciclo de vida están cubiertas
 ampliamente.
-
 \end{description}
 
 \subsubsection{Factores de plataforma}
@@ -504,7 +504,7 @@ Los factores de escala para el proyecto son los siguientes:
 objetivos del producto es \emph{general}, la experiencia en el trabajo con 
 software relacionado es \emph{moderada}, el desarrollo concurrente de nuevo
 hardware y procedimientos operacionales es \emph{abundante}, y la necesidad
-de innovación en el procesamiento de datos, aquitectura y algoritmos es
+de innovación en el procesamiento de datos, arquitectura y algoritmos es
 \emph{considerable}.
 
 \item[FLEX] Mide el nivel de exigencia en el cumplimiento de requerimientos
@@ -513,7 +513,7 @@ necesidad de conformar requerimientos preestablecidos es \emph{considerable},
 la necesidad de conformar especificaciones externas de interfase también es
 \emph{considerable} y el estímulo por terminación temprana es \emph{medio}.
 
-\item[RESL] Mide aspectos relacionados con los ítems de riesgo crítico y el
+\item[RESL] Mide aspectos relacionados con los ítem de riesgo crítico y el
 modo de abordarlos. Se le asigna un valor \textbf{alto}. Esto implica que:
 \begin{itemize}
 \item La planificación de la administración de riesgo, identificando los
@@ -526,7 +526,7 @@ de acuerdo a los objetivos generales del producto es aproximadamente del
 \emph{25\%}.
 \item El porcentaje de arquitecturas de software disponibles para el proyecto
 es aproximadamente del \emph{80\%}.
-\item Y las herramientas disponibles para resolver ítems de riesgo,
+\item Y las herramientas disponibles para resolver ítem de riesgo,
 desarrollando y verificando las especulaciones de arquitecturas, son
 \emph{buenas}.
 \end{itemize}
@@ -550,15 +550,14 @@ optimista y más probable de las variables calculadas por el software.
 \begin{table}[!h]
   \centering
   \begin{tabular}{p{4.5cm}|c|c|b{2cm}<{\centering}}
-    %\cline{2-4}
-    & \textbf{Pesimista} & \textbf{Más probable} & \textbf{Optimista}\\
+    & \textbf{Pesimista} & \textbf{Más probable} & \textbf{Optimista} \\
     \hline \hline
-    Esfuerzo & 20,1 & 16,1 & 12,8 \\ \hline
-    Duración & 9,5 & 8,9 & 8,3 \\ \hline
-    Productividad & 314 & 392,5 & 490,7 \\ \hline
-    Coste & 41822,71 & 33458,17 & 26766,53 \\ \hline
-    Coste por instrucción & 6,6 & 5,3 & 4,2 \\ \hline
-    Personal & 2,1 & 1,8 & 1,6 \\ \hline
+    Esfuerzo              & 20,1     & 16,1     & 12,8     \\ \hline
+    Duración              & 9,5      & 8,9      & 8,3      \\ \hline
+    Productividad         & 314      & 392,5    & 490,7    \\ \hline
+    Coste                 & 41822,71 & 33458,17 & 26766,53 \\ \hline
+    Coste por instrucción & 6,6      & 5,3      & 4,2      \\ \hline
+    Personal              & 2,1      & 1,8      & 1,6      \\ \hline
   \end{tabular}
   \caption{Estimaciones del modelo PAM} \label{Tab:EstPAM}
 \end{table}

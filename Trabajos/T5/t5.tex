@@ -62,7 +62,9 @@ para poder realizar una estimación de costo en la etapa posterior.
 Los principales módulos que se identifican en el software que se
 va a desarrollar son \emph{gestión de usuarios}, \emph{gestión de cursos} e
 \emph{interfaz}. Para obtener los puntos función del software sin ajustar se
-utiliza el método de ``Puntos Función'' de \emph{Albrecht}. 
+utiliza el método \emph{Puntos Función} definido por Allan Albrecht
+\cite{albrecht} y empleando la metodología de medición de la
+\emph{International Function Point Users Group}
 
 En cada módulo del sistema software se identifican entradas externas, salidas
 externas, consultas externas, archivos lógicos internos y archivos lógicos de
@@ -71,12 +73,17 @@ interfaz externos para estimar el tamaño de cada uno de ellos.
 \section*{Visión general}
 El desarrollo del sistema pretende facilitar el control de todos los aspectos
 relacionados con la generación automatizada de guías docentes para la
-Universidad de Málaga. El software tiene funcionalidad para construir una
+Universidad de Málaga \cite{uma}. El software tiene funcionalidad para
+construir una 
 guía docente a partir de los datos almacenados en las distintas bases de
 datos de la universidad, así como adaptar los planes de estudio antiguos a
-los nuevos acordados por el EEES, asignar el profesorado a las distintas
-asignaturas, el establecimiento de los horarios lectivos y los horarios de
-exámenes. 
+los nuevos acordados por el EEES\footnote{El Espacio Europeo de Educación
+  Superior es un ámbito de organización educativo iniciado en 1999 con la
+  \emph{Declaración de Bolonia} que quiere armonizar los distintos sistemas
+  educativos de la Unión Europea. Fuente:
+  http://es.wikipedia.org/wiki/Espacio\_Europeo\_de\_Educación\_Superior},
+asignar el profesorado a las distintas asignaturas, el establecimiento de los
+horarios lectivos y los horarios de exámenes.
 
 \section*{Objetivos}
 El objetivo principal es la agilización de la realización de guías
@@ -86,7 +93,27 @@ contenidos de las guías docentes, mejorar la accesibilidad a dichos
 contenidos y la reducción en el gasto de la contratación de personal para la
 elaboración de estas guías.
 
-\chapter{Módulos del software}
+\section*{Procedimiento}
+Para llevar a cabo esta medición se seguirá la metodología de puntos función
+del \emph{IFPUG}, que contiene los siguientes pasos:
+\begin{enumerate}
+\item Identificar la frontera de la aplicación. \\
+  \emph{Capitulo \ref{cap:mod}: \nameref{cap:mod}}
+\item Identificar los puntos funcionales. \\
+  \emph{Capitulo \ref{cap:mod}: \nameref{cap:mod}}
+\item Evaluar la complejidad. \\
+  \emph{Capitulo \ref{cap:com}: \nameref{cap:com}}
+\item Calcular los PF sin ajustar. \\
+  \emph{Capitulo \ref{cap:pun}: \nameref{cap:pun}} 
+\item Evaluar los atributos de ajuste. \\ 
+  \emph{Capitulo \ref{cap:fac}: \nameref{cap:fac}} 
+\item Calcular el valor de ajuste. \\
+  \emph{Capitulo \ref{cap:fac}: \nameref{cap:fac}} 
+\item Calcular el valor final de los PF. \\
+  \emph{Capitulo \ref{cap:aju}: \nameref{cap:aju}}
+\end{enumerate}
+
+\chapter{Módulos del software} \label{cap:mod}
 \section{Gestión de usuarios}
 \subsection{Entradas externas}
 \subsubsection{Identificación del usuario}
@@ -149,7 +176,7 @@ tales como nombre, créditos, guión de la asignatura, contenidos, evaluación,
 \section{Gestión de cursos}
 \subsection{Entradas externas}
 \subsubsection{Añadir curso}
-Entrada destinada a la inclusión de los distintos cursos correspondientes al
+EFntrada destinada a la inclusión de los distintos cursos correspondientes al
 plan de estudios en el sistema.
 
 \subsubsection{Añadir asignaturas}
@@ -264,7 +291,7 @@ búsqueda solicitadas y en el orden indicado en un fichero de texto.
 \subsection{Archivos lógicos de interfaz externos}
 No se ha detectado ningún archivo lógico de interfaz externo.
 
-\chapter{Complejidad de las funciones de los  módulos}
+\chapter{Complejidad de las funciones de los  módulos} \label{cap:com}
 \section{Gestión de usuarios}
 \subsection{Entradas externas}
 \subsubsection{Identificación del usuario}
@@ -409,7 +436,6 @@ La complejidad de esta función es \textbf{alta}, porque usa todos los
 registros de este módulo y el número de tipo de datos elementales es mayor
 que cincuenta y uno. 
 
-
 \section{Interfaz}
 \subsection{Entradas externas}
 \subsubsection{Autentificación de los usuarios}
@@ -473,7 +499,7 @@ La complejidad de esta función de usuario es \textbf{alta}, porque tiene dos
 fichero referenciado para la información y el número de tipo de datos
 elementales es veinte.
 
-\chapter{Puntos función sin ajustar}
+\chapter{Puntos función sin ajustar} \label{cap:pun}
 Para la estimación del tamaño del producto software se necesitan los puntos
 función sin ajustar representados en las tablas \ref{Tab:PFSAusu},
 \ref{Tab:PFSAcur} y \ref{Tab:PFSAint}.
@@ -591,10 +617,10 @@ función sin ajustar representados en las tablas \ref{Tab:PFSAusu},
   \label{Tab:PFSAint}
 \end{table}
 
-\chapter{Factores de influencia} 
+\chapter{Factores de influencia} \label{cap:fac}
 En este apartado se especifican los pesos que se han asignado a cada factor
 de influencia. Estos valores han sido extraídos de la información que
-proporciona Métrica v.3. 
+proporciona Métrica V3 \cite{met}. 
 
 \section{Gestión de usuarios}
 \begin{enumerate}[{\bf 1.}]
@@ -843,7 +869,7 @@ Todo lo anterior queda resumido en la tabla \ref{tab:infIN}
   \caption{Influencia en la dificultad del sistema del módulo interfaz}
 \end{table}
 
-\chapter{Puntos función ajustados}
+\chapter{Puntos función ajustados} \label{cap:aju}
 Para el cálculo de los puntos función totales se utiliza la fórmula \ref{eq},
 obteniendo como resultado los valores reflejados en la tabla \ref{Tab:PFA}.
 \begin{equation}
@@ -852,21 +878,20 @@ obteniendo como resultado los valores reflejados en la tabla \ref{Tab:PFA}.
 \end{equation}
 \begin{table}[!h]
   \centering
-  \begin{tabular}{|b{3.5cm}<\centering|b{3cm}<\centering|
-      b{3cm}<\centering|b{3cm}<\centering|}
+  \begin{tabular}{|b{3.3cm}|b{2.9cm}<\centering|c|b{2.9cm}<\centering|}
     \hline
-    \textbf{Módulo} & \textbf{Puntos función sin ajustar} &
+    \center{\textbf{Módulo}} & \textbf{Puntos función sin ajustar} &
     \textbf{Total GI} & \textbf{Puntos función ajustados}\\
     \hline \hline
-    Gestión de usuarios & 45 & 40 & 47.25\\
-    \hline
-    Gestión de cursos & 83 & 47 & 92.96 \\
-    \hline
-    Interfaz & 69 & 39 & 71.76 \\
-    \hline
+    Gestión de usuarios & 45 & 40 & 47.25 \\ \hline
+    Gestión de cursos   & 83 & 47 & 92.96 \\ \hline
+    Interfaz            & 69 & 39 & 71.76 \\ \hline
   \end{tabular}
   \caption{Puntos de función ajustados} 
   \label{Tab:PFA}
 \end{table}
+
+\bibliographystyle{plain} 
+\bibliography{t5}
 
 \end{document}

@@ -86,7 +86,7 @@ contenidos de las guías docentes, mejorar la accesibilidad a dichos
 contenidos y la reducción en el gasto de la contratación de personal para la
 elaboración de estas guías.
 
-\chapter{Identificación de los módulos}
+\chapter{Módulos del software}
 \section{Gestión de usuarios}
 \subsection{Entradas externas}
 \subsubsection{Identificación del usuario}
@@ -123,7 +123,6 @@ El sistema muestra la información de cada asignatura que comprende:
 
 \subsection{Consultas externas}
 \subsubsection{Consultar currículum}
-
 Información del currículum de un determinado profesor.
 
 \subsubsection{Consultar datos de asignatura} 
@@ -265,8 +264,7 @@ búsqueda solicitadas y en el orden indicado en un fichero de texto.
 \subsection{Archivos lógicos de interfaz externos}
 No se ha detectado ningún archivo lógico de interfaz externo.
 
-\chapter[Complejidad de las funciones de los módulos]
-{Determinación de la complejidad de las funciones de los  módulos}
+\chapter{Complejidad de las funciones de los  módulos}
 \section{Gestión de usuarios}
 \subsection{Entradas externas}
 \subsubsection{Identificación del usuario}
@@ -475,49 +473,42 @@ La complejidad de esta función de usuario es \textbf{alta}, porque tiene dos
 fichero referenciado para la información y el número de tipo de datos
 elementales es veinte.
 
-\chapter{Tablas de puntos función sin ajustar}
+\chapter{Puntos función sin ajustar}
 Para la estimación del tamaño del producto software se necesitan los puntos
 función sin ajustar representados en las tablas \ref{Tab:PFSAusu},
 \ref{Tab:PFSAcur} y \ref{Tab:PFSAint}.
+
 \section{Gestión de usuarios}
 \begin{table}[!h]
   \centering
-  \begin{tabular}{|b{2.1cm}<\centering|b{2.5cm}<{\centering} |c c c c c|}
+  \begin{tabular}{|b{2.1cm}<\centering|b{2.5cm}<{\centering}  ||c c c c c|}
     \hline
     \textbf{Tipo de función} & \textbf{Nivel de complejidad} & \textbf{Número}
     & \textbf{*} & \textbf{Peso} & \textbf{=} & \textbf{Total} \\
     \hline \hline
     \multirow{3}{*}{Entradas} 
-    & Baja  & 1 & * & 3 & = & \textbf{3} \\
-    \cline{3-7}
-    & Media & 1 & * & 4 & = & \textbf{4} \\
-    \cline{3-7}
-    & Alta  &   &   & 6  &   & \\
-    \hline
+    & Baja  & 1 & * & 3 & = & \textbf{3} \\ \cline{2-7}
+    & Media & 1 & * & 4 & = & \textbf{4} \\ \cline{2-7}
+    & Alta  &   &   & 6  &   & \\ \hline
+    
     \multirow{3}{*}{Salidas}
-    & Baja  & 1 & * & 4 & = & \textbf{4} \\
-    \cline{3-7}
-    & Media & 3 & * & 5 & = & \textbf{15} \\
-    \cline{3-7}
-    & Alta  & & & 7 & & \\
-    \hline
+    & Baja  & 1 & * & 4 & = & \textbf{4} \\ \cline{2-7}
+    & Media & 3 & * & 5 & = & \textbf{15} \\ \cline{2-7}
+    & Alta  & & & 7 & & \\ \hline
+
     \multirow{3}{*}{Consultas}
-    & Baja  & 3 & * & 3 & = & \textbf{9} \\
-    \cline{3-7}
-    & Media & & & 4 & & \\
-    \cline{3-7}
-    & Alta  & & & 6 & & \\
-    \hline
+    & Baja  & 3 & * & 3 & = & \textbf{9} \\ \cline{2-7}
+    & Media & & & 4 & & \\ \cline{2-7}
+    & Alta  & & & 6 & & \\ \hline
+
     \multirow{3}{*}{Interfaces}
-    & Baja  & 2 & * & 5 & = & \textbf{10}\\
-    \cline{3-7} 
-    & Media & & & 7 & & \\
-    \cline{3-7}
+    & Baja  & 2 & * & 5 & = & \textbf{10}\\ \cline{2-7}
+    & Media & & & 7 & & \\ \cline{2-7}
     & Alta  & & & 10 & & \\
-    \hline
+    \hline \hline
     \multicolumn{6}{|l}{\textbf{Número de puntos función sin ajustar}} &
     \textbf{\textcolor{rojo}{45}} \\ 
-    \hline \hline
+    \hline
   \end{tabular}
   \caption{Puntos de función sin ajustar del módulo gestión de usuarios} 
   \label{Tab:PFSAusu}
@@ -526,44 +517,34 @@ función sin ajustar representados en las tablas \ref{Tab:PFSAusu},
 \section{Gestión de cursos}
 \begin{table}[!h]
   \centering
-  \begin{tabular}{|b{2.1cm}<\centering|b{2.5cm}<{\centering} |c c c c c|}
+  \begin{tabular}{|b{2.1cm}<\centering|b{2.5cm}<{\centering} ||c c c c c|}
     \hline
     \textbf{Tipo de función} & \textbf{Nivel de complejidad} &
     \textbf{Número} & \textbf{*} & \textbf{Peso} & \textbf{=} & \textbf{Total}\\
     \hline \hline
     \multirow{3}{*}{Entradas} 
-    & Baja & 4 & * & 3 & = & \textbf{12} \\
-    \cline{3-7}
-    & Media &  &  & 4 &  &  \\
-    \cline{3-7}
-    & Alta  &  &  & 6 & &  \\
-    \hline
+    & Baja & 4 & * & 3 & = & \textbf{12} \\ \cline{2-7}
+    & Media &  &  & 4 &  &  \\ \cline{2-7}
+    & Alta  &  &  & 6 & &  \\ \hline
+
     \multirow{3}{*}{Salidas}
-    & Baja  & & & 4 & & \\
-    \cline{3-7}
-    & Media & 3 & * & 5 & = & \textbf{15} \\
-    \cline{3-7}
-    & Alta  & 1 & * & 7 & = & \textbf{7} \\
-    \hline
+    & Baja  & & & 4 & & \\ \cline{2-7}
+    & Media & 3 & * & 5 & = & \textbf{15} \\ \cline{2-7}
+    & Alta  & 1 & * & 7 & = & \textbf{7} \\ \hline
+
     \multirow{3}{*}{Consultas}
-    & Baja  & & & 3 & & \\
-    \cline{3-7}
-    & Media & 3 & * & 4 & = & \textbf{12} \\
-    \cline{3-7}
-    & Alta  & 1 & * & 6 & = & \textbf{6} \\
-    \hline
+    & Baja  & & & 3 & & \\ \cline{2-7}
+    & Media & 3 & * & 4 & = & \textbf{12} \\ \cline{2-7}
+    & Alta  & 1 & * & 6 & = & \textbf{6} \\ \hline
+
     \multirow{3}{*}{Archivos}
-    & Baja  & 3 & * & 7 & = & \textbf{21} \\
-    \cline{3-7}
-    & Media &  &  & 10 &  & \\
-    \cline{3-7}
-    & Alta  &  &  & 15 &  & \\
-    \hline
+    & Baja  & 3 & * & 7 & = & \textbf{21} \\ \cline{2-7}
+    & Media &  &  & 10 &  & \\ \cline{2-7}
+    & Alta  &  &  & 15 &  & \\ \hline
+
     \multirow{3}{*}{Interfaces}
-    & Baja  & & & 5 & & \\
-    \cline{3-7}
-    & Media & & & 7 & & \\
-    \cline{3-7}
+    & Baja  & & & 5 & & \\ \cline{2-7}
+    & Media & & & 7 & & \\ \cline{2-7}
     & Alta  & 1 & * & 10 & = & \textbf{10} \\
     \hline \hline
     \multicolumn{6}{|l}{\textbf{Número de puntos función sin ajustar}} &
@@ -577,37 +558,29 @@ función sin ajustar representados en las tablas \ref{Tab:PFSAusu},
 \section{Interfaz}
 \begin{table}[!h]
   \centering
-  \begin{tabular}{|b{2.1cm}<\centering|b{2.5cm}<{\centering} |c c c c c|}
+  \begin{tabular}{|b{2.1cm}<\centering|b{2.5cm}<{\centering} ||c c c c c|}
     \hline
     \textbf{Tipo de función} & \textbf{Nivel de complejidad} &
     \textbf{Número} & \textbf{*} & \textbf{Peso} & \textbf{=} & \textbf{Total}\\
         \hline \hline
     \multirow{3}{*}{Entradas} 
-    & Baja & 4 & * & 3 & = & \textbf{12} \\
-    \cline{3-7}
-    & Media & 3 & * & 4 & = & \textbf{12} \\
-    \cline{3-7}
-    & Alta  & & & 6 & & \\
-    \hline
+    & Baja & 4 & * & 3 & = & \textbf{12} \\ \cline{2-7}
+    & Media & 3 & * & 4 & = & \textbf{12} \\ \cline{2-7}
+    & Alta  & & & 6 & & \\ \hline
+
     \multirow{3}{*}{Salidas}
-    & Baja  & 2 & * & 4 & = & \textbf{8} \\
-    \cline{3-7}
-    & Media & 1 & * & 5 & = & \textbf{5} \\
-    \cline{3-7}
-    & Alta  & & & 7 & & \\
-    \hline
+    & Baja  & 2 & * & 4 & = & \textbf{8} \\ \cline{2-7}
+    & Media & 1 & * & 5 & = & \textbf{5} \\ \cline{2-7}
+    & Alta  & & & 7 & & \\ \hline
+
     \multirow{3}{*}{Consultas}
-    & Baja  & 2 & * & 3 & = & \textbf{6} \\
-    \cline{3-7}
-    & Media & 1 & * & 4 & = & \textbf{4} \\
-    \cline{3-7}
-    & Alta  & & & 6 & & \\
-    \hline
+    & Baja  & 2 & * & 3 & = & \textbf{6} \\ \cline{2-7}
+    & Media & 1 & * & 4 & = & \textbf{4} \\ \cline{2-7}
+    & Alta  & & & 6 & & \\ \hline \hline
+
     \multirow{3}{*}{Archivos}
-    & Baja  & 1 & * & 7 & = & \textbf{7} \\
-    \cline{3-7}
-    & Media & & & 10 & & \\
-    \cline{3-7}
+    & Baja  & 1 & * & 7 & = & \textbf{7} \\ \cline{2-7}
+    & Media & & & 10 & & \\ \cline{2-7}
     & Alta  & 1 & * & 15 & = & \textbf{15} \\
     \hline \hline
     \multicolumn{6}{|l}{\textbf{Número de puntos función sin ajustar}} &
@@ -618,8 +591,7 @@ función sin ajustar representados en las tablas \ref{Tab:PFSAusu},
   \label{Tab:PFSAint}
 \end{table}
 
-\chapter[Explicación de los valores de fac. de inf.]
-{Explicación de los valores de los factores de influencia} 
+\chapter{Factores de influencia} 
 En este apartado se especifican los pesos que se han asignado a cada factor
 de influencia. Estos valores han sido extraídos de la información que
 proporciona Métrica v.3. 
@@ -627,55 +599,58 @@ proporciona Métrica v.3.
 \section{Gestión de usuarios}
 \begin{enumerate}[{\bf 1.}]
 
-\item {\bf Comunicación de datos:} \emph{Peso 4} La aplicación está basada en
+\item {\bf Comunicación de datos:} \emph{Peso 4} \\ La aplicación está basada en
   un teleproceso interactivo, pero con un solo protocolo de comunicaciones.
 
-\item {\bf Procesamiento distribuido:} \emph{Peso 4} Proceso distribuido
+\item {\bf Procesamiento distribuido:} \emph{Peso 4} \\ Proceso distribuido
   con transferencia de datos on line en ambas direcciones. 
 
-\item {\bf Objetivos de rendimiento:} \emph{Peso 1} Se establecen requisitos
+\item {\bf Objetivos de rendimiento:} \emph{Peso 1} \\ Se establecen requisitos
   de rendimiento y diseño, pero no se requieren acciones especiales.
 
-\item {\bf Configuración de uso intensivo:} \emph{Peso 2} Se incluyen algunas
+\item {\bf Configuración de uso intensivo:} \emph{Peso 2} \\ Se incluyen algunas
   consideraciones sobre tiempo y seguridad. 
 
-\item {\bf Tasas de transacción rápida:} \emph{Peso 0} Las transacciones no
+\item {\bf Tasas de transacción rápida:} \emph{Peso 0} \\ Las transacciones no
   están afectadas por picos de tráfico. 
 
-\item {\bf Entradas de datos en línea:} \emph{Peso 5} Más del 30\% de las
+\item {\bf Entradas de datos en línea:} \emph{Peso 5} \\ Más del 30\% de las
   funciones son entradas interactivas de datos. 
 
-\item {\bf Eficiencia de Usuario Final:} \emph{Peso 5} Además se requiere del
+\item {\bf Eficiencia de Usuario Final:} \emph{Peso 5} \\ Además se requiere del
   uso de herramientas y procesos para demostrar que se cumplen los requisitos
   establecidos.
 
-\item {\bf Actualización de datos en línea:} \emph{Peso 5} Además, grandes
+\item {\bf Actualización de datos en línea:} \emph{Peso 5} \\ Además, grandes
   volúmenes implican consideraciones de coste en el proceso de
   recuperación. Se incluyen procedimientos de recuperación que requieren
   mínima intervención del operador. 
 
-\item {\bf Procesamiento complejo:} \emph{Peso 1} Es aplicable una de las
+\item {\bf Procesamiento complejo:} \emph{Peso 1} \\ Es aplicable una de las
   situaciones descritas. 
 
-\item {\bf Reutilización:} \emph{Peso 3} El 10\% o más de la aplicación se
+\item {\bf Reutilización:} \emph{Peso 3} \\ El 10\% o más de la aplicación se
   considera reusable. 
 
-\item {\bf Facilidad de instalación:} \emph{Peso 2} El usuario ha declarado
+\item {\bf Facilidad de instalación:} \emph{Peso 2} \\ El usuario ha declarado
   consideraciones especiales para la conversión e instalación y se requieren
   guías probadas de conversión e instalación. El impacto de la conversión
   sobre el proyecto no se considera importante. 
 
-\item {\bf Facilidad operacional:} \emph{Peso 5} La aplicación debe diseñarse
+\item {\bf Facilidad operacional:} \emph{Peso 5} \\ La aplicación debe diseñarse
   para una operación totalmente automática. La recuperación automática ante
   errores es una funcionalidad de la aplicación. 
 
-\item {\bf Múltiples localizaciones:} \emph{Peso 2} Se consideran en el diseño
-  múltiples instalaciones pero para operar con similar configuración HW y/o SW.
+\item {\bf Múltiples localizaciones:} \emph{Peso 2} \\ Se consideran en el
+  diseño múltiples instalaciones pero para operar con similar configuración HW
+  y/o SW.
 
 \item {\bf Facilidad de cambio:} \emph{Peso 1} Consultas y Generación de
   Informes Flexible que manejan peticiones simples.
 
 \end{enumerate}
+
+Todo lo anterior queda resumido en la tabla \ref{tab:infUS}
 
 \begin{table}[!ht]
   \centering
@@ -700,62 +675,64 @@ proporciona Métrica v.3.
     Facilidad de cambio             & 1 \\ \hline \hline
     \textbf{Total}                  & \textbf{40} \\ \hline
   \end{tabular}
-  \label{}
-  \caption{}
+  \label{tab:infUS}
+  \caption{Influencia en la dificultad del sistema del módulo usuarios}
 \end{table}
 
 
 \section{Gestión de cursos}
 \begin{enumerate}[{\bf 1.}]
 
-\item {\bf Comunicación de datos:} \emph{Peso 4} La aplicación está basada en
+\item {\bf Comunicación de datos:} \emph{Peso 4} \\ La aplicación está basada en
   un teleproceso interactivo, pero con un solo protocolo de comunicaciones.
 
-\item {\bf Procesamiento distribuido:} \emph{Peso 4} Proceso distribuido
+\item {\bf Procesamiento distribuido:} \emph{Peso 4} \\ Proceso distribuido
   con transferencia de datos on line en ambas direcciones. 
 
-\item {\bf Objetivos de rendimiento:} \emph{Peso 1} Se establecen requisitos
+\item {\bf Objetivos de rendimiento:} \emph{Peso 1} \\ Se establecen requisitos
   de rendimiento y diseño, pero no se requieren acciones especiales.
 
-\item {\bf Configuración de uso intensivo:} \emph{Peso2} Se incluyen algunas
+\item {\bf Configuración de uso intensivo:} \emph{Peso 2} \\ Se incluyen algunas
   consideraciones sobre tiempo y seguridad. 
 
-\item {\bf Tasas de transacción rápida:} \emph{Peso 0} Las transacciones no
+\item {\bf Tasas de transacción rápida:} \emph{Peso 0} \\ Las transacciones no
   están afectadas por picos de tráfico. 
 
-\item {\bf Entradas de datos en línea:} \emph{Peso 5} Más del 30\% de las
+\item {\bf Entradas de datos en línea:} \emph{Peso 5} \\ Más del 30\% de las
   funciones son entradas interactivas de datos. 
 
-\item {\bf Eficiencia de Usuario Final:} \emph{Peso 5} Además se requiere del
+\item {\bf Eficiencia de Usuario Final:} \emph{Peso 5} \\ Además se requiere del
   uso de herramientas y procesos para demostrar que se cumplen los requisitos
   establecidos.
 
-\item {\bf Actualización de datos en línea:} \emph{Peso 5} Además, grandes
+\item {\bf Actualización de datos en línea:} \emph{Peso 5} \\ Además, grandes
   volúmenes implican consideraciones de coste en el proceso de
   recuperación. Se incluyen procedimientos de recuperación que requieren
   mínima intervención del operador. 
 
-\item {\bf Procesamiento complejo:} \emph{Peso 5} Son aplicables todas las
+\item {\bf Procesamiento complejo:} \emph{Peso 5} \\Son aplicables todas las
   situaciones descritas.
  
-\item {\bf Reutilización:} \emph{Peso 3} El 10\% o más de la aplicación se
+\item {\bf Reutilización:} \emph{Peso 3} \\ El 10\% o más de la aplicación se
   considera reusable. 
 
-\item {\bf Facilidad de instalación:} \emph{Peso 3} El usuario ha declarado
+\item {\bf Facilidad de instalación:} \emph{Peso 3} \\ El usuario ha declarado
   consideraciones especiales para la conversión e instalación y se requieren
   guías probadas de conversión e instalación. El impacto de la conversión
   sobre el proyecto se considera importante. 
 
-\item {\bf Facilidad operacional:} \emph{Peso 5} La aplicación debe diseñarse
+\item {\bf Facilidad operacional:} \emph{Peso 5} \\ La aplicación debe diseñarse
   para una operación totalmente automática. La recuperación automática ante
   errores es una funcionalidad de la aplicación. 
 
-\item {\bf Múltiples localizaciones:} \emph{Peso 2} Se consideran en el diseño
-  múltiples instalaciones pero para operar con similar configuración HW y/o
-  SW.
+\item {\bf Múltiples localizaciones:} \emph{Peso 2} \\ Se consideran en el
+  diseño múltiples instalaciones pero para operar con similar configuración HW
+  y/o SW.
 
-\item {\bf Facilidad de cambio:} \emph{Peso 3} Consultas y Generación de
+\item {\bf Facilidad de cambio:} \emph{Peso 3} \\ Consultas y Generación de
   Informes Flexible que manejan peticiones complejas.
+
+Todo lo anterior queda resumido en la tabla \ref{tab:infCU}
 
 \end{enumerate}
 \begin{table}[!ht]
@@ -781,62 +758,63 @@ proporciona Métrica v.3.
     Facilidad de cambio             & 3 \\ \hline \hline
     \textbf{Total}                  & \textbf{47} \\ \hline
   \end{tabular}
-  \label{}
-  \caption{}
+  \label{tab:infCU}
+  \caption{Influencia en la dificultad del sistema del módulo cursos}
 \end{table}
 
 \section{Interfaz}
 \begin{enumerate}[{\bf 1.}]
 
-\item {\bf Comunicación de datos:} \emph{Peso 4} La aplicación está basada en
+\item {\bf Comunicación de datos:} \emph{Peso 4} \\ La aplicación está basada en
   un teleproceso interactivo, pero con un solo protocolo de comunicaciones.
 
-\item {\bf Procesamiento distribuido:} \emph{Peso 4} Proceso distribuido
+\item {\bf Procesamiento distribuido:} \emph{Peso 4} \\ Proceso distribuido
   con transferencia de datos on line en ambas direcciones. 
 
-\item {\bf Objetivos de rendimiento:} \emph{Peso 1} Se establecen requisitos
+\item {\bf Objetivos de rendimiento:} \emph{Peso 1} \\ Se establecen requisitos
   de rendimiento y diseño, pero no se requieren acciones especiales.
 
-\item {\bf Configuración de uso intensivo:} \emph{Peso2} Se incluyen algunas
+\item {\bf Configuración de uso intensivo:} \emph{Peso 2} \\ Se incluyen algunas
   consideraciones sobre tiempo y seguridad. 
 
-\item {\bf Tasas de transacción rápida:} \emph{Peso 0} Las transacciones no
+\item {\bf Tasas de transacción rápida:} \emph{Peso 0} \\ Las transacciones no
   están afectadas por picos de tráfico. 
 
-\item {\bf Entradas de datos en línea:} \emph{Peso 5} Más del 30\% de las
+\item {\bf Entradas de datos en línea:} \emph{Peso 5} \\ Más del 30\% de las
   funciones son entradas interactivas de datos. 
 
-\item {\bf Eficiencia de Usuario Final:} \emph{Peso 5} Además se requiere del
+\item {\bf Eficiencia de Usuario Final:} \emph{Peso 5} \\ Además se requiere del
   uso de herramientas y procesos para demostrar que se cumplen los requisitos
   establecidos.
 
-\item {\bf Actualización de datos en línea:} \emph{Peso 5} Además, grandes
+\item {\bf Actualización de datos en línea:} \emph{Peso 5} \\ Además, grandes
   volúmenes implican consideraciones de coste en el proceso de
   recuperación. Se incluyen procedimientos de recuperación que requieren
   mínima intervención del operador. 
 
-\item {\bf Procesamiento complejo:} \emph{Peso 1} Es aplicable una de las
+\item {\bf Procesamiento complejo:} \emph{Peso 1} \\ Es aplicable una de las
   situaciones descritas. 
 
-\item {\bf Reutilización:} \emph{Peso 3} El 10\% o más de la aplicación se
+\item {\bf Reutilización:} \emph{Peso 3} \\ El 10\% o más de la aplicación se
   considera reusable. 
 
-\item {\bf Facilidad de instalación:} \emph{Peso 1} El usuario no ha
+\item {\bf Facilidad de instalación:} \emph{Peso 1} \\ El usuario no ha
   declarado consideraciones especiales pero se requiere una configuración
   especial para la instalación 
 
-\item {\bf Facilidad operacional:} \emph{Peso 5} La aplicación debe diseñarse
+\item {\bf Facilidad operacional:} \emph{Peso 5} \\ La aplicación debe diseñarse
   para una operación totalmente automática. La recuperación automática ante
   errores es una funcionalidad de la aplicación. 
 
-\item {\bf Múltiples localizaciones:} \emph{Peso 2} Se consideran en el
+\item {\bf Múltiples localizaciones:} \emph{Peso 2} \\ Se consideran en el
   diseño múltiples instalaciones pero para operar con similar configuración
   HW y/o SW. 
 
-\item {\bf Facilidad de cambio:} \emph{Peso 1} Consultas y Generación de
+\item {\bf Facilidad de cambio:} \emph{Peso 1} \\ Consultas y Generación de
   Informes Flexible que manejan peticiones simples.
-
 \end{enumerate}
+
+Todo lo anterior queda resumido en la tabla \ref{tab:infIN}
 
 \begin{table}[!ht]
   \centering
@@ -861,16 +839,21 @@ proporciona Métrica v.3.
     Facilidad de cambio             & 1 \\ \hline \hline
     \textbf{Total}                  & \textbf{39} \\ \hline
   \end{tabular}
-  \label{}
-  \caption{}
+  \label{tab:infIN}
+  \caption{Influencia en la dificultad del sistema del módulo interfaz}
 \end{table}
 
-\chapter{Cálculo de los puntos función ajustados}
-Para el cálculo de los puntos función totales se utiliza la fórmula:
-\[PF=PFSA*(0.65+0.01*SUMA(GI))\]
+\chapter{Puntos función ajustados}
+Para el cálculo de los puntos función totales se utiliza la fórmula \ref{eq},
+obteniendo como resultado los valores reflejados en la tabla \ref{Tab:PFA}.
+\begin{equation}
+  PF=PFSA*(0.65+0.01*SUMA(GI)
+  \label{eq}
+\end{equation}
 \begin{table}[!h]
   \centering
-  \begin{tabular}{|b{3.5cm}<\centering|b{3cm}<\centering|b{3cm}<\centering|b{3cm}<\centering|}
+  \begin{tabular}{|b{3.5cm}<\centering|b{3cm}<\centering|
+      b{3cm}<\centering|b{3cm}<\centering|}
     \hline
     \textbf{Módulo} & \textbf{Puntos función sin ajustar} &
     \textbf{Total GI} & \textbf{Puntos función ajustados}\\

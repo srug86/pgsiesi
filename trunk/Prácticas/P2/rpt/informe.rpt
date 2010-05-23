@@ -1,0 +1,662 @@
+
+
+
+
+
+
+
+		     __  _____________             _________________
+		    / / /   ____  ___/            / ___   ____  ___/
+		   / / / / /_  / /      _____    / /   / /_  / /__  
+		  / / / /\__ \/ /      /____/   / /    \__ \/ ___/  
+		 / /_/ /___/ / /___            / /_______/ / /___   
+		 \____/\____/\____/            \____/\____/\____/   
+
+
+
+
+
+
+		          _______________________________________________
+		         / ___ /    \  ___ /    \  _  _   /    \ | | | | 
+		        / /   / __  / /   / __  / / \/ / / __  / | | | | 
+		       / /   / /_/ / /   / /_/ / /    / / /_/ /  | | | | 
+		      / /___/     / /___/     / /    / /     /   | | | | 
+		      \____/\____/\____/\____/\/    /_/\____/   _|_|_|_|_
+
+
+
+
+
+		##USC COCOMO II.1999.0##
+
+	 DEVELOPMENT MODEL: Early Design Model
+Printed at:  Sun May 23 13:15:13 2010
+
+
+Project Name:  GACGD
+
+Scale Factors:    PREC   FLEX   RESL   TEAM   PMAT
+                     L      N      H      H      L
+                  4.96   3.04   2.83   2.19   6.24
+
+
+                                 NOM     ACT           RATE             
+                Module        Effort  Effort  PROD        &  INST
+  Module Name    Size   EAF      DEV     DEV           COST  COST  Staff   RISK
+
+                    FP                               2083.3             
+Gestion de usuario    1440  0.88     5.1     4.5 321.2     9341   6.5    0.5    0.0
+
+                    FP                               2083.3             
+Gestion de cursos    2656  0.71     9.4     6.7 396.3    13961   5.3    0.7    0.0
+
+                    FP                               2083.3             
+      Interfaz    2208  1.18     7.8     9.3 238.6    19276   8.7    1.0    0.0
+
+
+    TOTAL SLOC    6304     OPTIMISTIC   13.7 462.7    28528   4.5    1.6    0.0
+                           MOST LIKELY  20.4 308.5    42579   6.8    2.1    0.0
+                          PESSIMISTIC  30.7 206.7    63868  10.1    2.8    0.0
+
+                OPTIMISTIC   MOST LIKELY   PESSIMISTIC
+  SCHEDULE             8.4           9.6          10.9
+
+
+Printed at:  Sun May 23 13:15:13 2010
+
+
+Project Name:  GACGD
+
+         MODULE NAME   SIZING DETAILS
+
+
+  Gestion de usuario BRAK  Language  Inputs   Outputs   Files  Interface Queries 
+                  FP    0OBJECT_ORI  1  1  0  1  3  0  0  0  0  2  0  0  3  0  0
+
+   Gestion de cursos BRAK  Language  Inputs   Outputs   Files  Interface Queries 
+                  FP    0OBJECT_ORI  4  0  0  0  3  1  3  0  0  0  0  1  0  3  1
+
+            Interfaz BRAK  Language  Inputs   Outputs   Files  Interface Queries 
+                  FP    0OBJECT_ORI  4  3  0  2  1  0  1  0  1  0  0  0  2  1  0
+
+
+
+
+Printed at:  Sun May 23 13:15:13 2010
+
+
+Project Name:  GACGD
+
+		       PROJECT PHASE & ACTIVITY INFORMATION
+		     ========================================
+
+          Overall Phase Distribution
+==============================================================================
+ PROJECT                                           GACGD
+ SLOC                                               6304
+ TOTAL EFFORT                                     20.438 Person Months
+==============================================================================
+                          PCNT    EFFORT (PM)     PCNT     SCHEDULE       Staff
+ Plans And Requirements    7.000     1.431       17.435      1.673       0.855
+ Product Design           17.000     3.474       24.717      2.372       1.465
+ Programming              61.848    12.640       53.131      5.098       2.479
+   - Detailed Design      26.283     5.372        ----        ----        ----
+   - Code and Unit Test   35.565     7.269        ----        ----        ----
+ Integration and Test     21.152     4.323       22.152      2.126       2.034
+
+
+==============================================================================
+ Life Cycle Phase                      Plans And Requirements
+ Life Cycle Effort                                        1.431 Person Months
+ Life Cycle Schedule                                      1.673 Months
+==============================================================================
+                                PCNT      EFFORT (PM)   SCHEDULE       Staff   
+ Requirements Analysis          47.283     0.676         1.673        0.404
+ Product Design                 16.359     0.234         1.673        0.140
+ Programming                     3.217     0.046         1.673        0.028
+ Test Planning                   2.859     0.041         1.673        0.024
+ Verification and Validation     6.359     0.091         1.673        0.054
+ Project Office                 14.783     0.211         1.673        0.126
+ CM/QA                           3.141     0.045         1.673        0.027
+ Manuals                         6.000     0.086         1.673        0.051
+
+
+
+Printed at:  Sun May 23 13:15:13 2010
+
+
+Project Name:  GACGD
+
+		       PROJECT PHASE & ACTIVITY INFORMATION
+		     ========================================
+
+==============================================================================
+ Life Cycle Phase                              Product Design
+ Life Cycle Effort                                        3.474 Person Months
+ Life Cycle Schedule                                      2.372 Months
+==============================================================================
+                                PCNT      EFFORT (PM)   SCHEDULE       Staff   
+ Requirements Analysis          12.500     0.434         2.372        0.183
+ Product Design                 41.000     1.425         2.372        0.601
+ Programming                    12.359     0.429         2.372        0.181
+ Test Planning                   4.859     0.169         2.372        0.071
+ Verification and Validation     6.359     0.221         2.372        0.093
+ Project Office                 12.283     0.427         2.372        0.180
+ CM/QA                           2.641     0.092         2.372        0.039
+ Manuals                         8.000     0.278         2.372        0.117
+
+==============================================================================
+ Life Cycle Phase                                 Programming
+ Life Cycle Effort                                       12.640 Person Months
+ Life Cycle Schedule                                      5.098 Months
+==============================================================================
+                                PCNT      EFFORT (PM)   SCHEDULE       Staff   
+ Requirements Analysis           4.000     0.506         5.098        0.099
+ Product Design                  8.000     1.011         5.098        0.198
+ Programming                    56.500     7.142         5.098        1.401
+ Test Planning                   4.359     0.551         5.098        0.108
+ Verification and Validation     7.359     0.930         5.098        0.182
+ Project Office                  7.141     0.903         5.098        0.177
+ CM/QA                           6.641     0.839         5.098        0.165
+ Manuals                         6.000     0.758         5.098        0.149
+
+==============================================================================
+ Life Cycle Phase                        Integration and Test
+ Life Cycle Effort                                        4.323 Person Months
+ Life Cycle Schedule                                      2.126 Months
+==============================================================================
+                                PCNT      EFFORT (PM)   SCHEDULE       Staff   
+ Requirements Analysis           2.500     0.108         2.126        0.051
+ Product Design                  5.000     0.216         2.126        0.102
+ Programming                    34.435     1.489         2.126        0.700
+ Test Planning                   2.500     0.108         2.126        0.051
+ Verification and Validation    31.283     1.352         2.126        0.636
+ Project Office                  8.141     0.352         2.126        0.166
+ CM/QA                           8.141     0.352         2.126        0.166
+ Manuals                         8.000     0.346         2.126        0.163
+
+
+
+
+Printed at:  Sun May 23 13:15:13 2010
+
+
+Project Name:  GACGD
+
+		       PROJECT  MAINTENANCE INFORMATION
+		=============================================
+
+ PROJECT                                                     GACGD
+ Development SLOC                                             6304
+ Development Nominal Person-Month                               22.39
+ Development Adjusted Person-Month                              20.44
+ Development Cost                                            42578.74
+ Maintenance Labor Rate                                          0.00
+ Percentage Added                                                0.00%
+ Percentage Modified                                             0.00%
+ Maintenance Software Understanding                              30.00
+ Unfamiliarity with the Software                                 0.40
+
+ Annual Change Traffic                                           0.00%
+
+ Effort Ajustment Factor                                         1.00
+
+
+   RCPX     RUSE     PDIF     PERS     PREX     FCIL
+  Nominal  Nominal  Nominal  Nominal  Nominal  Nominal
+       0%       0%       0%       0%       0%       0%
+   USR1     USR2
+  Nominal  Nominal
+       0%       0%
+
+              WORK LOAD PROJECTION FOR THE NEXT 1 YEARS
+ Year      KSLOC       Effort_Nom  Effort_Maint  Staff   KSLOC/Staff     Cost
+   1        6.30         0.00          0.00      0.00       0.00         0.00
+
+
+             SUMMARY OF PROJECTION
+ Cumulative Maintenance Person-month                                 0.00
+ Overall Development and Maintenance Person-month                   20.44
+ Cumulative Maintenance Cost                                         0.00
+ Overall Development and Maintenance Cost                        42578.74
+
+
+Printed at:  Sun May 23 13:15:13 2010
+
+
+Project Name:  GACGD
+
+Early Design Cost Drivers
+
+         MODULE NAME  RCPX  RUSE  PDIF  PERS  PREX  FCIL  SCED  USR1  USR2
+                         N     N     N     H     N     H     N     N     N
+  Gestion de usuario   50%   25%   25%    0%   25%    0%    0%    0%    0%
+                      1.15  1.02  1.07  0.83  0.97  0.87  1.00  1.00  1.00
+
+		       MODULE PHASE & ACTIVITY INFORMATION
+		     ========================================
+
+          Overall Phase Distribution
+==============================================================================
+ MODULE                               Gestion de usuario
+ SLOC                                               1440
+ TOTAL EFFORT                                      4.484 Person Months
+==============================================================================
+                          PCNT    EFFORT (PM)     PCNT     SCHEDULE       Staff
+ Plans And Requirements    7.000     0.314       17.435      1.673       0.188
+ Product Design           17.000     0.762       24.717      2.372       0.321
+ Programming              61.848     2.773       53.131      5.098       0.544
+   - Detailed Design      26.283     1.178        ----        ----        ----
+   - Code and Unit Test   35.565     1.595        ----        ----        ----
+ Integration and Test     21.152     0.948       22.152      2.126       0.446
+
+
+==============================================================================
+ Life Cycle Phase                      Plans And Requirements
+ Life Cycle Effort                                        0.314 Person Months
+ Life Cycle Schedule                                      1.673 Months
+==============================================================================
+                                PCNT      EFFORT (PM)   SCHEDULE       Staff   
+ Requirements Analysis          47.283     0.148         1.673        0.089
+ Product Design                 16.359     0.051         1.673        0.031
+ Programming                     3.217     0.010         1.673        0.006
+ Test Planning                   2.859     0.009         1.673        0.005
+ Verification and Validation     6.359     0.020         1.673        0.012
+ Project Office                 14.783     0.046         1.673        0.028
+ CM/QA                           3.141     0.010         1.673        0.006
+ Manuals                         6.000     0.019         1.673        0.011
+
+
+
+Printed at:  Sun May 23 13:15:13 2010
+
+
+Project Name:  GACGD
+
+		       MODULE PHASE & ACTIVITY INFORMATION
+		     ========================================
+
+==============================================================================
+ Life Cycle Phase                              Product Design
+ Life Cycle Effort                                        0.762 Person Months
+ Life Cycle Schedule                                      2.372 Months
+==============================================================================
+                                PCNT      EFFORT (PM)   SCHEDULE       Staff   
+ Requirements Analysis          12.500     0.095         2.372        0.040
+ Product Design                 41.000     0.313         2.372        0.132
+ Programming                    12.359     0.094         2.372        0.040
+ Test Planning                   4.859     0.037         2.372        0.016
+ Verification and Validation     6.359     0.048         2.372        0.020
+ Project Office                 12.283     0.094         2.372        0.039
+ CM/QA                           2.641     0.020         2.372        0.008
+ Manuals                         8.000     0.061         2.372        0.026
+
+==============================================================================
+ Life Cycle Phase                                 Programming
+ Life Cycle Effort                                        2.773 Person Months
+ Life Cycle Schedule                                      5.098 Months
+==============================================================================
+                                PCNT      EFFORT (PM)   SCHEDULE       Staff   
+ Requirements Analysis           4.000     0.111         5.098        0.022
+ Product Design                  8.000     0.222         5.098        0.044
+ Programming                    56.500     1.567         5.098        0.307
+ Test Planning                   4.359     0.121         5.098        0.024
+ Verification and Validation     7.359     0.204         5.098        0.040
+ Project Office                  7.141     0.198         5.098        0.039
+ CM/QA                           6.641     0.184         5.098        0.036
+ Manuals                         6.000     0.166         5.098        0.033
+
+==============================================================================
+ Life Cycle Phase                        Integration and Test
+ Life Cycle Effort                                        0.948 Person Months
+ Life Cycle Schedule                                      2.126 Months
+==============================================================================
+                                PCNT      EFFORT (PM)   SCHEDULE       Staff   
+ Requirements Analysis           2.500     0.024         2.126        0.011
+ Product Design                  5.000     0.047         2.126        0.022
+ Programming                    34.435     0.327         2.126        0.154
+ Test Planning                   2.500     0.024         2.126        0.011
+ Verification and Validation    31.283     0.297         2.126        0.140
+ Project Office                  8.141     0.077         2.126        0.036
+ CM/QA                           8.141     0.077         2.126        0.036
+ Manuals                         8.000     0.076         2.126        0.036
+
+
+
+
+Printed at:  Sun May 23 13:15:13 2010
+
+
+Project Name:  GACGD
+
+		       MODULE  MAINTENANCE INFORMATION
+		=============================================
+
+ MODULE                                         Gestion de usuario
+ Development SLOC                                             1440
+ Development Nominal Person-Month                                5.11
+ Development Adjusted Person-Month                               4.48
+ Development Cost                                             9340.94
+ Maintenance Labor Rate                                          0.00
+ Percentage Added                                                0.00%
+ Percentage Modified                                             0.00%
+ Maintenance Software Understanding                              30.00
+ Unfamiliarity with the Software                                 0.40
+
+ Annual Change Traffic                                           0.00%
+
+ Effort Ajustment Factor                                         1.00
+
+
+   RCPX     RUSE     PDIF     PERS     PREX     FCIL
+  Nominal  Nominal  Nominal  Nominal  Nominal  Nominal
+       0%       0%       0%       0%       0%       0%
+   USR1     USR2
+  Nominal  Nominal
+       0%       0%
+
+              WORK LOAD PROJECTION FOR THE NEXT 1 YEARS
+ Year      KSLOC       Effort_Nom  Effort_Maint  Staff   KSLOC/Staff     Cost
+   1        1.44         0.00          0.00      0.00       0.00         0.00
+
+
+             SUMMARY OF PROJECTION
+ Cumulative Maintenance Person-month                                 0.00
+ Overall Development and Maintenance Person-month                    4.48
+ Cumulative Maintenance Cost                                         0.00
+ Overall Development and Maintenance Cost                         9340.94
+
+
+Printed at:  Sun May 23 13:15:13 2010
+
+
+Project Name:  GACGD
+
+Early Design Cost Drivers
+
+         MODULE NAME  RCPX  RUSE  PDIF  PERS  PREX  FCIL  SCED  USR1  USR2
+                         N     N     N    VH     N     H     N     N     N
+   Gestion de cursos   50%   25%   50%    0%   25%    0%    0%    0%    0%
+                      1.15  1.02  1.15  0.63  0.97  0.87  1.00  1.00  1.00
+
+		       MODULE PHASE & ACTIVITY INFORMATION
+		     ========================================
+
+          Overall Phase Distribution
+==============================================================================
+ MODULE                                Gestion de cursos
+ SLOC                                               2656
+ TOTAL EFFORT                                      6.701 Person Months
+==============================================================================
+                          PCNT    EFFORT (PM)     PCNT     SCHEDULE       Staff
+ Plans And Requirements    7.000     0.469       17.435      1.673       0.280
+ Product Design           17.000     1.139       24.717      2.372       0.480
+ Programming              61.848     4.145       53.131      5.098       0.813
+   - Detailed Design      26.283     1.761        ----        ----        ----
+   - Code and Unit Test   35.565     2.383        ----        ----        ----
+ Integration and Test     21.152     1.417       22.152      2.126       0.667
+
+
+==============================================================================
+ Life Cycle Phase                      Plans And Requirements
+ Life Cycle Effort                                        0.469 Person Months
+ Life Cycle Schedule                                      1.673 Months
+==============================================================================
+                                PCNT      EFFORT (PM)   SCHEDULE       Staff   
+ Requirements Analysis          47.283     0.222         1.673        0.133
+ Product Design                 16.359     0.077         1.673        0.046
+ Programming                     3.217     0.015         1.673        0.009
+ Test Planning                   2.859     0.013         1.673        0.008
+ Verification and Validation     6.359     0.030         1.673        0.018
+ Project Office                 14.783     0.069         1.673        0.041
+ CM/QA                           3.141     0.015         1.673        0.009
+ Manuals                         6.000     0.028         1.673        0.017
+
+
+
+Printed at:  Sun May 23 13:15:13 2010
+
+
+Project Name:  GACGD
+
+		       MODULE PHASE & ACTIVITY INFORMATION
+		     ========================================
+
+==============================================================================
+ Life Cycle Phase                              Product Design
+ Life Cycle Effort                                        1.139 Person Months
+ Life Cycle Schedule                                      2.372 Months
+==============================================================================
+                                PCNT      EFFORT (PM)   SCHEDULE       Staff   
+ Requirements Analysis          12.500     0.142         2.372        0.060
+ Product Design                 41.000     0.467         2.372        0.197
+ Programming                    12.359     0.141         2.372        0.059
+ Test Planning                   4.859     0.055         2.372        0.023
+ Verification and Validation     6.359     0.072         2.372        0.031
+ Project Office                 12.283     0.140         2.372        0.059
+ CM/QA                           2.641     0.030         2.372        0.013
+ Manuals                         8.000     0.091         2.372        0.038
+
+==============================================================================
+ Life Cycle Phase                                 Programming
+ Life Cycle Effort                                        4.145 Person Months
+ Life Cycle Schedule                                      5.098 Months
+==============================================================================
+                                PCNT      EFFORT (PM)   SCHEDULE       Staff   
+ Requirements Analysis           4.000     0.166         5.098        0.033
+ Product Design                  8.000     0.332         5.098        0.065
+ Programming                    56.500     2.342         5.098        0.459
+ Test Planning                   4.359     0.181         5.098        0.035
+ Verification and Validation     7.359     0.305         5.098        0.060
+ Project Office                  7.141     0.296         5.098        0.058
+ CM/QA                           6.641     0.275         5.098        0.054
+ Manuals                         6.000     0.249         5.098        0.049
+
+==============================================================================
+ Life Cycle Phase                        Integration and Test
+ Life Cycle Effort                                        1.417 Person Months
+ Life Cycle Schedule                                      2.126 Months
+==============================================================================
+                                PCNT      EFFORT (PM)   SCHEDULE       Staff   
+ Requirements Analysis           2.500     0.035         2.126        0.017
+ Product Design                  5.000     0.071         2.126        0.033
+ Programming                    34.435     0.488         2.126        0.230
+ Test Planning                   2.500     0.035         2.126        0.017
+ Verification and Validation    31.283     0.443         2.126        0.209
+ Project Office                  8.141     0.115         2.126        0.054
+ CM/QA                           8.141     0.115         2.126        0.054
+ Manuals                         8.000     0.113         2.126        0.053
+
+
+
+
+Printed at:  Sun May 23 13:15:13 2010
+
+
+Project Name:  GACGD
+
+		       MODULE  MAINTENANCE INFORMATION
+		=============================================
+
+ MODULE                                          Gestion de cursos
+ Development SLOC                                             2656
+ Development Nominal Person-Month                                9.43
+ Development Adjusted Person-Month                               6.70
+ Development Cost                                            13961.33
+ Maintenance Labor Rate                                          0.00
+ Percentage Added                                                0.00%
+ Percentage Modified                                             0.00%
+ Maintenance Software Understanding                              30.00
+ Unfamiliarity with the Software                                 0.40
+
+ Annual Change Traffic                                           0.00%
+
+ Effort Ajustment Factor                                         1.00
+
+
+   RCPX     RUSE     PDIF     PERS     PREX     FCIL
+  Nominal  Nominal  Nominal  Nominal  Nominal  Nominal
+       0%       0%       0%       0%       0%       0%
+   USR1     USR2
+  Nominal  Nominal
+       0%       0%
+
+              WORK LOAD PROJECTION FOR THE NEXT 1 YEARS
+ Year      KSLOC       Effort_Nom  Effort_Maint  Staff   KSLOC/Staff     Cost
+   1        2.66         0.00          0.00      0.00       0.00         0.00
+
+
+             SUMMARY OF PROJECTION
+ Cumulative Maintenance Person-month                                 0.00
+ Overall Development and Maintenance Person-month                    6.70
+ Cumulative Maintenance Cost                                         0.00
+ Overall Development and Maintenance Cost                        13961.33
+
+
+Printed at:  Sun May 23 13:15:13 2010
+
+
+Project Name:  GACGD
+
+Early Design Cost Drivers
+
+         MODULE NAME  RCPX  RUSE  PDIF  PERS  PREX  FCIL  SCED  USR1  USR2
+                         N     N     N     L     N     H     N     N     N
+            Interfaz   25%   25%   25%   25%   25%    0%    0%    0%    0%
+                      1.08  1.02  1.07  1.20  0.97  0.87  1.00  1.00  1.00
+
+		       MODULE PHASE & ACTIVITY INFORMATION
+		     ========================================
+
+          Overall Phase Distribution
+==============================================================================
+ MODULE                                         Interfaz
+ SLOC                                               2208
+ TOTAL EFFORT                                      9.253 Person Months
+==============================================================================
+                          PCNT    EFFORT (PM)     PCNT     SCHEDULE       Staff
+ Plans And Requirements    7.000     0.648       17.435      1.673       0.387
+ Product Design           17.000     1.573       24.717      2.372       0.663
+ Programming              61.848     5.723       53.131      5.098       1.122
+   - Detailed Design      26.283     2.432        ----        ----        ----
+   - Code and Unit Test   35.565     3.291        ----        ----        ----
+ Integration and Test     21.152     1.957       22.152      2.126       0.921
+
+
+==============================================================================
+ Life Cycle Phase                      Plans And Requirements
+ Life Cycle Effort                                        0.648 Person Months
+ Life Cycle Schedule                                      1.673 Months
+==============================================================================
+                                PCNT      EFFORT (PM)   SCHEDULE       Staff   
+ Requirements Analysis          47.283     0.306         1.673        0.183
+ Product Design                 16.359     0.106         1.673        0.063
+ Programming                     3.217     0.021         1.673        0.012
+ Test Planning                   2.859     0.019         1.673        0.011
+ Verification and Validation     6.359     0.041         1.673        0.025
+ Project Office                 14.783     0.096         1.673        0.057
+ CM/QA                           3.141     0.020         1.673        0.012
+ Manuals                         6.000     0.039         1.673        0.023
+
+
+
+Printed at:  Sun May 23 13:15:13 2010
+
+
+Project Name:  GACGD
+
+		       MODULE PHASE & ACTIVITY INFORMATION
+		     ========================================
+
+==============================================================================
+ Life Cycle Phase                              Product Design
+ Life Cycle Effort                                        1.573 Person Months
+ Life Cycle Schedule                                      2.372 Months
+==============================================================================
+                                PCNT      EFFORT (PM)   SCHEDULE       Staff   
+ Requirements Analysis          12.500     0.197         2.372        0.083
+ Product Design                 41.000     0.645         2.372        0.272
+ Programming                    12.359     0.194         2.372        0.082
+ Test Planning                   4.859     0.076         2.372        0.032
+ Verification and Validation     6.359     0.100         2.372        0.042
+ Project Office                 12.283     0.193         2.372        0.081
+ CM/QA                           2.641     0.042         2.372        0.018
+ Manuals                         8.000     0.126         2.372        0.053
+
+==============================================================================
+ Life Cycle Phase                                 Programming
+ Life Cycle Effort                                        5.723 Person Months
+ Life Cycle Schedule                                      5.098 Months
+==============================================================================
+                                PCNT      EFFORT (PM)   SCHEDULE       Staff   
+ Requirements Analysis           4.000     0.229         5.098        0.045
+ Product Design                  8.000     0.458         5.098        0.090
+ Programming                    56.500     3.233         5.098        0.634
+ Test Planning                   4.359     0.249         5.098        0.049
+ Verification and Validation     7.359     0.421         5.098        0.083
+ Project Office                  7.141     0.409         5.098        0.080
+ CM/QA                           6.641     0.380         5.098        0.075
+ Manuals                         6.000     0.343         5.098        0.067
+
+==============================================================================
+ Life Cycle Phase                        Integration and Test
+ Life Cycle Effort                                        1.957 Person Months
+ Life Cycle Schedule                                      2.126 Months
+==============================================================================
+                                PCNT      EFFORT (PM)   SCHEDULE       Staff   
+ Requirements Analysis           2.500     0.049         2.126        0.023
+ Product Design                  5.000     0.098         2.126        0.046
+ Programming                    34.435     0.674         2.126        0.317
+ Test Planning                   2.500     0.049         2.126        0.023
+ Verification and Validation    31.283     0.612         2.126        0.288
+ Project Office                  8.141     0.159         2.126        0.075
+ CM/QA                           8.141     0.159         2.126        0.075
+ Manuals                         8.000     0.157         2.126        0.074
+
+
+
+
+Printed at:  Sun May 23 13:15:13 2010
+
+
+Project Name:  GACGD
+
+		       MODULE  MAINTENANCE INFORMATION
+		=============================================
+
+ MODULE                                                   Interfaz
+ Development SLOC                                             2208
+ Development Nominal Person-Month                                7.84
+ Development Adjusted Person-Month                               9.25
+ Development Cost                                            19276.47
+ Maintenance Labor Rate                                          0.00
+ Percentage Added                                                0.00%
+ Percentage Modified                                             0.00%
+ Maintenance Software Understanding                              30.00
+ Unfamiliarity with the Software                                 0.40
+
+ Annual Change Traffic                                           0.00%
+
+ Effort Ajustment Factor                                         1.00
+
+
+   RCPX     RUSE     PDIF     PERS     PREX     FCIL
+  Nominal  Nominal  Nominal  Nominal  Nominal  Nominal
+       0%       0%       0%       0%       0%       0%
+   USR1     USR2
+  Nominal  Nominal
+       0%       0%
+
+              WORK LOAD PROJECTION FOR THE NEXT 1 YEARS
+ Year      KSLOC       Effort_Nom  Effort_Maint  Staff   KSLOC/Staff     Cost
+   1        2.21         0.00          0.00      0.00       0.00         0.00
+
+
+             SUMMARY OF PROJECTION
+ Cumulative Maintenance Person-month                                 0.00
+ Overall Development and Maintenance Person-month                    9.25
+ Cumulative Maintenance Cost                                         0.00
+ Overall Development and Maintenance Cost                        19276.47
+
+

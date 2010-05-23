@@ -107,7 +107,30 @@ de la interfaz es de \textbf{2208}.
 \chapter{Multiplicadores y estimaciones de esfuerzo}
 \section{Gestión de usuarios}
 \subsection{Early Design Model}
-Para el Early Design Model, a partir de ahora EDM,
+Para el Early Design Model, a partir de ahora EDM, se van a diferenciar los
+valores de esfuerzo de seis multiplicadores.
+
+\begin{description}
+\item[PERS] Mide la capacidad del personal. Combina los valores ACAP, PCAP y
+PCON, que se verán en el modelo \emph{post architecture}. Se le asigna un
+valor \textbf{alto}. Esto implica que la suma promedio de los factores
+ACAP, PCAP y PCON es aproximadamente de \emph{10,11}; el percentil combinado
+de ACAP y PCAP es del 65\%; y el grado de permanencia anual del personal es
+del \emph{9\%}.
+
+\item[RCPX] Mide la fiabilidad y complejidad del producto. Combina los
+factores del modelo \emph{post architecture} RELY, DATA, CPLX y DOCU. Se le
+asigna un valor \textbf{normal}, con un aumento del \textbf{50\%}. Esto
+implica que el valor promedio de la suma de los factores RELY, DATA, CPLX y
+DOCU está en torno a \emph{12}; el énfasis en la confiabilidad de la
+documentación es \emph{básico}; la complejidad del producto es
+\emph{moderada}; y el tamaño de la base de datos también es también
+\emph{moderada}.
+
+\item[RUSE] Mide la reutilización requerida. Equivale al factor de esfuerzo
+del modelo \emph{post architecture} (RUSE). Se le asigna un valor
+\textbf{normal}, con un aumento del \textbf{25\%}.
+\end{description}
 
 \subsection{Post Architecture Model}
 Para el Post Architecture Model, a partir de ahora PAM, en el valor de Effort
@@ -127,7 +150,7 @@ le asigna un valor \textbf{normal}, lo que significa que la relación se
 encuentra entre cien y mil. Tendrá un aumento del \textbf{50\%}. 
 
 \item[CPLX] Mide la complejidad del producto. Se le asigna un
-valor \textbf{nominal}, esto conlleva que use anidamientos sencillos, rutinas
+valor \textbf{normal}, esto conlleva que use anidamientos sencillos, rutinas
 estándares de matemática y estadística, el uso simple de algunos dispositivos
 y consultas y actualizaciones complejas. Tendrá un aumento del 
 \textbf{25\%}.
@@ -137,7 +160,7 @@ lo que significa que tendrá partes reusables dentro del mismo
 proyecto. Tendrá un aumento del \textbf{25\%}.
 
 \item[DOCU] Corresponde con la documentación de las diferentes etapas del
-ciclo de vida software. A este factor se le asigna un valor de \textbf{alto},
+ciclo de vida software. A este factor se le asigna un valor \textbf{alto},
 esto significa que las necesidades del ciclo de vida están cubiertas
 ampliamente.
 

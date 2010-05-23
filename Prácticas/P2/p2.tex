@@ -1,6 +1,8 @@
 % Clase
 \documentclass[11pt,a4paper,spanish,twoside]{report}
 
+\usepackage[margin=2.5cm,top=3cm]{geometry}
+
 % Órdenes auxiliares
 \input{inc/includes.tex}
 
@@ -9,13 +11,16 @@
 
 % Encabezado y pie de página
 \encabezado
-\setcounter{secnumdepth}{3} 
+
+\setcounter{tocdepth}{1} 
+
 \begin{document}
 
 % Silabación extra
 \input{inc/hyphenations.tex}
 
 % Portada
+\vspace*{2.5cm}
 \portada{Planificación y Gestión de\\Sistemas de Información}
 {Práctica 2}{Estimación del esfuerzo de desarrollo de\\un software utilizando
 USC COCOMO II}
@@ -24,8 +29,8 @@ USC COCOMO II}
   Juan Miguel Torres Triviño}{26 de Mayo de 2010}
 
 % Licencia
-\licencia{Sergio de la Rubia García-Carpintero, Miguel Millán Sánchez-Grande,
-  Luis Muñoz Villarreal, Alicia Serrano Sánchez, Juan Miguel Torres Triviño}
+% \licencia{Sergio de la Rubia García-Carpintero, Miguel Millán Sánchez-Grande,
+%   Luis Muñoz Villarreal, Alicia Serrano Sánchez, Juan Miguel Torres Triviño}
 
 \chapter*{Ficha de trabajo}
 \begin{description}
@@ -168,7 +173,7 @@ Analizan la complejidad de la plataforma subyacente.
 \item[STOR] Mide la restricción del almacenamiento principal. Es una función
   que representa el grado de restricción del almacenamiento principal
   impuesto sobre un sistema software. A este factor se le asigna un valor
-  \textbf{normal}, es decir, un uso del 50\% del porcetanje total de
+  \textbf{normal}, es decir, un uso del 50\% del porcentaje total de
   almacenamiento o menor. Tendrá un aumento del \textbf{50\%}.
 
 \item[TIME] Restricción del tiempo de ejecución. Se le asigna un valor
@@ -298,7 +303,7 @@ Analizan la complejidad de la plataforma subyacente.
 \item[STOR] Mide la restricción del almacenamiento principal. Es una función
   que representa el grado de restricción del almacenamiento principal
   impuesto sobre un sistema de software. A este factor se le asigna un valor
-  \textbf{normal}, es decir, un uso del 50\% del porcetanje total de
+  \textbf{normal}, es decir, un uso del 50\% del porcentaje total de
   almacenamiento o menor. Tendrá un aumento del \textbf{50\%}.
 
 \item[TIME] Restricción del tiempo de ejecución. Se le asigna un valor
@@ -380,8 +385,8 @@ modelo \emph{post architecture} . Se le asigna un valor \textbf{alto}. Esto
 implica que el valor promedio de la suma de los factores TOOL y SITE está en 
 entre \emph{7 y 8}, el soporte de TOOL es \emph{bueno} y la condición de 
 multisitio es \emph{fuerte soporte para el desarrollo}.
-
 \end{description}
+
 \section{Interfaz}
 \subsection{Post Architecture Model}
 \subsubsection{Factores de producto}
@@ -424,7 +429,7 @@ Analizan la complejidad de la plataforma subyacente.
 \item[STOR] Mide la restricción del almacenamiento principal. Es una función
   que representa el grado de restricción del almacenamiento principal
   impuesto sobre un sistema de software. A este factor se le asigna un valor
-  \textbf{normal}, es decir, un uso del 50\% del porcetanje total de
+  \textbf{normal}, es decir, un uso del 50\% del porcentaje total de
   almacenamiento o menor. Tendrá un aumento del \textbf{25\%}.
 
 \item[TIME] Restricción del tiempo de ejecución. Se le asigna un valor

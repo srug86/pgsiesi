@@ -1,5 +1,5 @@
 % Clase
-\documentclass[11pt,a4paper,spanish,twoside]{report}
+\documentclass[11pt,a4paper,spanish,twoside]{book}
 
 % Órdenes auxiliares
 \input{inc/includes.tex}
@@ -53,8 +53,8 @@ USC COCOMO II}
 
 % Índices
 \tableofcontents
-\listoffigures
-%\listoftables
+% \listoffigures
+% \listoftables
 
 %% INICIO DEL DOCUMENTO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter*{Introducción}
@@ -77,7 +77,7 @@ realizadas en el trabajo 5, y el equivalente total en tamaño de líneas de
 código calculado por COCOMO II.
 
 \imagen{CodGesUs.png}{8}{Tamaño en líneas de código del módulo de gestión de
-usuarios}{CodGesUs}
+  usuarios}{CodGesUs}
 
 Como puede verse, el tamaño total equivalente en líneas de código del módulo
 de gestión de usuarios es de \textbf{1440}.
@@ -88,7 +88,7 @@ ajustar del módulo de gestión de usuario, extraídas de las estimaciones
 realizadas en el trabajo 5, y el equivalente total en tamaño de líneas de
 código calculado por COCOMO II.
 
-\imagen{CodGesCu.png}{8}{Tamaño en líneas de código del módulo de gestión de
+\imagen{CodGesCu.png}{8.5}{Tamaño en líneas de código del módulo de gestión de
 cursos}{CodGesCu}
 
 Como puede verse, el tamaño total equivalente en líneas de código del módulo
@@ -100,7 +100,7 @@ ajustar del módulo de la interfaz, extraídas de las estimaciones realizadas en
 el trabajo 5, y el equivalente total en tamaño de líneas de código calculado
 por COCOMO II.
 
-\imagen{CodInt.png}{8}{Tamaño en líneas de código del módulo de gestión de
+\imagen{CodInt.png}{8.5}{Tamaño en líneas de código del módulo de gestión de
 cursos}{CodInt}
 
 Como puede verse, el tamaño total equivalente en líneas de código del módulo
@@ -452,7 +452,6 @@ electrónicas de banda ancha y ocasionalmente por videoconferencia.
 \end{description}
 
 \subsection{Early Design Model}
-
 \begin{description}
 \item[PERS] Mide la capacidad del personal. Combina los valores ACAP, PCAP y
 PCON, que se ven en el modelo \emph{post architecture}. Se le asigna un
@@ -545,7 +544,7 @@ para PMAT.
 
 \section{Estimaciones de las variables calculadas}
 \subsection{Post Architecture Model}
-En la tabla \ref{Tab:EstPAM} se muestran las estimaciones pesimista,
+En la \emph{tabla \ref{Tab:EstPAM}} se muestran las estimaciones pesimista,
 optimista y más probable de las variables calculadas por el software.
 \begin{table}[!h]
   \centering
@@ -562,8 +561,9 @@ optimista y más probable de las variables calculadas por el software.
   \caption{Estimaciones del modelo PAM} \label{Tab:EstPAM}
 \end{table}
 
+\newpage
 \subsection{Early Design Model}
-En la tabla \ref{Tab:EstEDM} se muestran las estimaciones pesimista,
+En la \emph{tabla \ref{Tab:EstEDM}} se muestran las estimaciones pesimista,
 optimista y más probable de las variables calculadas por el software.
 \begin{table}[!h]
   \centering

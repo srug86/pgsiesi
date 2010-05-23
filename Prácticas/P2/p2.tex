@@ -366,26 +366,70 @@ electrónicas de banda ancha y ocasionalmente por videoconferencia.
 \section{Factores de escala}
 Los factores de escala para el proyecto son los siguientes:
 \begin{description}
-\item[PREC], mide el grado de experiencia previa. Se le asigna un valor de
+\item[PREC], mide el grado de experiencia previa. Se le asigna un valor
 \textbf{bajo}. Esto implica que: el entendimiento organizacional de los objetivos del producto es \emph{general}; la experiencia en el trabajo con
 software relacionado es \emph{moderada}; el desarrollo concurrente de nuevo
 hardware y procedimientos operacionales es \emph{abundante}; y la necesidad
 de innovación en el procesamiento de datos, aquitectura y algoritmos es
 \emph{considerable}.
 
-\item[FLEX], 
+\item[FLEX], mide el nivel de exigencia en el cumplimiento de requerimientos
+y plazos. Se le asigna un valor \textbf{nominal}. Esto implica que: la
+necesidad de conformar requerimientos preestablecidos es \emph{considerable},
+la necesidad de conformar especificaciones externas de interfase también es
+\emph{considerable} y el estímulo por terminación temprana es \emph{medio}.
 
-\item[RESL]
+\item[RESL], mide aspectos relacionados con los ítems de riesgo crítico y el
+modo de abordarlos. Se le asigna un valor \textbf{alto}. Esto implica que:
+\begin{itemize}
+\item La planificación de la administración de riesgo, identificando los
+ítems de riesgo y estableciendo hitos de control para su solución por medio
+de la revisión del diseño del producto (PDR) es \emph{general}.
+\item El cronograma, presupuesto e hitos internos especificados en el PDR,
+compatibles con el plan de administración de riesgo es también \emph{general}.
+\item El orcentaje del cronograma dedicado a la definición de la arquitectura
+de acuerdo a los objetivos generales del producto es aproximadamente del
+\emph{25\%}.
+\item El porcentaje de arquitecturas de software disponibles para el proyecto
+es aproximadamente del \emph{80\%}.
+\item Y las herramientas disponibles para resolver ítems de riesgo,
+desarrollando y verificando las especulaciones de arquitecturas, son
+\emph{buenas}.
+\end{itemize}
 
-\item[TEAM]
+\item[TEAM], mide el grado de cohesión del equipo. Se le asigna un valor
+\textbf{alto}. Esto implica que: la compatibilidad entre los objetivos y
+culturas de los integrantes del equipo es \emph{considerable}, la habilidad
+y predisposición para conciliar objetivos es también \emph{considerable}, la
+experiencia en el trabajo en grupo es \emph{básica} y la visión compartida
+de objetivos y compromisos, es también \emph{básica}.
 
-\item[PMAT]
-
+\item[PMAT], mide la madurez del proceso. Según la evaluación CMM se le asigna
+un valor \textbf{1 - mitad superior}, que corresponde a un nivel \emph{bajo}
+para PMAT.
 \end{description}
+
 \section{Estimaciones de las variables calculadas}
 \subsection{Early Design Model}
-\subsection{Post Architecture Model}
 
+\subsection{Post Architecture Model}
+En la tabla \ref{Tab:EstPOMP} se muestran las estimaciones pesimista,
+optimista y más probable de las variables calculadas por el software.
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{p{4.5cm}|c|c|b{2cm}<{\centering}}
+    %\cline{2-4}
+    & \textbf{Pesimista} & \textbf{Más probable} & \textbf{Optimista}\\
+    \hline \hline
+    Esfuerzo & 20,1 & 16,1 & 12,8 \\ \hline
+    Duración & 9,5 & 8,9 & 8,3 \\ \hline
+    Productividad & 314 & 392,5 & 490,7 \\ \hline
+    Coste & 41822,71 & 33458,17 & 26766,53 \\ \hline
+    Coste por instrucción & 6,6 & 5,3 & 4,2 \\ \hline
+    Personal & 2,1 & 1,8 & 1,6 \\ \hline
+  \end{tabular}
+  \caption{Gestión de Riesgos} \label{Tab:EstPOMP}
+\end{table}
 
 \chapter{Informes}
 \section{Early Design Model}

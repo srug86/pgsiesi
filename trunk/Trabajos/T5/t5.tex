@@ -185,7 +185,7 @@ tales como nombre, créditos, guión de la asignatura, contenidos, evaluación,
 \section{Gestión de cursos}
 \subsection{Entradas externas}
 \subsubsection{Añadir curso}
-EFntrada destinada a la inclusión de los distintos cursos correspondientes al
+Entrada destinada a la inclusión de los distintos cursos correspondientes al
 plan de estudios en el sistema.
 
 \subsubsection{Añadir asignaturas}
@@ -229,14 +229,15 @@ Consulta de la información necesaria para relacionar las tablas de
 cursos con las tablas de aulas.
 
 \subsubsection{Consultar cuadrante de horarios}
-Consulta de la información requerida para realizar los cuadrantes de horarios.
+Consulta de la información requerida para realizar los cuadrantes de los
+horarios.
 
 \subsection{Archivos lógicos internos}
 \subsubsection{Datos de las asignaturas}
-Toda la información relacionada con cada asignatura, temario, créditos \dots
+Toda la información relacionada con cada asignatura, temario, créditos, \dots
 
 \subsubsection{Datos de los cursos}
-Información relacionada con cada curso así como las asignaturas que los forman.
+Información relacionada con cada curso y con las asignaturas que lo forman.
 
 \subsubsection{Datos de las aulas}
 Información de las aulas disponibles y las utilizadas para la docencia de las
@@ -256,7 +257,7 @@ dependiendo si este es administrador o no.
 de información de un determinado usuario}
 Por su similitud se explican conjuntamente pero equivale a tres
 \emph{funciones de usuario} diferentes. El objetivo de estas funciones es
-recoger los datos necesarios para la de inserción, modificación o borrado de
+recoger los datos necesarios para la inserción, modificación o borrado de
 la información de un usuario en la aplicación.
 
 \subsection{Salidas externas}
@@ -304,56 +305,56 @@ No se ha detectado ningún archivo lógico de interfaz externo.
 \section{Gestión de usuarios}
 \subsection{Entradas externas}
 \subsubsection{Identificación del usuario}
-La complejidad de esta función de usuario es \textbf{baja} porque se hace
+La complejidad de esta función de usuario es \textbf{baja}, porque se hace
 referencia a un registro para la información de usuario y el número de datos
 elementales es dos. 
 
 \subsubsection{Preferencia de horarios} 
-La complejidad de esta función es \textbf{media} porque se hace
+La complejidad de esta función es \textbf{media}, porque se hace
 referencia a dos registros donde se tienen guardados los horarios y las
-asignaturas y el número de datos elementales son que se utilizan son seis. 
+asignaturas y el número de datos elementales que se utilizan son seis. 
 
 \subsection{Salidas externas}
 \subsubsection{Datos personales}
-La complejidad de esta función es \textbf{media} porque se hace referencia a
+La complejidad de esta función es \textbf{media}, porque se hace referencia a
 un registro para la información de usuario y los datos elementales que se
 utilizan son dieciséis.
 
 \subsubsection{Horario de un profesor}
-La complejidad de esta función es \textbf{media} porque se hace referencia a
+La complejidad de esta función es \textbf{media}, porque se hace referencia a
 dos registros, horarios y asignaturas; y los datos elementales que
 se utilizan son seis.
 
 \subsubsection{Tutorías de los profesores} 
-La complejidad de esta función es \textbf{baja} porque se hace referencia a
+La complejidad de esta función es \textbf{baja}, porque se hace referencia a
 dos registros, profesores y tutorías; y el número de datos elementales que se
 utilizan son cuatro. 
 
 \subsubsection{Asignaturas impartidas por cada profesor}
-La complejidad de esta función es \textbf{medio} porque se hace referencia a
-dos registros, profesores y asignaturas; y el número de datos elementales que se
-utilizan son siete. 
+La complejidad de esta función es \textbf{medio}, porque se hace referencia a
+dos registros, profesores y asignaturas; y el número de datos elementales que
+se utilizan son siete.
 
 \subsection{Consultas externas}
 \subsubsection{Consultar currículum}
-La complejidad de esta función es \textbf{baja} porque se hace referencia a
+La complejidad de esta función es \textbf{baja}, porque se hace referencia a
 un registro y el número de datos elementales es dos.
 
 \subsubsection{Consultar datos de asignatura} 
-La complejidad de esta función es \textbf{baja} porque se hace referencia a
+La complejidad de esta función es \textbf{baja}, porque se hace referencia a
 un registro y el número de datos elementales es nueve.
 
 \subsubsection{Horarios de asignaturas}
-La complejidad de esta función es \textbf{baja} porque se hace referencia a
+La complejidad de esta función es \textbf{baja}, porque se hace referencia a
 tres registros y los datos elementales que se utilizan son cuatro.
 
 \subsection{Archivos lógicos de interfaz externos}
 \subsubsection{Datos de los profesores}
-La complejidad de esta función es \textbf{baja} porque se hace referencia a
+La complejidad de esta función es \textbf{baja}, porque se hace referencia a
 un registro y los datos elementales son siete.
 
 \subsubsection{Datos de las asignaturas}
-La complejidad de esta función es \textbf{baja} porque se hace referencia a
+La complejidad de esta función es \textbf{baja}, porque se hace referencia a
 un registro y los datos elementales son catorce.
 
 \section{Gestión de cursos}
@@ -426,23 +427,23 @@ es mayor que veinte.
 \subsection{Archivos lógicos internos}
 \subsubsection{Datos de las asignaturas}
 La complejidad de esta función es \textbf{baja}, porque usa un
-registros para la información de las asignaturas de este módulo y el número
+registro para la información de las asignaturas de este módulo y el número
 de tipo de datos elementales es menor que veinte.
 
 \subsubsection{Datos de los cursos}
 La complejidad de esta función es \textbf{baja}, porque usa un
-registros para la información de los cursos de este módulo y el número
+registro para la información de los cursos de este módulo y el número
 de tipo de datos elementales es menor que veinte.
 
 \subsubsection{Datos de las aulas}
 La complejidad de esta función es \textbf{baja}, porque usa un
-registros para la información de las aulas de este módulo y el número
+registro para la información de las aulas de este módulo y el número
 de tipo de datos elementales es menor que veinte.
 
 \subsection{Archivos lógicos de interfaz externos}
 \subsubsection{Historial de guías docentes}
 La complejidad de esta función es \textbf{alta}, porque usa todos los
-registros de este módulo y el número de tipo de datos elementales es mayor
+registros de este módulo y el número de tipos de datos elementales es mayor
 que cincuenta y uno. 
 
 \section{Interfaz}
@@ -456,35 +457,35 @@ elementales es dos.
   de información de un determinado usuario}
 La complejidad para cada función de usuario (inserción, modificación y
 borrado) es \textbf{media}, porque tiene un registro para la información del
-usuario y el número de tipo de datos elementales es diecisiete.
+usuario y el número de tipos de datos elementales es diecisiete.
 
 \subsubsection{Introducción de datos para la inserción/modificación/borrado 
-  de información de un determinado curso }
+  de información de un determinado curso}
 La complejidad para cada función de usuario (inserción, modificación y
 borrado) es \textbf{baja}, porque tiene un registro para la información del
-curso y el número de tipo de datos elementales es diez.
+curso y el número de tipos de datos elementales es diez.
 
 \subsection{Salidas externas}
 \subsubsection{Mostrar los datos para una búsqueda de información con
   posibilidad de ordenación por diferentes criterios}
 La complejidad de esta función de usuario es \textbf{media}, porque tiene un
-registro para la información y el número de tipo de datos elementales es veinte.
+registro para la información y el número de tipos de datos elementales es veinte.
 
 \subsubsection{Mostrar los datos de un determinado usuario}
 La complejidad de esta función de usuario es \textbf{baja}, porque tiene un
-registro para la información del usuario y el número de tipo de datos
+registro para la información del usuario y el número de tipos de datos
 elementales es nueve.
 
 \subsubsection{Mostrar los datos de un determinado curso}
 La complejidad de esta función de usuario es \textbf{baja}, porque tiene un
-registro para la información del curso y el número de tipo de datos
+registro para la información del curso y el número de tipos de datos
 elementales es cinco.
 
 \subsection{Consultas externas}
 \subsubsection{Búsqueda de información con posibilidad de ordenación por
   diferentes criterios}
 La complejidad de esta función de usuario es \textbf{media}, porque no tiene
-ningún registro para la información y el número de tipo de datos elementales
+ningún registro para la información y el número de tipos de datos elementales
 es dieciocho.
 
 \subsubsection{Consulta de los datos de un determinado usuario}
@@ -500,12 +501,12 @@ elementales es uno.
 \subsection{Archivos lógicos internos}
 \subsubsection{Importación de datos desde un fichero}
 La complejidad de esta función de usuario es \textbf{baja}, porque tiene un
-fichero referenciado para la información y el número de tipo de datos
+fichero referenciado para la información y el número de tipos de datos
 elementales es nueve.
 
 \subsubsection{Exportación de los resultados de la búsqueda a un fichero}
 La complejidad de esta función de usuario es \textbf{alta}, porque tiene dos
-fichero referenciado para la información y el número de tipo de datos
+ficheros referenciados para la información y el número de tipos de datos
 elementales es veinte.
 
 \chapter{Puntos función sin ajustar} \label{cap:pun}
@@ -589,6 +590,8 @@ función sin ajustar representados en las tablas \ref{Tab:PFSAusu},
   \caption{Puntos de función sin ajustar del módulo gestión de cursos} 
   \label{Tab:PFSAcur}
 \end{table}
+
+\newpage
 
 \section{Interfaz}
 \begin{table}[!h]
@@ -677,11 +680,11 @@ proporciona Métrica V3 \cite{met}.
   errores es una funcionalidad de la aplicación. 
 
 \item {\bf Múltiples localizaciones:} \emph{Peso 2} \\ Se consideran en el
-  diseño múltiples instalaciones pero para operar con similar configuración HW
-  y/o SW.
+  diseño múltiples instalaciones, pero para operar con similar configuración
+  HW y/o SW.
 
-\item {\bf Facilidad de cambio:} \emph{Peso 1} Consultas y Generación de
-  Informes Flexible que manejan peticiones simples.
+\item {\bf Facilidad de cambio:} \emph{Peso 1} Consultas y generación de
+  informes flexibles que manejan peticiones simples.
 
 \end{enumerate}
 
@@ -745,7 +748,7 @@ Todo lo anterior queda resumido en la tabla \ref{tab:infUS}
   recuperación. Se incluyen procedimientos de recuperación que requieren
   mínima intervención del operador. 
 
-\item {\bf Procesamiento complejo:} \emph{Peso 5} \\Son aplicables todas las
+\item {\bf Procesamiento complejo:} \emph{Peso 5} \\ Son aplicables todas las
   situaciones descritas.
  
 \item {\bf Reutilización:} \emph{Peso 3} \\ El 10\% o más de la aplicación se
@@ -818,7 +821,7 @@ Todo lo anterior queda resumido en la tabla \ref{tab:infCU}
 \item {\bf Entradas de datos en línea:} \emph{Peso 5} \\ Más del 30\% de las
   funciones son entradas interactivas de datos. 
 
-\item {\bf Eficiencia de Usuario Final:} \emph{Peso 5} \\ Además se requiere del
+\item {\bf Eficiencia de usuario final:} \emph{Peso 5} \\ Además se requiere del
   uso de herramientas y procesos para demostrar que se cumplen los requisitos
   establecidos.
 
@@ -835,7 +838,7 @@ Todo lo anterior queda resumido en la tabla \ref{tab:infCU}
 
 \item {\bf Facilidad de instalación:} \emph{Peso 1} \\ El usuario no ha
   declarado consideraciones especiales pero se requiere una configuración
-  especial para la instalación 
+  especial para la instalación.
 
 \item {\bf Facilidad operacional:} \emph{Peso 5} \\ La aplicación debe diseñarse
   para una operación totalmente automática. La recuperación automática ante
@@ -845,8 +848,8 @@ Todo lo anterior queda resumido en la tabla \ref{tab:infCU}
   diseño múltiples instalaciones pero para operar con similar configuración
   HW y/o SW. 
 
-\item {\bf Facilidad de cambio:} \emph{Peso 1} \\ Consultas y Generación de
-  Informes Flexible que manejan peticiones simples.
+\item {\bf Facilidad de cambio:} \emph{Peso 1} \\ Consultas y generación de
+  informes flexible que manejan peticiones simples.
 \end{enumerate}
 
 Todo lo anterior queda resumido en la tabla \ref{tab:infIN}
@@ -882,7 +885,7 @@ Todo lo anterior queda resumido en la tabla \ref{tab:infIN}
 Para el cálculo de los puntos función totales se utiliza la fórmula \ref{eq},
 obteniendo como resultado los valores reflejados en la tabla \ref{Tab:PFA}.
 \begin{equation}
-  PF=PFSA*(0.65+0.01*SUMA(GI)
+  PF=PFSA*(0.65+0.01*SUMA(GI))
   \label{eq}
 \end{equation}
 \begin{table}[!h]

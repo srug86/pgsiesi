@@ -59,14 +59,13 @@ USC COCOMO II
 \chapter{Ajustes de tamaño aplicados}
 
 Para la estimación del tamaño de los tres módulos de los que se compone el
-proyecto, se va a utilizar el método de \emph{puntos función}. Como lenguaje
-de implementación del proyecto se va a utilizar \emph{php} (un lenguaje
+proyecto se va a utilizar el método de \emph{puntos función}. Como lenguaje
+de implementación del proyecto se va a utilizar \emph{php} (lenguaje
 orientado a objetos). Además, se ha considerado que el porcentaje de código que
-se va a desechar cuando finalice la implementación va a ser de nulo
-\emph{0.00}.
+se va a desechar cuando finalice la implementación va a ser \emph{0\%}.
 
 Para rellenar las tablas del formulario de entrada de estimaciones de tamaño
-en \emph{puntos función}, se han utilizado los valores calculados en las tablas
+en \emph{puntos función} se han utilizado los valores calculados en las tablas
 de \emph{PFSA} del trabajo 5.
 
 \section{Gestión de usuarios}
@@ -118,25 +117,26 @@ plataforma, personal, proyecto y usuario.
 Se refieren a las restricciones y requerimientos sobre el producto a
 desarrollar.
 \begin{description}
-\item[RELY], mide la confiabilidad del producto software, se le asigna un 
-valor \textbf{bajo}, que implica unas mínimas pérdidas al usuario,
+\item[RELY] Mide la confiabilidad del producto software. Se le asigna un 
+valor \textbf{bajo} que implica unas mínimas pérdidas al usuario,
 fácilmente recuperables.
 
-\item[DATA], mide el tamaño de la base de datos, es decir la relación entre
-el tamaño de las base de datos y el tamaño del código en líneas de código; se
-le asigna un valor \textbf{normal}, lo que significa que la relación se encuentra entre cien y mil. Va a tener un aumento del \textbf{50\%}.
+\item[DATA] Mide el tamaño de la base de datos, es decir, la relación entre
+el tamaño de las bases de datos y el tamaño del código en líneas de código. Se
+le asigna un valor \textbf{normal}, lo que significa que la relación se
+encuentra entre cien y mil. Tendrá un aumento del \textbf{50\%}. 
 
-\item[CPLX], mide complejidad del producto, se le asigna un
+\item[CPLX] Mide la complejidad del producto. Se le asigna un
 valor \textbf{nominal}, esto conlleva que use anidamientos sencillos, rutinas
 estándares de matemática y estadística, el uso simple de algunos dispositivos
-y consultas y actualizaciones complejas. Va a tener un aumento del 
+y consultas y actualizaciones complejas. Tendrá un aumento del 
 \textbf{25\%}.
 
-\item[RUSE], requerimientos de reusabilidad, tiene un valor \textbf{normal}
+\item[RUSE] Requerimientos de reusabilidad. Tiene un valor \textbf{normal},
 lo que significa que tendrá partes reusables dentro del mismo
-proyecto. Va a tener un aumento del \textbf{25\%}.
+proyecto. Tendrá un aumento del \textbf{25\%}.
 
-\item[DOCU] corresponde con la documentación de las diferentes etapas del
+\item[DOCU] Corresponde con la documentación de las diferentes etapas del
 ciclo de vida software. A este factor se le asigna un valor de \textbf{alto},
 esto significa que las necesidades del ciclo de vida están cubiertas
 ampliamente.
@@ -146,18 +146,18 @@ ampliamente.
 \subsubsection{Factores de plataforma}
 Analizan la complejidad de la plataforma subyacente.
 \begin{description}
-\item[PVOL],mide la volatilidad de la plataforma, representa la frecuencia de
+\item[PVOL] Mide la volatilidad de la plataforma y representa la frecuencia de
   los cambios en la plataforma. Se le asigna un valor \textbf{bajo}, que
   corresponde con un cambio principal cada doce meses y un cambio menor todos
   los meses.
 
-\item[STOR], mide la restricción del almacenamiento principal. Es una función
-  que representa el grado de restricción del almacenamiento pricnipal
-  impuesto sobre un sistema de software. A este factor se le asigna un valor
+\item[STOR] Mide la restricción del almacenamiento principal. Es una función
+  que representa el grado de restricción del almacenamiento principal
+  impuesto sobre un sistema software. A este factor se le asigna un valor
   \textbf{normal}, es decir, un uso del 50\% del porcetanje total de
-  almacenamiento o menor. Va a tener un aumento del \textbf{50\%}.
+  almacenamiento o menor. Tendrá un aumento del \textbf{50\%}.
 
-\item[TIME],restricción del tiempo de ejecución. Se le asigna un valor
+\item[TIME] Restricción del tiempo de ejecución. Se le asigna un valor
   \textbf{alto}, que equivale a un 70\% del tiempo de ejecución disponible.
 \end{description}
 
@@ -165,21 +165,21 @@ Analizan la complejidad de la plataforma subyacente.
 Estos factores están referidos al nivel de habilidad que posee el equipo de
 desarrollo.
 \begin{description}
-\item[ACAP], mide la capacidad del analista. Se le asigna un valor
+\item[ACAP] Mide la capacidad del analista. Se le asigna un valor
 \textbf{alto}, que equivale al 75\% de su capacidad.
-\item[PCAP], mide la capacidad del programador. Se le asigna un valor
+\item[PCAP] Mide la capacidad del programador. Se le asigna un valor
 \textbf{alto}, que equivale al 75\% de su capacidad.
-\item[PCON], mide el grado de permanencia anual del personal afectado en un
+\item[PCON] Mide el grado de permanencia anual del personal afectado en un
 proyecto. Se le asigna un valor \textbf{bajo}, que equivale a un 24\% de
 permanencia por año.
-\item[AEXP], mide el nivel de experiencia en el desarrollo de aplicaciones
+\item[AEXP] Mide el nivel de experiencia en el desarrollo de aplicaciones
 similares. Se le asigna un valor \textbf{normal}, que equivale a una
-experiencia de 1 año. Va a tener un aumento del \textbf{25\%}.
-\item[PEXP], mide el reconocimiento de nuevas y potentes plataformas. Se le
-asigna un valor \textbf{normal}, que equivale a una experiencia de 1 año. Va
-a tener un aumento del \textbf{25\%}.
-\item[LTEX], mide el nivel de experiencia del equipo en el uso del lenguaje y
-herramientas a emplear. Se le asigna un valor \textbf{alto} que
+experiencia de 1 año. Tendrá un aumento del \textbf{25\%}.
+\item[PEXP] Mide el reconocimiento de nuevas y potentes plataformas. Se le
+asigna un valor \textbf{normal}, que equivale a una experiencia de 1
+año. Tendrá un aumento del \textbf{25\%}. 
+\item[LTEX] Mide el nivel de experiencia del equipo en el uso del lenguaje y
+herramientas a emplear. Se le asigna un valor \textbf{alto}, que
 equivale a un de 3 años de experiencia.
 \end{description}
 
@@ -187,11 +187,11 @@ equivale a un de 3 años de experiencia.
 Se refieren a las condiciones y restricciones bajo las cuales se lleva a cabo
 el proyecto.
 \begin{description}
-\item[TOOL], mide el uso de herramientas software. Se le asigna un valor
-\textbf{alto} que significa que, se cuenta con herramientas robustas y
+\item[TOOL] Mide el uso de herramientas software. Se le asigna un valor
+\textbf{alto}, que significa que se cuenta con herramientas robustas y
 maduras, integradas moderadamente.
-\item[SITE], mide dos factores: la ubicación espacial y las comunicaciones.
-Se le asigna un valor de \textbf{muy alto} que significa que, el desarrollo
+\item[SITE] Mide dos factores: la ubicación espacial y las comunicaciones.
+Se le asigna un valor \textbf{muy alto}, que significa que el desarrollo
 se producirá en un mismo edificio o complejo y las comunicaciones serán
 electrónicas de banda ancha y ocasionalmente por videoconferencia.
 \end{description}
@@ -201,25 +201,26 @@ electrónicas de banda ancha y ocasionalmente por videoconferencia.
 Se refieren a las restricciones y requerimientos sobre el producto a
 desarrollar.
 \begin{description}
-\item[RELY], mide la confiabilidad del producto software, se le asigna un 
+\item[RELY] Mide la confiabilidad del producto software. Se le asigna un 
 valor \textbf{bajo}, que implica unas mínimas pérdidas al usuario,
 fácilmente recuperables.
 
-\item[DATA], mide el tamaño de la base de datos, es decir la relación entre
-el tamaño de las base de datos y el tamaño del código en líneas de código; se
-le asigna un valor \textbf{normal}, lo que significa que la relación se encuentra entre cien y mil. Va a tener un aumento del \textbf{75\%}.
+\item[DATA] Mide el tamaño de la base de datos, es decir, la relación entre
+el tamaño de las bases de datos y el tamaño del código en líneas de código. Se
+le asigna un valor \textbf{normal}, lo que significa que la relación se
+encuentra entre cien y mil. Tendrá un aumento del \textbf{75\%}. 
 
-\item[CPLX], mide complejidad del producto, se le asigna un
+\item[CPLX] Mide la complejidad del producto. Se le asigna un
 valor \textbf{nominal}, esto conlleva que use anidamientos sencillos, rutinas
 estándares de matemática y estadística, el uso simple de algunos dispositivos
-y consultas y actualizaciones complejas. Va a tener un aumento del 
+y consultas y actualizaciones complejas. Tendrá un aumento del 
 \textbf{25\%}.
 
-\item[RUSE], requerimientos de reusabilidad, tiene un valor \textbf{normal}
+\item[RUSE] Requerimientos de reusabilidad. Tiene un valor \textbf{normal},
 lo que significa que tendrá partes reusables dentro del mismo
-proyecto. Va a tener un aumento del \textbf{25\%}.
+proyecto. Tendrá un aumento del \textbf{25\%}.
 
-\item[DOCU] corresponde con la documentación de las diferentes etapas del
+\item[DOCU] Corresponde con la documentación de las diferentes etapas del
 ciclo de vida software. A este factor se le asigna un valor de \textbf{alto},
 esto significa que las necesidades del ciclo de vida están cubiertas
 ampliamente.
@@ -229,18 +230,18 @@ ampliamente.
 \subsubsection{Factores de plataforma}
 Analizan la complejidad de la plataforma subyacente.
 \begin{description}
-\item[PVOL],mide la volatilidad de la plataforma, representa la frecuencia de
+\item[PVOL] Mide la volatilidad de la plataforma y representa la frecuencia de
   los cambios en la plataforma. Se le asigna un valor \textbf{bajo}, que
   corresponde con un cambio principal cada doce meses y un cambio menor todos
   los meses.
 
-\item[STOR], mide la restricción del almacenamiento principal. Es una función
-  que representa el grado de restricción del almacenamiento pricnipal
+\item[STOR] Mide la restricción del almacenamiento principal. Es una función
+  que representa el grado de restricción del almacenamiento principal
   impuesto sobre un sistema de software. A este factor se le asigna un valor
   \textbf{normal}, es decir, un uso del 50\% del porcetanje total de
   almacenamiento o menor. Va a tener un aumento del \textbf{50\%}.
 
-\item[TIME],restricción del tiempo de ejecución. Se le asigna un valor
+\item[TIME] Restricción del tiempo de ejecución. Se le asigna un valor
   \textbf{alto}, que equivale a un 70\% del tiempo de ejecución disponible.
 \end{description}
 
@@ -248,33 +249,33 @@ Analizan la complejidad de la plataforma subyacente.
 Estos factores están referidos al nivel de habilidad que posee el equipo de
 desarrollo.
 \begin{description}
-\item[ACAP], mide la capacidad del analista. Se le asigna un valor
+\item[ACAP] Mide la capacidad del analista. Se le asigna un valor
 \textbf{alto}, que equivale al 75\% de su capacidad.
-\item[PCAP], mide la capacidad del programador. Se le asigna un valor
+\item[PCAP] Mide la capacidad del programador. Se le asigna un valor
 \textbf{alto}, que equivale al 75\% de su capacidad.
-\item[PCON], mide el grado de permanencia anual del personal afectado en un
+\item[PCON] Mide el grado de permanencia anual del personal afectado en un
 proyecto. Se le asigna un valor \textbf{bajo}, que equivale a un 24\% de
 permanencia por año.
-\item[AEXP], mide el nivel de experiencia en el desarrollo de aplicaciones
+\item[AEXP] Mide el nivel de experiencia en el desarrollo de aplicaciones
 similares. Se le asigna un valor \textbf{normal}, que equivale a una
-experiencia de 1 año. Va a tener un aumento del \textbf{25\%}.
-\item[PEXP], mide el reconocimiento de nuevas y potentes plataformas. Se le
-asigna un valor \textbf{normal}, que equivale a una experiencia de 1 año. Va
-a tener un aumento del \textbf{25\%}.
-\item[LTEX], mide el nivel de experiencia del equipo en el uso del lenguaje y
-herramientas a emplear. Se le asigna un valor \textbf{alto} que equivale a un
-de 3 años de experiencia.
+experiencia de 1 año. Tendrá un aumento del \textbf{25\%}.
+\item[PEXP] Mide el reconocimiento de nuevas y potentes plataformas. Se le
+asigna un valor \textbf{normal}, que equivale a una experiencia de 1
+año. Tendrá un aumento del \textbf{25\%}. 
+\item[LTEX] Mide el nivel de experiencia del equipo en el uso del lenguaje y
+herramientas a emplear. Se le asigna un valor \textbf{alto} que equivale a una
+experiencia de 3 años.
 \end{description}
 
 \subsubsection{Factores del proyecto}
 Se refieren a las condiciones y restricciones bajo las cuales se lleva a cabo
 el proyecto.
 \begin{description}
-\item[TOOL], mide el uso de herramientas software. Se le asigna un valor
-\textbf{alto} que significa que, se cuenta con herramientas robustas y
+\item[TOOL] Mide el uso de herramientas software. Se le asigna un valor
+\textbf{alto}, que significa que se cuenta con herramientas robustas y
 maduras, integradas moderadamente.
-\item[SITE], mide dos factores: la ubicación espacial y las comunicaciones.
-Se le asigna un valor de \textbf{muy alto} que significa que, el desarrollo
+\item[SITE] Mide dos factores: la ubicación espacial y las comunicaciones.
+Se le asigna un valor de \textbf{muy alto}, que significa que el desarrollo
 se producirá en un mismo edificio o complejo y las comunicaciones serán
 electrónicas de banda ancha y ocasionalmente por videoconferencia.
 \end{description}
@@ -284,25 +285,26 @@ electrónicas de banda ancha y ocasionalmente por videoconferencia.
 Se refieren a las restricciones y requerimientos sobre el producto a
 desarrollar.
 \begin{description}
-\item[RELY], mide la confiabilidad del producto software, se le asigna un 
+\item[RELY] Mide la confiabilidad del producto software. Se le asigna un 
 valor \textbf{bajo}, que implica unas mínimas pérdidas al usuario,
 fácilmente recuperables.
 
-\item[DATA], mide el tamaño de la base de datos, es decir la relación entre
-el tamaño de las base de datos y el tamaño del código en líneas de código; se
-le asigna un valor \textbf{normal}, lo que significa que la relación se encuentra entre cien y mil. Va a tener un aumento del \textbf{25\%}.
+\item[DATA] Mide el tamaño de la base de datos, es decir, la relación entre
+el tamaño de las bases de datos y el tamaño del código en líneas de código. Se
+le asigna un valor \textbf{normal}, lo que significa que la relación se
+encuentra entre cien y mil. Tendrá un aumento del \textbf{25\%}. 
 
-\item[CPLX], mide complejidad del producto, se le asigna un
+\item[CPLX] Mide la complejidad del producto. Se le asigna un
 valor \textbf{nominal}, esto conlleva que use anidamientos sencillos, rutinas
 estándares de matemática y estadística, el uso simple de algunos dispositivos
-y consultas y actualizaciones complejas. Va a tener un aumento del 
+y consultas y actualizaciones complejas. Tendrá un aumento del 
 \textbf{25\%}.
 
-\item[RUSE], requerimientos de reusabilidad, tiene un valor \textbf{normal}
+\item[RUSE] Requerimientos de reusabilidad. Tiene un valor \textbf{normal},
 lo que significa que tendrá partes reusables dentro del mismo
-proyecto. Va a tener un aumento del \textbf{25\%}.
+proyecto. Tendrá un aumento del \textbf{25\%}.
 
-\item[DOCU] corresponde con la documentación de las diferentes etapas del
+\item[DOCU] Corresponde con la documentación de las diferentes etapas del
 ciclo de vida software. A este factor se le asigna un valor de \textbf{alto},
 esto significa que las necesidades del ciclo de vida están cubiertas
 ampliamente.
@@ -312,18 +314,18 @@ ampliamente.
 \subsubsection{Factores de plataforma}
 Analizan la complejidad de la plataforma subyacente.
 \begin{description}
-\item[PVOL],mide la volatilidad de la plataforma, representa la frecuencia de
+\item[PVOL] Mide la volatilidad de la plataforma y representa la frecuencia de
   los cambios en la plataforma. Se le asigna un valor \textbf{bajo}, que
   corresponde con un cambio principal cada doce meses y un cambio menor todos
   los meses.
 
-\item[STOR], mide la restricción del almacenamiento principal. Es una función
-  que representa el grado de restricción del almacenamiento pricnipal
+\item[STOR] Mide la restricción del almacenamiento principal. Es una función
+  que representa el grado de restricción del almacenamiento principal
   impuesto sobre un sistema de software. A este factor se le asigna un valor
   \textbf{normal}, es decir, un uso del 50\% del porcetanje total de
-  almacenamiento o menor. Va a tener un aumento del \textbf{25\%}.
+  almacenamiento o menor. Tendrá un aumento del \textbf{25\%}.
 
-\item[TIME],restricción del tiempo de ejecución. Se le asigna un valor
+\item[TIME] Restricción del tiempo de ejecución. Se le asigna un valor
   \textbf{alto}, que equivale a un 70\% del tiempo de ejecución disponible.
 \end{description}
 
@@ -331,33 +333,33 @@ Analizan la complejidad de la plataforma subyacente.
 Estos factores están referidos al nivel de habilidad que posee el equipo de
 desarrollo.
 \begin{description}
-\item[ACAP], mide la capacidad del analista. Se le asigna un valor
+\item[ACAP] Mide la capacidad del analista. Se le asigna un valor
 \textbf{bajo}, que equivale al 35\% de su capacidad.
-\item[PCAP], mide la capacidad del programador. Se le asigna un valor
+\item[PCAP] Mide la capacidad del programador. Se le asigna un valor
 \textbf{alto}, que equivale al 75\% de su capacidad.
-\item[PCON], mide el grado de permanencia anual del personal afectado en un
+\item[PCON] Mide el grado de permanencia anual del personal afectado en un
 proyecto. Se le asigna un valor \textbf{bajo}, que equivale a un 24\% de
 permanencia por año.
-\item[AEXP], mide el nivel de experiencia en el desarrollo de aplicaciones
+\item[AEXP] Mide el nivel de experiencia en el desarrollo de aplicaciones
 similares. Se le asigna un valor \textbf{normal}, que equivale a una
-experiencia de 1 año. Va a tener un aumento del \textbf{50\%}.
-\item[PEXP], mide el reconocimiento de nuevas y potentes plataformas. Se le
-asigna un valor \textbf{normal}, que equivale a una experiencia de 1 año. Va
-a tener un aumento del \textbf{25\%}.
-\item[LTEX], mide el nivel de experiencia del equipo en el uso del lenguaje y
-herramientas a emplear. Se le asigna un valor \textbf{alto} que equivale a un
-de 3 años de experiencia.
+experiencia de 1 año. Tendrá un aumento del \textbf{50\%}.
+\item[PEXP] Mide el reconocimiento de nuevas y potentes plataformas. Se le
+asigna un valor \textbf{normal}, que equivale a una experiencia de 1
+año. Tendrá un aumento del \textbf{25\%}. 
+\item[LTEX] Mide el nivel de experiencia del equipo en el uso del lenguaje y
+herramientas a emplear. Se le asigna un valor \textbf{alto}, que equivale a una
+experiencia de 3 años.
 \end{description}
 
 \subsubsection{Factores del proyecto}
 Se refieren a las condiciones y restricciones bajo las cuales se lleva a cabo
 el proyecto.
 \begin{description}
-\item[TOOL], mide el uso de herramientas software. Se le asigna un valor
-\textbf{alto} que significa que, se cuenta con herramientas robustas y
+\item[TOOL] Mide el uso de herramientas software. Se le asigna un valor
+\textbf{alto}, que significa que se cuenta con herramientas robustas y
 maduras, integradas moderadamente.
-\item[SITE], mide dos factores: la ubicación espacial y las comunicaciones.
-Se le asigna un valor de \textbf{muy alto} que significa que, el desarrollo
+\item[SITE] Mide dos factores: la ubicación espacial y las comunicaciones.
+Se le asigna un valor de \textbf{muy alto}, que significa que el desarrollo
 se producirá en un mismo edificio o complejo y las comunicaciones serán
 electrónicas de banda ancha y ocasionalmente por videoconferencia.
 \end{description}
@@ -366,28 +368,29 @@ electrónicas de banda ancha y ocasionalmente por videoconferencia.
 \section{Factores de escala}
 Los factores de escala para el proyecto son los siguientes:
 \begin{description}
-\item[PREC], mide el grado de experiencia previa. Se le asigna un valor
-\textbf{bajo}. Esto implica que: el entendimiento organizacional de los objetivos del producto es \emph{general}; la experiencia en el trabajo con
-software relacionado es \emph{moderada}; el desarrollo concurrente de nuevo
-hardware y procedimientos operacionales es \emph{abundante}; y la necesidad
+\item[PREC] Mide el grado de experiencia previa. Se le asigna un valor de
+\textbf{bajo}, esto implica que el entendimiento organizacional de los
+objetivos del producto es \emph{general}, la experiencia en el trabajo con 
+software relacionado es \emph{moderada}, el desarrollo concurrente de nuevo
+hardware y procedimientos operacionales es \emph{abundante}, y la necesidad
 de innovación en el procesamiento de datos, aquitectura y algoritmos es
 \emph{considerable}.
 
-\item[FLEX], mide el nivel de exigencia en el cumplimiento de requerimientos
-y plazos. Se le asigna un valor \textbf{nominal}. Esto implica que: la
+\item[FLEX] Mide el nivel de exigencia en el cumplimiento de requerimientos
+y plazos. Se le asigna un valor \textbf{nominal}, esto implica que la
 necesidad de conformar requerimientos preestablecidos es \emph{considerable},
 la necesidad de conformar especificaciones externas de interfase también es
 \emph{considerable} y el estímulo por terminación temprana es \emph{medio}.
 
-\item[RESL], mide aspectos relacionados con los ítems de riesgo crítico y el
+\item[RESL] Mide aspectos relacionados con los ítems de riesgo crítico y el
 modo de abordarlos. Se le asigna un valor \textbf{alto}. Esto implica que:
 \begin{itemize}
 \item La planificación de la administración de riesgo, identificando los
 ítems de riesgo y estableciendo hitos de control para su solución por medio
 de la revisión del diseño del producto (PDR) es \emph{general}.
 \item El cronograma, presupuesto e hitos internos especificados en el PDR,
-compatibles con el plan de administración de riesgo es también \emph{general}.
-\item El orcentaje del cronograma dedicado a la definición de la arquitectura
+compatibles con el plan de administración de riesgo, es también \emph{general}.
+\item El porcentaje del cronograma dedicado a la definición de la arquitectura
 de acuerdo a los objetivos generales del producto es aproximadamente del
 \emph{25\%}.
 \item El porcentaje de arquitecturas de software disponibles para el proyecto
@@ -397,14 +400,14 @@ desarrollando y verificando las especulaciones de arquitecturas, son
 \emph{buenas}.
 \end{itemize}
 
-\item[TEAM], mide el grado de cohesión del equipo. Se le asigna un valor
-\textbf{alto}. Esto implica que: la compatibilidad entre los objetivos y
+\item[TEAM] Mide el grado de cohesión del equipo. Se le asigna un valor
+\textbf{alto}. Esto implica que la compatibilidad entre los objetivos y
 culturas de los integrantes del equipo es \emph{considerable}, la habilidad
 y predisposición para conciliar objetivos es también \emph{considerable}, la
 experiencia en el trabajo en grupo es \emph{básica} y la visión compartida
 de objetivos y compromisos, es también \emph{básica}.
 
-\item[PMAT], mide la madurez del proceso. Según la evaluación CMM se le asigna
+\item[PMAT] Mide la madurez del proceso. Según la evaluación CMM se le asigna
 un valor \textbf{1 - mitad superior}, que corresponde a un nivel \emph{bajo}
 para PMAT.
 \end{description}

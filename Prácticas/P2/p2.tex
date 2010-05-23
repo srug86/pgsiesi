@@ -106,32 +106,6 @@ de la interfaz es de \textbf{2208}.
 
 \chapter{Multiplicadores y estimaciones de esfuerzo}
 \section{Gestión de usuarios}
-\subsection{Early Design Model}
-Para el Early Design Model, a partir de ahora EDM, se van a diferenciar los
-valores de esfuerzo de seis multiplicadores.
-
-\begin{description}
-\item[PERS] Mide la capacidad del personal. Combina los valores ACAP, PCAP y
-PCON, que se verán en el modelo \emph{post architecture}. Se le asigna un
-valor \textbf{alto}. Esto implica que la suma promedio de los factores
-ACAP, PCAP y PCON es aproximadamente de \emph{10,11}; el percentil combinado
-de ACAP y PCAP es del 65\%; y el grado de permanencia anual del personal es
-del \emph{9\%}.
-
-\item[RCPX] Mide la fiabilidad y complejidad del producto. Combina los
-factores del modelo \emph{post architecture} RELY, DATA, CPLX y DOCU. Se le
-asigna un valor \textbf{normal}, con un aumento del \textbf{50\%}. Esto
-implica que el valor promedio de la suma de los factores RELY, DATA, CPLX y
-DOCU está en torno a \emph{12}; el énfasis en la confiabilidad de la
-documentación es \emph{básico}; la complejidad del producto es
-\emph{moderada}; y el tamaño de la base de datos también es también
-\emph{moderada}.
-
-\item[RUSE] Mide la reutilización requerida. Equivale al factor de esfuerzo
-del modelo \emph{post architecture} (RUSE). Se le asigna un valor
-\textbf{normal}, con un aumento del \textbf{25\%}.
-\end{description}
-
 \subsection{Post Architecture Model}
 Para el Post Architecture Model, a partir de ahora PAM, en el valor de Effort
 Adjustment Factor (EAF), se va a describir los valores referentes a producto,
@@ -219,7 +193,54 @@ se producirá en un mismo edificio o complejo y las comunicaciones serán
 electrónicas de banda ancha y ocasionalmente por videoconferencia.
 \end{description}
 
+\subsection{Early Design Model}
+Para el Early Design Model, a partir de ahora EDM, se van a diferenciar los
+valores de esfuerzo de seis multiplicadores.
+
+\begin{description}
+\item[PERS] Mide la capacidad del personal. Combina los valores ACAP, PCAP y
+PCON, que se ven en el modelo \emph{post architecture}. Se le asigna un
+valor \textbf{alto}. Esto implica que la suma promedio de los factores
+ACAP, PCAP y PCON es aproximadamente de \emph{10,11}; el percentil combinado
+de ACAP y PCAP es del 65\%; y el grado de permanencia anual del personal es
+del \emph{9\%}.
+
+\item[RCPX] Mide la fiabilidad y complejidad del producto. Combina los
+factores RELY, DATA, CPLX y DOCU del modelo \emph{post architecture}. Se le
+asigna un valor \textbf{normal}, con un aumento del \textbf{50\%}. Esto
+implica que el valor promedio de la suma de los factores RELY, DATA, CPLX y
+DOCU está en torno a \emph{12}; el énfasis en la confiabilidad de la
+documentación es \emph{básico}; la complejidad del producto es
+\emph{moderada}; y el tamaño de la base de datos también es también
+\emph{moderada}.
+
+\item[RUSE] Mide la reutilización requerida. Equivale al factor de esfuerzo
+del modelo \emph{post architecture} (RUSE). Se le asigna un valor
+\textbf{normal}, con un aumento del \textbf{25\%}.
+
+\item[PDIF] Mide la dificultad de la plataforma. Combina los factores TIME, 
+STOR y PVOL del modelo \emph{post architecture} . Se le asigna un valor
+\textbf{normal}, con un aumento del \textbf{25\%}. Esto implica que el valor 
+promedio de la suma de los factores TIME, STOR y PVOL está en torno a \emph{9};
+la volatilidad de la plataforma es \emph{estable}; y la restricción de tiempo y
+almacenamiento es \emph{menor o igual que el 50\%}.
+
+\item[PREX] Mide la experiencia del personal. Combina los factores AEXP, PEXP y
+LTEX del modelo \emph{post architecture} . Se le asigna un valor 
+\textbf{normal}, con un aumento del \textbf{25\%}. Esto implica que el valor 
+promedio de la suma de los factores AEXP, PEXP y LTEX está en torno a \emph{9};
+y la experiencia en el lenguaje y herramientas es de \emph{1 año}.
+
+\item[FCIL] Mide los medios disponibles. Combina los factores TOOL y SITE del 
+modelo \emph{post architecture} . Se le asigna un valor \textbf{alto}. Esto 
+implica que el valor promedio de la suma de los factores TOOL y SITE está en 
+entre \emph{7 y 8}; el soporte de TOOL es \emph{bueno}; y la condición de 
+multisitio es \emph{fuerte soporte para el desarrollo}.
+
+\end{description}
+
 \section{Gestión de cursos}
+\subsection{Post Architecture Model}
 \subsubsection{Factores de producto}
 Se refieren a las restricciones y requerimientos sobre el producto a
 desarrollar.
@@ -303,7 +324,50 @@ se producirá en un mismo edificio o complejo y las comunicaciones serán
 electrónicas de banda ancha y ocasionalmente por videoconferencia.
 \end{description}
 
+\subsection{Early Design Model}
+\begin{description}
+\item[PERS] Mide la capacidad del personal. Combina los valores ACAP, PCAP y
+PCON, que se ven en el modelo \emph{post architecture}. Se le asigna un
+valor \textbf{muy alto}. Esto implica que la suma promedio de los factores
+ACAP, PCAP y PCON es aproximadamente de \emph{11,12}; el percentil combinado
+de ACAP y PCAP es del 75\%; y el grado de permanencia anual del personal es
+del \emph{5\%}.
+
+\item[RCPX] Mide la fiabilidad y complejidad del producto. Combina los
+factores RELY, DATA, CPLX y DOCU del modelo \emph{post architecture}. Se le
+asigna un valor \textbf{normal}, con un aumento del \textbf{50\%}. Esto
+implica que el valor promedio de la suma de los factores RELY, DATA, CPLX y
+DOCU está en torno a \emph{12}; el énfasis en la confiabilidad de la
+documentación es \emph{básico}; la complejidad del producto es
+\emph{moderada}; y el tamaño de la base de datos también es también
+\emph{moderada}.
+
+\item[RUSE] Mide la reutilización requerida. Equivale al factor de esfuerzo
+del modelo \emph{post architecture} (RUSE). Se le asigna un valor
+\textbf{normal}, con un aumento del \textbf{25\%}.
+
+\item[PDIF] Mide la dificultad de la plataforma. Combina los factores TIME, 
+STOR y PVOL del modelo \emph{post architecture} . Se le asigna un valor
+\textbf{normal}, con un aumento del \textbf{50\%}. Esto implica que el valor 
+promedio de la suma de los factores TIME, STOR y PVOL está en torno a \emph{9};
+la volatilidad de la plataforma es \emph{estable}; y la restricción de tiempo y
+almacenamiento es \emph{menor o igual que el 50\%}.
+
+\item[PREX] Mide la experiencia del personal. Combina los factores AEXP, PEXP y
+LTEX del modelo \emph{post architecture} . Se le asigna un valor 
+\textbf{normal}, con un aumento del \textbf{25\%}. Esto implica que el valor 
+promedio de la suma de los factores AEXP, PEXP y LTEX está en torno a \emph{9};
+y la experiencia en el lenguaje y herramientas es de \emph{1 año}.
+
+\item[FCIL] Mide los medios disponibles. Combina los factores TOOL y SITE del 
+modelo \emph{post architecture} . Se le asigna un valor \textbf{alto}. Esto 
+implica que el valor promedio de la suma de los factores TOOL y SITE está en 
+entre \emph{7 y 8}; el soporte de TOOL es \emph{bueno}; y la condición de 
+multisitio es \emph{fuerte soporte para el desarrollo}.
+
+\end{description}
 \section{Interfaz}
+\subsection{Post Architecture Model}
 \subsubsection{Factores de producto}
 Se refieren a las restricciones y requerimientos sobre el producto a
 desarrollar.
@@ -385,6 +449,50 @@ maduras, integradas moderadamente.
 Se le asigna un valor de \textbf{muy alto}, que significa que el desarrollo
 se producirá en un mismo edificio o complejo y las comunicaciones serán
 electrónicas de banda ancha y ocasionalmente por videoconferencia.
+\end{description}
+
+\subsection{Early Design Model}
+
+\begin{description}
+\item[PERS] Mide la capacidad del personal. Combina los valores ACAP, PCAP y
+PCON, que se ven en el modelo \emph{post architecture}. Se le asigna un
+valor \textbf{bajo}. Esto implica que la suma promedio de los factores
+ACAP, PCAP y PCON es aproximadamente de \emph{7,8}; el percentil combinado
+de ACAP y PCAP es del 45\%; y el grado de permanencia anual del personal es
+del \emph{20\%}.
+
+\item[RCPX] Mide la fiabilidad y complejidad del producto. Combina los
+factores RELY, DATA, CPLX y DOCU del modelo \emph{post architecture}. Se le
+asigna un valor \textbf{normal}, con un aumento del \textbf{25\%}. Esto
+implica que el valor promedio de la suma de los factores RELY, DATA, CPLX y
+DOCU está en torno a \emph{12}; el énfasis en la confiabilidad de la
+documentación es \emph{básico}; la complejidad del producto es
+\emph{moderada}; y el tamaño de la base de datos también es también
+\emph{moderada}.
+
+\item[RUSE] Mide la reutilización requerida. Equivale al factor de esfuerzo
+del modelo \emph{post architecture} (RUSE). Se le asigna un valor
+\textbf{normal}, con un aumento del \textbf{25\%}.
+
+\item[PDIF] Mide la dificultad de la plataforma. Combina los factores TIME, 
+STOR y PVOL del modelo \emph{post architecture} . Se le asigna un valor
+\textbf{normal}, con un aumento del \textbf{25\%}. Esto implica que el valor 
+promedio de la suma de los factores TIME, STOR y PVOL está en torno a \emph{9};
+la volatilidad de la plataforma es \emph{estable}; y la restricción de tiempo y
+almacenamiento es \emph{menor o igual que el 50\%}.
+
+\item[PREX] Mide la experiencia del personal. Combina los factores AEXP, PEXP y
+LTEX del modelo \emph{post architecture} . Se le asigna un valor 
+\textbf{normal}, con un aumento del \textbf{25\%}. Esto implica que el valor 
+promedio de la suma de los factores AEXP, PEXP y LTEX está en torno a \emph{9};
+y la experiencia en el lenguaje y herramientas es de \emph{1 año}.
+
+\item[FCIL] Mide los medios disponibles. Combina los factores TOOL y SITE del 
+modelo \emph{post architecture} . Se le asigna un valor \textbf{alto}. Esto 
+implica que el valor promedio de la suma de los factores TOOL y SITE está en 
+entre \emph{7 y 8}; el soporte de TOOL es \emph{bueno}; y la condición de 
+multisitio es \emph{fuerte soporte para el desarrollo}.
+
 \end{description}
 
 \chapter{Justificaciones del proyecto}
